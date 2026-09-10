@@ -1,32 +1,128 @@
 {
-  "date": "2026-09-10",
-  "lesson_id": "D01",
+  "schema_version": "2.0",
+  "session_id": "2026-09-10-D01-2030",
+  "recorded_at": "2026-09-10T20:30:00+08:00",
+  "timezone": "Asia/Taipei",
+  "source": {
+    "channel": "chatgpt_mobile",
+    "conversation_title": "104字根與口說技巧",
+    "coach_version": "2.0"
+  },
+  "lesson": {
+    "lesson_id": "D01",
+    "title": "What is Energy Management?",
+    "day": 1,
+    "source_url": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/day-01-energy-management/lesson.md",
+    "course_git_ref": "main"
+  },
+  "practice_context": "parked",
   "practice_minutes": 20,
-  "mode": ["listen", "repeat", "qa"],
+  "materials": [
+    {
+      "material_id": "D01-transcript",
+      "material_type": "transcript",
+      "title": "D01 Core Transcript",
+      "url": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/day-01-energy-management/lesson.md",
+      "completed": true,
+      "repetitions": 1
+    },
+    {
+      "material_id": "D01-qa",
+      "material_type": "audio_qa",
+      "title": "D01 Q&A",
+      "url": "https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-01/day-01-qa.mp3",
+      "completed": true,
+      "repetitions": 1
+    }
+  ],
+  "practice_events": [
+    {
+      "event_id": "E01",
+      "activity": "qa",
+      "material_ids": ["D01-qa"],
+      "prompt_or_task": "What do you work on?",
+      "learner_response_excerpt": "I work on energy management.",
+      "result": "independent",
+      "response_start_seconds": 3.2,
+      "issue_ids": []
+    },
+    {
+      "event_id": "E02",
+      "activity": "qa",
+      "material_ids": ["D01-qa"],
+      "prompt_or_task": "Why do you look at the data?",
+      "learner_response_excerpt": "We find the waste energy.",
+      "result": "with_hint",
+      "response_start_seconds": 7.1,
+      "issue_ids": ["I01", "I02"]
+    }
+  ],
   "scores": {
     "comprehension": 3,
     "response_speed": 2,
     "clarity": 3,
-    "confidence": 2
+    "confidence": 2,
+    "pronunciation": null
   },
-  "comfortable_chunks": [
-    "My work is about energy management.",
-    "We look at the data."
-  ],
-  "needs_practice": [
-    "unusual changes",
-    "keep the equipment working well"
-  ],
-  "corrections": [
+  "issues": [
     {
-      "original": "We find the waste energy.",
-      "suggested": "We find energy waste.",
-      "reason": "Use 'energy' before 'waste' here."
+      "issue_id": "I01",
+      "recurrence_key": "energy-waste-word-order",
+      "type": "grammar",
+      "target": "energy waste",
+      "observed_excerpt": "waste energy",
+      "correction": "We find energy waste.",
+      "reason": "Use energy before waste when waste is the main noun.",
+      "support_level": "model_answer",
+      "status": "open"
+    },
+    {
+      "issue_id": "I02",
+      "recurrence_key": "slow-start-reason-question",
+      "type": "response_speed",
+      "target": "Start a reason answer within five seconds.",
+      "observed_excerpt": "The answer started after 7.1 seconds.",
+      "correction": "Start with: We want to...",
+      "reason": "A familiar opening chunk reduces response delay.",
+      "support_level": "first_word",
+      "status": "open"
     }
   ],
-  "new_words": ["measure", "unusual"],
-  "learner_note": "The 10-second answer felt easier after the third try.",
-  "coach_note": "Meaning was clear; response start was slow on example questions.",
-  "next_goal": "Answer the first four questions within five seconds."
+  "chunk_progress": [
+    {
+      "chunk": "My work is about energy management.",
+      "attempts": 3,
+      "successful_attempts": 2,
+      "status": "practicing",
+      "issue_ids": []
+    }
+  ],
+  "new_words": [
+    {
+      "word": "measure",
+      "simple_meaning": "find the amount of something",
+      "status": "practicing"
+    }
+  ],
+  "self_assessment": {
+    "difficulty": 3,
+    "confidence": 2,
+    "note": "The short answer felt easier after the third try."
+  },
+  "coach_summary": {
+    "wins": [
+      "The learner answered the first question without a hint."
+    ],
+    "priority_issue_ids": ["I01", "I02"],
+    "evidence_limitations": [
+      "Pronunciation was not scored because the audio evidence was insufficient."
+    ]
+  },
+  "next_plan": {
+    "goal": "Answer the first four reason questions within five seconds.",
+    "target_chunks": ["We want to...", "We try to find..."],
+    "target_issue_ids": ["I01", "I02"],
+    "recommended_activities": ["repeat", "qa"],
+    "ready_for_next_lesson": false
+  }
 }
-

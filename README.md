@@ -28,7 +28,7 @@
 
 1. Q&A：聽問題，在停頓中自己回答。
 2. 用 ChatGPT Voice 按 `coach/CHATGPT_COACH.md` 練習。
-3. 結束時請 ChatGPT 產出一筆 progress JSON，並透過共用 SB MCP 寫入私人月誌。
+3. 結束時請 ChatGPT 產出一筆 progress JSON，並透過共用 SB MCP 追加到當週私人紀錄。
 
 開車時不要閱讀或操作手機。請在出發前開始播放，行車中只用耳朵和口說。
 
@@ -66,6 +66,7 @@ personal-english-loop/
 - 先求能回答，再求完整；先求清楚，再求流利。
 - 每次練習留下可機器讀取的紀錄，下一輪內容依弱點調整。
 - GitHub 是教材唯一來源；SB 是私人學習進度唯一來源。
+- SB 每週一份紀錄，每次練習追加一個 Session；每週日產生總結並討論教材調整方向。
 
 ## 免費資源
 

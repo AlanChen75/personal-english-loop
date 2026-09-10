@@ -1,17 +1,20 @@
 {
   "course": "Personal English Loop",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "language_level": "A2-B1",
   "base_url": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main",
   "coach_instructions": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/coach/CHATGPT_COACH.md",
   "progress_schema": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/progress/progress.schema.json",
+  "weekly_summary_schema": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/progress/weekly-summary.schema.json",
   "progress_storage": {
     "system": "shared SB MCP",
     "category": "learning/personal-english-loop/progress",
-    "monthly_note_title": "PEL 學習進度 YYYY-MM",
+    "weekly_note_title": "PEL 進度 YYYY-Www",
     "session_id_format": "YYYY-MM-DD-[lesson_id]-HHmm",
     "timezone": "Asia/Taipei",
-    "write_policy": "append-only; check duplicate before append; read back after append"
+    "write_policy": "one weekly note; append one session after every practice; check duplicate before append; read back after append",
+    "review_schedule": "weekly on Sunday at 20:00 Asia/Taipei",
+    "adjustment_policy": "discuss proposed changes with the learner before editing course content"
   },
   "lessons": [
     {
