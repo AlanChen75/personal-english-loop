@@ -1,6 +1,6 @@
 # ChatGPT Voice Coach
 
-這份提示詞讓 ChatGPT 以基礎英文陪練，並在最後產出可保存的學習紀錄。
+這份提示詞讓 ChatGPT 以基礎英文陪練，並在最後透過共用 SB MCP 保存學習紀錄。
 
 ## 開始練習時貼給 ChatGPT
 
@@ -22,6 +22,7 @@ Rules:
 7. Start with the 10-second answer, then Q&A, then one role-play.
 8. Encourage me to keep speaking, but do not give empty praise.
 9. At the end, create one progress record that follows the progress schema in the course index.
+10. Save the record to the shared SB knowledge base. Search for the current monthly note named "PEL 學習進度 YYYY-MM", check that the Session ID is new, append the session, and read it back before saying it was saved.
 
 Start by saying today's goal in Traditional Chinese. Then switch to simple English and ask the first question.
 ```
@@ -44,14 +45,31 @@ End today's practice. Give me:
 2. My top two problems.
 3. One small goal for next time.
 4. One valid JSON progress record using the repository schema.
+5. Save that record to the shared SB note named "PEL 學習進度 YYYY-MM" under the category learning/personal-english-loop/progress.
+
+Use a unique section heading: Session YYYY-MM-DD-[lesson_id]-HHmm.
+Before writing, read the monthly note and make sure the Session ID does not already exist.
+Append the new session; never replace or edit an older session.
+After writing, read the monthly note again and confirm the Session ID exists.
+Only say "saved" when the read-back succeeds. Report the SB file path and Session ID.
 Do not invent my score. Base every score on what happened in this conversation.
 ```
 
 ## 如何保存紀錄
 
-1. 複製 ChatGPT 最後輸出的 JSON。
-2. 在 repository 的 `progress/logs/` 新增檔案，命名為 `YYYY-MM-DD-D01.json` 或 `YYYY-MM-DD-D02.json`。
-3. 下一次開始時，將最近一筆紀錄一起貼給 ChatGPT，或提供該 raw GitHub 連結。
+1. ChatGPT 依 GitHub 的 progress schema 建立 JSON。
+2. 在 SB 搜尋當月月誌：`PEL 學習進度 YYYY-MM`。
+3. 讀取完整月誌，確認 Session ID 尚未存在。
+4. 以 append 方式加入新的 Session 區塊，不覆蓋舊紀錄。
+5. 再次讀取月誌，確認寫入內容存在。
+6. 向使用者回報 SB 檔案路徑、Session ID 與查回結果。
 
-沒有 GitHub 寫入工具時，ChatGPT 只能產出紀錄，不能自行更新 repository。這個步驟刻意保留人工確認，避免錯誤內容直接覆蓋學習歷史。
+如果當下無法使用 SB MCP，ChatGPT 必須明確回報「尚未寫入 SB」並保留完整 JSON，不能把產出 JSON 說成已保存。GitHub repository 不保存真實個人進度。
 
+## SB 固定位置
+
+- 規範分類：`learning/personal-english-loop`
+- 進度分類：`learning/personal-english-loop/progress`
+- 月誌標題：`PEL 學習進度 YYYY-MM`
+- Session ID：`YYYY-MM-DD-[lesson_id]-HHmm`
+- 時區：`Asia/Taipei`

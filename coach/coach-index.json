@@ -5,6 +5,14 @@
   "base_url": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main",
   "coach_instructions": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/coach/CHATGPT_COACH.md",
   "progress_schema": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/progress/progress.schema.json",
+  "progress_storage": {
+    "system": "shared SB MCP",
+    "category": "learning/personal-english-loop/progress",
+    "monthly_note_title": "PEL 學習進度 YYYY-MM",
+    "session_id_format": "YYYY-MM-DD-[lesson_id]-HHmm",
+    "timezone": "Asia/Taipei",
+    "write_policy": "append-only; check duplicate before append; read back after append"
+  },
   "lessons": [
     {
       "id": "D01",
