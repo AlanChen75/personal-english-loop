@@ -117,11 +117,11 @@ Today I want to explain how AI and IoT help energy management. IoT devices colle
 
 ## Audio
 
-- Slow: [day-02-slow.mp3](../../audio/day-02/day-02-slow.mp3)
-- Natural: [day-02-natural.mp3](../../audio/day-02/day-02-natural.mp3)
-- Listen and repeat: [day-02-listen-repeat.mp3](../../audio/day-02/day-02-listen-repeat.mp3)
-- Q&A: [day-02-qa.mp3](../../audio/day-02/day-02-qa.mp3)
-- Commute pack: [day-02-commute-pack.mp3](../../audio/day-02/day-02-commute-pack.mp3)
+- Slow: [day-02-slow.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-02/day-02-slow.mp3)
+- Natural: [day-02-natural.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-02/day-02-natural.mp3)
+- Listen and repeat: [day-02-listen-repeat.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-02/day-02-listen-repeat.mp3)
+- Q&A: [day-02-qa.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-02/day-02-qa.mp3)
+- Commute pack: [day-02-commute-pack.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-02/day-02-commute-pack.mp3)
 
 ## 完成標準
 
@@ -129,4 +129,3 @@ Today I want to explain how AI and IoT help energy management. IoT devices colle
 - 九題 Q&A 至少七題能在五秒內開始回答。
 - 清楚說出 `IoT collects → AI understands → people act`。
 - 用一個自己的裝置、建築或機器例子回答。
-

@@ -10,8 +10,8 @@
 
 | Day | 主題 | 教材 | 完整通勤音訊 |
 |---|---|---|---|
-| 01 | What is Energy Management? | [文字教材](lessons/day-01-energy-management/lesson.md) | [播放 MP3](audio/day-01/day-01-commute-pack.mp3) |
-| 02 | How AI and IoT Help Energy Management | [文字教材](lessons/day-02-ai-iot-energy/lesson.md) | [播放 MP3](audio/day-02/day-02-commute-pack.mp3) |
+| 01 | What is Energy Management? | [文字教材](lessons/day-01-energy-management/lesson.md) | [播放 MP3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-01/day-01-commute-pack.mp3) |
+| 02 | How AI and IoT Help Energy Management | [文字教材](lessons/day-02-ai-iot-energy/lesson.md) | [播放 MP3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-02/day-02-commute-pack.mp3) |
 
 每一天另有四段練習音訊：slow、natural、listen-and-repeat、Q&A。完整連結見各課教材。
 
@@ -68,4 +68,4 @@ personal-english-loop/
 
 ## 免費資源
 
-目前音訊使用 macOS 內建英文語音合成，不需要付費 API。MP3 儲存在本 repository，公開連結可直接播放。Commute pack 把同一組約 7 分鐘的素材安排成三輪，利用重複加深記憶；未來若要更自然的多角色聲音，可在不改教材結構的情況下替換音訊。
+目前音訊使用 macOS 內建英文語音合成，不需要付費 API。MP3 儲存在本 repository，並透過免費 jsDelivr GitHub CDN 提供標準 `audio/mpeg` 播放連結。Commute pack 把同一組約 7 分鐘的素材安排成三輪，利用重複加深記憶；未來若要更自然的多角色聲音，可在不改教材結構的情況下替換音訊。

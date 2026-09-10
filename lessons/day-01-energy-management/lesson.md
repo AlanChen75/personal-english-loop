@@ -113,11 +113,11 @@ Hello. My work is about energy management. Energy management means using energy 
 
 ## Audio
 
-- Slow: [day-01-slow.mp3](../../audio/day-01/day-01-slow.mp3)
-- Natural: [day-01-natural.mp3](../../audio/day-01/day-01-natural.mp3)
-- Listen and repeat: [day-01-listen-repeat.mp3](../../audio/day-01/day-01-listen-repeat.mp3)
-- Q&A: [day-01-qa.mp3](../../audio/day-01/day-01-qa.mp3)
-- Commute pack: [day-01-commute-pack.mp3](../../audio/day-01/day-01-commute-pack.mp3)
+- Slow: [day-01-slow.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-01/day-01-slow.mp3)
+- Natural: [day-01-natural.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-01/day-01-natural.mp3)
+- Listen and repeat: [day-01-listen-repeat.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-01/day-01-listen-repeat.mp3)
+- Q&A: [day-01-qa.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-01/day-01-qa.mp3)
+- Commute pack: [day-01-commute-pack.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-01/day-01-commute-pack.mp3)
 
 ## 完成標準
 
@@ -125,4 +125,3 @@ Hello. My work is about energy management. Energy management means using energy 
 - 八題 Q&A 至少六題能在五秒內開始回答。
 - 用自己的例子替換至少三個 chunks。
 - 說不出來時先說短句，不停下來找完美文法。
-
