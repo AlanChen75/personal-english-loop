@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-10",
+  "lesson_id": "D01",
+  "practice_minutes": 20,
+  "mode": ["listen", "repeat", "qa"],
+  "scores": {
+    "comprehension": 3,
+    "response_speed": 2,
+    "clarity": 3,
+    "confidence": 2
+  },
+  "comfortable_chunks": [
+    "My work is about energy management.",
+    "We look at the data."
+  ],
+  "needs_practice": [
+    "unusual changes",
+    "keep the equipment working well"
+  ],
+  "corrections": [
+    {
+      "original": "We find the waste energy.",
+      "suggested": "We find energy waste.",
+      "reason": "Use 'energy' before 'waste' here."
+    }
+  ],
+  "new_words": ["measure", "unusual"],
+  "learner_note": "The 10-second answer felt easier after the third try.",
+  "coach_note": "Meaning was clear; response start was slow on example questions.",
+  "next_goal": "Answer the first four questions within five seconds."
+}
+

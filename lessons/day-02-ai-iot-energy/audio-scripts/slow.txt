@@ -1,0 +1,36 @@
+Day two. How AI and IoT help energy management.
+
+Listen slowly.
+
+Today I want to explain how AI and IoT help energy management.
+
+IoT devices collect data from buildings and machines.
+
+They can measure power, temperature, and operating time.
+
+The data tells us what is happening now.
+
+AI helps us look for patterns in the data.
+
+It can find a change that is hard to see.
+
+It can also give an early warning when something may be wrong.
+
+AI does not make every decision.
+
+It gives useful information to people.
+
+A manager or an engineer checks the situation and decides what to do.
+
+In short, IoT collects the data, AI helps us understand it, and people take action.
+
+Listen one more time.
+
+IoT collects energy data.
+
+AI looks for patterns and unusual changes.
+
+It can give an early warning.
+
+People check the situation and decide what to do.
+

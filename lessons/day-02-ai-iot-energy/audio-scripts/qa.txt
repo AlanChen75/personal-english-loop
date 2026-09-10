@@ -1,0 +1,60 @@
+Day two. Question and answer practice. After each question, answer before you hear the model answer.
+
+Question one. How do you get energy data?
+
+Think and answer.
+
+Model answer. We use IoT devices to collect it.
+
+Question two. Where does the data come from?
+
+Think and answer.
+
+Model answer. It comes from buildings and machines.
+
+Question three. What can the devices measure?
+
+Think and answer.
+
+Model answer. They can measure power, temperature, and operating time.
+
+Question four. What does the data tell you?
+
+Think and answer.
+
+Model answer. It tells us what is happening now.
+
+Question five. How does AI help?
+
+Think and answer.
+
+Model answer. AI looks for patterns and unusual changes.
+
+Question six. Can AI give a warning?
+
+Think and answer.
+
+Model answer. Yes. It can give an early warning.
+
+Question seven. Does AI make every decision?
+
+Think and answer.
+
+Model answer. No. It gives useful information to people.
+
+Question eight. Who takes action?
+
+Think and answer.
+
+Model answer. A manager or an engineer checks the situation and takes action.
+
+Question nine. Can you explain the whole process in one sentence?
+
+Think and answer.
+
+Model answer. IoT collects the data, AI helps us understand it, and people take action.
+
+Final challenge. Give one example from your own work.
+
+Take your time and answer now.
+

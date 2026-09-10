@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/progress/progress.schema.json",
+  "title": "Personal English Loop Progress Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "date",
+    "lesson_id",
+    "practice_minutes",
+    "mode",
+    "scores",
+    "comfortable_chunks",
+    "needs_practice",
+    "corrections",
+    "next_goal"
+  ],
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "lesson_id": {
+      "type": "string",
+      "pattern": "^[A-F][0-9]{2}$"
+    },
+    "practice_minutes": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 180
+    },
+    "mode": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": ["listen", "repeat", "qa", "role_play", "free_talk"]
+      }
+    },
+    "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["comprehension", "response_speed", "clarity", "confidence"],
+      "properties": {
+        "comprehension": {"type": ["integer", "null"], "minimum": 1, "maximum": 5},
+        "response_speed": {"type": ["integer", "null"], "minimum": 1, "maximum": 5},
+        "clarity": {"type": ["integer", "null"], "minimum": 1, "maximum": 5},
+        "confidence": {"type": ["integer", "null"], "minimum": 1, "maximum": 5}
+      }
+    },
+    "comfortable_chunks": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "needs_practice": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "corrections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["original", "suggested", "reason"],
+        "properties": {
+          "original": {"type": "string"},
+          "suggested": {"type": "string", "minLength": 1},
+          "reason": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "new_words": {
+      "type": "array",
+      "maxItems": 5,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "learner_note": {
+      "type": "string"
+    },
+    "coach_note": {
+      "type": "string"
+    },
+    "next_goal": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}
+

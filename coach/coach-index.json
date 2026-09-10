@@ -1,0 +1,37 @@
+{
+  "course": "Personal English Loop",
+  "version": "1.0.0",
+  "language_level": "A2-B1",
+  "base_url": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main",
+  "coach_instructions": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/coach/CHATGPT_COACH.md",
+  "progress_schema": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/progress/progress.schema.json",
+  "lessons": [
+    {
+      "id": "D01",
+      "day": 1,
+      "title": "What is Energy Management?",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/day-01-energy-management/lesson.md",
+      "audio": {
+        "slow": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/audio/day-01/day-01-slow.mp3",
+        "natural": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/audio/day-01/day-01-natural.mp3",
+        "listen_repeat": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/audio/day-01/day-01-listen-repeat.mp3",
+        "qa": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/audio/day-01/day-01-qa.mp3",
+        "commute_pack": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/audio/day-01/day-01-commute-pack.mp3"
+      }
+    },
+    {
+      "id": "D02",
+      "day": 2,
+      "title": "How AI and IoT Help Energy Management",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/day-02-ai-iot-energy/lesson.md",
+      "audio": {
+        "slow": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/audio/day-02/day-02-slow.mp3",
+        "natural": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/audio/day-02/day-02-natural.mp3",
+        "listen_repeat": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/audio/day-02/day-02-listen-repeat.mp3",
+        "qa": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/audio/day-02/day-02-qa.mp3",
+        "commute_pack": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/audio/day-02/day-02-commute-pack.mp3"
+      }
+    }
+  ]
+}
+
