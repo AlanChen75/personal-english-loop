@@ -1,6 +1,6 @@
 {
   "course": "Personal English Loop",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "language_level": "A2-B1",
   "base_url": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main",
   "coach_instructions": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/coach/CHATGPT_COACH.md",
@@ -42,6 +42,13 @@
         "qa": "https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-02/day-02-qa.mp3",
         "commute_pack": "https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-02/day-02-commute-pack.mp3"
       }
+    },
+    {
+      "id": "D03",
+      "day": 3,
+      "title": "Explain My PseudoNILM Research",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/practice-materials/cacs2026-pseudonilm/lesson.md",
+      "audio": {}
     }
   ]
 }
