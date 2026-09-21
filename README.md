@@ -19,7 +19,7 @@
 
 | 主題 | 練習方式 | 手機播放器 |
 |---|---|---|
-| CACS 2026 — PseudoNILM | 逐頁講稿、逐頁音檔、調速 Shadowing、Repeat All | [開啟練習頁](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/) |
+| CACS 2026 — PseudoNILM | 逐頁講稿、逐頁音檔、調速 Shadowing、Repeat All | [開啟練習頁](https://htmlpreview.github.io/?https://github.com/AlanChen75/personal-english-loop/blob/main/conference/cacs2026-pseudonilm/index.html) |
 
 播放器支援 0.8×、0.9×、1.0×、倒退 5 秒、重複本頁與全部循環播放。開車時請勿閱讀或操作畫面。
 
@@ -84,4 +84,4 @@ personal-english-loop/
 
 ## 免費資源
 
-Day 01–02 音訊使用 macOS 內建英文語音合成，不需要付費 API。研討會講稿使用地端 Qwen3-TTS 聲音複製模型產生，並統一做響度校正。MP3 儲存在本 repository；一般教材透過免費 jsDelivr GitHub CDN 播放，研討會 Shadowing 介面則透過 GitHub Pages 提供手機版入口。
+Day 01–02 音訊使用 macOS 內建英文語音合成，不需要付費 API。研討會講稿使用地端 Qwen3-TTS 聲音複製模型產生，並統一做響度校正。MP3 儲存在本 repository；一般教材透過免費 jsDelivr GitHub CDN 播放，研討會 Shadowing 介面則透過 GitHub HTML Preview 讀取 repository 內容。
