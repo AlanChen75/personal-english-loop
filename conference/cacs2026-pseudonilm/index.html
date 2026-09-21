@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CACS 2026 Shadowing Desk</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: oklch(25% 0.035 215);
+      --muted: oklch(48% 0.035 215);
+      --paper: oklch(96% 0.018 78);
+      --paper-deep: oklch(91% 0.025 78);
+      --teal: oklch(37% 0.075 205);
+      --orange: oklch(68% 0.15 48);
+      --line: oklch(82% 0.035 78);
+      --focus: oklch(55% 0.13 205);
+      --display: "Avenir Next", Avenir, "Trebuchet MS", sans-serif;
+      --reading: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { background: var(--paper-deep); scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, var(--teal) 0 0.72rem, transparent 0.72rem),
+        repeating-linear-gradient(0deg, transparent 0 2.95rem, color-mix(in oklch, var(--line), transparent 65%) 2.95rem 3rem),
+        var(--paper);
+      font-family: var(--display);
+      padding: max(1rem, env(safe-area-inset-top)) max(1rem, env(safe-area-inset-right)) max(2rem, env(safe-area-inset-bottom)) max(1.75rem, env(safe-area-inset-left));
+    }
+
+    button, select, audio { font: inherit; }
+    button:focus-visible, select:focus-visible, audio:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .shell { width: min(76rem, 100%); margin: 0 auto; }
+    header {
+      display: grid;
+      gap: 0.4rem;
+      padding: clamp(1rem, 3vw, 2.5rem) 0 clamp(1.5rem, 4vw, 3rem);
+      border-bottom: 2px solid var(--ink);
+    }
+    .eyebrow {
+      color: var(--teal);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      max-width: 18ch;
+      font-size: clamp(2rem, 7vw, 5.2rem);
+      font-weight: 650;
+      letter-spacing: -0.055em;
+      line-height: 0.98;
+    }
+    .lede { margin: 0.7rem 0 0; color: var(--muted); font-size: 1rem; }
+
+    .workspace { display: grid; gap: 2rem; padding-top: clamp(1.5rem, 4vw, 3rem); }
+    nav { min-width: 0; }
+    .mobile-select { width: 100%; min-height: 3rem; padding: 0.65rem 0.8rem; border: 1px solid var(--ink); background: var(--paper); color: var(--ink); }
+    .page-list { display: none; list-style: none; margin: 0; padding: 0; }
+    .page-button {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 2.2rem 1fr;
+      gap: 0.6rem;
+      min-height: 3.2rem;
+      padding: 0.7rem 0;
+      color: var(--muted);
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      cursor: pointer;
+    }
+    .page-button[aria-current="true"] { color: var(--ink); font-weight: 650; }
+    .page-button[aria-current="true"] .number { color: var(--orange); }
+    .number { font-variant-numeric: tabular-nums; font-weight: 750; }
+
+    main { min-width: 0; }
+    .page-meta { display: flex; align-items: baseline; gap: 0.7rem; color: var(--teal); }
+    .page-meta span { font-weight: 750; font-variant-numeric: tabular-nums; }
+    h2 { margin: 0.4rem 0 1.5rem; font-size: clamp(1.55rem, 4vw, 2.8rem); line-height: 1.12; letter-spacing: -0.035em; }
+
+    .player-desk {
+      position: sticky;
+      top: 0.75rem;
+      z-index: 2;
+      display: grid;
+      gap: 0.8rem;
+      padding: 1rem;
+      color: var(--paper);
+      background: var(--ink);
+      border-radius: 0.2rem;
+      box-shadow: 0 0.8rem 2.5rem color-mix(in oklch, var(--ink), transparent 78%);
+    }
+    audio { width: 100%; min-height: 3.2rem; }
+    .controls { display: flex; flex-wrap: wrap; gap: 0.55rem; align-items: center; }
+    .controls button, .loop-label {
+      min-height: 2.75rem;
+      padding: 0.55rem 0.8rem;
+      border: 1px solid color-mix(in oklch, var(--paper), transparent 56%);
+      border-radius: 999px;
+      color: inherit;
+      background: transparent;
+    }
+    .controls button { cursor: pointer; }
+    .controls button[aria-pressed="true"] { color: var(--ink); background: var(--orange); border-color: var(--orange); }
+    .loop-label { display: inline-flex; align-items: center; gap: 0.45rem; margin-left: auto; }
+    .status { grid-column: 1 / -1; margin: 0; color: color-mix(in oklch, var(--paper), transparent 25%); font-size: 0.82rem; line-height: 1.4; }
+
+    .transcript {
+      margin-top: clamp(2rem, 5vw, 4rem);
+      max-width: 67ch;
+      font-family: var(--reading);
+      font-size: clamp(1.22rem, 2.2vw, 1.58rem);
+      line-height: 1.78;
+      letter-spacing: 0.006em;
+    }
+    .sentence { display: inline; transition: background-color 180ms ease-out; }
+    .sentence:hover { background: color-mix(in oklch, var(--orange), transparent 70%); }
+    .sentence::after { content: " "; }
+    .practice-note { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; line-height: 1.6; }
+
+    @media (min-width: 48rem) {
+      body { padding-left: max(2.5rem, env(safe-area-inset-left)); }
+      .workspace { grid-template-columns: minmax(13rem, 0.68fr) minmax(0, 2fr); align-items: start; gap: clamp(2rem, 6vw, 6rem); }
+      nav { position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow: auto; }
+      .mobile-select { display: none; }
+      .page-list { display: block; }
+      .player-desk { grid-template-columns: minmax(16rem, 1fr) auto; align-items: center; }
+      .controls { justify-content: flex-end; }
+    }
+
+    @media (hover: hover) {
+      .page-button:hover { color: var(--ink); transform: translateX(0.18rem); }
+      .controls button:hover { border-color: var(--orange); }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div class="eyebrow">CACS 2026 · rehearsal desk</div>
+      <h1>Listen. Read. Shadow.</h1>
+      <p class="lede">選擇投影片，讓音檔與英文講稿保持在同一個畫面。</p>
+    </header>
+
+    <div class="workspace">
+      <nav aria-label="投影片清單">
+        <select id="page-select" class="mobile-select" aria-label="選擇投影片"></select>
+        <ol id="page-list" class="page-list"></ol>
+      </nav>
+
+      <main id="main-content">
+        <div class="page-meta"><span id="page-number">01</span><small>SLIDE</small></div>
+        <h2 id="page-title"></h2>
+
+        <section class="player-desk" aria-label="Shadowing 播放控制">
+          <audio id="practice-audio" controls preload="metadata"></audio>
+          <div class="controls">
+            <button id="rewind" type="button" title="倒退五秒">↶ 5 秒</button>
+            <button class="speed" type="button" data-speed="0.8">0.8×</button>
+            <button class="speed" type="button" data-speed="0.9">0.9×</button>
+            <button class="speed" type="button" data-speed="1" aria-pressed="true">1×</button>
+            <button id="repeat-all" type="button" aria-pressed="false">Repeat All</button>
+            <label class="loop-label"><input id="loop" type="checkbox"> 重複本頁</label>
+          </div>
+          <p id="player-status" class="status" aria-live="polite"></p>
+        </section>
+
+        <article id="transcript" class="transcript" aria-live="polite"></article>
+        <p class="practice-note">快捷鍵：空白鍵播放／暫停，← → 倒退或前進五秒。點選左側可切換下一頁。</p>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    const slides = [{"number": 1, "title": "Title and research question", "audio": "slide-01-title-and-research-question.mp3", "transcript": "Good morning. I am Chung-Kuang Chen from National Taiwan University of Science and Technology. This presentation asks one practical question: when should an industrial pseudo nil-em system produce an attribution result, and when should it stop? We present a frozen defensive dispatch. It selects a corpus-specific route and returns an explicit no-score output when the required pseudo-trace support is absent."}, {"number": 2, "title": "Unequal evidence across industrial sites", "audio": "slide-02-unequal-evidence-across-industrial-sites.mp3", "transcript": "Industrial sites do not provide one uniform evidence condition. Variable-frequency loads do not behave like simple on-off appliances. Similar machines can have duplicated roles but different aggregate signatures. Production schedules create process dependencies. Unmonitored loads can also dominate the aggregate measurement. Therefore, the same aggregate signal may support one attribution method at one site but not at another. Our design starts by recognizing this evidence mismatch before producing a device-level result."}, {"number": 3, "title": "Positioning among industrial NILM approaches", "audio": "slide-03-positioning-among-industrial-nilm-approaches.mp3", "transcript": "Recent industrial NILM studies address different parts of this problem. Li and colleagues use equipment and process constraints in a mixed-integer model. Fabri and colleagues reduce labeling demand through active learning, although a supervised stage remains. Yan and colleagues show that differences in datasets, metrics, and implementations still make NILM results difficult to compare. Our study targets a different operating condition. We freeze a route-selection protocol, apply bounded transformations, and allow an explicit no-score result. We do not claim state-of-the-art superiority over these methods."}, {"number": 4, "title": "Frozen defensive dispatch", "audio": "slide-04-frozen-defensive-dispatch.mp3", "transcript": "The system receives aggregate power, declared device priors, and deterministic pseudo traces. These pseudo traces contain timing evidence but no target labels. A frozen dispatch rule selects one of four outcomes. eye em dee ee el dee uses modulated allocation with pair calibration. well-tron uses guarded repair. Case one uses event rectangles. hype receives no score because its evaluated configuration does not provide the required pseudo-trace support. Equipment labels enter only after reconstruction, when we calculate tee ee see ay and descriptive diagnostics. The design principle is simple: do not force every corpus through the same reconstruction path."}, {"number": 5, "title": "Corpus-specific routes", "audio": "slide-05-corpus-specific-routes.mp3", "transcript": "The four corpora serve different roles. eye em dee ee el dee is an open industrial-machine dataset with six scored devices. well-tron is a private field dataset with two scored targets. Case one is a single-compressor case in IEEE DataPort. These three receive attribution scores. hype is public and useful, but it is used only to examine the no-score boundary. It is not a fourth scored result. This distinction matters because all four corpora informed the pilot protocol."}, {"number": 6, "title": "Evaluation contract", "audio": "slide-06-evaluation-contract.mp3", "transcript": "The evaluation has five stages. Development establishes the candidate routes. Validation labels select a small set of bounded constants. We then freeze the protocol. During the reported execution, the system reads only aggregate power, device priors, and pseudo traces. Equipment labels are used afterward for tee ee see ay and descriptive diagnostics. This separation prevents labels from entering dispatch or trace construction in the reported final execution. However, all four corpora informed the design, and earlier diagnostics affected component development. We therefore describe the evidence as a traceable pilot, not as a pristine confirmatory test."}, {"number": 7, "title": "Main TECA results", "audio": "slide-07-main-teca-results.mp3", "transcript": "All three scored datasets exceed the fixed full-partition tee ee see ay reference of zero point seven. eye em dee ee el dee reaches zero point seven six one nine. well-tron reaches zero point eight zero two one. Case one reaches zero point seven one three six. The mean is zero point seven five nine two, and the weakest full-partition result is zero point seven one three six. A descriptive bootstrap over eligible activity-bearing chunks gives a worst lower endpoint of zero point seven zero six one. This interval is conditional on those chunks. It is not a confidence interval for the complete time partition. Segment F one remains between zero point one five and zero point three two. Therefore, the supported claim is energy-focused attribution, not precise temporal reconstruction."}, {"number": 8, "title": "Component evidence", "audio": "slide-08-component-evidence.mp3", "transcript": "The component analysis links each tested change to its target corpus. Removing pair calibration lowers eye em dee ee el dee from zero point seven six one nine to zero point seven two one zero. Removing guarded repair lowers well-tron from zero point eight zero two one to zero point seven two two three. Removing the Case one-specific route lowers Case one from zero point seven one three six to zero point five nine zero zero. These changes support the route-specific components in the observed corpora. They do not show transfer to unseen facilities."}, {"number": 9, "title": "HIPE proxy inversion", "audio": "slide-09-hipe-proxy-inversion.mp3", "transcript": "The most important negative result appears in hype. The retrospective equipment-based audit gives hype a score of zero point one six zero two, which is consistent with abstention. A nameplate-only proxy raises the score to zero point nine two two zero and changes the decision to score. The reason is that monitored devices contribute only three point eight three percent of aggregate energy. Nameplate ratings describe device potential, but they do not measure realized contribution to the observed aggregate. This result shows that a simple nameplate proxy is unsafe for this boundary. A deployable identifiability proxy remains unresolved."}, {"number": 10, "title": "Supported claims and limits", "audio": "slide-10-supported-claims-and-limits.mp3", "transcript": "The evidence supports four conclusions. Three datasets exceed the fixed tee ee see ay reference. Each tested route component affects its associated corpus. The frozen protocol makes the no-score boundary visible. The evaluation settings remain traceable. Several claims remain outside the evidence. We do not establish generalization to unseen plants, precise segment reconstruction, fully label-free operation, or a validated safety controller. The practical contribution is a defensive reporting protocol in which explicit abstention is part of the system output. Thank you. I welcome your questions."}];
+    const audio = document.querySelector('#practice-audio');
+    const title = document.querySelector('#page-title');
+    const number = document.querySelector('#page-number');
+    const transcript = document.querySelector('#transcript');
+    const list = document.querySelector('#page-list');
+    const select = document.querySelector('#page-select');
+    const speedButtons = [...document.querySelectorAll('.speed')];
+    const repeatAll = document.querySelector('#repeat-all');
+    const repeatPage = document.querySelector('#loop');
+    const playerStatus = document.querySelector('#player-status');
+    let activeIndex = 0;
+    let speed = 1;
+
+    const sentenceParts = text => text.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [text];
+
+    function renderTranscript(text) {
+      transcript.replaceChildren(...sentenceParts(text).map(sentence => {
+        const span = document.createElement('span');
+        span.className = 'sentence';
+        span.textContent = sentence.trim();
+        return span;
+      }));
+    }
+
+    function loadSlide(index, shouldFocus = false) {
+      activeIndex = index;
+      const slide = slides[index];
+      audio.pause();
+      audio.src = slide.audio;
+      audio.playbackRate = speed;
+      playerStatus.textContent = '';
+      number.textContent = String(slide.number).padStart(2, '0');
+      title.textContent = slide.title;
+      renderTranscript(slide.transcript);
+      select.value = String(index);
+      document.querySelectorAll('.page-button').forEach((button, buttonIndex) => {
+        button.setAttribute('aria-current', buttonIndex === index ? 'true' : 'false');
+      });
+      if (shouldFocus) title.scrollIntoView({behavior: 'smooth', block: 'start'});
+    }
+
+    slides.forEach((slide, index) => {
+      const option = document.createElement('option');
+      option.value = index;
+      option.textContent = `${String(slide.number).padStart(2, '0')} · ${slide.title}`;
+      select.append(option);
+
+      const item = document.createElement('li');
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'page-button';
+      button.innerHTML = `<span class="number">${String(slide.number).padStart(2, '0')}</span><span></span>`;
+      button.lastElementChild.textContent = slide.title;
+      button.addEventListener('click', () => loadSlide(index, true));
+      item.append(button);
+      list.append(item);
+    });
+
+    select.addEventListener('change', event => loadSlide(Number(event.target.value)));
+    document.querySelector('#rewind').addEventListener('click', () => { audio.currentTime = Math.max(0, audio.currentTime - 5); });
+    repeatPage.addEventListener('change', event => {
+      audio.loop = event.target.checked;
+      if (event.target.checked) repeatAll.setAttribute('aria-pressed', 'false');
+    });
+    repeatAll.addEventListener('click', () => {
+      const enabled = repeatAll.getAttribute('aria-pressed') !== 'true';
+      repeatAll.setAttribute('aria-pressed', enabled ? 'true' : 'false');
+      if (enabled) {
+        repeatPage.checked = false;
+        audio.loop = false;
+      }
+    });
+    audio.addEventListener('ended', () => {
+      if (repeatAll.getAttribute('aria-pressed') !== 'true') return;
+      loadSlide((activeIndex + 1) % slides.length);
+      audio.play().catch(error => {
+        console.error('Repeat All playback was interrupted', error);
+        playerStatus.textContent = '瀏覽器暫停了連續播放，請按播放繼續。';
+      });
+    });
+    speedButtons.forEach(button => button.addEventListener('click', () => {
+      speed = Number(button.dataset.speed);
+      audio.playbackRate = speed;
+      speedButtons.forEach(item => item.setAttribute('aria-pressed', item === button ? 'true' : 'false'));
+    }));
+    document.addEventListener('keydown', event => {
+      if (['INPUT', 'SELECT', 'BUTTON'].includes(document.activeElement.tagName)) return;
+      if (event.code === 'Space') { event.preventDefault(); audio.paused ? audio.play() : audio.pause(); }
+      if (event.key === 'ArrowLeft') audio.currentTime = Math.max(0, audio.currentTime - 5);
+      if (event.key === 'ArrowRight') audio.currentTime = Math.min(audio.duration || Infinity, audio.currentTime + 5);
+    });
+
+    loadSlide(0);
+  </script>
+</body>
+</html>

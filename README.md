@@ -15,6 +15,14 @@
 
 每一天另有四段練習音訊：slow、natural、listen-and-repeat、Q&A。完整連結見各課教材。
 
+## 研討會講稿
+
+| 主題 | 練習方式 | 手機播放器 |
+|---|---|---|
+| CACS 2026 — PseudoNILM | 逐頁講稿、逐頁音檔、調速 Shadowing、Repeat All | [開啟練習頁](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/) |
+
+播放器支援 0.8×、0.9×、1.0×、倒退 5 秒、重複本頁與全部循環播放。開車時請勿閱讀或操作畫面。
+
 ## 每日使用方式
 
 ### 去程：輸入（約 30–45 分鐘）
@@ -49,6 +57,12 @@ personal-english-loop/
 ├── audio/
 │   ├── day-01/
 │   └── day-02/
+├── conference/
+│   └── cacs2026-pseudonilm/
+│       ├── index.html
+│       ├── cacs2026-full-talk.mp3
+│       ├── slide-01...slide-10.mp3
+│       └── slide-01...slide-10.txt
 ├── coach/
 │   ├── CHATGPT_COACH.md
 │   └── coach-index.json
@@ -70,4 +84,4 @@ personal-english-loop/
 
 ## 免費資源
 
-目前音訊使用 macOS 內建英文語音合成，不需要付費 API。MP3 儲存在本 repository，並透過免費 jsDelivr GitHub CDN 提供標準 `audio/mpeg` 播放連結。Commute pack 把同一組約 7 分鐘的素材安排成三輪，利用重複加深記憶；未來若要更自然的多角色聲音，可在不改教材結構的情況下替換音訊。
+Day 01–02 音訊使用 macOS 內建英文語音合成，不需要付費 API。研討會講稿使用地端 Qwen3-TTS 聲音複製模型產生，並統一做響度校正。MP3 儲存在本 repository；一般教材透過免費 jsDelivr GitHub CDN 播放，研討會 Shadowing 介面則透過 GitHub Pages 提供手機版入口。
