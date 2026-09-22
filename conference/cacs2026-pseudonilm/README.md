@@ -8,6 +8,7 @@
 
 播放器功能：
 
+- 可安裝為手機桌面 Web App
 - 第 1–10 頁講稿與音檔同步顯示
 - 0.8×、0.9×、1.0× 播放速度
 - 倒退 5 秒
@@ -17,6 +18,9 @@
 ## 檔案
 
 - `index.html`：手機及桌面 Shadowing 播放器
+- `manifest.webmanifest`：手機安裝資訊
+- `service-worker.js`：Web App 啟動與快取
+- `icon-180.png`、`icon-192.png`、`icon-512.png`：桌面圖示
 - `cacs2026-full-talk.mp3`：完整研討會講稿
 - `slide-01...slide-10.mp3`：逐頁音檔
 - `slide-01...slide-10.txt`：逐頁英文講稿

@@ -21,7 +21,7 @@
 |---|---|---|
 | CACS 2026 — PseudoNILM | 逐頁講稿、逐頁音檔、調速 Shadowing、Repeat All | [開啟練習頁](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/) |
 
-播放器支援 0.8×、0.9×、1.0×、倒退 5 秒、重複本頁與全部循環播放。開車時請勿閱讀或操作畫面。
+播放器支援安裝到手機桌面、0.8×、0.9×、1.0×、倒退 5 秒、重複本頁與全部循環播放。開車時請勿閱讀或操作畫面。
 
 ## 每日使用方式
 
