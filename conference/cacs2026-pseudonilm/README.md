@@ -4,7 +4,7 @@
 
 ## 手機播放
 
-[開啟 Shadowing 播放器](https://htmlpreview.github.io/?https://github.com/AlanChen75/personal-english-loop/blob/main/conference/cacs2026-pseudonilm/index.html)
+[開啟 Shadowing 播放器](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/)
 
 播放器功能：
 
