@@ -1,8 +1,8 @@
-const CACHE_NAME = 'cacs-shadowing-v1';
+const CACHE_NAME = 'cacs-shadowing-v2';
 const APP_SHELL = [
   './',
   './index.html',
-  './manifest.webmanifest',
+  './manifest.webmanifest?v=2',
   './icon-180.png',
   './icon-192.png',
   './icon-512.png'
