@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "collections": [
+    {
+      "id": "conference",
+      "title": "研討會講稿",
+      "items": [
+        {
+          "number": 1,
+          "title": "Title and research question",
+          "audio": "slide-01-title-and-research-question.mp3",
+          "spoken_transcript": "slide-01-title-and-research-question.txt"
+        },
+        {
+          "number": 2,
+          "title": "Unequal evidence across industrial sites",
+          "audio": "slide-02-unequal-evidence-across-industrial-sites.mp3",
+          "spoken_transcript": "slide-02-unequal-evidence-across-industrial-sites.txt"
+        },
+        {
+          "number": 3,
+          "title": "Positioning among industrial NILM approaches",
+          "audio": "slide-03-positioning-among-industrial-nilm-approaches.mp3",
+          "spoken_transcript": "slide-03-positioning-among-industrial-nilm-approaches.txt"
+        },
+        {
+          "number": 4,
+          "title": "Frozen defensive dispatch",
+          "audio": "slide-04-frozen-defensive-dispatch.mp3",
+          "spoken_transcript": "slide-04-frozen-defensive-dispatch.txt"
+        },
+        {
+          "number": 5,
+          "title": "Corpus-specific routes",
+          "audio": "slide-05-corpus-specific-routes.mp3",
+          "spoken_transcript": "slide-05-corpus-specific-routes.txt"
+        },
+        {
+          "number": 6,
+          "title": "Evaluation contract",
+          "audio": "slide-06-evaluation-contract.mp3",
+          "spoken_transcript": "slide-06-evaluation-contract.txt"
+        },
+        {
+          "number": 7,
+          "title": "Main TECA results",
+          "audio": "slide-07-main-teca-results.mp3",
+          "spoken_transcript": "slide-07-main-teca-results.txt"
+        },
+        {
+          "number": 8,
+          "title": "Component evidence",
+          "audio": "slide-08-component-evidence.mp3",
+          "spoken_transcript": "slide-08-component-evidence.txt"
+        },
+        {
+          "number": 9,
+          "title": "HIPE proxy inversion",
+          "audio": "slide-09-hipe-proxy-inversion.mp3",
+          "spoken_transcript": "slide-09-hipe-proxy-inversion.txt"
+        },
+        {
+          "number": 10,
+          "title": "Supported claims and limits",
+          "audio": "slide-10-supported-claims-and-limits.mp3",
+          "spoken_transcript": "slide-10-supported-claims-and-limits.txt"
+        }
+      ]
+    },
+    {
+      "id": "about-me",
+      "title": "自我介紹",
+      "items": [
+        {
+          "number": 1,
+          "title": "10-second introduction",
+          "audio": "learning/about-me-01-10-seconds.mp3",
+          "spoken_transcript": "learning/about-me-01-10-seconds.txt"
+        },
+        {
+          "number": 2,
+          "title": "30-second introduction",
+          "audio": "learning/about-me-02-30-seconds.mp3",
+          "spoken_transcript": "learning/about-me-02-30-seconds.txt"
+        },
+        {
+          "number": 3,
+          "title": "60-second introduction",
+          "audio": "learning/about-me-03-60-seconds.mp3",
+          "spoken_transcript": "learning/about-me-03-60-seconds.txt"
+        },
+        {
+          "number": 4,
+          "title": "Listen and repeat",
+          "audio": "learning/about-me-04-listen-repeat.mp3",
+          "spoken_transcript": "learning/about-me-04-listen-repeat.txt"
+        },
+        {
+          "number": 5,
+          "title": "Question and answer",
+          "audio": "learning/about-me-05-qa.mp3",
+          "spoken_transcript": "learning/about-me-05-qa.txt"
+        }
+      ]
+    },
+    {
+      "id": "daily-practice",
+      "title": "每日練習",
+      "items": [
+        {
+          "number": 1,
+          "title": "Day 1 · Slow",
+          "audio": "learning/daily-day-01-slow.mp3",
+          "spoken_transcript": "learning/daily-day-01-slow.txt"
+        },
+        {
+          "number": 2,
+          "title": "Day 1 · Natural",
+          "audio": "learning/daily-day-01-natural.mp3",
+          "spoken_transcript": "learning/daily-day-01-natural.txt"
+        },
+        {
+          "number": 3,
+          "title": "Day 1 · Listen and repeat",
+          "audio": "learning/daily-day-01-listen-repeat.mp3",
+          "spoken_transcript": "learning/daily-day-01-listen-repeat.txt"
+        },
+        {
+          "number": 4,
+          "title": "Day 1 · Question and answer",
+          "audio": "learning/daily-day-01-qa.mp3",
+          "spoken_transcript": "learning/daily-day-01-qa.txt"
+        },
+        {
+          "number": 5,
+          "title": "Day 1 · Commute pack",
+          "audio": "learning/daily-day-01-commute-pack.mp3",
+          "spoken_transcript": "learning/daily-day-01-commute-pack.txt"
+        },
+        {
+          "number": 6,
+          "title": "Day 2 · Slow",
+          "audio": "learning/daily-day-02-slow.mp3",
+          "spoken_transcript": "learning/daily-day-02-slow.txt"
+        },
+        {
+          "number": 7,
+          "title": "Day 2 · Natural",
+          "audio": "learning/daily-day-02-natural.mp3",
+          "spoken_transcript": "learning/daily-day-02-natural.txt"
+        },
+        {
+          "number": 8,
+          "title": "Day 2 · Listen and repeat",
+          "audio": "learning/daily-day-02-listen-repeat.mp3",
+          "spoken_transcript": "learning/daily-day-02-listen-repeat.txt"
+        },
+        {
+          "number": 9,
+          "title": "Day 2 · Question and answer",
+          "audio": "learning/daily-day-02-qa.mp3",
+          "spoken_transcript": "learning/daily-day-02-qa.txt"
+        },
+        {
+          "number": 10,
+          "title": "Day 2 · Commute pack",
+          "audio": "learning/daily-day-02-commute-pack.mp3",
+          "spoken_transcript": "learning/daily-day-02-commute-pack.txt"
+        }
+      ]
+    }
+  ]
+}

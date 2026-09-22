@@ -1,8 +1,8 @@
 {
   "id": "./",
-  "name": "CACS 2026 Shadowing Desk",
+  "name": "Personal English Loop",
   "short_name": "Shadow",
-  "description": "逐頁播放研討會講稿，同步閱讀英文逐字稿並練習 Shadowing。",
+  "description": "播放研討會、自我介紹與每日英語教材，同步閱讀逐字稿並練習 Shadowing。",
   "lang": "zh-Hant",
   "start_url": "./",
   "scope": "./",

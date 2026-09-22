@@ -10,18 +10,20 @@
 
 | Day | 主題 | 教材 | 完整通勤音訊 |
 |---|---|---|---|
-| 01 | What is Energy Management? | [文字教材](lessons/day-01-energy-management/lesson.md) | [播放 MP3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-01/day-01-commute-pack.mp3) |
-| 02 | How AI and IoT Help Energy Management | [文字教材](lessons/day-02-ai-iot-energy/lesson.md) | [播放 MP3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-02/day-02-commute-pack.mp3) |
+| 01 | What is Energy Management? | [文字教材](lessons/day-01-energy-management/lesson.md) | [播放 MP3](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-commute-pack.mp3) |
+| 02 | How AI and IoT Help Energy Management | [文字教材](lessons/day-02-ai-iot-energy/lesson.md) | [播放 MP3](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-commute-pack.mp3) |
 
 每一天另有四段練習音訊：slow、natural、listen-and-repeat、Q&A。完整連結見各課教材。
 
-## 研討會講稿
+## 手機 Shadowing 播放器
 
-| 主題 | 練習方式 | 手機播放器 |
+| 分類 | 內容 | 手機播放器 |
 |---|---|---|
-| CACS 2026 — PseudoNILM | 逐頁講稿、逐頁音檔、調速 Shadowing、Repeat All | [開啟練習頁](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/) |
+| 研討會講稿 | CACS 2026 第 1–10 頁 | [開啟研討會講稿](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#conference) |
+| 自我介紹 | 10 秒、30 秒、60 秒、跟讀、Q&A | [開啟自我介紹](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#about-me) |
+| 每日練習 | Day 1–2 的 slow、natural、跟讀、Q&A、通勤包 | [開啟每日練習](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice) |
 
-播放器支援安裝到手機桌面、0.8×、0.9×、1.0×、倒退 5 秒、重複本頁與全部循環播放。開車時請勿閱讀或操作畫面。
+播放器支援安裝到手機桌面、分類切換、0.8×、0.9×、1.0×、倒退 5 秒、重複本頁與分類內全部循環播放。開車時請勿閱讀或操作畫面。
 
 ## 每日使用方式
 
@@ -51,7 +53,10 @@ personal-english-loop/
 │   ├── day-01-energy-management/
 │   │   ├── lesson.md
 │   │   └── audio-scripts/
-│   └── day-02-ai-iot-energy/
+│   ├── day-02-ai-iot-energy/
+│   │   ├── lesson.md
+│   │   └── audio-scripts/
+│   └── about-me-introduction/
 │       ├── lesson.md
 │       └── audio-scripts/
 ├── audio/
@@ -84,4 +89,4 @@ personal-english-loop/
 
 ## 免費資源
 
-Day 01–02 音訊使用 macOS 內建英文語音合成，不需要付費 API。研討會講稿使用地端 Qwen3-TTS 聲音複製模型產生，並統一做響度校正。MP3 儲存在本 repository；一般教材透過免費 jsDelivr GitHub CDN 播放，研討會 Shadowing 介面則透過 GitHub Pages 提供手機版入口。
+播放器內的自我介紹、Day 01–02 與研討會講稿都使用地端 RTX 3090 上的 Qwen3-TTS 聲音複製模型產生，並統一做響度校正。MP3 儲存在本 repository，手機版入口由 GitHub Pages 免費提供。

@@ -117,11 +117,13 @@ Today I want to explain how AI and IoT help energy management. IoT devices colle
 
 ## Audio
 
-- Slow: [day-02-slow.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-02/day-02-slow.mp3)
-- Natural: [day-02-natural.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-02/day-02-natural.mp3)
-- Listen and repeat: [day-02-listen-repeat.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-02/day-02-listen-repeat.mp3)
-- Q&A: [day-02-qa.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-02/day-02-qa.mp3)
-- Commute pack: [day-02-commute-pack.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-02/day-02-commute-pack.mp3)
+- Shadowing player: [open Day 2 practice](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice)
+
+- Slow: [day-02-slow.mp3](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-slow.mp3)
+- Natural: [day-02-natural.mp3](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-natural.mp3)
+- Listen and repeat: [day-02-listen-repeat.mp3](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-listen-repeat.mp3)
+- Q&A: [day-02-qa.mp3](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-qa.mp3)
+- Commute pack: [day-02-commute-pack.mp3](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-commute-pack.mp3)
 
 ## 完成標準
 

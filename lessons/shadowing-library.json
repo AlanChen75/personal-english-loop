@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "collections": [
+    {
+      "id": "about-me",
+      "title": "自我介紹",
+      "items": [
+        {
+          "number": 1,
+          "title": "10-second introduction",
+          "source": "lessons/about-me-introduction/audio-scripts/intro-10-seconds.txt",
+          "stem": "about-me-01-10-seconds"
+        },
+        {
+          "number": 2,
+          "title": "30-second introduction",
+          "source": "lessons/about-me-introduction/audio-scripts/intro-30-seconds.txt",
+          "stem": "about-me-02-30-seconds"
+        },
+        {
+          "number": 3,
+          "title": "60-second introduction",
+          "source": "lessons/about-me-introduction/audio-scripts/intro-60-seconds.txt",
+          "stem": "about-me-03-60-seconds"
+        },
+        {
+          "number": 4,
+          "title": "Listen and repeat",
+          "source": "lessons/about-me-introduction/audio-scripts/listen-repeat.txt",
+          "stem": "about-me-04-listen-repeat"
+        },
+        {
+          "number": 5,
+          "title": "Question and answer",
+          "source": "lessons/about-me-introduction/audio-scripts/qa.txt",
+          "stem": "about-me-05-qa"
+        }
+      ]
+    },
+    {
+      "id": "daily-practice",
+      "title": "每日練習",
+      "items": [
+        {
+          "number": 1,
+          "title": "Day 1 · Slow",
+          "source": "lessons/day-01-energy-management/audio-scripts/slow.txt",
+          "stem": "daily-day-01-slow"
+        },
+        {
+          "number": 2,
+          "title": "Day 1 · Natural",
+          "source": "lessons/day-01-energy-management/audio-scripts/natural.txt",
+          "stem": "daily-day-01-natural"
+        },
+        {
+          "number": 3,
+          "title": "Day 1 · Listen and repeat",
+          "source": "lessons/day-01-energy-management/audio-scripts/listen-repeat.txt",
+          "stem": "daily-day-01-listen-repeat"
+        },
+        {
+          "number": 4,
+          "title": "Day 1 · Question and answer",
+          "source": "lessons/day-01-energy-management/audio-scripts/qa.txt",
+          "stem": "daily-day-01-qa"
+        },
+        {
+          "number": 5,
+          "title": "Day 2 · Slow",
+          "source": "lessons/day-02-ai-iot-energy/audio-scripts/slow.txt",
+          "stem": "daily-day-02-slow"
+        },
+        {
+          "number": 6,
+          "title": "Day 2 · Natural",
+          "source": "lessons/day-02-ai-iot-energy/audio-scripts/natural.txt",
+          "stem": "daily-day-02-natural"
+        },
+        {
+          "number": 7,
+          "title": "Day 2 · Listen and repeat",
+          "source": "lessons/day-02-ai-iot-energy/audio-scripts/listen-repeat.txt",
+          "stem": "daily-day-02-listen-repeat"
+        },
+        {
+          "number": 8,
+          "title": "Day 2 · Question and answer",
+          "source": "lessons/day-02-ai-iot-energy/audio-scripts/qa.txt",
+          "stem": "daily-day-02-qa"
+        }
+      ]
+    }
+  ]
+}

@@ -113,11 +113,13 @@ Hello. My work is about energy management. Energy management means using energy 
 
 ## Audio
 
-- Slow: [day-01-slow.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-01/day-01-slow.mp3)
-- Natural: [day-01-natural.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-01/day-01-natural.mp3)
-- Listen and repeat: [day-01-listen-repeat.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-01/day-01-listen-repeat.mp3)
-- Q&A: [day-01-qa.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-01/day-01-qa.mp3)
-- Commute pack: [day-01-commute-pack.mp3](https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-01/day-01-commute-pack.mp3)
+- Shadowing player: [open Day 1 practice](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice)
+
+- Slow: [day-01-slow.mp3](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-slow.mp3)
+- Natural: [day-01-natural.mp3](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-natural.mp3)
+- Listen and repeat: [day-01-listen-repeat.mp3](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-listen-repeat.mp3)
+- Q&A: [day-01-qa.mp3](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-qa.mp3)
+- Commute pack: [day-01-commute-pack.mp3](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-commute-pack.mp3)
 
 ## 完成標準
 

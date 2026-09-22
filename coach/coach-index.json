@@ -6,6 +6,7 @@
   "coach_instructions": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/coach/CHATGPT_COACH.md",
   "progress_schema": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/progress/progress.schema.json",
   "weekly_summary_schema": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/progress/weekly-summary.schema.json",
+  "shadowing_player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/",
   "progress_storage": {
     "system": "shared SB MCP",
     "category": "learning/personal-english-loop/progress",
@@ -22,12 +23,13 @@
       "day": 1,
       "title": "What is Energy Management?",
       "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/day-01-energy-management/lesson.md",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
       "audio": {
-        "slow": "https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-01/day-01-slow.mp3",
-        "natural": "https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-01/day-01-natural.mp3",
-        "listen_repeat": "https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-01/day-01-listen-repeat.mp3",
-        "qa": "https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-01/day-01-qa.mp3",
-        "commute_pack": "https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-01/day-01-commute-pack.mp3"
+        "slow": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-slow.mp3",
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-natural.mp3",
+        "listen_repeat": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-listen-repeat.mp3",
+        "qa": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-qa.mp3",
+        "commute_pack": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-commute-pack.mp3"
       }
     },
     {
@@ -35,12 +37,26 @@
       "day": 2,
       "title": "How AI and IoT Help Energy Management",
       "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/day-02-ai-iot-energy/lesson.md",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
       "audio": {
-        "slow": "https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-02/day-02-slow.mp3",
-        "natural": "https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-02/day-02-natural.mp3",
-        "listen_repeat": "https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-02/day-02-listen-repeat.mp3",
-        "qa": "https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-02/day-02-qa.mp3",
-        "commute_pack": "https://cdn.jsdelivr.net/gh/AlanChen75/personal-english-loop@main/audio/day-02/day-02-commute-pack.mp3"
+        "slow": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-slow.mp3",
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-natural.mp3",
+        "listen_repeat": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-listen-repeat.mp3",
+        "qa": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-qa.mp3",
+        "commute_pack": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-commute-pack.mp3"
+      }
+    },
+    {
+      "id": "B01",
+      "title": "Introducing Myself",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/about-me-introduction/lesson.md",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#about-me",
+      "audio": {
+        "10_seconds": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-me-01-10-seconds.mp3",
+        "30_seconds": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-me-02-30-seconds.mp3",
+        "60_seconds": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-me-03-60-seconds.mp3",
+        "listen_repeat": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-me-04-listen-repeat.mp3",
+        "qa": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-me-05-qa.mp3"
       }
     },
     {

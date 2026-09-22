@@ -1,0 +1,41 @@
+Introducing myself. Question and answer practice. Answer before you hear the model answer.
+
+Question one. What is your name?
+
+Think and answer.
+
+Model answer. I am Chung-Kuang Chen.
+
+Question two. Where are you from?
+
+Think and answer.
+
+Model answer. I am from Taiwan.
+
+Question three. What is your work about?
+
+Think and answer.
+
+Model answer. My work is about AI, IoT, and energy management.
+
+Question four. What kind of data do you study?
+
+Think and answer.
+
+Model answer. I study power data from buildings and machines.
+
+Question five. Why do you study this data?
+
+Think and answer.
+
+Model answer. I use the data to understand equipment behavior and find unusual changes.
+
+Question six. What is your goal?
+
+Think and answer.
+
+Model answer. My goal is to make energy information easier to understand and use.
+
+Final challenge. Introduce yourself in about thirty seconds.
+
+Take your time and answer now.
