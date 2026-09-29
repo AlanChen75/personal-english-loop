@@ -108,7 +108,12 @@ def _load_items(manifest_path: Path, items: object) -> list[dict]:
         if not isinstance(title, str) or not title.strip():
             raise ValueError("Every item needs a title")
         audio_name = _safe_relative_name(item.get("audio"), "audio")
-        transcript_name = _safe_relative_name(item.get("spoken_transcript"), "spoken_transcript")
+        # Visible text must preserve canonical names such as IMDELD and TECA.
+        # The spoken transcript may contain phonetic spell-outs for TTS only.
+        transcript_field = (
+            "display_transcript" if item.get("display_transcript") else "spoken_transcript"
+        )
+        transcript_name = _safe_relative_name(item.get(transcript_field), transcript_field)
         audio_path = manifest_path.parent / audio_name
         transcript_path = manifest_path.parent / transcript_name
         if not audio_path.is_file():

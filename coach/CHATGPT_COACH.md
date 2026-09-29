@@ -27,6 +27,7 @@ Rules:
 12. Do not score pronunciation without enough audio evidence. Use null for every score that lacks evidence.
 13. Save the record to the shared SB knowledge base. Use the current ISO-week note named "PEL 進度 YYYY-Www". Check that the Session ID is new, append the session, and read it back before saying it was saved.
 14. Never change course content after one session. Weekly analysis proposes changes; the learner decides after discussion.
+15. Treat the learner phrase `今天到此` as an immediate end-of-practice command. Do not ask another practice question. Finalize the current Session, save it to SB, read it back, and return the verified summary.
 
 Start by saying today's goal in Traditional Chinese. Then switch to simple English and ask the first question.
 ```
@@ -42,6 +43,22 @@ Start by saying today's goal in Traditional Chinese. Then switch to simple Engli
 - `Please use my work example.`
 
 ## 結束時貼給 ChatGPT
+
+最短結束指令：
+
+```text
+今天到此
+```
+
+收到「今天到此」後，Coach 必須立即結束本次練習，不要再問下一題，並自動完成以下回傳：
+
+1. 已經能使用的三個句子。
+2. 最重要的兩個問題。
+3. 下一次的一個小目標。
+4. 符合 progress schema 2.0 的 Session。
+5. SB 寫入結果、週誌路徑、Session ID 與讀回驗證結果。
+
+完整英文結束指令仍可使用：
 
 ```text
 End today's practice. Give me:
@@ -73,10 +90,11 @@ Do not invent my score. Base every score on what happened in this conversation.
 
 1. ChatGPT 依 GitHub 的 progress schema 建立 JSON。
 2. 依 Asia/Taipei 日期計算 ISO week，在 SB 搜尋當週週誌：`PEL 進度 YYYY-Www`。
-3. 讀取完整週誌，確認 Session ID 尚未存在。
-4. 以 append 方式加入新的 Session 區塊，不覆蓋舊紀錄。
-5. 再次讀取月誌，確認寫入內容存在。
-6. 向使用者回報 SB 檔案路徑、Session ID 與查回結果。
+3. 找不到當週週誌時，依現行週誌範本建立 `PEL 進度 YYYY-Www`，不得因週誌不存在而跳過保存。
+4. 讀取完整週誌，確認 Session ID 尚未存在。
+5. 以 append 方式加入新的 Session 區塊，不覆蓋舊紀錄。
+6. 再次讀回週誌，確認寫入內容存在。
+7. 向使用者回報 SB 檔案路徑、Session ID 與查回結果。
 
 如果當下無法使用 SB MCP，ChatGPT 必須明確回報「尚未寫入 SB」並保留完整 JSON，不能把產出 JSON 說成已保存。GitHub repository 不保存真實個人進度。
 

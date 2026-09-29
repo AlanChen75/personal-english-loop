@@ -30,6 +30,21 @@ class ConferenceAudioTest(unittest.TestCase):
             "pseudo nil-em uses tee ee see ay on eye em dee ee el dee, well-tron, hype, and Case one.",
         )
 
+    def test_plan_keeps_canonical_text_separate_from_tts_pronunciation(self):
+        canonical = "IMDELD uses TECA for industrial Pseudo-NILM."
+        slides = [{"number": 4, "title": "Dispatch", "script": canonical}]
+
+        plan = self.pipeline.build_xvector_plan(
+            slides,
+            pronunciation_guide="I M D E L D.",
+            max_chars=140,
+        )
+
+        slide_track = plan["tracks"][0]
+        self.assertEqual(slide_track["display_text"], canonical)
+        self.assertIn("eye em dee ee el dee", slide_track["spoken_text"])
+        self.assertNotEqual(slide_track["display_text"], slide_track["spoken_text"])
+
     def test_extracts_slide_scripts_without_executing_source(self):
         source = "ENGLISH_SLIDES = [{'number': 1, 'title': 'One', 'script': 'Hello.'}]\n"
         with tempfile.TemporaryDirectory() as directory:

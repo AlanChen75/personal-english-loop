@@ -25,6 +25,10 @@ class ShadowingPlayerTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / "slide-01.txt").write_text("Hello & welcome.\n", encoding="utf-8")
+            (root / "slide-01-display.txt").write_text(
+                "IMDELD uses TECA for industrial Pseudo-NILM.\n",
+                encoding="utf-8",
+            )
             (root / "slide-01.mp3").write_bytes(b"ID3")
             manifest = {
                 "collections": [
@@ -37,6 +41,7 @@ class ShadowingPlayerTest(unittest.TestCase):
                                 "title": "Opening <Question>",
                                 "audio": "slide-01.mp3",
                                 "spoken_transcript": "slide-01.txt",
+                                "display_transcript": "slide-01-display.txt",
                             }
                         ],
                     },
@@ -59,6 +64,7 @@ class ShadowingPlayerTest(unittest.TestCase):
 
             output = root / "shadowing-player.html"
             self.builder.build_player(manifest_path, output)
+            loaded_collections = self.builder.load_collections(manifest_path)
             html = output.read_text(encoding="utf-8")
             web_manifest = json.loads((root / "manifest.webmanifest").read_text(encoding="utf-8"))
             service_worker = (root / "service-worker.js").read_text(encoding="utf-8")
@@ -73,7 +79,12 @@ class ShadowingPlayerTest(unittest.TestCase):
             }
 
         self.assertIn("slide-01.mp3", html)
-        self.assertIn("Hello & welcome.", html)
+        self.assertIn("IMDELD uses TECA for industrial Pseudo-NILM.", html)
+        self.assertEqual(
+            loaded_collections[0]["items"][0]["transcript"],
+            "IMDELD uses TECA for industrial Pseudo-NILM.",
+        )
+        self.assertEqual(loaded_collections[1]["items"][0]["transcript"], "Hello & welcome.")
         self.assertIn("Opening <Question>", html)
         self.assertIn('id="practice-audio"', html)
         self.assertIn('id="collection-select"', html)

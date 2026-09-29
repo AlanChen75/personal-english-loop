@@ -1,6 +1,6 @@
 {
   "course": "Personal English Loop",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "language_level": "A2-B1",
   "base_url": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main",
   "coach_instructions": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/coach/CHATGPT_COACH.md",
@@ -13,7 +13,7 @@
     "weekly_note_title": "PEL 進度 YYYY-Www",
     "session_id_format": "YYYY-MM-DD-[lesson_id]-HHmm",
     "timezone": "Asia/Taipei",
-    "write_policy": "one weekly note; append one session after every practice; check duplicate before append; read back after append",
+    "write_policy": "the phrase 今天到此 immediately ends practice; create the weekly note if missing; append one session; check duplicate before append; read back before reporting saved",
     "review_schedule": "weekly on Sunday at 20:00 Asia/Taipei",
     "adjustment_policy": "discuss proposed changes with the learner before editing course content"
   },

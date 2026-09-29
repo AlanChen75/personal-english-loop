@@ -146,6 +146,9 @@ def build_xvector_plan(
             kind="slide",
             number=number,
             title=title,
+            # Keep canonical terminology for readers. Pronunciation spell-outs
+            # belong only to spoken_text, which is sent to TTS.
+            display_text=slide["script"],
             stem=f"slide-{number:02d}-{safe_slug(title)}",
         )
 
@@ -269,7 +272,15 @@ def assemble_xvector_plan(
             "probe": probe_audio(mp3_path),
         }
         if track["kind"] == "slide":
-            item.update({"number": track["number"], "title": track["title"]})
+            display_path = output_root / f"{track['stem']}-display.txt"
+            display_path.write_text(track["display_text"] + "\n", encoding="utf-8")
+            item.update(
+                {
+                    "number": track["number"],
+                    "title": track["title"],
+                    "display_transcript": display_path.name,
+                }
+            )
             manifest["slides"].append(item)
             full_talk_parts.append((raw_path, 1500))
         else:
@@ -388,6 +399,7 @@ def main() -> int:
         raw_path = raw_dir / f"{stem}.wav"
         mp3_path = args.output_root / f"{stem}.mp3"
         transcript_path = args.output_root / f"{stem}.txt"
+        display_path = args.output_root / f"{stem}-display.txt"
         print(f"\nSlide {number}: {title}")
         generation = generate_spoken_track(
             text=spoken_text,
@@ -401,6 +413,7 @@ def main() -> int:
         )
         encode_mp3(raw_path, mp3_path, slow=False)
         transcript_path.write_text(spoken_text + "\n", encoding="utf-8")
+        display_path.write_text(slide["script"] + "\n", encoding="utf-8")
         full_talk_parts.append((raw_path, 1500))
         manifest["slides"].append(
             {
@@ -408,6 +421,7 @@ def main() -> int:
                 "title": title,
                 "audio": mp3_path.name,
                 "spoken_transcript": transcript_path.name,
+                "display_transcript": display_path.name,
                 **generation,
                 "probe": probe_audio(mp3_path),
             }

@@ -11,6 +11,8 @@
 
 每個 ISO week 建立一份 SB 週誌。每次練習結束立即追加一個 Session；同週所有 Session 寫在同一份週誌。每週日再追加一個 Weekly Review，並在原 Codex 任務回報、討論調整方向。
 
+學員說「今天到此」時，視為本次練習的明確結束事件。Coach 必須停止提問、建立 Session、在缺少當週週誌時先建立週誌、追加 Session，並讀回確認後才回報保存成功。
+
 週誌採 append-only。禁止覆蓋或修改舊 Session。
 
 ## Session 必記內容
