@@ -29,11 +29,11 @@ APP_MANIFEST = {
         {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"},
     ],
 }
-SERVICE_WORKER = r'''const CACHE_NAME = 'personal-english-loop-v3';
+SERVICE_WORKER = r'''const CACHE_NAME = 'personal-english-loop-v4';
 const APP_SHELL = [
   './',
   './index.html',
-  './manifest.webmanifest?v=3',
+  './manifest.webmanifest?v=4',
   './icon-180.png',
   './icon-192.png',
   './icon-512.png'
@@ -123,14 +123,19 @@ def _load_items(manifest_path: Path, items: object) -> list[dict]:
         transcript = transcript_path.read_text(encoding="utf-8").strip()
         if not transcript:
             raise ValueError(f"Transcript is empty: {transcript_path}")
-        result.append(
-            {
-                "number": number,
-                "title": title.strip(),
-                "audio": audio_name,
-                "transcript": transcript,
-            }
-        )
+        loaded_item = {
+            "number": number,
+            "title": title.strip(),
+            "audio": audio_name,
+            "transcript": transcript,
+        }
+        if item.get("slide_image") is not None:
+            slide_image = _safe_relative_name(item.get("slide_image"), "slide_image")
+            slide_image_path = manifest_path.parent / slide_image
+            if not slide_image_path.is_file():
+                raise FileNotFoundError(slide_image_path)
+            loaded_item["slide_image"] = slide_image
+        result.append(loaded_item)
     return result
 
 
@@ -229,7 +234,7 @@ TEMPLATE = r'''<!doctype html>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Shadow">
-  <link rel="manifest" href="manifest.webmanifest?v=3">
+  <link rel="manifest" href="manifest.webmanifest?v=4">
   <link rel="apple-touch-icon" href="icon-180.png">
   <title>Personal English Loop</title>
   <style>
@@ -361,7 +366,7 @@ TEMPLATE = r'''<!doctype html>
     .status { grid-column: 1 / -1; margin: 0; color: color-mix(in oklch, var(--paper), transparent 25%); font-size: 0.82rem; line-height: 1.4; }
 
     .transcript {
-      margin-top: clamp(2rem, 5vw, 4rem);
+      margin: 0;
       max-width: 67ch;
       font-family: var(--reading);
       font-size: clamp(1.22rem, 2.2vw, 1.58rem);
@@ -371,6 +376,18 @@ TEMPLATE = r'''<!doctype html>
     .sentence { display: inline; transition: background-color 180ms ease-out; }
     .sentence:hover { background: color-mix(in oklch, var(--orange), transparent 70%); }
     .sentence::after { content: " "; }
+    .study-stage { display: grid; gap: clamp(1.5rem, 4vw, 3rem); margin-top: clamp(2rem, 5vw, 4rem); align-items: start; }
+    .slide-visual { margin: 0; min-width: 0; }
+    .slide-link {
+      display: block;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: color-mix(in oklch, var(--ink), transparent 4%);
+      box-shadow: 0 1rem 2.5rem color-mix(in oklch, var(--ink), transparent 84%);
+    }
+    .slide-link:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+    .slide-image { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; }
+    .slide-caption { margin-top: 0.65rem; color: var(--muted); font-size: 0.84rem; line-height: 1.5; }
     .practice-note { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; line-height: 1.6; }
 
     @media (min-width: 48rem) {
@@ -381,6 +398,11 @@ TEMPLATE = r'''<!doctype html>
       .page-list { display: block; }
       .player-desk { grid-template-columns: minmax(16rem, 1fr) auto; align-items: center; }
       .controls { justify-content: flex-end; }
+    }
+
+    @media (min-width: 68rem) {
+      .study-stage:has(.slide-visual:not([hidden])) { grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.85fr); }
+      .study-stage:has(.slide-visual:not([hidden])) .transcript { font-size: clamp(1.08rem, 1.45vw, 1.38rem); line-height: 1.68; }
     }
 
     @media (hover: hover) {
@@ -428,7 +450,15 @@ TEMPLATE = r'''<!doctype html>
           <p id="player-status" class="status" aria-live="polite"></p>
         </section>
 
-        <article id="transcript" class="transcript" aria-live="polite"></article>
+        <div class="study-stage">
+          <figure id="slide-visual" class="slide-visual" hidden>
+            <a id="slide-link" class="slide-link" target="_blank" rel="noopener" aria-label="在新分頁放大目前投影片">
+              <img id="slide-image" class="slide-image" width="1600" height="900" decoding="async" alt="">
+            </a>
+            <figcaption id="slide-caption" class="slide-caption">點選投影片可在新分頁放大</figcaption>
+          </figure>
+          <article id="transcript" class="transcript" aria-live="polite"></article>
+        </div>
         <p class="practice-note">快捷鍵：空白鍵播放／暫停，← → 倒退或前進五秒。點選左側可切換下一頁。</p>
       </main>
     </div>
@@ -441,6 +471,10 @@ TEMPLATE = r'''<!doctype html>
     const number = document.querySelector('#page-number');
     const collectionTitle = document.querySelector('#collection-title');
     const transcript = document.querySelector('#transcript');
+    const slideVisual = document.querySelector('#slide-visual');
+    const slideLink = document.querySelector('#slide-link');
+    const slideImage = document.querySelector('#slide-image');
+    const slideCaption = document.querySelector('#slide-caption');
     const list = document.querySelector('#page-list');
     const select = document.querySelector('#page-select');
     const collectionSelect = document.querySelector('#collection-select');
@@ -482,6 +516,18 @@ TEMPLATE = r'''<!doctype html>
       number.textContent = String(item.number).padStart(2, '0');
       collectionTitle.textContent = collections[activeCollectionIndex].title;
       title.textContent = item.title;
+      if (item.slide_image) {
+        slideImage.src = item.slide_image;
+        slideImage.alt = `投影片 ${item.number}：${item.title}`;
+        slideLink.href = item.slide_image;
+        slideCaption.textContent = `投影片 ${item.number}／${activeItems().length} · 點選圖片放大`;
+        slideVisual.hidden = false;
+      } else {
+        slideVisual.hidden = true;
+        slideImage.removeAttribute('src');
+        slideImage.alt = '';
+        slideLink.removeAttribute('href');
+      }
       renderTranscript(item.transcript);
       select.value = String(index);
       document.querySelectorAll('.page-button').forEach((button, buttonIndex) => {

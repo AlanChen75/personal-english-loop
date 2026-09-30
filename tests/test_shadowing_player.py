@@ -30,6 +30,7 @@ class ShadowingPlayerTest(unittest.TestCase):
                 encoding="utf-8",
             )
             (root / "slide-01.mp3").write_bytes(b"ID3")
+            (root / "slide-01.png").write_bytes(b"PNG")
             manifest = {
                 "collections": [
                     {
@@ -42,6 +43,7 @@ class ShadowingPlayerTest(unittest.TestCase):
                                 "audio": "slide-01.mp3",
                                 "spoken_transcript": "slide-01.txt",
                                 "display_transcript": "slide-01-display.txt",
+                                "slide_image": "slide-01.png",
                             }
                         ],
                     },
@@ -84,9 +86,14 @@ class ShadowingPlayerTest(unittest.TestCase):
             loaded_collections[0]["items"][0]["transcript"],
             "IMDELD uses TECA for industrial Pseudo-NILM.",
         )
+        self.assertEqual(loaded_collections[0]["items"][0]["slide_image"], "slide-01.png")
         self.assertEqual(loaded_collections[1]["items"][0]["transcript"], "Hello & welcome.")
         self.assertIn("Opening <Question>", html)
         self.assertIn('id="practice-audio"', html)
+        self.assertIn('id="slide-visual"', html)
+        self.assertIn('id="slide-image"', html)
+        self.assertIn('item.slide_image', html)
+        self.assertIn('slide-01.png', html)
         self.assertIn('id="collection-select"', html)
         self.assertIn('研討會講稿', html)
         self.assertIn('自我介紹', html)
@@ -96,7 +103,7 @@ class ShadowingPlayerTest(unittest.TestCase):
         self.assertNotIn('data-speed="0.75"', html)
         self.assertIn('id="repeat-all"', html)
         self.assertIn("audio.addEventListener('ended'", html)
-        self.assertIn('<link rel="manifest" href="manifest.webmanifest?v=3">', html)
+        self.assertIn('<link rel="manifest" href="manifest.webmanifest?v=4">', html)
         self.assertIn('<meta name="apple-mobile-web-app-title" content="Shadow">', html)
         self.assertIn('id="install-app"', html)
         self.assertIn("navigator.serviceWorker.register", html)
@@ -106,7 +113,7 @@ class ShadowingPlayerTest(unittest.TestCase):
         self.assertLessEqual(len(web_manifest["short_name"]), 7)
         self.assertEqual({icon["sizes"] for icon in web_manifest["icons"]}, {"192x192", "512x512"})
         self.assertTrue(all(generated_assets.values()), generated_assets)
-        self.assertIn("personal-english-loop-v3", service_worker)
+        self.assertIn("personal-english-loop-v4", service_worker)
         self.assertNotIn("fetch(", html)
 
 

@@ -1,8 +1,8 @@
-const CACHE_NAME = 'personal-english-loop-v3';
+const CACHE_NAME = 'personal-english-loop-v4';
 const APP_SHELL = [
   './',
   './index.html',
-  './manifest.webmanifest?v=3',
+  './manifest.webmanifest?v=4',
   './icon-180.png',
   './icon-192.png',
   './icon-512.png'
