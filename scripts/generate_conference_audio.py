@@ -60,6 +60,25 @@ PRONUNCIATION_GUIDE = (
     "Variable-frequency load. Aggregate power. Energy attribution. "
     "Pseudo trace. Defensive dispatch. Explicit abstention."
 )
+NUMBER_WORD_TO_DIGIT = {
+    "zero": "0",
+    "one": "1",
+    "two": "2",
+    "three": "3",
+    "four": "4",
+    "five": "5",
+    "six": "6",
+    "seven": "7",
+    "eight": "8",
+    "nine": "9",
+}
+_DIGIT_WORD_PATTERN = "|".join(NUMBER_WORD_TO_DIGIT)
+SPOKEN_DECIMAL_RE = re.compile(
+    rf"\b({_DIGIT_WORD_PATTERN}) point "
+    rf"((?:{_DIGIT_WORD_PATTERN})(?: (?:{_DIGIT_WORD_PATTERN}))*)"
+    rf"( percent)?\b",
+    re.IGNORECASE,
+)
 
 
 def load_english_slides(source_path: Path) -> list[dict]:
@@ -85,6 +104,20 @@ def prepare_spoken_text(text: str) -> str:
     for pattern, replacement in PRONUNCIATION_REPLACEMENTS:
         spoken = pattern.sub(replacement, spoken)
     return spoken
+
+
+def prepare_display_text(text: str) -> str:
+    """Format spoken decimals for readers without changing the TTS script."""
+
+    def replace_decimal(match: re.Match[str]) -> str:
+        integer = NUMBER_WORD_TO_DIGIT[match.group(1).lower()]
+        fraction = "".join(
+            NUMBER_WORD_TO_DIGIT[word.lower()] for word in match.group(2).split()
+        )
+        suffix = "%" if match.group(3) else ""
+        return f"{integer}.{fraction}{suffix}"
+
+    return SPOKEN_DECIMAL_RE.sub(replace_decimal, text)
 
 
 def normalize_request_text(text: str) -> str:
@@ -146,9 +179,9 @@ def build_xvector_plan(
             kind="slide",
             number=number,
             title=title,
-            # Keep canonical terminology for readers. Pronunciation spell-outs
-            # belong only to spoken_text, which is sent to TTS.
-            display_text=slide["script"],
+            # Keep canonical terminology and numeric notation for readers.
+            # Pronunciation spell-outs belong only to spoken_text sent to TTS.
+            display_text=prepare_display_text(slide["script"]),
             stem=f"slide-{number:02d}-{safe_slug(title)}",
         )
 
@@ -413,7 +446,7 @@ def main() -> int:
         )
         encode_mp3(raw_path, mp3_path, slow=False)
         transcript_path.write_text(spoken_text + "\n", encoding="utf-8")
-        display_path.write_text(slide["script"] + "\n", encoding="utf-8")
+        display_path.write_text(prepare_display_text(slide["script"]) + "\n", encoding="utf-8")
         full_talk_parts.append((raw_path, 1500))
         manifest["slides"].append(
             {
