@@ -101,6 +101,35 @@ class ConferenceAudioTest(unittest.TestCase):
             all(job["output"].endswith(".wav") and len(job["output"]) == 68 for job in plan["jobs"])
         )
 
+    def test_published_slide_07_uses_approved_bootstrap_wording(self):
+        conference_dir = ROOT / "conference/cacs2026-pseudonilm"
+        spoken = (conference_dir / "slide-07-main-teca-results.txt").read_text(
+            encoding="utf-8"
+        )
+        display = (conference_dir / "slide-07-main-teca-results-display.txt").read_text(
+            encoding="utf-8"
+        )
+        player = (conference_dir / "index.html").read_text(encoding="utf-8")
+
+        self.assertIn(
+            "The lowest bootstrap lower bound is zero point seven zero six one "
+            "for the activity chunks used in this analysis.",
+            spoken,
+        )
+        self.assertIn(
+            "The lowest bootstrap lower bound is 0.7061 "
+            "for the activity chunks used in this analysis.",
+            display,
+        )
+        self.assertNotIn("eligible activity-bearing chunks", spoken)
+        self.assertNotIn("eligible activity-bearing chunks", display)
+        self.assertIn(
+            "The lowest bootstrap lower bound is 0.7061 "
+            "for the activity chunks used in this analysis.",
+            player,
+        )
+        self.assertNotIn("eligible activity-bearing chunks", player)
+
 
 if __name__ == "__main__":
     unittest.main()
