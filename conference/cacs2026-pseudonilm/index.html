@@ -7,7 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Shadow">
-  <link rel="manifest" href="manifest.webmanifest?v=8">
+  <link rel="manifest" href="manifest.webmanifest?v=9">
   <link rel="apple-touch-icon" href="icon-180.png">
   <title>Personal English Loop</title>
   <style>
@@ -328,7 +328,8 @@
 
     function updateStickyPlayer() {
       const stickyTop = parseFloat(getComputedStyle(playerDesk).top) || 0;
-      const compactEdge = stickyTop + 48;
+      const compactOffset = playerDesk.classList.contains('is-stuck') ? 108 : 48;
+      const compactEdge = stickyTop + compactOffset;
       const isStuck = playerSentinel.getBoundingClientRect().top <= compactEdge;
       playerDesk.classList.toggle('is-stuck', isStuck);
     }
