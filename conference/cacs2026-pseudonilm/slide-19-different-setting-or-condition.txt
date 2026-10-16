@@ -1,0 +1,1 @@
+Thank you for the question. If I understand correctly, you are asking whether the method would work in another setting. We only tested it under the fixed setup used in this study. The results support device energy estimates on three datasets, and the system stops when the required data are missing. We still need more tests before using it in other conditions.

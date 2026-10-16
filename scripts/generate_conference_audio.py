@@ -37,15 +37,23 @@ DEFAULT_SOURCE = Path(
     "/Users/user/Desktop/NILM+LLM/cacs2026-nilm-llm/"
     "paper/R1/presentation/src/build_documents.py"
 )
+DEFAULT_SUPPLEMENT_SOURCE = ROOT / "conference/cacs2026-pseudonilm/qa-script.json"
 PRONUNCIATION_REPLACEMENTS = (
     (re.compile(r"\bPseudo-?NILM\b", re.IGNORECASE), "pseudo nil-em"),
+    (re.compile(r"\bNILM\b"), "nil-em"),
     (re.compile(r"\bTECA\b"), "tee ee see ay"),
     (re.compile(r"\bIMDELD\b"), "eye em dee ee el dee"),
     (re.compile(r"\bWELTRON\b"), "well-tron"),
     (re.compile(r"\bHIPE\b"), "hype"),
     (re.compile(r"\bVFD\b"), "vee eff dee"),
+    (re.compile(r"\bCPU\b"), "see pee you"),
     (re.compile(r"\bCase1\b"), "Case one"),
     (re.compile(r"\bF1\b"), "F one"),
+    (
+        re.compile(r"d11351004@mail\.ntust\.edu\.tw", re.IGNORECASE),
+        "d one one three five one zero zero four at mail dot "
+        "N T U S T dot E D U dot T W",
+    ),
 )
 PRONUNCIATION_GUIDE = (
     "Conference pronunciation guide. "
@@ -97,6 +105,53 @@ def load_english_slides(source_path: Path) -> list[dict]:
                     raise ValueError("Every slide needs number, title, and script")
             return slides
     raise ValueError(f"ENGLISH_SLIDES not found in {source_path}")
+
+
+def load_supplemental_slides(source_path: Path) -> list[dict]:
+    """Load portable closing and Q&A tracks extracted from the approved DOCX."""
+    payload = json.loads(source_path.read_text(encoding="utf-8"))
+    if not isinstance(payload, dict) or not isinstance(payload.get("items"), list):
+        raise ValueError("Supplemental source must contain an items list")
+    items = payload["items"]
+    if not items:
+        raise ValueError("Supplemental items must not be empty")
+
+    validated = []
+    required = {"number", "title", "script"}
+    for item in items:
+        if not isinstance(item, dict) or not required.issubset(item):
+            raise ValueError("Every supplemental item needs number, title, and script")
+        number = item["number"]
+        title = item["title"]
+        script = item["script"]
+        if not isinstance(number, int) or number < 1:
+            raise ValueError("Supplemental item numbers must be positive integers")
+        if not isinstance(title, str) or not title.strip():
+            raise ValueError("Supplemental item titles must be non-empty strings")
+        if not isinstance(script, str) or not script.strip():
+            raise ValueError("Supplemental item scripts must be non-empty strings")
+
+        clean_item = {
+            "number": number,
+            "title": title.strip(),
+            "script": script.strip(),
+        }
+        slide_image = item.get("slide_image")
+        if slide_image is not None:
+            if (
+                not isinstance(slide_image, str)
+                or not slide_image.strip()
+                or Path(slide_image).is_absolute()
+                or ".." in Path(slide_image).parts
+            ):
+                raise ValueError("slide_image must be a safe relative path")
+            clean_item["slide_image"] = slide_image.strip()
+        validated.append(clean_item)
+
+    numbers = [item["number"] for item in validated]
+    if numbers != list(range(numbers[0], numbers[0] + len(numbers))):
+        raise ValueError("Supplemental item numbers must be consecutive and ordered")
+    return validated
 
 
 def prepare_spoken_text(text: str) -> str:
@@ -172,17 +227,22 @@ def build_xvector_plan(
     for slide in slides:
         number = slide["number"]
         title = slide["title"]
+        metadata = {
+            "kind": "slide",
+            "number": number,
+            "title": title,
+            # Keep canonical terminology and numeric notation for readers.
+            # Pronunciation spell-outs belong only to spoken_text sent to TTS.
+            "display_text": prepare_display_text(slide["script"]),
+            "stem": f"slide-{number:02d}-{safe_slug(title)}",
+        }
+        if slide.get("slide_image"):
+            metadata["slide_image"] = slide["slide_image"]
         add_track(
             track_id=f"slide-{number:02d}",
             text=prepare_spoken_text(slide["script"]),
             pause_ms=350,
-            kind="slide",
-            number=number,
-            title=title,
-            # Keep canonical terminology and numeric notation for readers.
-            # Pronunciation spell-outs belong only to spoken_text sent to TTS.
-            display_text=prepare_display_text(slide["script"]),
-            stem=f"slide-{number:02d}-{safe_slug(title)}",
+            **metadata,
         )
 
     add_track(
@@ -208,7 +268,18 @@ def safe_slug(title: str) -> str:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
-    parser.add_argument("--slides", type=int, nargs="+", choices=range(1, 11))
+    parser.add_argument(
+        "--supplement-source",
+        type=Path,
+        default=DEFAULT_SUPPLEMENT_SOURCE,
+        help="JSON source for the closing and Q&A tracks.",
+    )
+    parser.add_argument(
+        "--without-supplement",
+        action="store_true",
+        help="Generate only the numbered main-talk slides from --source.",
+    )
+    parser.add_argument("--slides", type=int, nargs="+")
     parser.add_argument("--server", default=DEFAULT_SERVER)
     parser.add_argument("--ref-audio")
     parser.add_argument("--ref-audio-ssh", default=DEFAULT_REF_AUDIO_SSH)
@@ -314,6 +385,8 @@ def assemble_xvector_plan(
                     "display_transcript": display_path.name,
                 }
             )
+            if track.get("slide_image"):
+                item["slide_image"] = track["slide_image"]
             manifest["slides"].append(item)
             full_talk_parts.append((raw_path, 1500))
         else:
@@ -375,9 +448,16 @@ def generate_spoken_track(
 def main() -> int:
     args = parse_args()
     slides = load_english_slides(args.source)
+    if not args.without_supplement:
+        slides.extend(load_supplemental_slides(args.supplement_source))
     if args.slides:
+        if any(number < 1 for number in args.slides):
+            raise ValueError("--slides values must be positive integers")
         selected = set(args.slides)
         slides = [slide for slide in slides if slide["number"] in selected]
+        missing = selected - {slide["number"] for slide in slides}
+        if missing:
+            raise ValueError(f"Unknown slide numbers: {sorted(missing)}")
 
     if args.prepare_xvector or args.assemble_xvector:
         plan = build_xvector_plan(slides, max_chars=args.max_chars)
@@ -455,6 +535,11 @@ def main() -> int:
                 "audio": mp3_path.name,
                 "spoken_transcript": transcript_path.name,
                 "display_transcript": display_path.name,
+                **(
+                    {"slide_image": slide["slide_image"]}
+                    if slide.get("slide_image")
+                    else {}
+                ),
                 **generation,
                 "probe": probe_audio(mp3_path),
             }

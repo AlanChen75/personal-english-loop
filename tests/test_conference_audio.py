@@ -1,4 +1,5 @@
 import importlib.util
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -29,6 +30,97 @@ class ConferenceAudioTest(unittest.TestCase):
             spoken,
             "pseudo nil-em uses tee ee see ay on eye em dee ee el dee, well-tron, hype, and Case one.",
         )
+
+    def test_spoken_text_expands_qa_terms_and_contact_email(self):
+        source = (
+            "This is a NILM question. Please email me at "
+            "d11351004@mail.ntust.edu.tw."
+        )
+
+        spoken = self.pipeline.prepare_spoken_text(source)
+
+        self.assertEqual(
+            spoken,
+            "This is a nil-em question. Please email me at "
+            "d one one three five one zero zero four at mail dot "
+            "N T U S T dot E D U dot T W.",
+        )
+
+    def test_loads_supplemental_script_with_required_sequence(self):
+        source = {
+            "source_document": "script-v3.docx",
+            "items": [
+                {
+                    "number": 11,
+                    "title": "Thank you and Q&A",
+                    "script": "Thank you for listening.",
+                    "slide_image": "slides/slide-15.png",
+                },
+                {
+                    "number": 12,
+                    "title": "Is this method training-free?",
+                    "script": "The main method does not train a supervised model.",
+                },
+            ],
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "supplement.json"
+            path.write_text(json.dumps(source), encoding="utf-8")
+
+            items = self.pipeline.load_supplemental_slides(path)
+
+        self.assertEqual([item["number"] for item in items], [11, 12])
+        self.assertEqual(items[0]["slide_image"], "slides/slide-15.png")
+        self.assertEqual(items[1]["title"], "Is this method training-free?")
+
+    def test_rejects_invalid_supplemental_script_boundaries(self):
+        cases = [
+            ({}, "items list"),
+            ({"items": []}, "must not be empty"),
+            ({"items": [{"number": 11, "title": "Missing script"}]}, "needs number"),
+            (
+                {"items": [{"number": 0, "title": "Invalid number", "script": "Text."}]},
+                "positive integers",
+            ),
+            (
+                {"items": [{"number": 11, "title": " ", "script": "Text."}]},
+                "titles must be non-empty",
+            ),
+            (
+                {"items": [{"number": 11, "title": "Empty", "script": " "}]},
+                "scripts must be non-empty",
+            ),
+            (
+                {
+                    "items": [
+                        {
+                            "number": 11,
+                            "title": "Unsafe image",
+                            "script": "Text.",
+                            "slide_image": "../private.png",
+                        }
+                    ]
+                },
+                "safe relative path",
+            ),
+            (
+                {
+                    "items": [
+                        {"number": 11, "title": "First", "script": "Text."},
+                        {"number": 13, "title": "Gap", "script": "Text."},
+                    ]
+                },
+                "consecutive and ordered",
+            ),
+        ]
+
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "supplement.json"
+            for payload, message in cases:
+                with self.subTest(message=message):
+                    path.write_text(json.dumps(payload), encoding="utf-8")
+                    with self.assertRaisesRegex(ValueError, message):
+                        self.pipeline.load_supplemental_slides(path)
 
     def test_plan_keeps_canonical_text_separate_from_tts_pronunciation(self):
         canonical = "IMDELD uses TECA for industrial Pseudo-NILM at zero point seven."
@@ -129,6 +221,35 @@ class ConferenceAudioTest(unittest.TestCase):
             player,
         )
         self.assertNotIn("eligible activity-bearing chunks", player)
+
+    def test_published_conference_places_closing_before_qa(self):
+        conference_dir = ROOT / "conference/cacs2026-pseudonilm"
+        manifest = json.loads(
+            (conference_dir / "library-manifest.json").read_text(encoding="utf-8")
+        )
+        items = manifest["collections"][0]["items"]
+
+        self.assertEqual(items[9]["title"], "Supported claims and limits")
+        self.assertEqual(items[10]["number"], 11)
+        self.assertEqual(items[10]["title"], "Thank you and Q&A")
+        self.assertEqual(items[10]["slide_image"], "slides/slide-15.png")
+        self.assertEqual(items[11]["title"], "Is this method training-free?")
+        self.assertEqual(items[-1]["title"], "Please repeat the question")
+        self.assertEqual(len(items), 21)
+        for item in items[10:]:
+            self.assertTrue((conference_dir / item["audio"]).is_file())
+            self.assertTrue((conference_dir / item["spoken_transcript"]).is_file())
+            self.assertTrue((conference_dir / item["display_transcript"]).is_file())
+
+        closing = (conference_dir / items[10]["display_transcript"]).read_text(
+            encoding="utf-8"
+        )
+        self.assertEqual(
+            closing.strip(),
+            "Thank you for listening. I am happy to take your questions. "
+            "If we do not have enough time, please email me at "
+            "d11351004@mail.ntust.edu.tw.",
+        )
 
 
 if __name__ == "__main__":

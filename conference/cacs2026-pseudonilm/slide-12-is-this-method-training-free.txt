@@ -1,0 +1,1 @@
+The main method does not train a supervised model. However, we still use labeled data during setup to choose a few fixed values. So I do not call the whole system label-free.

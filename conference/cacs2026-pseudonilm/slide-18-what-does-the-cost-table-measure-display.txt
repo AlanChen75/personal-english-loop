@@ -1,0 +1,1 @@
+It measures the CPU time and memory of the analysis after we fixed the method. It does not include making pseudo traces, searching for settings, or the full deployment cost.

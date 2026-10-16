@@ -1,0 +1,1 @@
+hype does not have the pseudo traces required by our fixed rule. The system is designed to stop in this case, so no-score is an expected result.

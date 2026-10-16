@@ -1,0 +1,1 @@
+We study how well the method assigns energy to devices, so TECA matches our main goal. The low F1 scores also show that we should not claim accurate event timing.
