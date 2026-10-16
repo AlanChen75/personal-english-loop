@@ -10,7 +10,7 @@
 
 - 可安裝為手機桌面 Web App
 - 三類教材：研討會講稿、自我介紹、每日練習
-- 研討會教材依序收錄 1–10 正式講稿、11 結尾與 Q&A 畫面、12–21 Q&A 回應稿
+- 研討會教材依序收錄 1–10 正式講稿、11 結尾與 Q&A 畫面、12 一份完整 Q&A Response Pack
 - 正式講稿與結尾頁同步顯示投影片、逐頁音檔與英文講稿
 - 自我介紹與每日教材同步顯示音檔與英文逐字稿
 - 點選投影片可開啟原尺寸圖片
@@ -27,8 +27,8 @@
 - `library-manifest.json`：播放器分類與教材索引
 - `icon-180.png`、`icon-192.png`、`icon-512.png`：桌面圖示
 - `cacs2026-full-talk.mp3`：完整研討會講稿
-- `slide-01...slide-21.mp3`：正式講稿、結尾與 Q&A 逐段音檔
-- `slide-01...slide-21.txt`：正式講稿、結尾與 Q&A 英文講稿
+- `slide-01...slide-11.*`：正式講稿與結尾逐頁音檔及英文講稿
+- `slide-12-q-a-response-pack.*`：合併後的完整 Q&A 音檔與講稿
 - `slides/slide-1...slide-10.png`：主講第 1–10 頁正式投影片圖片
 - `slides/slide-15.png`：Thank you and Q&A 畫面，顯示於 Shadow 第 11 段
 - `qa-script.json`：從核准版 Word 講稿整理出的結尾與 Q&A 可重生來源

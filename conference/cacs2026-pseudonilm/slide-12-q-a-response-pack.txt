@@ -1,0 +1,39 @@
+Question one. Is this method training-free?
+
+The main method does not train a supervised model. However, we still use labeled data during setup to choose a few fixed values. So I do not call the whole system label-free.
+
+Question two. Why does hype receive no score?
+
+hype does not have the pseudo traces required by our fixed rule. The system is designed to stop in this case, so no-score is an expected result.
+
+Question three. Does this work at a new plant?
+
+We do not know yet. All four datasets helped us build the method. We need a new test on a plant that was not used during development.
+
+Question four. Why use tee ee see ay instead of only F one?
+
+We study how well the method assigns energy to devices, so tee ee see ay matches our main goal. The low F one scores also show that we should not claim accurate event timing.
+
+Question five. Is zero point seven a general standard?
+
+No. We use zero point seven only as a fixed reference in this study. It is not a general standard for industry.
+
+Question six. Can well-tron be shared?
+
+Please contact me. We can share a version after removing private information, if the request is reasonable. The public files do not include the original raw data.
+
+Question seven. What does the cost table measure?
+
+It measures the see pee you time and memory of the analysis after we fixed the method. It does not include making pseudo traces, searching for settings, or the full deployment cost.
+
+General response one. Different setting or condition.
+
+Thank you for the question. If I understand correctly, you are asking whether the method would work in another setting. We only tested it under the fixed setup used in this study. The results support device energy estimates on three datasets, and the system stops when the required data are missing. We still need more tests before using it in other conditions.
+
+General response two. Question outside the tested evidence.
+
+That is a good point. I do not want to say more than the results show. This study gives a careful rule for deciding when to report a result and when to stop. It is not a solution for every nil-em problem. I will check your specific case and discuss it with you after the session. You can also email me.
+
+Useful phrase. Please repeat the question.
+
+Sorry, could you please repeat or rephrase the question more slowly?

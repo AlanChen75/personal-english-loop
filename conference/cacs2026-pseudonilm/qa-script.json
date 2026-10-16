@@ -11,53 +11,9 @@
     },
     {
       "number": 12,
-      "title": "Is this method training-free?",
-      "script": "The main method does not train a supervised model. However, we still use labeled data during setup to choose a few fixed values. So I do not call the whole system label-free."
-    },
-    {
-      "number": 13,
-      "title": "Why does HIPE receive no score?",
-      "script": "HIPE does not have the pseudo traces required by our fixed rule. The system is designed to stop in this case, so no-score is an expected result."
-    },
-    {
-      "number": 14,
-      "title": "Does this work at a new plant?",
-      "script": "We do not know yet. All four datasets helped us build the method. We need a new test on a plant that was not used during development."
-    },
-    {
-      "number": 15,
-      "title": "Why use TECA instead of only F1?",
-      "script": "We study how well the method assigns energy to devices, so TECA matches our main goal. The low F1 scores also show that we should not claim accurate event timing."
-    },
-    {
-      "number": 16,
-      "title": "Is 0.7 a general standard?",
-      "script": "No. We use zero point seven only as a fixed reference in this study. It is not a general standard for industry."
-    },
-    {
-      "number": 17,
-      "title": "Can WELTRON be shared?",
-      "script": "Please contact me. We can share a version after removing private information, if the request is reasonable. The public files do not include the original raw data."
-    },
-    {
-      "number": 18,
-      "title": "What does the cost table measure?",
-      "script": "It measures the CPU time and memory of the analysis after we fixed the method. It does not include making pseudo traces, searching for settings, or the full deployment cost."
-    },
-    {
-      "number": 19,
-      "title": "Different setting or condition",
-      "script": "Thank you for the question. If I understand correctly, you are asking whether the method would work in another setting. We only tested it under the fixed setup used in this study. The results support device energy estimates on three datasets, and the system stops when the required data are missing. We still need more tests before using it in other conditions."
-    },
-    {
-      "number": 20,
-      "title": "Question outside the tested evidence",
-      "script": "That is a good point. I do not want to say more than the results show. This study gives a careful rule for deciding when to report a result and when to stop. It is not a solution for every NILM problem. I will check your specific case and discuss it with you after the session. You can also email me."
-    },
-    {
-      "number": 21,
-      "title": "Please repeat the question",
-      "script": "Sorry, could you please repeat or rephrase the question more slowly?"
+      "title": "Q&A response pack",
+      "script": "Question one. Is this method training-free?\n\nThe main method does not train a supervised model. However, we still use labeled data during setup to choose a few fixed values. So I do not call the whole system label-free.\n\nQuestion two. Why does HIPE receive no score?\n\nHIPE does not have the pseudo traces required by our fixed rule. The system is designed to stop in this case, so no-score is an expected result.\n\nQuestion three. Does this work at a new plant?\n\nWe do not know yet. All four datasets helped us build the method. We need a new test on a plant that was not used during development.\n\nQuestion four. Why use TECA instead of only F1?\n\nWe study how well the method assigns energy to devices, so TECA matches our main goal. The low F1 scores also show that we should not claim accurate event timing.\n\nQuestion five. Is zero point seven a general standard?\n\nNo. We use zero point seven only as a fixed reference in this study. It is not a general standard for industry.\n\nQuestion six. Can WELTRON be shared?\n\nPlease contact me. We can share a version after removing private information, if the request is reasonable. The public files do not include the original raw data.\n\nQuestion seven. What does the cost table measure?\n\nIt measures the CPU time and memory of the analysis after we fixed the method. It does not include making pseudo traces, searching for settings, or the full deployment cost.\n\nGeneral response one. Different setting or condition.\n\nThank you for the question. If I understand correctly, you are asking whether the method would work in another setting. We only tested it under the fixed setup used in this study. The results support device energy estimates on three datasets, and the system stops when the required data are missing. We still need more tests before using it in other conditions.\n\nGeneral response two. Question outside the tested evidence.\n\nThat is a good point. I do not want to say more than the results show. This study gives a careful rule for deciding when to report a result and when to stop. It is not a solution for every NILM problem. I will check your specific case and discuss it with you after the session. You can also email me.\n\nUseful phrase. Please repeat the question.\n\nSorry, could you please repeat or rephrase the question more slowly?",
+      "slide_image": "slides/slide-15.png"
     }
   ]
 }

@@ -3,6 +3,8 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
+from unittest import mock
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -117,7 +119,7 @@ class ShadowingPlayerTest(unittest.TestCase):
         self.assertIn("window.addEventListener('scroll', queueStickyUpdate", html)
         self.assertIn("const compactOffset = playerDesk.classList.contains('is-stuck') ? 108 : 48", html)
         self.assertIn("playerDesk.classList.toggle('is-stuck'", html)
-        self.assertIn('<link rel="manifest" href="manifest.webmanifest?v=10">', html)
+        self.assertIn('<link rel="manifest" href="manifest.webmanifest?v=11">', html)
         self.assertIn('<meta name="apple-mobile-web-app-title" content="Shadow">', html)
         self.assertIn('id="install-app"', html)
         self.assertIn("navigator.serviceWorker.register", html)
@@ -127,8 +129,41 @@ class ShadowingPlayerTest(unittest.TestCase):
         self.assertLessEqual(len(web_manifest["short_name"]), 7)
         self.assertEqual({icon["sizes"] for icon in web_manifest["icons"]}, {"192x192", "512x512"})
         self.assertTrue(all(generated_assets.values()), generated_assets)
-        self.assertIn("personal-english-loop-v10", service_worker)
+        self.assertIn("personal-english-loop-v11", service_worker)
         self.assertNotIn("fetch(", html)
+
+    def test_main_builds_the_requested_output(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "track.mp3").write_bytes(b"ID3")
+            (root / "track.txt").write_text("Practice text.\n", encoding="utf-8")
+            manifest_path = root / "manifest.json"
+            manifest_path.write_text(
+                json.dumps(
+                    {
+                        "collections": [
+                            {
+                                "id": "practice",
+                                "title": "Practice",
+                                "items": [
+                                    {
+                                        "number": 1,
+                                        "title": "Track",
+                                        "audio": "track.mp3",
+                                        "spoken_transcript": "track.txt",
+                                    }
+                                ],
+                            }
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+            output_path = root / "index.html"
+            args = SimpleNamespace(manifest=manifest_path, output=output_path)
+            with mock.patch.object(self.builder, "parse_args", return_value=args):
+                self.assertEqual(self.builder.main(), 0)
+            self.assertTrue(output_path.is_file())
 
 
 if __name__ == "__main__":

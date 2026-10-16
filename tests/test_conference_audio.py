@@ -222,7 +222,7 @@ class ConferenceAudioTest(unittest.TestCase):
         )
         self.assertNotIn("eligible activity-bearing chunks", player)
 
-    def test_published_conference_places_closing_before_qa(self):
+    def test_published_conference_places_closing_before_combined_qa(self):
         conference_dir = ROOT / "conference/cacs2026-pseudonilm"
         manifest = json.loads(
             (conference_dir / "library-manifest.json").read_text(encoding="utf-8")
@@ -233,9 +233,9 @@ class ConferenceAudioTest(unittest.TestCase):
         self.assertEqual(items[10]["number"], 11)
         self.assertEqual(items[10]["title"], "Thank you and Q&A")
         self.assertEqual(items[10]["slide_image"], "slides/slide-15.png")
-        self.assertEqual(items[11]["title"], "Is this method training-free?")
-        self.assertEqual(items[-1]["title"], "Please repeat the question")
-        self.assertEqual(len(items), 21)
+        self.assertEqual(items[11]["number"], 12)
+        self.assertEqual(items[11]["title"], "Q&A response pack")
+        self.assertEqual(len(items), 12)
         for item in items[10:]:
             self.assertTrue((conference_dir / item["audio"]).is_file())
             self.assertTrue((conference_dir / item["spoken_transcript"]).is_file())
@@ -250,6 +250,15 @@ class ConferenceAudioTest(unittest.TestCase):
             "If we do not have enough time, please email me at "
             "d11351004@mail.ntust.edu.tw.",
         )
+
+        qa_pack = (conference_dir / items[11]["display_transcript"]).read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("Question one. Is this method training-free?", qa_pack)
+        self.assertIn("Question seven. What does the cost table measure?", qa_pack)
+        self.assertIn("General response one. Different setting or condition.", qa_pack)
+        self.assertIn("General response two. Question outside the tested evidence.", qa_pack)
+        self.assertIn("Useful phrase. Please repeat the question.", qa_pack)
 
 
 if __name__ == "__main__":

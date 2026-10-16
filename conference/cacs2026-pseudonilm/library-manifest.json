@@ -95,73 +95,11 @@
         },
         {
           "number": 12,
-          "title": "Is this method training-free?",
-          "audio": "slide-12-is-this-method-training-free.mp3",
-          "spoken_transcript": "slide-12-is-this-method-training-free.txt",
-          "display_transcript": "slide-12-is-this-method-training-free-display.txt"
-        },
-        {
-          "number": 13,
-          "title": "Why does HIPE receive no score?",
-          "audio": "slide-13-why-does-hipe-receive-no-score.mp3",
-          "spoken_transcript": "slide-13-why-does-hipe-receive-no-score.txt",
-          "display_transcript": "slide-13-why-does-hipe-receive-no-score-display.txt"
-        },
-        {
-          "number": 14,
-          "title": "Does this work at a new plant?",
-          "audio": "slide-14-does-this-work-at-a-new-plant.mp3",
-          "spoken_transcript": "slide-14-does-this-work-at-a-new-plant.txt",
-          "display_transcript": "slide-14-does-this-work-at-a-new-plant-display.txt"
-        },
-        {
-          "number": 15,
-          "title": "Why use TECA instead of only F1?",
-          "audio": "slide-15-why-use-teca-instead-of-only-f1.mp3",
-          "spoken_transcript": "slide-15-why-use-teca-instead-of-only-f1.txt",
-          "display_transcript": "slide-15-why-use-teca-instead-of-only-f1-display.txt"
-        },
-        {
-          "number": 16,
-          "title": "Is 0.7 a general standard?",
-          "audio": "slide-16-is-0-7-a-general-standard.mp3",
-          "spoken_transcript": "slide-16-is-0-7-a-general-standard.txt",
-          "display_transcript": "slide-16-is-0-7-a-general-standard-display.txt"
-        },
-        {
-          "number": 17,
-          "title": "Can WELTRON be shared?",
-          "audio": "slide-17-can-weltron-be-shared.mp3",
-          "spoken_transcript": "slide-17-can-weltron-be-shared.txt",
-          "display_transcript": "slide-17-can-weltron-be-shared-display.txt"
-        },
-        {
-          "number": 18,
-          "title": "What does the cost table measure?",
-          "audio": "slide-18-what-does-the-cost-table-measure.mp3",
-          "spoken_transcript": "slide-18-what-does-the-cost-table-measure.txt",
-          "display_transcript": "slide-18-what-does-the-cost-table-measure-display.txt"
-        },
-        {
-          "number": 19,
-          "title": "Different setting or condition",
-          "audio": "slide-19-different-setting-or-condition.mp3",
-          "spoken_transcript": "slide-19-different-setting-or-condition.txt",
-          "display_transcript": "slide-19-different-setting-or-condition-display.txt"
-        },
-        {
-          "number": 20,
-          "title": "Question outside the tested evidence",
-          "audio": "slide-20-question-outside-the-tested-evidence.mp3",
-          "spoken_transcript": "slide-20-question-outside-the-tested-evidence.txt",
-          "display_transcript": "slide-20-question-outside-the-tested-evidence-display.txt"
-        },
-        {
-          "number": 21,
-          "title": "Please repeat the question",
-          "audio": "slide-21-please-repeat-the-question.mp3",
-          "spoken_transcript": "slide-21-please-repeat-the-question.txt",
-          "display_transcript": "slide-21-please-repeat-the-question-display.txt"
+          "title": "Q&A response pack",
+          "audio": "slide-12-q-a-response-pack.mp3",
+          "spoken_transcript": "slide-12-q-a-response-pack.txt",
+          "display_transcript": "slide-12-q-a-response-pack-display.txt",
+          "slide_image": "slides/slide-15.png"
         }
       ]
     },
