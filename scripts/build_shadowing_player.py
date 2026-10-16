@@ -29,11 +29,11 @@ APP_MANIFEST = {
         {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"},
     ],
 }
-SERVICE_WORKER = r'''const CACHE_NAME = 'personal-english-loop-v5';
+SERVICE_WORKER = r'''const CACHE_NAME = 'personal-english-loop-v6';
 const APP_SHELL = [
   './',
   './index.html',
-  './manifest.webmanifest?v=5',
+  './manifest.webmanifest?v=6',
   './icon-180.png',
   './icon-192.png',
   './icon-512.png'
@@ -234,7 +234,7 @@ TEMPLATE = r'''<!doctype html>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Shadow">
-  <link rel="manifest" href="manifest.webmanifest?v=5">
+  <link rel="manifest" href="manifest.webmanifest?v=6">
   <link rel="apple-touch-icon" href="icon-180.png">
   <title>Personal English Loop</title>
   <style>
@@ -389,6 +389,30 @@ TEMPLATE = r'''<!doctype html>
     .slide-image { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; }
     .slide-caption { margin-top: 0.65rem; color: var(--muted); font-size: 0.84rem; line-height: 1.5; }
     .practice-note { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; line-height: 1.6; }
+    .page-navigation {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+      margin-top: 1rem;
+      padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+    }
+    .page-navigation button {
+      min-height: 3.5rem;
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--teal);
+      color: var(--paper);
+      background: var(--teal);
+      font-weight: 750;
+      cursor: pointer;
+    }
+    .page-navigation button:last-child { background: var(--ink); border-color: var(--ink); }
+    .page-navigation button:active:not(:disabled) { transform: translateY(1px); }
+    .page-navigation button:disabled {
+      color: color-mix(in oklch, var(--muted), transparent 20%);
+      background: color-mix(in oklch, var(--paper-deep), transparent 12%);
+      border-color: var(--line);
+      cursor: not-allowed;
+    }
 
     @media (min-width: 48rem) {
       body { padding-left: max(2.5rem, env(safe-area-inset-left)); }
@@ -403,6 +427,7 @@ TEMPLATE = r'''<!doctype html>
     @media (min-width: 68rem) {
       .study-stage:has(.slide-visual:not([hidden])) { grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.85fr); }
       .study-stage:has(.slide-visual:not([hidden])) .transcript { font-size: clamp(1.08rem, 1.45vw, 1.38rem); line-height: 1.68; }
+      .page-navigation { grid-template-columns: repeat(2, minmax(12rem, 16rem)); justify-content: space-between; }
     }
 
     @media (hover: hover) {
@@ -459,7 +484,11 @@ TEMPLATE = r'''<!doctype html>
           </figure>
           <article id="transcript" class="transcript" aria-live="polite"></article>
         </div>
-        <p class="practice-note">快捷鍵：空白鍵播放／暫停，← → 倒退或前進五秒。點選左側可切換下一頁。</p>
+        <p class="practice-note">快捷鍵：空白鍵播放／暫停，← → 倒退或前進五秒。使用下方按鍵切換講稿頁面。</p>
+        <nav class="page-navigation" aria-label="講稿換頁">
+          <button id="previous-item" type="button" disabled>← 上一頁</button>
+          <button id="next-item" type="button">下一頁 →</button>
+        </nav>
       </main>
     </div>
   </div>
@@ -481,6 +510,8 @@ TEMPLATE = r'''<!doctype html>
     const speedButtons = [...document.querySelectorAll('.speed')];
     const repeatAll = document.querySelector('#repeat-all');
     const repeatPage = document.querySelector('#loop');
+    const previousItem = document.querySelector('#previous-item');
+    const nextItem = document.querySelector('#next-item');
     const playerStatus = document.querySelector('#player-status');
     const installButton = document.querySelector('#install-app');
     const installStatus = document.querySelector('#install-status');
@@ -533,6 +564,8 @@ TEMPLATE = r'''<!doctype html>
       document.querySelectorAll('.page-button').forEach((button, buttonIndex) => {
         button.setAttribute('aria-current', buttonIndex === index ? 'true' : 'false');
       });
+      previousItem.disabled = activeIndex === 0;
+      nextItem.disabled = activeIndex === activeItems().length - 1;
       if (shouldFocus) title.scrollIntoView({behavior: 'smooth', block: 'start'});
     }
 
@@ -571,6 +604,12 @@ TEMPLATE = r'''<!doctype html>
       loadItem(0);
     });
     select.addEventListener('change', event => loadItem(Number(event.target.value)));
+    previousItem.addEventListener('click', () => {
+      if (activeIndex > 0) loadItem(activeIndex - 1, true);
+    });
+    nextItem.addEventListener('click', () => {
+      if (activeIndex < activeItems().length - 1) loadItem(activeIndex + 1, true);
+    });
     document.querySelector('#rewind').addEventListener('click', () => { audio.currentTime = Math.max(0, audio.currentTime - 5); });
     repeatPage.addEventListener('change', event => {
       audio.loop = event.target.checked;
