@@ -29,11 +29,11 @@ APP_MANIFEST = {
         {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"},
     ],
 }
-SERVICE_WORKER = r'''const CACHE_NAME = 'personal-english-loop-v7';
+SERVICE_WORKER = r'''const CACHE_NAME = 'personal-english-loop-v8';
 const APP_SHELL = [
   './',
   './index.html',
-  './manifest.webmanifest?v=7',
+  './manifest.webmanifest?v=8',
   './icon-180.png',
   './icon-192.png',
   './icon-512.png'
@@ -234,7 +234,7 @@ TEMPLATE = r'''<!doctype html>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Shadow">
-  <link rel="manifest" href="manifest.webmanifest?v=7">
+  <link rel="manifest" href="manifest.webmanifest?v=8">
   <link rel="apple-touch-icon" href="icon-180.png">
   <title>Personal English Loop</title>
   <style>
@@ -551,27 +551,26 @@ TEMPLATE = r'''<!doctype html>
 
     const sentenceParts = text => text.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [text];
 
-    function updateStickyPlayer(entry) {
+    let stickyFrame = 0;
+
+    function updateStickyPlayer() {
       const stickyTop = parseFloat(getComputedStyle(playerDesk).top) || 0;
-      const isStuck = !entry.isIntersecting && entry.boundingClientRect.top <= stickyTop;
+      const compactEdge = stickyTop + 48;
+      const isStuck = playerSentinel.getBoundingClientRect().top <= compactEdge;
       playerDesk.classList.toggle('is-stuck', isStuck);
     }
 
-    if ('IntersectionObserver' in window) {
-      const stickyTop = parseFloat(getComputedStyle(playerDesk).top) || 0;
-      const stickyObserver = new IntersectionObserver(
-        entries => updateStickyPlayer(entries[0]),
-        {rootMargin: `-${stickyTop}px 0px 0px 0px`, threshold: 0},
-      );
-      stickyObserver.observe(playerSentinel);
-    } else {
-      const updateOnScroll = () => updateStickyPlayer({
-        isIntersecting: playerSentinel.getBoundingClientRect().top > 0,
-        boundingClientRect: playerSentinel.getBoundingClientRect(),
+    function queueStickyUpdate() {
+      if (stickyFrame) return;
+      stickyFrame = requestAnimationFrame(() => {
+        stickyFrame = 0;
+        updateStickyPlayer();
       });
-      window.addEventListener('scroll', updateOnScroll, {passive: true});
-      updateOnScroll();
     }
+
+    window.addEventListener('scroll', queueStickyUpdate, {passive: true});
+    window.addEventListener('resize', queueStickyUpdate, {passive: true});
+    updateStickyPlayer();
 
     function renderTranscript(text) {
       transcript.replaceChildren(...sentenceParts(text).map(sentence => {

@@ -113,9 +113,11 @@ class ShadowingPlayerTest(unittest.TestCase):
         self.assertNotIn('快捷鍵：', html)
         self.assertIn('id="player-sentinel"', html)
         self.assertIn('.player-desk.is-stuck', html)
-        self.assertIn("new IntersectionObserver", html)
+        self.assertIn("requestAnimationFrame", html)
+        self.assertIn("window.addEventListener('scroll', queueStickyUpdate", html)
+        self.assertIn("const compactEdge = stickyTop + 48", html)
         self.assertIn("playerDesk.classList.toggle('is-stuck'", html)
-        self.assertIn('<link rel="manifest" href="manifest.webmanifest?v=7">', html)
+        self.assertIn('<link rel="manifest" href="manifest.webmanifest?v=8">', html)
         self.assertIn('<meta name="apple-mobile-web-app-title" content="Shadow">', html)
         self.assertIn('id="install-app"', html)
         self.assertIn("navigator.serviceWorker.register", html)
@@ -125,7 +127,7 @@ class ShadowingPlayerTest(unittest.TestCase):
         self.assertLessEqual(len(web_manifest["short_name"]), 7)
         self.assertEqual({icon["sizes"] for icon in web_manifest["icons"]}, {"192x192", "512x512"})
         self.assertTrue(all(generated_assets.values()), generated_assets)
-        self.assertIn("personal-english-loop-v7", service_worker)
+        self.assertIn("personal-english-loop-v8", service_worker)
         self.assertNotIn("fetch(", html)
 
 
