@@ -1,6 +1,116 @@
 {
-  "version": 1,
+  "version": 2,
   "collections": [
+    {
+      "id": "automation-2026",
+      "title": "Automation 2026 講稿",
+      "items": [
+        {
+          "number": 1,
+          "title": "Engineering Bounds Constrain Candidate Selection in Industrial NILM",
+          "audio": "automation2026/slide-01-engineering-bounds-constrain-candidate-selection-in-industri.mp3",
+          "spoken_transcript": "automation2026/slide-01-engineering-bounds-constrain-candidate-selection-in-industri.txt",
+          "display_transcript": "automation2026/slide-01-engineering-bounds-constrain-candidate-selection-in-industri-display.txt",
+          "slide_image": "automation2026/slides/slide-1.png"
+        },
+        {
+          "number": 2,
+          "title": "Industrial NILM calibration",
+          "audio": "automation2026/slide-02-industrial-nilm-calibration.mp3",
+          "spoken_transcript": "automation2026/slide-02-industrial-nilm-calibration.txt",
+          "display_transcript": "automation2026/slide-02-industrial-nilm-calibration-display.txt",
+          "slide_image": "automation2026/slides/slide-2.png"
+        },
+        {
+          "number": 3,
+          "title": "Three corpora · nine devices",
+          "audio": "automation2026/slide-03-three-corpora-nine-devices.mp3",
+          "spoken_transcript": "automation2026/slide-03-three-corpora-nine-devices.txt",
+          "display_transcript": "automation2026/slide-03-three-corpora-nine-devices-display.txt",
+          "slide_image": "automation2026/slides/slide-3.png"
+        },
+        {
+          "number": 4,
+          "title": "Common aggregate-only selector",
+          "audio": "automation2026/slide-04-common-aggregate-only-selector.mp3",
+          "spoken_transcript": "automation2026/slide-04-common-aggregate-only-selector.txt",
+          "display_transcript": "automation2026/slide-04-common-aggregate-only-selector-display.txt",
+          "slide_image": "automation2026/slides/slide-4.png"
+        },
+        {
+          "number": 5,
+          "title": "Bounds change two parts of the procedure",
+          "audio": "automation2026/slide-05-bounds-change-two-parts-of-the-procedure.mp3",
+          "spoken_transcript": "automation2026/slide-05-bounds-change-two-parts-of-the-procedure.txt",
+          "display_transcript": "automation2026/slide-05-bounds-change-two-parts-of-the-procedure-display.txt",
+          "slide_image": "automation2026/slides/slide-5.png"
+        },
+        {
+          "number": 6,
+          "title": "Primary outcome: device-balanced MCC",
+          "audio": "automation2026/slide-06-primary-outcome-device-balanced-mcc.mp3",
+          "spoken_transcript": "automation2026/slide-06-primary-outcome-device-balanced-mcc.txt",
+          "display_transcript": "automation2026/slide-06-primary-outcome-device-balanced-mcc-display.txt",
+          "slide_image": "automation2026/slides/slide-6.png"
+        },
+        {
+          "number": 7,
+          "title": "Frozen seed-101 test comparison",
+          "audio": "automation2026/slide-07-frozen-seed-101-test-comparison.mp3",
+          "spoken_transcript": "automation2026/slide-07-frozen-seed-101-test-comparison.txt",
+          "display_transcript": "automation2026/slide-07-frozen-seed-101-test-comparison-display.txt",
+          "slide_image": "automation2026/slides/slide-7.png"
+        },
+        {
+          "number": 8,
+          "title": "Five LLM test seeds",
+          "audio": "automation2026/slide-08-five-llm-test-seeds.mp3",
+          "spoken_transcript": "automation2026/slide-08-five-llm-test-seeds.txt",
+          "display_transcript": "automation2026/slide-08-five-llm-test-seeds-display.txt",
+          "slide_image": "automation2026/slides/slide-8.png"
+        },
+        {
+          "number": 9,
+          "title": "Full compliance is rare without bounds",
+          "audio": "automation2026/slide-09-full-compliance-is-rare-without-bounds.mp3",
+          "spoken_transcript": "automation2026/slide-09-full-compliance-is-rare-without-bounds.txt",
+          "display_transcript": "automation2026/slide-09-full-compliance-is-rare-without-bounds-display.txt",
+          "slide_image": "automation2026/slides/slide-9.png"
+        },
+        {
+          "number": 10,
+          "title": "Post-hoc validation decomposition",
+          "audio": "automation2026/slide-10-post-hoc-validation-decomposition.mp3",
+          "spoken_transcript": "automation2026/slide-10-post-hoc-validation-decomposition.txt",
+          "display_transcript": "automation2026/slide-10-post-hoc-validation-decomposition-display.txt",
+          "slide_image": "automation2026/slides/slide-10.png"
+        },
+        {
+          "number": 11,
+          "title": "What the evidence supports",
+          "audio": "automation2026/slide-11-what-the-evidence-supports.mp3",
+          "spoken_transcript": "automation2026/slide-11-what-the-evidence-supports.txt",
+          "display_transcript": "automation2026/slide-11-what-the-evidence-supports-display.txt",
+          "slide_image": "automation2026/slides/slide-11.png"
+        },
+        {
+          "number": 12,
+          "title": "Future work",
+          "audio": "automation2026/slide-12-future-work.mp3",
+          "spoken_transcript": "automation2026/slide-12-future-work.txt",
+          "display_transcript": "automation2026/slide-12-future-work-display.txt",
+          "slide_image": "automation2026/slides/slide-12.png"
+        },
+        {
+          "number": 13,
+          "title": "Q&A response pack",
+          "audio": "automation2026/slide-13-q-a-response-pack.mp3",
+          "spoken_transcript": "automation2026/slide-13-q-a-response-pack.txt",
+          "display_transcript": "automation2026/slide-13-q-a-response-pack-display.txt",
+          "slide_image": "automation2026/slides/slide-12.png"
+        }
+      ]
+    },
     {
       "id": "conference",
       "title": "研討會講稿",

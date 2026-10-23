@@ -119,7 +119,7 @@ class ShadowingPlayerTest(unittest.TestCase):
         self.assertIn("window.addEventListener('scroll', queueStickyUpdate", html)
         self.assertIn("const compactOffset = playerDesk.classList.contains('is-stuck') ? 108 : 48", html)
         self.assertIn("playerDesk.classList.toggle('is-stuck'", html)
-        self.assertIn('<link rel="manifest" href="manifest.webmanifest?v=11">', html)
+        self.assertIn('<link rel="manifest" href="manifest.webmanifest?v=12">', html)
         self.assertIn('<meta name="apple-mobile-web-app-title" content="Shadow">', html)
         self.assertIn('id="install-app"', html)
         self.assertIn("navigator.serviceWorker.register", html)
@@ -129,7 +129,7 @@ class ShadowingPlayerTest(unittest.TestCase):
         self.assertLessEqual(len(web_manifest["short_name"]), 7)
         self.assertEqual({icon["sizes"] for icon in web_manifest["icons"]}, {"192x192", "512x512"})
         self.assertTrue(all(generated_assets.values()), generated_assets)
-        self.assertIn("personal-english-loop-v11", service_worker)
+        self.assertIn("personal-english-loop-v12", service_worker)
         self.assertNotIn("fetch(", html)
 
     def test_main_builds_the_requested_output(self):
@@ -164,6 +164,37 @@ class ShadowingPlayerTest(unittest.TestCase):
             with mock.patch.object(self.builder, "parse_args", return_value=args):
                 self.assertEqual(self.builder.main(), 0)
             self.assertTrue(output_path.is_file())
+
+    def test_published_player_prefers_automation_and_keeps_cacs(self):
+        player_dir = ROOT / "conference/cacs2026-pseudonilm"
+        manifest = json.loads(
+            (player_dir / "library-manifest.json").read_text(encoding="utf-8")
+        )
+        collections = manifest["collections"]
+
+        self.assertEqual(collections[0]["id"], "automation-2026")
+        self.assertEqual(collections[0]["title"], "Automation 2026 講稿")
+        self.assertEqual(len(collections[0]["items"]), 13)
+        self.assertEqual(collections[0]["items"][0]["number"], 1)
+        self.assertEqual(collections[0]["items"][11]["number"], 12)
+        self.assertEqual(collections[0]["items"][12]["title"], "Q&A response pack")
+        self.assertEqual(collections[1]["id"], "conference")
+        self.assertEqual(len(collections[1]["items"]), 12)
+
+        for item in collections[0]["items"]:
+            self.assertTrue((player_dir / item["audio"]).is_file(), item["audio"])
+            self.assertTrue(
+                (player_dir / item["spoken_transcript"]).is_file(),
+                item["spoken_transcript"],
+            )
+            self.assertTrue(
+                (player_dir / item["display_transcript"]).is_file(),
+                item["display_transcript"],
+            )
+            if item.get("slide_image"):
+                self.assertTrue(
+                    (player_dir / item["slide_image"]).is_file(), item["slide_image"]
+                )
 
 
 if __name__ == "__main__":

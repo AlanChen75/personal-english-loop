@@ -227,7 +227,12 @@ class ConferenceAudioTest(unittest.TestCase):
         manifest = json.loads(
             (conference_dir / "library-manifest.json").read_text(encoding="utf-8")
         )
-        items = manifest["collections"][0]["items"]
+        conference = next(
+            collection
+            for collection in manifest["collections"]
+            if collection["id"] == "conference"
+        )
+        items = conference["items"]
 
         self.assertEqual(items[9]["title"], "Supported claims and limits")
         self.assertEqual(items[10]["number"], 11)

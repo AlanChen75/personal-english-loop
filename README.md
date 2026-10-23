@@ -19,7 +19,8 @@
 
 | 分類 | 內容 | 手機播放器 |
 |---|---|---|
-| 研討會講稿 | CACS 2026 第 1–10 頁 | [開啟研討會講稿](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#conference) |
+| Automation 2026 講稿 | 第 1–12 頁與合併 Q&A，預設優先顯示 | [開啟 Automation 2026](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#automation-2026) |
+| CACS 2026 講稿 | 第 1–10 頁、結尾與合併 Q&A | [開啟 CACS 2026](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#conference) |
 | 自我介紹 | 10 秒、30 秒、60 秒、跟讀、Q&A | [開啟自我介紹](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#about-me) |
 | 每日練習 | Day 1–2 的 slow、natural、跟讀、Q&A、通勤包 | [開啟每日練習](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice) |
 
@@ -66,8 +67,10 @@ personal-english-loop/
 │   └── cacs2026-pseudonilm/
 │       ├── index.html
 │       ├── cacs2026-full-talk.mp3
-│       ├── slide-01...slide-10.mp3
-│       └── slide-01...slide-10.txt
+│       ├── slide-01...slide-12.*
+│       └── automation2026/
+│           ├── automation2026-full-talk.mp3
+│           └── slide-01...slide-13.*
 ├── coach/
 │   ├── CHATGPT_COACH.md
 │   └── coach-index.json
@@ -89,4 +92,4 @@ personal-english-loop/
 
 ## 免費資源
 
-播放器內的自我介紹、Day 01–02 與研討會講稿都使用地端 RTX 3090 上的 Qwen3-TTS 聲音複製模型產生，並統一做響度校正。MP3 儲存在本 repository，手機版入口由 GitHub Pages 免費提供。
+播放器內的自我介紹、Day 01–02、Automation 2026 與 CACS 2026 講稿都使用地端 RTX 3090 上的 Qwen3-TTS 聲音複製模型產生，並統一做響度校正。MP3 儲存在本 repository，手機版入口由 GitHub Pages 免費提供。

@@ -1,0 +1,377 @@
+{
+  "generated_at": "2026-10-23T14:52:29.275286+00:00",
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "generation_mode": "voice_clone_x-vector-only_existing_parameters",
+  "post_processing": "loudnorm I=-16 LUFS, TP=-1.5 dB, LRA=11; no speed change",
+  "source_path": "spoken_segments.json",
+  "source_sha256": "3c6a9066c07e2bcfd109e840ac93793bf697e18eec67ff9590483f600e822d8a",
+  "items": [
+    {
+      "number": 1,
+      "title": "Engineering Bounds Constrain Candidate Selection in Industrial NILM",
+      "audio": "slide-01-engineering-bounds-constrain-candidate-selection-in-industri.mp3",
+      "spoken_transcript": "slide-01-engineering-bounds-constrain-candidate-selection-in-industri.txt",
+      "display_transcript": "slide-01-engineering-bounds-constrain-candidate-selection-in-industri-display.txt",
+      "slide_image": "automation2026/slides/slide-1.png",
+      "raw_duration_seconds": 32.73,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "24000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "32.730000",
+          "size": "393741",
+          "bit_rate": "96239"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "title": "Industrial NILM calibration",
+      "audio": "slide-02-industrial-nilm-calibration.mp3",
+      "spoken_transcript": "slide-02-industrial-nilm-calibration.txt",
+      "display_transcript": "slide-02-industrial-nilm-calibration-display.txt",
+      "slide_image": "automation2026/slides/slide-2.png",
+      "raw_duration_seconds": 47.19,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "24000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "47.190000",
+          "size": "567405",
+          "bit_rate": "96190"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "title": "Three corpora · nine devices",
+      "audio": "slide-03-three-corpora-nine-devices.mp3",
+      "spoken_transcript": "slide-03-three-corpora-nine-devices.txt",
+      "display_transcript": "slide-03-three-corpora-nine-devices-display.txt",
+      "slide_image": "automation2026/slides/slide-3.png",
+      "raw_duration_seconds": 57.06,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "24000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "57.060000",
+          "size": "685773",
+          "bit_rate": "96147"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "title": "Common aggregate-only selector",
+      "audio": "slide-04-common-aggregate-only-selector.mp3",
+      "spoken_transcript": "slide-04-common-aggregate-only-selector.txt",
+      "display_transcript": "slide-04-common-aggregate-only-selector-display.txt",
+      "slide_image": "automation2026/slides/slide-4.png",
+      "raw_duration_seconds": 59.14,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "24000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "59.140000",
+          "size": "710829",
+          "bit_rate": "96155"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "title": "Bounds change two parts of the procedure",
+      "audio": "slide-05-bounds-change-two-parts-of-the-procedure.mp3",
+      "spoken_transcript": "slide-05-bounds-change-two-parts-of-the-procedure.txt",
+      "display_transcript": "slide-05-bounds-change-two-parts-of-the-procedure-display.txt",
+      "slide_image": "automation2026/slides/slide-5.png",
+      "raw_duration_seconds": 55.22,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "24000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "55.220000",
+          "size": "663597",
+          "bit_rate": "96138"
+        }
+      }
+    },
+    {
+      "number": 6,
+      "title": "Primary outcome: device-balanced MCC",
+      "audio": "slide-06-primary-outcome-device-balanced-mcc.mp3",
+      "spoken_transcript": "slide-06-primary-outcome-device-balanced-mcc.txt",
+      "display_transcript": "slide-06-primary-outcome-device-balanced-mcc-display.txt",
+      "slide_image": "automation2026/slides/slide-6.png",
+      "raw_duration_seconds": 57.14,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "24000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "57.140000",
+          "size": "686637",
+          "bit_rate": "96133"
+        }
+      }
+    },
+    {
+      "number": 7,
+      "title": "Frozen seed-101 test comparison",
+      "audio": "slide-07-frozen-seed-101-test-comparison.mp3",
+      "spoken_transcript": "slide-07-frozen-seed-101-test-comparison.txt",
+      "display_transcript": "slide-07-frozen-seed-101-test-comparison-display.txt",
+      "slide_image": "automation2026/slides/slide-7.png",
+      "raw_duration_seconds": 59.49,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "24000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "59.490000",
+          "size": "714861",
+          "bit_rate": "96131"
+        }
+      }
+    },
+    {
+      "number": 8,
+      "title": "Five LLM test seeds",
+      "audio": "slide-08-five-llm-test-seeds.mp3",
+      "spoken_transcript": "slide-08-five-llm-test-seeds.txt",
+      "display_transcript": "slide-08-five-llm-test-seeds-display.txt",
+      "slide_image": "automation2026/slides/slide-8.png",
+      "raw_duration_seconds": 55.3,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "24000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "55.300000",
+          "size": "664749",
+          "bit_rate": "96166"
+        }
+      }
+    },
+    {
+      "number": 9,
+      "title": "Full compliance is rare without bounds",
+      "audio": "slide-09-full-compliance-is-rare-without-bounds.mp3",
+      "spoken_transcript": "slide-09-full-compliance-is-rare-without-bounds.txt",
+      "display_transcript": "slide-09-full-compliance-is-rare-without-bounds-display.txt",
+      "slide_image": "automation2026/slides/slide-9.png",
+      "raw_duration_seconds": 58.21,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "24000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "58.210000",
+          "size": "699597",
+          "bit_rate": "96148"
+        }
+      }
+    },
+    {
+      "number": 10,
+      "title": "Post-hoc validation decomposition",
+      "audio": "slide-10-post-hoc-validation-decomposition.mp3",
+      "spoken_transcript": "slide-10-post-hoc-validation-decomposition.txt",
+      "display_transcript": "slide-10-post-hoc-validation-decomposition-display.txt",
+      "slide_image": "automation2026/slides/slide-10.png",
+      "raw_duration_seconds": 79.36,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "24000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "79.360000",
+          "size": "953325",
+          "bit_rate": "96101"
+        }
+      }
+    },
+    {
+      "number": 11,
+      "title": "What the evidence supports",
+      "audio": "slide-11-what-the-evidence-supports.mp3",
+      "spoken_transcript": "slide-11-what-the-evidence-supports.txt",
+      "display_transcript": "slide-11-what-the-evidence-supports-display.txt",
+      "slide_image": "automation2026/slides/slide-11.png",
+      "raw_duration_seconds": 50.87,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "24000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "50.870000",
+          "size": "611469",
+          "bit_rate": "96161"
+        }
+      }
+    },
+    {
+      "number": 12,
+      "title": "Future work",
+      "audio": "slide-12-future-work.mp3",
+      "spoken_transcript": "slide-12-future-work.txt",
+      "display_transcript": "slide-12-future-work-display.txt",
+      "slide_image": "automation2026/slides/slide-12.png",
+      "raw_duration_seconds": 34.84,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "24000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "34.840000",
+          "size": "419085",
+          "bit_rate": "96230"
+        }
+      }
+    },
+    {
+      "number": 13,
+      "title": "Q&A response pack",
+      "audio": "slide-13-q-a-response-pack.mp3",
+      "spoken_transcript": "slide-13-q-a-response-pack.txt",
+      "display_transcript": "slide-13-q-a-response-pack-display.txt",
+      "slide_image": "automation2026/slides/slide-12.png",
+      "raw_duration_seconds": 203.43,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "24000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "203.430000",
+          "size": "2442285",
+          "bit_rate": "96044"
+        }
+      }
+    }
+  ],
+  "pronunciation_guide": {
+    "audio": "pronunciation-guide.mp3",
+    "spoken_transcript": "pronunciation-guide.txt",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "34.440000",
+        "size": "414189",
+        "bit_rate": "96211"
+      }
+    }
+  },
+  "full_talk": {
+    "audio": "automation2026-full-talk.mp3",
+    "spoken_transcript": "automation2026-full-talk.txt",
+    "display_transcript": "automation2026-full-talk-display.txt",
+    "raw_duration_seconds": 663.05,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "663.050000",
+        "size": "7957773",
+        "bit_rate": "96014"
+      }
+    }
+  }
+}
