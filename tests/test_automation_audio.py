@@ -23,7 +23,7 @@ class AutomationAudioTest(unittest.TestCase):
     def setUpClass(cls):
         cls.pipeline = load_module()
 
-    def test_loads_twelve_slides_and_combines_qa_as_item_thirteen(self):
+    def test_loads_twelve_slides_appendix_and_combines_qa_as_item_fourteen(self):
         payload = {
             "segments": [
                 {
@@ -50,20 +50,44 @@ class AutomationAudioTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             source = Path(directory) / "spoken_segments.json"
             source.write_text(json.dumps(payload), encoding="utf-8")
+            appendix = Path(directory) / "appendix.json"
+            appendix.write_text(
+                json.dumps(
+                    {
+                        "appendices": [
+                            {
+                                "slide": 13,
+                                "title": "How were the numbers calculated?",
+                                "spoken_transcript": "We calculate an MCC for each device.",
+                                "display_transcript": "We calculate an MCC for each device.",
+                            }
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
 
-            tracks = self.pipeline.load_automation_tracks(source)
+            tracks = self.pipeline.load_automation_tracks(source, appendix)
 
-        self.assertEqual(len(tracks), 13)
+        self.assertEqual(len(tracks), 14)
         self.assertEqual([item["number"] for item in tracks[:12]], list(range(1, 13)))
-        self.assertEqual(tracks[-1]["number"], 13)
+        self.assertEqual(tracks[12]["number"], 13)
+        self.assertEqual(tracks[12]["kind"], "appendix")
+        self.assertEqual(
+            tracks[12]["slide_image"], "automation2026/slides/slide-13.png"
+        )
+        self.assertEqual(tracks[-1]["number"], 14)
         self.assertEqual(tracks[-1]["title"], "Q&A response pack")
+        self.assertEqual(
+            tracks[-1]["slide_image"], "automation2026/slides/slide-13.png"
+        )
         self.assertIn("Question one. What is MCC?", tracks[-1]["script"])
         self.assertIn("General response.", tracks[-1]["script"])
 
     def test_uses_tts_pronunciations_without_changing_display_terms(self):
         source = (
-            "NILM compares LLM and LHS by MCC on IMDELD, Case 1, and WELTRON "
-            "in seed-one-oh-one."
+            "NILM compares LLM and LHS by MCC and five MCCs on IMDELD, Case 1, "
+            "and WELTRON in seed-one-oh-one. TP, TN, FP, and FN are counted."
         )
 
         spoken = self.pipeline.prepare_spoken_text(source)
@@ -72,13 +96,16 @@ class AutomationAudioTest(unittest.TestCase):
         self.assertIn("ell ell em", spoken)
         self.assertIn("ell aitch ess", spoken)
         self.assertIn("em see see", spoken)
+        self.assertIn("five em see see values", spoken)
+        self.assertIn("tee pee, tee en, eff pee, and eff en", spoken)
         self.assertIn("eye em dee ee el dee", spoken)
         self.assertIn("Case one", spoken)
         self.assertIn("well-tron", spoken)
         self.assertIn("seed one oh one", spoken)
         self.assertEqual(
             self.pipeline.prepare_display_text(source),
-            "NILM compares LLM and LHS by MCC on IMDELD, Case 1, and WELTRON in seed 101.",
+            "NILM compares LLM and LHS by MCC and five MCCs on IMDELD, Case 1, and "
+            "WELTRON in seed 101. TP, TN, FP, and FN are counted.",
         )
 
     def test_display_text_uses_digits_for_reported_results(self):
@@ -130,10 +157,18 @@ class AutomationAudioTest(unittest.TestCase):
             },
             {
                 "number": 13,
+                "title": "Calculation Q&A appendix",
+                "script": "MCC appendix answer.",
+                "display_text": "MCC appendix answer.",
+                "slide_image": "automation2026/slides/slide-13.png",
+                "kind": "appendix",
+            },
+            {
+                "number": 14,
                 "title": "Q&A response pack",
                 "script": "LLM answer.",
                 "display_text": "LLM answer.",
-                "slide_image": "automation2026/slides/slide-12.png",
+                "slide_image": "automation2026/slides/slide-13.png",
                 "kind": "qa",
             },
         ]
@@ -178,12 +213,17 @@ class AutomationAudioTest(unittest.TestCase):
                 )
 
             manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-            self.assertEqual(len(manifest["items"]), 2)
+            self.assertEqual(len(manifest["items"]), 3)
             self.assertEqual(manifest["items"][0]["number"], 1)
             self.assertEqual(manifest["items"][1]["number"], 13)
+            self.assertEqual(manifest["items"][2]["number"], 14)
             self.assertTrue((output / "automation2026-full-talk.mp3").is_file())
             self.assertTrue((output / "automation2026-full-talk.txt").is_file())
             self.assertTrue((output / "automation2026-full-talk-display.txt").is_file())
+            self.assertNotIn(
+                "appendix answer",
+                (output / "automation2026-full-talk.txt").read_text(),
+            )
             self.assertNotIn("LLM answer", (output / "automation2026-full-talk.txt").read_text())
 
     def test_rejects_incomplete_sources_and_missing_wav_chunks(self):

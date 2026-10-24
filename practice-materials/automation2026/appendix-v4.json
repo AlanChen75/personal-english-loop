@@ -1,0 +1,12 @@
+{
+  "version": "4.0",
+  "source_deck": "automation2026_13min_deck_v4.pptx",
+  "appendices": [
+    {
+      "slide": 13,
+      "title": "Q&A: How were the numbers calculated?",
+      "spoken_transcript": "We compare predicted and true on and off states for each device. We count the four outcomes, calculate an MCC for each device, and average the nine device scores. The configuration is locked before test labels are used. The five-seed result averages five macro MCCs. The compliance figures are direct fractions. The validation decomposition is a post-hoc diagnostic, and its oracle ceiling is not a deployable selector.",
+      "display_transcript": "We compare predicted and true on/off states for each device. We count the 4 outcomes, calculate an MCC for each device, and average the 9 device scores. The configuration is locked before test labels are used. The 5-seed result averages 5 macro MCCs. The compliance figures are direct fractions. The validation decomposition is a post-hoc diagnostic, and its oracle ceiling is not a deployable selector."
+    }
+  ]
+}

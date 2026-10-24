@@ -10,7 +10,7 @@
 
 - 可安裝為手機桌面 Web App
 - 四類教材：Automation 2026、CACS 2026、自我介紹、每日練習
-- Automation 2026 是預設分類，收錄第 1–12 頁正式講稿與第 13 段完整 Q&A Response Pack
+- Automation 2026 是預設分類，收錄第 1–12 頁正式講稿、第 13 頁計算方式備答與第 14 段完整 Q&A Response Pack
 - CACS 2026 保留原分類，依序收錄 1–10 正式講稿、11 結尾與 Q&A 畫面、12 一份完整 Q&A Response Pack
 - 兩套研討會講稿都同步顯示投影片、逐頁音檔與英文講稿
 - 自我介紹與每日教材同步顯示音檔與英文逐字稿
@@ -36,15 +36,16 @@
 - `pronunciation-guide.mp3`：專有名詞發音
 - `pronunciation-guide.txt`：專有名詞文字稿
 - `automation2026/automation2026-full-talk.mp3`：Automation 2026 完整講稿
-- `automation2026/slide-01...slide-13.*`：Automation 2026 逐頁講稿、合併 Q&A 與音檔
-- `automation2026/slides/slide-1...slide-12.png`：Automation 2026 投影片圖片
+- `automation2026/slide-01...slide-14.*`：Automation 2026 逐頁講稿、計算方式備答、合併 Q&A 與音檔
+- `automation2026/slides/slide-1...slide-13.png`：Automation 2026 投影片圖片
+- `practice-materials/automation2026/appendix-v4.json`：第 13 頁可重生講稿與顯示字稿
 - `automation2026/generation-manifest.json`：Automation 2026 音訊生成紀錄
 
 新增音檔由地端 RTX 3090 的 Qwen3-TTS 複製聲音產生。音檔為 24 kHz、單聲道、96 kbps MP3，輸出響度目標為 -16 LUFS，沒有改變原始生成語速。
 
 ## Automation 2026 更新流程
 
-1. `python3 scripts/generate_automation_audio.py --prepare --work-root <work-dir>` 建立固定的 x-vector 工作清單。
+1. `python3 scripts/generate_automation_audio.py --prepare --work-root <work-dir>` 從 12 頁正式講稿與 `appendix-v4.json` 建立固定的 x-vector 工作清單。
 2. 在 `ac-3090` 以 `scripts/remote_qwen_clone_worker.py` 和既有參考聲音執行工作清單，參數維持 `--max-new-tokens 512 --x-vector-only`。
 3. `python3 scripts/generate_automation_audio.py --assemble --work-root <work-dir> --xvector-cache <wav-cache> --output-root <output-dir>` 合併、正規化並輸出 MP3。
 4. 將生成檔與投影片圖片放進 `automation2026/`，更新 `library-manifest.json` 後執行 `scripts/build_shadowing_player.py`。

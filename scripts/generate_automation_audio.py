@@ -36,12 +36,18 @@ DEFAULT_SOURCE = Path(
     "/Users/user/Desktop/NILM+LLM/automation2026-nilm-llm/"
     "presentation/tts_13min_v3/spoken_segments.json"
 )
+DEFAULT_APPENDIX_SOURCE = ROOT / "practice-materials/automation2026/appendix-v4.json"
 DEFAULT_REF_AUDIO_SSH = "ac-3090:/home/ac3090/alan_voice.wav"
 PRONUNCIATION_REPLACEMENTS = (
     (re.compile(r"\bNILM\b"), "nil-em"),
     (re.compile(r"\bLLM\b"), "ell ell em"),
     (re.compile(r"\bLHS\b"), "ell aitch ess"),
+    (re.compile(r"\bMCCs\b"), "em see see values"),
     (re.compile(r"\bMCC\b"), "em see see"),
+    (re.compile(r"\bTP\b"), "tee pee"),
+    (re.compile(r"\bTN\b"), "tee en"),
+    (re.compile(r"\bFP\b"), "eff pee"),
+    (re.compile(r"\bFN\b"), "eff en"),
     (re.compile(r"\bIMDELD\b"), "eye em dee ee el dee"),
     (re.compile(r"\bWELTRON\b"), "well-tron"),
     (re.compile(r"\bCase 1\b", re.IGNORECASE), "Case one"),
@@ -137,7 +143,9 @@ def _qa_number_word(index: int) -> str:
     return words[index]
 
 
-def load_automation_tracks(source_path: Path) -> list[dict]:
+def load_automation_tracks(
+    source_path: Path, appendix_path: Path | None = None
+) -> list[dict]:
     payload = json.loads(source_path.read_text(encoding="utf-8"))
     segments = payload.get("segments")
     qa_answers = payload.get("qa_answers")
@@ -165,6 +173,30 @@ def load_automation_tracks(source_path: Path) -> list[dict]:
             }
         )
 
+    if appendix_path is not None:
+        appendix_payload = json.loads(appendix_path.read_text(encoding="utf-8"))
+        appendices = appendix_payload.get("appendices")
+        if not isinstance(appendices, list) or not appendices:
+            raise ValueError("Automation appendix source must contain appendices")
+        for appendix in appendices:
+            expected = len(tracks) + 1
+            if not isinstance(appendix, dict) or appendix.get("slide") != expected:
+                raise ValueError("Automation appendices must continue the slide sequence")
+            script = _require_text(appendix, "spoken_transcript")
+            display_source = appendix.get("display_transcript", script)
+            if not isinstance(display_source, str) or not display_source.strip():
+                raise ValueError("Every appendix needs a display transcript")
+            tracks.append(
+                {
+                    "number": expected,
+                    "title": _require_text(appendix, "title"),
+                    "script": script,
+                    "display_text": prepare_display_text(display_source.strip()),
+                    "slide_image": f"automation2026/slides/slide-{expected}.png",
+                    "kind": "appendix",
+                }
+            )
+
     qa_spoken = []
     qa_display = []
     numbered = 0
@@ -185,11 +217,11 @@ def load_automation_tracks(source_path: Path) -> list[dict]:
 
     tracks.append(
         {
-            "number": 13,
+            "number": len(tracks) + 1,
             "title": "Q&A response pack",
             "script": "\n\n".join(qa_spoken),
             "display_text": "\n\n".join(qa_display),
-            "slide_image": "automation2026/slides/slide-12.png",
+            "slide_image": tracks[-1]["slide_image"],
             "kind": "qa",
         }
     )
@@ -255,7 +287,13 @@ def write_plan(plan: dict, work_root: Path) -> tuple[Path, Path]:
 
 
 def assemble_plan(
-    *, plan: dict, cache_dir: Path, work_root: Path, output_root: Path, source_path: Path
+    *,
+    plan: dict,
+    cache_dir: Path,
+    work_root: Path,
+    output_root: Path,
+    source_path: Path,
+    appendix_path: Path | None = None,
 ) -> Path:
     missing = sorted(
         {name for track in plan["tracks"] for name in track["chunks"]}
@@ -273,6 +311,22 @@ def assemble_plan(
         "post_processing": "loudnorm I=-16 LUFS, TP=-1.5 dB, LRA=11; no speed change",
         "source_path": source_path.name,
         "source_sha256": hashlib.sha256(source_path.read_bytes()).hexdigest(),
+        "source_inputs": [
+            {
+                "path": source_path.name,
+                "sha256": hashlib.sha256(source_path.read_bytes()).hexdigest(),
+            },
+            *(
+                [
+                    {
+                        "path": appendix_path.name,
+                        "sha256": hashlib.sha256(appendix_path.read_bytes()).hexdigest(),
+                    }
+                ]
+                if appendix_path is not None
+                else []
+            ),
+        ],
         "items": [],
     }
     full_talk_parts = []
@@ -345,6 +399,7 @@ def assemble_plan(
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
+    parser.add_argument("--appendix-source", type=Path, default=DEFAULT_APPENDIX_SOURCE)
     parser.add_argument("--work-root", type=Path, default=ROOT / "work/automation2026-audio")
     parser.add_argument("--output-root", type=Path, default=ROOT / "outputs/automation2026-audio")
     parser.add_argument("--max-chars", type=int, default=140)
@@ -357,7 +412,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
-    tracks = load_automation_tracks(args.source)
+    tracks = load_automation_tracks(args.source, args.appendix_source)
     plan = build_xvector_plan(tracks, max_chars=args.max_chars)
     plan_path, jobs_path = write_plan(plan, args.work_root)
     print(f"Plan: {plan_path}")
@@ -373,6 +428,7 @@ def main() -> int:
         work_root=args.work_root,
         output_root=args.output_root,
         source_path=args.source,
+        appendix_path=args.appendix_source,
     )
     print(f"Done: {manifest}")
     return 0

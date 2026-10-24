@@ -1,10 +1,20 @@
 {
-  "generated_at": "2026-10-23T14:52:29.275286+00:00",
+  "generated_at": "2026-10-24T02:58:54.364272+00:00",
   "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "generation_mode": "voice_clone_x-vector-only_existing_parameters",
   "post_processing": "loudnorm I=-16 LUFS, TP=-1.5 dB, LRA=11; no speed change",
   "source_path": "spoken_segments.json",
   "source_sha256": "3c6a9066c07e2bcfd109e840ac93793bf697e18eec67ff9590483f600e822d8a",
+  "source_inputs": [
+    {
+      "path": "spoken_segments.json",
+      "sha256": "3c6a9066c07e2bcfd109e840ac93793bf697e18eec67ff9590483f600e822d8a"
+    },
+    {
+      "path": "appendix-v4.json",
+      "sha256": "a0a66008427860aab08f88c18b04d833f0e75399b456efd80f4e5550568f4cd3"
+    }
+  ],
   "items": [
     {
       "number": 1,
@@ -308,12 +318,12 @@
     },
     {
       "number": 13,
-      "title": "Q&A response pack",
-      "audio": "slide-13-q-a-response-pack.mp3",
-      "spoken_transcript": "slide-13-q-a-response-pack.txt",
-      "display_transcript": "slide-13-q-a-response-pack-display.txt",
-      "slide_image": "automation2026/slides/slide-12.png",
-      "raw_duration_seconds": 203.43,
+      "title": "Q&A: How were the numbers calculated?",
+      "audio": "slide-13-q-a-how-were-the-numbers-calculated.mp3",
+      "spoken_transcript": "slide-13-q-a-how-were-the-numbers-calculated.txt",
+      "display_transcript": "slide-13-q-a-how-were-the-numbers-calculated-display.txt",
+      "slide_image": "automation2026/slides/slide-13.png",
+      "raw_duration_seconds": 36.44,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -325,9 +335,34 @@
           }
         ],
         "format": {
-          "duration": "203.430000",
-          "size": "2442285",
-          "bit_rate": "96044"
+          "duration": "36.440000",
+          "size": "438381",
+          "bit_rate": "96241"
+        }
+      }
+    },
+    {
+      "number": 14,
+      "title": "Q&A response pack",
+      "audio": "slide-14-q-a-response-pack.mp3",
+      "spoken_transcript": "slide-14-q-a-response-pack.txt",
+      "display_transcript": "slide-14-q-a-response-pack-display.txt",
+      "slide_image": "automation2026/slides/slide-13.png",
+      "raw_duration_seconds": 208.63,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "24000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "208.630000",
+          "size": "2504493",
+          "bit_rate": "96035"
         }
       }
     }

@@ -19,7 +19,7 @@
 
 | 分類 | 內容 | 手機播放器 |
 |---|---|---|
-| Automation 2026 講稿 | 第 1–12 頁與合併 Q&A，預設優先顯示 | [開啟 Automation 2026](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#automation-2026) |
+| Automation 2026 講稿 | 第 1–12 頁、計算方式備用頁與合併 Q&A，預設優先顯示 | [開啟 Automation 2026](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#automation-2026) |
 | CACS 2026 講稿 | 第 1–10 頁、結尾與合併 Q&A | [開啟 CACS 2026](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#conference) |
 | 自我介紹 | 10 秒、30 秒、60 秒、跟讀、Q&A | [開啟自我介紹](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#about-me) |
 | 每日練習 | Day 1–2 的 slow、natural、跟讀、Q&A、通勤包 | [開啟每日練習](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice) |
@@ -70,7 +70,7 @@ personal-english-loop/
 │       ├── slide-01...slide-12.*
 │       └── automation2026/
 │           ├── automation2026-full-talk.mp3
-│           └── slide-01...slide-13.*
+│           └── slide-01...slide-14.*
 ├── coach/
 │   ├── CHATGPT_COACH.md
 │   └── coach-index.json
