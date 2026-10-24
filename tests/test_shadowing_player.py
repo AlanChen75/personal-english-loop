@@ -119,7 +119,7 @@ class ShadowingPlayerTest(unittest.TestCase):
         self.assertIn("window.addEventListener('scroll', queueStickyUpdate", html)
         self.assertIn("const compactOffset = playerDesk.classList.contains('is-stuck') ? 108 : 48", html)
         self.assertIn("playerDesk.classList.toggle('is-stuck'", html)
-        self.assertIn('<link rel="manifest" href="manifest.webmanifest?v=13">', html)
+        self.assertIn('<link rel="manifest" href="manifest.webmanifest?v=14">', html)
         self.assertIn('<meta name="apple-mobile-web-app-title" content="Shadow">', html)
         self.assertIn('id="install-app"', html)
         self.assertIn("navigator.serviceWorker.register", html)
@@ -129,7 +129,7 @@ class ShadowingPlayerTest(unittest.TestCase):
         self.assertLessEqual(len(web_manifest["short_name"]), 7)
         self.assertEqual({icon["sizes"] for icon in web_manifest["icons"]}, {"192x192", "512x512"})
         self.assertTrue(all(generated_assets.values()), generated_assets)
-        self.assertIn("personal-english-loop-v13", service_worker)
+        self.assertIn("personal-english-loop-v14", service_worker)
         self.assertNotIn("fetch(", html)
 
     def test_main_builds_the_requested_output(self):
@@ -174,16 +174,21 @@ class ShadowingPlayerTest(unittest.TestCase):
 
         self.assertEqual(collections[0]["id"], "automation-2026")
         self.assertEqual(collections[0]["title"], "Automation 2026 講稿")
-        self.assertEqual(len(collections[0]["items"]), 14)
+        self.assertEqual(len(collections[0]["items"]), 15)
         self.assertEqual(collections[0]["items"][0]["number"], 1)
         self.assertEqual(collections[0]["items"][11]["number"], 12)
         self.assertEqual(
             collections[0]["items"][12]["title"],
-            "Q&A: How were the numbers calculated?",
+            "Thank you and Q&A",
         )
         self.assertEqual(collections[0]["items"][12]["number"], 13)
-        self.assertEqual(collections[0]["items"][13]["title"], "Q&A response pack")
+        self.assertEqual(
+            collections[0]["items"][13]["title"],
+            "Q&A: How were the numbers calculated?",
+        )
         self.assertEqual(collections[0]["items"][13]["number"], 14)
+        self.assertEqual(collections[0]["items"][14]["title"], "Q&A response pack")
+        self.assertEqual(collections[0]["items"][14]["number"], 15)
         self.assertEqual(collections[1]["id"], "conference")
         self.assertEqual(len(collections[1]["items"]), 12)
 

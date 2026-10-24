@@ -23,7 +23,7 @@ class AutomationAudioTest(unittest.TestCase):
     def setUpClass(cls):
         cls.pipeline = load_module()
 
-    def test_loads_twelve_slides_appendix_and_combines_qa_as_item_fourteen(self):
+    def test_applies_overrides_adds_closing_then_appendix_and_qa(self):
         payload = {
             "segments": [
                 {
@@ -50,13 +50,28 @@ class AutomationAudioTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             source = Path(directory) / "spoken_segments.json"
             source.write_text(json.dumps(payload), encoding="utf-8")
-            appendix = Path(directory) / "appendix.json"
-            appendix.write_text(
+            extension = Path(directory) / "extension.json"
+            extension.write_text(
                 json.dumps(
                     {
-                        "appendices": [
+                        "overrides": [
+                            {
+                                "slide": 1,
+                                "spoken_transcript": "Opening with affiliation.",
+                                "display_transcript": "Opening with affiliation.",
+                            }
+                        ],
+                        "additional_slides": [
                             {
                                 "slide": 13,
+                                "title": "Thank you and Q&A",
+                                "spoken_transcript": "Thank you. Email d11351004@mail.ntust.edu.tw.",
+                                "display_transcript": "Thank you. Email d11351004@mail.ntust.edu.tw.",
+                            }
+                        ],
+                        "appendices": [
+                            {
+                                "slide": 14,
                                 "title": "How were the numbers calculated?",
                                 "spoken_transcript": "We calculate an MCC for each device.",
                                 "display_transcript": "We calculate an MCC for each device.",
@@ -67,19 +82,23 @@ class AutomationAudioTest(unittest.TestCase):
                 encoding="utf-8",
             )
 
-            tracks = self.pipeline.load_automation_tracks(source, appendix)
+            tracks = self.pipeline.load_automation_tracks(source, extension)
 
-        self.assertEqual(len(tracks), 14)
+        self.assertEqual(len(tracks), 15)
         self.assertEqual([item["number"] for item in tracks[:12]], list(range(1, 13)))
+        self.assertEqual(tracks[0]["script"], "Opening with affiliation.")
         self.assertEqual(tracks[12]["number"], 13)
-        self.assertEqual(tracks[12]["kind"], "appendix")
+        self.assertEqual(tracks[12]["kind"], "slide")
+        self.assertEqual(tracks[12]["title"], "Thank you and Q&A")
         self.assertEqual(
             tracks[12]["slide_image"], "automation2026/slides/slide-13.png"
         )
-        self.assertEqual(tracks[-1]["number"], 14)
+        self.assertEqual(tracks[13]["number"], 14)
+        self.assertEqual(tracks[13]["kind"], "appendix")
+        self.assertEqual(tracks[-1]["number"], 15)
         self.assertEqual(tracks[-1]["title"], "Q&A response pack")
         self.assertEqual(
-            tracks[-1]["slide_image"], "automation2026/slides/slide-13.png"
+            tracks[-1]["slide_image"], "automation2026/slides/slide-14.png"
         )
         self.assertIn("Question one. What is MCC?", tracks[-1]["script"])
         self.assertIn("General response.", tracks[-1]["script"])
@@ -107,6 +126,16 @@ class AutomationAudioTest(unittest.TestCase):
             "NILM compares LLM and LHS by MCC and five MCCs on IMDELD, Case 1, and "
             "WELTRON in seed 101. TP, TN, FP, and FN are counted.",
         )
+
+    def test_speaks_email_address_but_keeps_visible_address(self):
+        source = "Please email me at d11351004@mail.ntust.edu.tw."
+
+        self.assertEqual(
+            self.pipeline.prepare_spoken_text(source),
+            "Please email me at d one one three five one zero zero four at mail dot "
+            "N T U S T dot E D U dot T W.",
+        )
+        self.assertEqual(self.pipeline.prepare_display_text(source), source)
 
     def test_display_text_uses_digits_for_reported_results(self):
         source = (

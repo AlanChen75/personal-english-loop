@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T02:58:54.364272+00:00",
+  "generated_at": "2026-10-24T03:33:09.097226+00:00",
   "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "generation_mode": "voice_clone_x-vector-only_existing_parameters",
   "post_processing": "loudnorm I=-16 LUFS, TP=-1.5 dB, LRA=11; no speed change",
@@ -11,8 +11,8 @@
       "sha256": "3c6a9066c07e2bcfd109e840ac93793bf697e18eec67ff9590483f600e822d8a"
     },
     {
-      "path": "appendix-v4.json",
-      "sha256": "a0a66008427860aab08f88c18b04d833f0e75399b456efd80f4e5550568f4cd3"
+      "path": "extension-v5.json",
+      "sha256": "7aaa2748154086dfbf8b8f32ffb258bad8c4d9f2732685c8e938732d0397c2e5"
     }
   ],
   "items": [
@@ -23,7 +23,7 @@
       "spoken_transcript": "slide-01-engineering-bounds-constrain-candidate-selection-in-industri.txt",
       "display_transcript": "slide-01-engineering-bounds-constrain-candidate-selection-in-industri-display.txt",
       "slide_image": "automation2026/slides/slide-1.png",
-      "raw_duration_seconds": 32.73,
+      "raw_duration_seconds": 38.52,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -35,9 +35,9 @@
           }
         ],
         "format": {
-          "duration": "32.730000",
-          "size": "393741",
-          "bit_rate": "96239"
+          "duration": "38.520000",
+          "size": "463149",
+          "bit_rate": "96188"
         }
       }
     },
@@ -318,11 +318,36 @@
     },
     {
       "number": 13,
-      "title": "Q&A: How were the numbers calculated?",
-      "audio": "slide-13-q-a-how-were-the-numbers-calculated.mp3",
-      "spoken_transcript": "slide-13-q-a-how-were-the-numbers-calculated.txt",
-      "display_transcript": "slide-13-q-a-how-were-the-numbers-calculated-display.txt",
+      "title": "Thank you and Q&A",
+      "audio": "slide-13-thank-you-and-q-a.mp3",
+      "spoken_transcript": "slide-13-thank-you-and-q-a.txt",
+      "display_transcript": "slide-13-thank-you-and-q-a-display.txt",
       "slide_image": "automation2026/slides/slide-13.png",
+      "raw_duration_seconds": 19.31,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "24000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "19.310000",
+          "size": "232749",
+          "bit_rate": "96426"
+        }
+      }
+    },
+    {
+      "number": 14,
+      "title": "Q&A: How were the numbers calculated?",
+      "audio": "slide-14-q-a-how-were-the-numbers-calculated.mp3",
+      "spoken_transcript": "slide-14-q-a-how-were-the-numbers-calculated.txt",
+      "display_transcript": "slide-14-q-a-how-were-the-numbers-calculated-display.txt",
+      "slide_image": "automation2026/slides/slide-14.png",
       "raw_duration_seconds": 36.44,
       "probe": {
         "programs": [],
@@ -342,12 +367,12 @@
       }
     },
     {
-      "number": 14,
+      "number": 15,
       "title": "Q&A response pack",
-      "audio": "slide-14-q-a-response-pack.mp3",
-      "spoken_transcript": "slide-14-q-a-response-pack.txt",
-      "display_transcript": "slide-14-q-a-response-pack-display.txt",
-      "slide_image": "automation2026/slides/slide-13.png",
+      "audio": "slide-15-q-a-response-pack.mp3",
+      "spoken_transcript": "slide-15-q-a-response-pack.txt",
+      "display_transcript": "slide-15-q-a-response-pack-display.txt",
+      "slide_image": "automation2026/slides/slide-14.png",
       "raw_duration_seconds": 208.63,
       "probe": {
         "programs": [],
@@ -391,7 +416,7 @@
     "audio": "automation2026-full-talk.mp3",
     "spoken_transcript": "automation2026-full-talk.txt",
     "display_transcript": "automation2026-full-talk-display.txt",
-    "raw_duration_seconds": 663.05,
+    "raw_duration_seconds": 689.65,
     "probe": {
       "programs": [],
       "stream_groups": [],
@@ -403,9 +428,9 @@
         }
       ],
       "format": {
-        "duration": "663.050000",
-        "size": "7957773",
-        "bit_rate": "96014"
+        "duration": "689.650000",
+        "size": "8276877",
+        "bit_rate": "96012"
       }
     }
   }

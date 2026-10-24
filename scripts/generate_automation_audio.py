@@ -36,9 +36,13 @@ DEFAULT_SOURCE = Path(
     "/Users/user/Desktop/NILM+LLM/automation2026-nilm-llm/"
     "presentation/tts_13min_v3/spoken_segments.json"
 )
-DEFAULT_APPENDIX_SOURCE = ROOT / "practice-materials/automation2026/appendix-v4.json"
+DEFAULT_APPENDIX_SOURCE = ROOT / "practice-materials/automation2026/extension-v5.json"
 DEFAULT_REF_AUDIO_SSH = "ac-3090:/home/ac3090/alan_voice.wav"
 PRONUNCIATION_REPLACEMENTS = (
+    (
+        re.compile(r"\bd11351004@mail\.ntust\.edu\.tw\b", re.IGNORECASE),
+        "d one one three five one zero zero four at mail dot N T U S T dot E D U dot T W",
+    ),
     (re.compile(r"\bNILM\b"), "nil-em"),
     (re.compile(r"\bLLM\b"), "ell ell em"),
     (re.compile(r"\bLHS\b"), "ell aitch ess"),
@@ -154,18 +158,34 @@ def load_automation_tracks(
     if not isinstance(qa_answers, list) or not qa_answers:
         raise ValueError("Automation source must contain Q&A answers")
 
+    extension_payload = {}
+    if appendix_path is not None:
+        extension_payload = json.loads(appendix_path.read_text(encoding="utf-8"))
+    overrides = extension_payload.get("overrides", [])
+    if not isinstance(overrides, list):
+        raise ValueError("Automation extension overrides must be a list")
+    overrides_by_slide = {}
+    for override in overrides:
+        if not isinstance(override, dict) or not isinstance(override.get("slide"), int):
+            raise ValueError("Every Automation override needs an integer slide")
+        slide_number = override["slide"]
+        if slide_number < 1 or slide_number > 12 or slide_number in overrides_by_slide:
+            raise ValueError("Automation overrides must target unique slides from 1 to 12")
+        overrides_by_slide[slide_number] = override
+
     tracks = []
     for expected, segment in enumerate(segments, start=1):
         if not isinstance(segment, dict) or segment.get("slide") != expected:
             raise ValueError("Automation slides must be consecutive from 1 to 12")
-        script = _require_text(segment, "spoken_transcript")
-        display_source = segment.get("display_transcript", script)
+        effective = {**segment, **overrides_by_slide.get(expected, {})}
+        script = _require_text(effective, "spoken_transcript")
+        display_source = effective.get("display_transcript", script)
         if not isinstance(display_source, str) or not display_source.strip():
             raise ValueError("Every slide needs a display transcript")
         tracks.append(
             {
                 "number": expected,
-                "title": _require_text(segment, "title"),
+                "title": _require_text(effective, "title"),
                 "script": script,
                 "display_text": prepare_display_text(display_source.strip()),
                 "slide_image": f"automation2026/slides/slide-{expected}.png",
@@ -174,10 +194,31 @@ def load_automation_tracks(
         )
 
     if appendix_path is not None:
-        appendix_payload = json.loads(appendix_path.read_text(encoding="utf-8"))
-        appendices = appendix_payload.get("appendices")
+        additional_slides = extension_payload.get("additional_slides", [])
+        if not isinstance(additional_slides, list):
+            raise ValueError("Automation extension additional_slides must be a list")
+        for additional in additional_slides:
+            expected = len(tracks) + 1
+            if not isinstance(additional, dict) or additional.get("slide") != expected:
+                raise ValueError("Automation additional slides must continue the slide sequence")
+            script = _require_text(additional, "spoken_transcript")
+            display_source = additional.get("display_transcript", script)
+            if not isinstance(display_source, str) or not display_source.strip():
+                raise ValueError("Every additional slide needs a display transcript")
+            tracks.append(
+                {
+                    "number": expected,
+                    "title": _require_text(additional, "title"),
+                    "script": script,
+                    "display_text": prepare_display_text(display_source.strip()),
+                    "slide_image": f"automation2026/slides/slide-{expected}.png",
+                    "kind": "slide",
+                }
+            )
+
+        appendices = extension_payload.get("appendices")
         if not isinstance(appendices, list) or not appendices:
-            raise ValueError("Automation appendix source must contain appendices")
+            raise ValueError("Automation extension source must contain appendices")
         for appendix in appendices:
             expected = len(tracks) + 1
             if not isinstance(appendix, dict) or appendix.get("slide") != expected:

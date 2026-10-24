@@ -1,0 +1,32 @@
+{
+  "version": "5.0",
+  "source_deck": "automation2026_13min_deck_v5.pptx",
+  "overrides": [
+    {
+      "slide": 1,
+      "spoken_transcript": "Good morning. I am Chung-Kuang Chen from National Taiwan University of Science and Technology. In industrial non-intrusive load monitoring, calibration labels are often scarce. We ask whether an LLM proposes more useful calibration candidates than structured sampling under a small evaluation budget, and how engineering bounds change the answer. Our result is conditional: the relative advantage depends on bounds and on how performance is summarized.",
+      "display_transcript": "Good morning. I am Chung-Kuang Chen from National Taiwan University of Science and Technology. In industrial non-intrusive load monitoring, calibration labels are often scarce. We ask whether an LLM proposes more useful calibration candidates than structured sampling under a small evaluation budget, and how engineering bounds change the answer. Our result is conditional: the relative advantage depends on bounds and on how performance is summarized."
+    },
+    {
+      "slide": 12,
+      "spoken_transcript": "The next step is independent controlled validation. We would specify device states, physical behavior, and a feasible region independently of the generators. Then we would test correct, boundary-adjacent, and misspecified bounds while separating candidate restrictions from reconstruction caps. That would show when bounds help, when generation adds value, and when the procedure fails. For now, assess bounds, the selector, and a simple baseline together.",
+      "display_transcript": "The next step is independent controlled validation. We would specify device states, physical behavior, and a feasible region independently of the generators. Then we would test correct, boundary-adjacent, and misspecified bounds while separating candidate restrictions from reconstruction caps. That would show when bounds help, when generation adds value, and when the procedure fails. For now, assess bounds, the selector, and a simple baseline together."
+    }
+  ],
+  "additional_slides": [
+    {
+      "slide": 13,
+      "title": "Thank you and Q&A",
+      "spoken_transcript": "Thank you for listening. I am happy to take your questions. If we do not have enough time, please email me at d11351004@mail.ntust.edu.tw.",
+      "display_transcript": "Thank you for listening. I am happy to take your questions. If we do not have enough time, please email me at d11351004@mail.ntust.edu.tw."
+    }
+  ],
+  "appendices": [
+    {
+      "slide": 14,
+      "title": "Q&A: How were the numbers calculated?",
+      "spoken_transcript": "We compare predicted and true on and off states for each device. We count the four outcomes, calculate an MCC for each device, and average the nine device scores. The configuration is locked before test labels are used. The five-seed result averages five macro MCCs. The compliance figures are direct fractions. The validation decomposition is a post-hoc diagnostic, and its oracle ceiling is not a deployable selector.",
+      "display_transcript": "We compare predicted and true on/off states for each device. We count the 4 outcomes, calculate an MCC for each device, and average the 9 device scores. The configuration is locked before test labels are used. The 5-seed result averages 5 macro MCCs. The compliance figures are direct fractions. The validation decomposition is a post-hoc diagnostic, and its oracle ceiling is not a deployable selector."
+    }
+  ]
+}

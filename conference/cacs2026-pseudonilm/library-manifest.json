@@ -103,19 +103,27 @@
         },
         {
           "number": 13,
-          "title": "Q&A: How were the numbers calculated?",
-          "audio": "automation2026/slide-13-q-a-how-were-the-numbers-calculated.mp3",
-          "spoken_transcript": "automation2026/slide-13-q-a-how-were-the-numbers-calculated.txt",
-          "display_transcript": "automation2026/slide-13-q-a-how-were-the-numbers-calculated-display.txt",
+          "title": "Thank you and Q&A",
+          "audio": "automation2026/slide-13-thank-you-and-q-a.mp3",
+          "spoken_transcript": "automation2026/slide-13-thank-you-and-q-a.txt",
+          "display_transcript": "automation2026/slide-13-thank-you-and-q-a-display.txt",
           "slide_image": "automation2026/slides/slide-13.png"
         },
         {
           "number": 14,
+          "title": "Q&A: How were the numbers calculated?",
+          "audio": "automation2026/slide-14-q-a-how-were-the-numbers-calculated.mp3",
+          "spoken_transcript": "automation2026/slide-14-q-a-how-were-the-numbers-calculated.txt",
+          "display_transcript": "automation2026/slide-14-q-a-how-were-the-numbers-calculated-display.txt",
+          "slide_image": "automation2026/slides/slide-14.png"
+        },
+        {
+          "number": 15,
           "title": "Q&A response pack",
-          "audio": "automation2026/slide-14-q-a-response-pack.mp3",
-          "spoken_transcript": "automation2026/slide-14-q-a-response-pack.txt",
-          "display_transcript": "automation2026/slide-14-q-a-response-pack-display.txt",
-          "slide_image": "automation2026/slides/slide-13.png"
+          "audio": "automation2026/slide-15-q-a-response-pack.mp3",
+          "spoken_transcript": "automation2026/slide-15-q-a-response-pack.txt",
+          "display_transcript": "automation2026/slide-15-q-a-response-pack-display.txt",
+          "slide_image": "automation2026/slides/slide-14.png"
         }
       ]
     },
