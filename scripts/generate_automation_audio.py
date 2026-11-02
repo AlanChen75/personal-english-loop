@@ -43,11 +43,13 @@ PRONUNCIATION_REPLACEMENTS = (
         re.compile(r"\bd11351004@mail\.ntust\.edu\.tw\b", re.IGNORECASE),
         "d one one three five one zero zero four at mail dot N T U S T dot E D U dot T W",
     ),
-    (re.compile(r"\bNILM\b"), "nil-em"),
+    (re.compile(r"\bNILM\b"), "en eye ell em"),
     (re.compile(r"\bLLM\b"), "ell ell em"),
     (re.compile(r"\bLHS\b"), "ell aitch ess"),
-    (re.compile(r"\bMCCs\b"), "em see see values"),
-    (re.compile(r"\bMCC\b"), "em see see"),
+    # Commas create short, reliable pauses so the cloned voice does not merge
+    # the three letter names into one unclear sound.
+    (re.compile(r"\bMCCs\b"), "M, C, C values"),
+    (re.compile(r"\bMCC\b"), "M, C, C"),
     (re.compile(r"\bTP\b"), "tee pee"),
     (re.compile(r"\bTN\b"), "tee en"),
     (re.compile(r"\bFP\b"), "eff pee"),
@@ -59,11 +61,15 @@ PRONUNCIATION_REPLACEMENTS = (
     (re.compile(r"\bQ&A\b"), "Q and A"),
 )
 PRONUNCIATION_GUIDE = (
-    "Automation pronunciation guide. "
-    "N I L M, pronounced nil-em. Nil-em. "
+    "Automation pronunciation practice. "
+    "N I L M. En eye ell em. En eye ell em. "
+    "Matthews correlation coefficient. "
+    "Matthews. Correlation. Coefficient. Matthews correlation coefficient. "
+    "Arithmetic mean. Arithmetic. Arithmetic mean. "
+    "Misspecified. Misspecified bounds. "
     "L L M, pronounced ell ell em. Ell ell em. "
     "L H S, pronounced ell aitch ess. Ell aitch ess. "
-    "M C C, pronounced em see see. Em see see. "
+    "M, C, C. M, C, C. "
     "I M D E L D, pronounced eye em dee ee el dee. "
     "WELTRON is pronounced well-tron. "
     "Case one. Seed one oh one. Event F one."
@@ -85,6 +91,7 @@ DIGIT_WORDS = {
     "eight": "8",
     "nine": "9",
 }
+NUMBER_WORDS = frozenset(DIGIT_WORDS)
 DISPLAY_REPLACEMENTS = (
     (re.compile(r"\bseed-one-oh-one\b", re.IGNORECASE), "seed 101"),
     (
@@ -117,6 +124,15 @@ def prepare_spoken_text(text: str) -> str:
     spoken = text
     for pattern, replacement in PRONUNCIATION_REPLACEMENTS:
         spoken = pattern.sub(replacement, spoken)
+    # A bare decimal such as "point three five" must include the leading zero,
+    # while a value such as "two point two two" keeps its integer part.
+    def add_leading_zero(match: re.Match[str]) -> str:
+        previous = re.search(r"([A-Za-z]+)\s+$", spoken[: match.start()])
+        if previous and previous.group(1).lower() in NUMBER_WORDS:
+            return match.group(0)
+        return f"zero {match.group(0)}"
+
+    spoken = LEADING_DECIMAL_RE.sub(add_leading_zero, spoken)
     return spoken
 
 

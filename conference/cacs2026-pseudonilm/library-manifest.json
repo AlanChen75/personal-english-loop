@@ -124,6 +124,13 @@
           "spoken_transcript": "automation2026/slide-15-q-a-response-pack.txt",
           "display_transcript": "automation2026/slide-15-q-a-response-pack-display.txt",
           "slide_image": "automation2026/slides/slide-14.png"
+        },
+        {
+          "number": 16,
+          "title": "Pronunciation: NILM and key terms",
+          "audio": "automation2026/pronunciation-guide.mp3",
+          "spoken_transcript": "automation2026/pronunciation-guide.txt",
+          "display_transcript": "automation2026/pronunciation-guide-display.txt"
         }
       ]
     },

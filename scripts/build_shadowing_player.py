@@ -29,11 +29,11 @@ APP_MANIFEST = {
         {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"},
     ],
 }
-SERVICE_WORKER = r'''const CACHE_NAME = 'personal-english-loop-v14';
+SERVICE_WORKER = r'''const CACHE_NAME = 'personal-english-loop-v16';
 const APP_SHELL = [
   './',
   './index.html',
-  './manifest.webmanifest?v=13',
+  './manifest.webmanifest?v=16',
   './icon-180.png',
   './icon-192.png',
   './icon-512.png'
@@ -234,7 +234,7 @@ TEMPLATE = r'''<!doctype html>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Shadow">
-  <link rel="manifest" href="manifest.webmanifest?v=14">
+  <link rel="manifest" href="manifest.webmanifest?v=16">
   <link rel="apple-touch-icon" href="icon-180.png">
   <title>Personal English Loop</title>
   <style>
@@ -398,8 +398,17 @@ TEMPLATE = r'''<!doctype html>
       line-height: 1.78;
       letter-spacing: 0.006em;
     }
-    .sentence { display: inline; transition: background-color 180ms ease-out; }
-    .sentence:hover { background: color-mix(in oklch, var(--orange), transparent 70%); }
+    .sentence {
+      display: inline;
+      padding: 0 0.08em;
+      border-radius: 0.16em;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+    }
+    .sentence.is-speaking {
+      color: var(--ink);
+      background: color-mix(in oklch, var(--orange), var(--paper) 38%);
+    }
     .sentence::after { content: " "; }
     .study-stage { display: grid; gap: clamp(1.5rem, 4vw, 3rem); margin-top: clamp(2rem, 5vw, 4rem); align-items: start; }
     .slide-visual { margin: 0; min-width: 0; }
@@ -549,9 +558,36 @@ TEMPLATE = r'''<!doctype html>
     let speed = 1;
     let installPrompt = null;
 
-    const sentenceParts = text => text.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [text];
+    const sentenceSegmenter = typeof Intl.Segmenter === 'function'
+      ? new Intl.Segmenter('en', {granularity: 'sentence'})
+      : null;
+    const sentenceParts = text => {
+      if (sentenceSegmenter) {
+        const segments = [...sentenceSegmenter.segment(text)]
+          .map(item => item.segment.trim())
+          .filter(Boolean);
+        if (segments.length) return segments;
+      }
+      return text.match(/.*?(?:[.!?](?=\s+[A-Z]|$)|$)/g)?.map(item => item.trim()).filter(Boolean) || [text];
+    };
+
+    const speechUnits = sentence => {
+      const tokens = sentence.match(/[A-Za-z]+(?:['’-][A-Za-z]+)*|\d+(?:\.\d+)?%?/g) || [];
+      return Math.max(1, tokens.reduce((total, token) => {
+        if (/^\d/.test(token)) {
+          const digits = (token.match(/\d/g) || []).length;
+          return total + digits + (token.includes('.') ? 1 : 0) + (token.endsWith('%') ? 1 : 0);
+        }
+        if (/^[A-Z]{2,}$/.test(token)) return total + token.length;
+        const syllableLikeGroups = token.toLowerCase().match(/[aeiouy]+/g)?.length || 1;
+        return total + Math.max(1, syllableLikeGroups);
+      }, 0));
+    };
 
     let stickyFrame = 0;
+    let sentenceWeights = [];
+    let totalSentenceWeight = 0;
+    let activeSentenceIndex = -1;
 
     function updateStickyPlayer() {
       const stickyTop = parseFloat(getComputedStyle(playerDesk).top) || 0;
@@ -574,12 +610,47 @@ TEMPLATE = r'''<!doctype html>
     updateStickyPlayer();
 
     function renderTranscript(text) {
-      transcript.replaceChildren(...sentenceParts(text).map(sentence => {
+      const sentences = sentenceParts(text);
+      sentenceWeights = sentences.map(speechUnits);
+      totalSentenceWeight = sentenceWeights.reduce((total, weight) => total + weight, 0);
+      activeSentenceIndex = -1;
+      transcript.replaceChildren(...sentences.map(sentence => {
         const span = document.createElement('span');
         span.className = 'sentence';
         span.textContent = sentence.trim();
         return span;
       }));
+    }
+
+    function setActiveSentence(index) {
+      if (index === activeSentenceIndex) return;
+      transcript.querySelectorAll('.sentence').forEach((sentence, sentenceIndex) => {
+        sentence.classList.toggle('is-speaking', sentenceIndex === index);
+      });
+      activeSentenceIndex = index;
+    }
+
+    function updateSentenceHighlight() {
+      if (!Number.isFinite(audio.duration) || audio.duration <= 0 || totalSentenceWeight <= 0) {
+        setActiveSentence(-1);
+        return;
+      }
+      if (audio.paused && audio.currentTime <= 0) {
+        setActiveSentence(-1);
+        return;
+      }
+      const progress = Math.min(Math.max(audio.currentTime / audio.duration, 0), 0.999999);
+      const targetWeight = progress * totalSentenceWeight;
+      let cumulativeWeight = 0;
+      let sentenceIndex = sentenceWeights.length - 1;
+      for (let index = 0; index < sentenceWeights.length; index += 1) {
+        cumulativeWeight += sentenceWeights[index];
+        if (targetWeight < cumulativeWeight) {
+          sentenceIndex = index;
+          break;
+        }
+      }
+      setActiveSentence(sentenceIndex);
     }
 
     function activeItems() {
@@ -590,6 +661,7 @@ TEMPLATE = r'''<!doctype html>
       activeIndex = index;
       const item = activeItems()[index];
       audio.pause();
+      setActiveSentence(-1);
       audio.src = item.audio;
       audio.playbackRate = speed;
       playerStatus.textContent = '';
@@ -660,6 +732,10 @@ TEMPLATE = r'''<!doctype html>
       if (activeIndex < activeItems().length - 1) loadItem(activeIndex + 1, true);
     });
     document.querySelector('#rewind').addEventListener('click', () => { audio.currentTime = Math.max(0, audio.currentTime - 5); });
+    audio.addEventListener('loadedmetadata', updateSentenceHighlight);
+    audio.addEventListener('timeupdate', updateSentenceHighlight);
+    audio.addEventListener('play', updateSentenceHighlight);
+    audio.addEventListener('seeking', updateSentenceHighlight);
     repeatPage.addEventListener('change', event => {
       audio.loop = event.target.checked;
       if (event.target.checked) repeatAll.setAttribute('aria-pressed', 'false');
@@ -673,6 +749,7 @@ TEMPLATE = r'''<!doctype html>
       }
     });
     audio.addEventListener('ended', () => {
+      setActiveSentence(-1);
       if (repeatAll.getAttribute('aria-pressed') !== 'true') return;
       loadItem((activeIndex + 1) % activeItems().length);
       audio.play().catch(error => {

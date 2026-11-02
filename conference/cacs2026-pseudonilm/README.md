@@ -10,10 +10,11 @@
 
 - 可安裝為手機桌面 Web App
 - 四類教材：Automation 2026、CACS 2026、自我介紹、每日練習
-- Automation 2026 是預設分類，收錄第 1–13 頁正式講稿（含封面介紹與 Thank you／email 收尾）、第 14 頁計算方式備答與第 15 段完整 Q&A Response Pack
+- Automation 2026 是預設分類，收錄第 1–13 頁正式講稿（含封面介紹與 Thank you／email 收尾）、第 14 頁計算方式備答、第 15 段完整 Q&A Response Pack，以及第 16 段重點發音練習
 - CACS 2026 保留原分類，依序收錄 1–10 正式講稿、11 結尾與 Q&A 畫面、12 一份完整 Q&A Response Pack
 - 兩套研討會講稿都同步顯示投影片、逐頁音檔與英文講稿
 - 自我介紹與每日教材同步顯示音檔與英文逐字稿
+- 播放、拖曳或倒退音訊時，逐字稿會同步標示目前句子
 - 點選投影片可開啟原尺寸圖片
 - 0.8×、0.9×、1.0× 播放速度
 - 倒退 5 秒
@@ -37,6 +38,7 @@
 - `pronunciation-guide.txt`：專有名詞文字稿
 - `automation2026/automation2026-full-talk.mp3`：Automation 2026 完整講稿
 - `automation2026/slide-01...slide-15.*`：Automation 2026 逐頁講稿、收尾、計算方式備答、合併 Q&A 與音檔
+- `automation2026/pronunciation-guide.*`：NILM、MCC 與較少使用術語的重點發音練習
 - `automation2026/slides/slide-1...slide-14.png`：Automation 2026 投影片圖片
 - `practice-materials/automation2026/extension-v5.json`：封面／Future Work 覆寫、第 13 頁收尾與第 14 頁計算備答的可重生來源
 - `automation2026/generation-manifest.json`：Automation 2026 音訊生成紀錄

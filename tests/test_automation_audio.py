@@ -111,11 +111,13 @@ class AutomationAudioTest(unittest.TestCase):
 
         spoken = self.pipeline.prepare_spoken_text(source)
 
-        self.assertIn("nil-em", spoken)
+        self.assertIn("en eye ell em", spoken)
+        self.assertNotIn("nil-em", spoken)
         self.assertIn("ell ell em", spoken)
         self.assertIn("ell aitch ess", spoken)
-        self.assertIn("em see see", spoken)
-        self.assertIn("five em see see values", spoken)
+        self.assertIn("M, C, C", spoken)
+        self.assertIn("five M, C, C values", spoken)
+        self.assertNotIn("em see see", spoken)
         self.assertIn("tee pee, tee en, eff pee, and eff en", spoken)
         self.assertIn("eye em dee ee el dee", spoken)
         self.assertIn("Case one", spoken)
@@ -136,6 +138,27 @@ class AutomationAudioTest(unittest.TestCase):
             "N T U S T dot E D U dot T W.",
         )
         self.assertEqual(self.pipeline.prepare_display_text(source), source)
+
+    def test_adds_zero_before_bare_decimal_but_keeps_numbered_decimals(self):
+        source = (
+            "The weights are point three five and point three zero. "
+            "The rate is two point two two percent."
+        )
+
+        self.assertEqual(
+            self.pipeline.prepare_spoken_text(source),
+            "The weights are zero point three five and zero point three zero. "
+            "The rate is two point two two percent.",
+        )
+
+    def test_pronunciation_guide_drills_less_familiar_terms(self):
+        guide = self.pipeline.PRONUNCIATION_GUIDE
+        guide_lower = guide.lower()
+
+        self.assertIn("N I L M", guide)
+        self.assertIn("matthews correlation coefficient", guide_lower)
+        self.assertIn("arithmetic mean", guide_lower)
+        self.assertIn("misspecified", guide_lower)
 
     def test_display_text_uses_digits_for_reported_results(self):
         source = (

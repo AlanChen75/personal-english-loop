@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T03:33:09.097226+00:00",
+  "generated_at": "2026-11-02T03:26:28.596711+00:00",
   "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "generation_mode": "voice_clone_x-vector-only_existing_parameters",
   "post_processing": "loudnorm I=-16 LUFS, TP=-1.5 dB, LRA=11; no speed change",
@@ -48,7 +48,7 @@
       "spoken_transcript": "slide-02-industrial-nilm-calibration.txt",
       "display_transcript": "slide-02-industrial-nilm-calibration-display.txt",
       "slide_image": "automation2026/slides/slide-2.png",
-      "raw_duration_seconds": 47.19,
+      "raw_duration_seconds": 48.15,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -60,9 +60,9 @@
           }
         ],
         "format": {
-          "duration": "47.190000",
-          "size": "567405",
-          "bit_rate": "96190"
+          "duration": "48.150000",
+          "size": "578925",
+          "bit_rate": "96186"
         }
       }
     },
@@ -98,7 +98,7 @@
       "spoken_transcript": "slide-04-common-aggregate-only-selector.txt",
       "display_transcript": "slide-04-common-aggregate-only-selector-display.txt",
       "slide_image": "automation2026/slides/slide-4.png",
-      "raw_duration_seconds": 59.14,
+      "raw_duration_seconds": 63.73,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -110,9 +110,9 @@
           }
         ],
         "format": {
-          "duration": "59.140000",
-          "size": "710829",
-          "bit_rate": "96155"
+          "duration": "63.730000",
+          "size": "765837",
+          "bit_rate": "96135"
         }
       }
     },
@@ -148,7 +148,7 @@
       "spoken_transcript": "slide-06-primary-outcome-device-balanced-mcc.txt",
       "display_transcript": "slide-06-primary-outcome-device-balanced-mcc-display.txt",
       "slide_image": "automation2026/slides/slide-6.png",
-      "raw_duration_seconds": 57.14,
+      "raw_duration_seconds": 54.82,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -160,9 +160,9 @@
           }
         ],
         "format": {
-          "duration": "57.140000",
-          "size": "686637",
-          "bit_rate": "96133"
+          "duration": "54.820000",
+          "size": "658989",
+          "bit_rate": "96167"
         }
       }
     },
@@ -173,7 +173,7 @@
       "spoken_transcript": "slide-07-frozen-seed-101-test-comparison.txt",
       "display_transcript": "slide-07-frozen-seed-101-test-comparison-display.txt",
       "slide_image": "automation2026/slides/slide-7.png",
-      "raw_duration_seconds": 59.49,
+      "raw_duration_seconds": 59.01,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -185,9 +185,9 @@
           }
         ],
         "format": {
-          "duration": "59.490000",
-          "size": "714861",
-          "bit_rate": "96131"
+          "duration": "59.010000",
+          "size": "709101",
+          "bit_rate": "96132"
         }
       }
     },
@@ -198,7 +198,7 @@
       "spoken_transcript": "slide-08-five-llm-test-seeds.txt",
       "display_transcript": "slide-08-five-llm-test-seeds-display.txt",
       "slide_image": "automation2026/slides/slide-8.png",
-      "raw_duration_seconds": 55.3,
+      "raw_duration_seconds": 54.98,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -210,9 +210,9 @@
           }
         ],
         "format": {
-          "duration": "55.300000",
-          "size": "664749",
-          "bit_rate": "96166"
+          "duration": "54.980000",
+          "size": "660717",
+          "bit_rate": "96139"
         }
       }
     },
@@ -248,7 +248,7 @@
       "spoken_transcript": "slide-10-post-hoc-validation-decomposition.txt",
       "display_transcript": "slide-10-post-hoc-validation-decomposition-display.txt",
       "slide_image": "automation2026/slides/slide-10.png",
-      "raw_duration_seconds": 79.36,
+      "raw_duration_seconds": 78.0,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -260,9 +260,9 @@
           }
         ],
         "format": {
-          "duration": "79.360000",
-          "size": "953325",
-          "bit_rate": "96101"
+          "duration": "78.000000",
+          "size": "936909",
+          "bit_rate": "96093"
         }
       }
     },
@@ -348,7 +348,7 @@
       "spoken_transcript": "slide-14-q-a-how-were-the-numbers-calculated.txt",
       "display_transcript": "slide-14-q-a-how-were-the-numbers-calculated-display.txt",
       "slide_image": "automation2026/slides/slide-14.png",
-      "raw_duration_seconds": 36.44,
+      "raw_duration_seconds": 35.16,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -360,9 +360,9 @@
           }
         ],
         "format": {
-          "duration": "36.440000",
-          "size": "438381",
-          "bit_rate": "96241"
+          "duration": "35.160000",
+          "size": "422829",
+          "bit_rate": "96206"
         }
       }
     },
@@ -373,7 +373,7 @@
       "spoken_transcript": "slide-15-q-a-response-pack.txt",
       "display_transcript": "slide-15-q-a-response-pack-display.txt",
       "slide_image": "automation2026/slides/slide-14.png",
-      "raw_duration_seconds": 208.63,
+      "raw_duration_seconds": 202.23,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -385,9 +385,9 @@
           }
         ],
         "format": {
-          "duration": "208.630000",
-          "size": "2504493",
-          "bit_rate": "96035"
+          "duration": "202.230000",
+          "size": "2427885",
+          "bit_rate": "96044"
         }
       }
     }
@@ -406,9 +406,9 @@
         }
       ],
       "format": {
-        "duration": "34.440000",
-        "size": "414189",
-        "bit_rate": "96211"
+        "duration": "49.660000",
+        "size": "597069",
+        "bit_rate": "96185"
       }
     }
   },
@@ -416,7 +416,7 @@
     "audio": "automation2026-full-talk.mp3",
     "spoken_transcript": "automation2026-full-talk.txt",
     "display_transcript": "automation2026-full-talk-display.txt",
-    "raw_duration_seconds": 689.65,
+    "raw_duration_seconds": 690.72,
     "probe": {
       "programs": [],
       "stream_groups": [],
@@ -428,9 +428,9 @@
         }
       ],
       "format": {
-        "duration": "689.650000",
-        "size": "8276877",
-        "bit_rate": "96012"
+        "duration": "690.720000",
+        "size": "8289549",
+        "bit_rate": "96010"
       }
     }
   }

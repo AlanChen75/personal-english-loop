@@ -105,6 +105,12 @@ class ShadowingPlayerTest(unittest.TestCase):
         self.assertNotIn('data-speed="0.75"', html)
         self.assertIn('id="repeat-all"', html)
         self.assertIn("audio.addEventListener('ended'", html)
+        self.assertIn("new Intl.Segmenter('en', {granularity: 'sentence'})", html)
+        self.assertIn("function updateSentenceHighlight()", html)
+        self.assertIn("audio.addEventListener('timeupdate', updateSentenceHighlight)", html)
+        self.assertIn("audio.addEventListener('loadedmetadata', updateSentenceHighlight)", html)
+        self.assertIn(".sentence.is-speaking", html)
+        self.assertNotIn(".sentence:hover", html)
         self.assertIn('id="previous-item"', html)
         self.assertIn('id="next-item"', html)
         self.assertIn("previousItem.addEventListener('click'", html)
@@ -119,7 +125,7 @@ class ShadowingPlayerTest(unittest.TestCase):
         self.assertIn("window.addEventListener('scroll', queueStickyUpdate", html)
         self.assertIn("const compactOffset = playerDesk.classList.contains('is-stuck') ? 108 : 48", html)
         self.assertIn("playerDesk.classList.toggle('is-stuck'", html)
-        self.assertIn('<link rel="manifest" href="manifest.webmanifest?v=14">', html)
+        self.assertIn('<link rel="manifest" href="manifest.webmanifest?v=16">', html)
         self.assertIn('<meta name="apple-mobile-web-app-title" content="Shadow">', html)
         self.assertIn('id="install-app"', html)
         self.assertIn("navigator.serviceWorker.register", html)
@@ -129,7 +135,7 @@ class ShadowingPlayerTest(unittest.TestCase):
         self.assertLessEqual(len(web_manifest["short_name"]), 7)
         self.assertEqual({icon["sizes"] for icon in web_manifest["icons"]}, {"192x192", "512x512"})
         self.assertTrue(all(generated_assets.values()), generated_assets)
-        self.assertIn("personal-english-loop-v14", service_worker)
+        self.assertIn("personal-english-loop-v16", service_worker)
         self.assertNotIn("fetch(", html)
 
     def test_main_builds_the_requested_output(self):
@@ -165,6 +171,34 @@ class ShadowingPlayerTest(unittest.TestCase):
                 self.assertEqual(self.builder.main(), 0)
             self.assertTrue(output_path.is_file())
 
+    def test_loads_legacy_single_collection_manifest(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "track.mp3").write_bytes(b"ID3")
+            (root / "track.txt").write_text("Practice text.\n", encoding="utf-8")
+            manifest_path = root / "manifest.json"
+            manifest_path.write_text(
+                json.dumps(
+                    {
+                        "slides": [
+                            {
+                                "number": 1,
+                                "title": "Track",
+                                "audio": "track.mp3",
+                                "spoken_transcript": "track.txt",
+                            }
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            collections = self.builder.load_collections(manifest_path)
+            slides = self.builder.load_slides(manifest_path)
+
+        self.assertEqual(collections[0]["id"], "conference")
+        self.assertEqual(slides[0]["transcript"], "Practice text.")
+
     def test_published_player_prefers_automation_and_keeps_cacs(self):
         player_dir = ROOT / "conference/cacs2026-pseudonilm"
         manifest = json.loads(
@@ -174,7 +208,7 @@ class ShadowingPlayerTest(unittest.TestCase):
 
         self.assertEqual(collections[0]["id"], "automation-2026")
         self.assertEqual(collections[0]["title"], "Automation 2026 講稿")
-        self.assertEqual(len(collections[0]["items"]), 15)
+        self.assertEqual(len(collections[0]["items"]), 16)
         self.assertEqual(collections[0]["items"][0]["number"], 1)
         self.assertEqual(collections[0]["items"][11]["number"], 12)
         self.assertEqual(
@@ -189,6 +223,11 @@ class ShadowingPlayerTest(unittest.TestCase):
         self.assertEqual(collections[0]["items"][13]["number"], 14)
         self.assertEqual(collections[0]["items"][14]["title"], "Q&A response pack")
         self.assertEqual(collections[0]["items"][14]["number"], 15)
+        self.assertEqual(
+            collections[0]["items"][15]["title"],
+            "Pronunciation: NILM and key terms",
+        )
+        self.assertEqual(collections[0]["items"][15]["number"], 16)
         self.assertEqual(collections[1]["id"], "conference")
         self.assertEqual(len(collections[1]["items"]), 12)
 
