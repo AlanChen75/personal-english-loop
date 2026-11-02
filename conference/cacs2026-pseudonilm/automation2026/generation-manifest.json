@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T03:26:28.596711+00:00",
+  "generated_at": "2026-11-02T08:27:18.956417+00:00",
   "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "generation_mode": "voice_clone_x-vector-only_existing_parameters",
   "post_processing": "loudnorm I=-16 LUFS, TP=-1.5 dB, LRA=11; no speed change",
@@ -11,8 +11,8 @@
       "sha256": "3c6a9066c07e2bcfd109e840ac93793bf697e18eec67ff9590483f600e822d8a"
     },
     {
-      "path": "extension-v5.json",
-      "sha256": "7aaa2748154086dfbf8b8f32ffb258bad8c4d9f2732685c8e938732d0397c2e5"
+      "path": "extension-v7.json",
+      "sha256": "be5464cb25466bc4d60e04222a25a8cd3fadd9aff84fc682ba70ad319937a96b"
     }
   ],
   "items": [
@@ -73,7 +73,7 @@
       "spoken_transcript": "slide-03-three-corpora-nine-devices.txt",
       "display_transcript": "slide-03-three-corpora-nine-devices-display.txt",
       "slide_image": "automation2026/slides/slide-3.png",
-      "raw_duration_seconds": 57.06,
+      "raw_duration_seconds": 62.05,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -85,9 +85,9 @@
           }
         ],
         "format": {
-          "duration": "57.060000",
-          "size": "685773",
-          "bit_rate": "96147"
+          "duration": "62.050000",
+          "size": "745677",
+          "bit_rate": "96138"
         }
       }
     },
@@ -98,7 +98,7 @@
       "spoken_transcript": "slide-04-common-aggregate-only-selector.txt",
       "display_transcript": "slide-04-common-aggregate-only-selector-display.txt",
       "slide_image": "automation2026/slides/slide-4.png",
-      "raw_duration_seconds": 63.73,
+      "raw_duration_seconds": 62.82,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -110,9 +110,9 @@
           }
         ],
         "format": {
-          "duration": "63.730000",
-          "size": "765837",
-          "bit_rate": "96135"
+          "duration": "62.820000",
+          "size": "754893",
+          "bit_rate": "96134"
         }
       }
     },
@@ -123,7 +123,7 @@
       "spoken_transcript": "slide-05-bounds-change-two-parts-of-the-procedure.txt",
       "display_transcript": "slide-05-bounds-change-two-parts-of-the-procedure-display.txt",
       "slide_image": "automation2026/slides/slide-5.png",
-      "raw_duration_seconds": 55.22,
+      "raw_duration_seconds": 55.57,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -135,9 +135,9 @@
           }
         ],
         "format": {
-          "duration": "55.220000",
-          "size": "663597",
-          "bit_rate": "96138"
+          "duration": "55.570000",
+          "size": "667917",
+          "bit_rate": "96155"
         }
       }
     },
@@ -148,7 +148,7 @@
       "spoken_transcript": "slide-06-primary-outcome-device-balanced-mcc.txt",
       "display_transcript": "slide-06-primary-outcome-device-balanced-mcc-display.txt",
       "slide_image": "automation2026/slides/slide-6.png",
-      "raw_duration_seconds": 54.82,
+      "raw_duration_seconds": 59.17,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -160,9 +160,9 @@
           }
         ],
         "format": {
-          "duration": "54.820000",
-          "size": "658989",
-          "bit_rate": "96167"
+          "duration": "59.170000",
+          "size": "711117",
+          "bit_rate": "96145"
         }
       }
     },
@@ -198,7 +198,7 @@
       "spoken_transcript": "slide-08-five-llm-test-seeds.txt",
       "display_transcript": "slide-08-five-llm-test-seeds-display.txt",
       "slide_image": "automation2026/slides/slide-8.png",
-      "raw_duration_seconds": 54.98,
+      "raw_duration_seconds": 51.83,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -210,9 +210,9 @@
           }
         ],
         "format": {
-          "duration": "54.980000",
-          "size": "660717",
-          "bit_rate": "96139"
+          "duration": "51.830000",
+          "size": "622989",
+          "bit_rate": "96158"
         }
       }
     },
@@ -223,7 +223,7 @@
       "spoken_transcript": "slide-09-full-compliance-is-rare-without-bounds.txt",
       "display_transcript": "slide-09-full-compliance-is-rare-without-bounds-display.txt",
       "slide_image": "automation2026/slides/slide-9.png",
-      "raw_duration_seconds": 58.21,
+      "raw_duration_seconds": 53.03,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -235,9 +235,9 @@
           }
         ],
         "format": {
-          "duration": "58.210000",
-          "size": "699597",
-          "bit_rate": "96148"
+          "duration": "53.030000",
+          "size": "637389",
+          "bit_rate": "96155"
         }
       }
     },
@@ -248,7 +248,7 @@
       "spoken_transcript": "slide-10-post-hoc-validation-decomposition.txt",
       "display_transcript": "slide-10-post-hoc-validation-decomposition-display.txt",
       "slide_image": "automation2026/slides/slide-10.png",
-      "raw_duration_seconds": 78.0,
+      "raw_duration_seconds": 72.08,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -260,9 +260,9 @@
           }
         ],
         "format": {
-          "duration": "78.000000",
-          "size": "936909",
-          "bit_rate": "96093"
+          "duration": "72.080000",
+          "size": "866061",
+          "bit_rate": "96122"
         }
       }
     },
@@ -273,7 +273,7 @@
       "spoken_transcript": "slide-11-what-the-evidence-supports.txt",
       "display_transcript": "slide-11-what-the-evidence-supports-display.txt",
       "slide_image": "automation2026/slides/slide-11.png",
-      "raw_duration_seconds": 50.87,
+      "raw_duration_seconds": 58.74,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -285,9 +285,9 @@
           }
         ],
         "format": {
-          "duration": "50.870000",
-          "size": "611469",
-          "bit_rate": "96161"
+          "duration": "58.740000",
+          "size": "705933",
+          "bit_rate": "96143"
         }
       }
     },
@@ -416,7 +416,7 @@
     "audio": "automation2026-full-talk.mp3",
     "spoken_transcript": "automation2026-full-talk.txt",
     "display_transcript": "automation2026-full-talk-display.txt",
-    "raw_duration_seconds": 690.72,
+    "raw_duration_seconds": 693.12,
     "probe": {
       "programs": [],
       "stream_groups": [],
@@ -428,8 +428,8 @@
         }
       ],
       "format": {
-        "duration": "690.720000",
-        "size": "8289549",
+        "duration": "693.120000",
+        "size": "8318349",
         "bit_rate": "96010"
       }
     }

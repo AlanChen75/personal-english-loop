@@ -178,6 +178,47 @@ class AutomationAudioTest(unittest.TestCase):
             "it was 6%. The question cites 2.22%.",
         )
 
+    def test_default_extension_aligns_slide_four_formula_and_tts_numbers(self):
+        payload = {
+            "segments": [
+                {
+                    "slide": number,
+                    "title": f"Slide {number}",
+                    "spoken_transcript": f"Original slide {number} script.",
+                    "display_transcript": f"Original slide {number} script.",
+                }
+                for number in range(1, 13)
+            ],
+            "qa_answers": [
+                {
+                    "id": "general",
+                    "question": "General response",
+                    "spoken_transcript": "This study does not test that case.",
+                }
+            ],
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "spoken_segments.json"
+            source.write_text(json.dumps(payload), encoding="utf-8")
+            tracks = self.pipeline.load_automation_tracks(
+                source, self.pipeline.DEFAULT_APPENDIX_SOURCE
+            )
+
+        slide_four = tracks[3]
+        self.assertEqual(
+            self.pipeline.DEFAULT_APPENDIX_SOURCE.name, "extension-v7.json"
+        )
+        self.assertIn("residual fit", slide_four["script"])
+        self.assertIn("event agreement", slide_four["script"])
+        self.assertIn("state consistency", slide_four["script"])
+        self.assertIn("separation", slide_four["script"])
+        self.assertIn("point three five", slide_four["script"])
+        self.assertIn("0.35", slide_four["display_text"])
+        self.assertIn("0.30", slide_four["display_text"])
+        self.assertIn("0.20", slide_four["display_text"])
+        self.assertIn("0.15", slide_four["display_text"])
+        self.assertIn("No device-level labels enter selection", slide_four["script"])
+
     def test_plan_keeps_display_and_spoken_transcripts_separate(self):
         tracks = [
             {
