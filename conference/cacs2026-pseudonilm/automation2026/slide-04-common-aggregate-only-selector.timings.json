@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "f7c8a5e845e7b00133ba057b33d2355acd533d006d8a69026ba90170680b7cd5",
+  "transcript_sha256": "baad423f2029f8b577c77c2fe63999690961ad86263c35c0a99adcebb264a71f",
+  "duration_seconds": 62.82,
+  "cues": [
+    {
+      "text": "First, we form the LLM and LHS candidate pools.",
+      "start": 0.28052,
+      "end": 6.2115
+    },
+    {
+      "text": "The same selector then ranks every pool using aggregate data only.",
+      "start": 6.59221,
+      "end": 10.31911
+    },
+    {
+      "text": "The formula on the right combines residual fit, event agreement, state consistency, and separation.",
+      "start": 11.57107,
+      "end": 18.86969
+    },
+    {
+      "text": "Their weights are 0.35, 0.30, 0.20, and 0.15.",
+      "start": 19.70092,
+      "end": 26.79903
+    },
+    {
+      "text": "No device-level labels enter selection.",
+      "start": 27.9508,
+      "end": 30.31532
+    },
+    {
+      "text": "We freeze the selected configuration first, and only then evaluate it with test labels.",
+      "start": 31.27715,
+      "end": 37.3287
+    },
+    {
+      "text": "Candidate-count and calibration-sample budgets are equal.",
+      "start": 38.82218,
+      "end": 42.49953
+    },
+    {
+      "text": "Generation information differs: the LLM also sees device information, aggregate statistics, and the scorer description.",
+      "start": 43.35075,
+      "end": 53.42955
+    },
+    {
+      "text": "LHS uses the parameter ranges and a seed.",
+      "start": 54.66146,
+      "end": 57.68834
+    },
+    {
+      "text": "Generation time and cost are not matched.",
+      "start": 60.27421,
+      "end": 62.67968
+    }
+  ]
+}

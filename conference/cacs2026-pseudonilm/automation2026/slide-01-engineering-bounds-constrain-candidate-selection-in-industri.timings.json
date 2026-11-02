@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "49821402352a2b5b8f8c9f86488b0b8446db9d133e352bafde7ffa0a74c44b39",
+  "transcript_sha256": "3f3c28dbe1eca6a9b1e4d1f074a67d1e8c0b24517baef2913128967ecea721a0",
+  "duration_seconds": 38.52,
+  "cues": [
+    {
+      "text": "Good morning.",
+      "start": 0.0,
+      "end": 0.52165
+    },
+    {
+      "text": "I am Chung-Kuang Chen from National Taiwan University of Science and Technology.",
+      "start": 1.24394,
+      "end": 5.91873
+    },
+    {
+      "text": "In industrial non-intrusive load monitoring, calibration labels are often scarce.",
+      "start": 7.61259,
+      "end": 13.82967
+    },
+    {
+      "text": "We ask whether an LLM proposes more useful calibration candidates than structured sampling under a small evaluation budget, and how engineering bounds change the answer.",
+      "start": 14.86098,
+      "end": 28.96946
+    },
+    {
+      "text": "Our result is conditional: the relative advantage depends on bounds and on how performance is summarized.",
+      "start": 30.00132,
+      "end": 37.89864
+    }
+  ]
+}

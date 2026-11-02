@@ -11,7 +11,8 @@
           "audio": "automation2026/slide-01-engineering-bounds-constrain-candidate-selection-in-industri.mp3",
           "spoken_transcript": "automation2026/slide-01-engineering-bounds-constrain-candidate-selection-in-industri.txt",
           "display_transcript": "automation2026/slide-01-engineering-bounds-constrain-candidate-selection-in-industri-display.txt",
-          "slide_image": "automation2026/slides/slide-1.png"
+          "slide_image": "automation2026/slides/slide-1.png",
+          "timings": "automation2026/slide-01-engineering-bounds-constrain-candidate-selection-in-industri.timings.json"
         },
         {
           "number": 2,
@@ -19,7 +20,8 @@
           "audio": "automation2026/slide-02-industrial-nilm-calibration.mp3",
           "spoken_transcript": "automation2026/slide-02-industrial-nilm-calibration.txt",
           "display_transcript": "automation2026/slide-02-industrial-nilm-calibration-display.txt",
-          "slide_image": "automation2026/slides/slide-2.png"
+          "slide_image": "automation2026/slides/slide-2.png",
+          "timings": "automation2026/slide-02-industrial-nilm-calibration.timings.json"
         },
         {
           "number": 3,
@@ -27,7 +29,8 @@
           "audio": "automation2026/slide-03-three-corpora-nine-devices.mp3",
           "spoken_transcript": "automation2026/slide-03-three-corpora-nine-devices.txt",
           "display_transcript": "automation2026/slide-03-three-corpora-nine-devices-display.txt",
-          "slide_image": "automation2026/slides/slide-3.png"
+          "slide_image": "automation2026/slides/slide-3.png",
+          "timings": "automation2026/slide-03-three-corpora-nine-devices.timings.json"
         },
         {
           "number": 4,
@@ -35,7 +38,8 @@
           "audio": "automation2026/slide-04-common-aggregate-only-selector.mp3",
           "spoken_transcript": "automation2026/slide-04-common-aggregate-only-selector.txt",
           "display_transcript": "automation2026/slide-04-common-aggregate-only-selector-display.txt",
-          "slide_image": "automation2026/slides/slide-4.png"
+          "slide_image": "automation2026/slides/slide-4.png",
+          "timings": "automation2026/slide-04-common-aggregate-only-selector.timings.json"
         },
         {
           "number": 5,
@@ -43,7 +47,8 @@
           "audio": "automation2026/slide-05-bounds-change-two-parts-of-the-procedure.mp3",
           "spoken_transcript": "automation2026/slide-05-bounds-change-two-parts-of-the-procedure.txt",
           "display_transcript": "automation2026/slide-05-bounds-change-two-parts-of-the-procedure-display.txt",
-          "slide_image": "automation2026/slides/slide-5.png"
+          "slide_image": "automation2026/slides/slide-5.png",
+          "timings": "automation2026/slide-05-bounds-change-two-parts-of-the-procedure.timings.json"
         },
         {
           "number": 6,
@@ -51,7 +56,8 @@
           "audio": "automation2026/slide-06-primary-outcome-device-balanced-mcc.mp3",
           "spoken_transcript": "automation2026/slide-06-primary-outcome-device-balanced-mcc.txt",
           "display_transcript": "automation2026/slide-06-primary-outcome-device-balanced-mcc-display.txt",
-          "slide_image": "automation2026/slides/slide-6.png"
+          "slide_image": "automation2026/slides/slide-6.png",
+          "timings": "automation2026/slide-06-primary-outcome-device-balanced-mcc.timings.json"
         },
         {
           "number": 7,
@@ -59,7 +65,8 @@
           "audio": "automation2026/slide-07-frozen-seed-101-test-comparison.mp3",
           "spoken_transcript": "automation2026/slide-07-frozen-seed-101-test-comparison.txt",
           "display_transcript": "automation2026/slide-07-frozen-seed-101-test-comparison-display.txt",
-          "slide_image": "automation2026/slides/slide-7.png"
+          "slide_image": "automation2026/slides/slide-7.png",
+          "timings": "automation2026/slide-07-frozen-seed-101-test-comparison.timings.json"
         },
         {
           "number": 8,
@@ -67,7 +74,8 @@
           "audio": "automation2026/slide-08-five-llm-test-seeds.mp3",
           "spoken_transcript": "automation2026/slide-08-five-llm-test-seeds.txt",
           "display_transcript": "automation2026/slide-08-five-llm-test-seeds-display.txt",
-          "slide_image": "automation2026/slides/slide-8.png"
+          "slide_image": "automation2026/slides/slide-8.png",
+          "timings": "automation2026/slide-08-five-llm-test-seeds.timings.json"
         },
         {
           "number": 9,
@@ -75,7 +83,8 @@
           "audio": "automation2026/slide-09-full-compliance-is-rare-without-bounds.mp3",
           "spoken_transcript": "automation2026/slide-09-full-compliance-is-rare-without-bounds.txt",
           "display_transcript": "automation2026/slide-09-full-compliance-is-rare-without-bounds-display.txt",
-          "slide_image": "automation2026/slides/slide-9.png"
+          "slide_image": "automation2026/slides/slide-9.png",
+          "timings": "automation2026/slide-09-full-compliance-is-rare-without-bounds.timings.json"
         },
         {
           "number": 10,
@@ -83,7 +92,8 @@
           "audio": "automation2026/slide-10-post-hoc-validation-decomposition.mp3",
           "spoken_transcript": "automation2026/slide-10-post-hoc-validation-decomposition.txt",
           "display_transcript": "automation2026/slide-10-post-hoc-validation-decomposition-display.txt",
-          "slide_image": "automation2026/slides/slide-10.png"
+          "slide_image": "automation2026/slides/slide-10.png",
+          "timings": "automation2026/slide-10-post-hoc-validation-decomposition.timings.json"
         },
         {
           "number": 11,
@@ -91,7 +101,8 @@
           "audio": "automation2026/slide-11-what-the-evidence-supports.mp3",
           "spoken_transcript": "automation2026/slide-11-what-the-evidence-supports.txt",
           "display_transcript": "automation2026/slide-11-what-the-evidence-supports-display.txt",
-          "slide_image": "automation2026/slides/slide-11.png"
+          "slide_image": "automation2026/slides/slide-11.png",
+          "timings": "automation2026/slide-11-what-the-evidence-supports.timings.json"
         },
         {
           "number": 12,
@@ -99,7 +110,8 @@
           "audio": "automation2026/slide-12-future-work.mp3",
           "spoken_transcript": "automation2026/slide-12-future-work.txt",
           "display_transcript": "automation2026/slide-12-future-work-display.txt",
-          "slide_image": "automation2026/slides/slide-12.png"
+          "slide_image": "automation2026/slides/slide-12.png",
+          "timings": "automation2026/slide-12-future-work.timings.json"
         },
         {
           "number": 13,
@@ -107,7 +119,8 @@
           "audio": "automation2026/slide-13-thank-you-and-q-a.mp3",
           "spoken_transcript": "automation2026/slide-13-thank-you-and-q-a.txt",
           "display_transcript": "automation2026/slide-13-thank-you-and-q-a-display.txt",
-          "slide_image": "automation2026/slides/slide-13.png"
+          "slide_image": "automation2026/slides/slide-13.png",
+          "timings": "automation2026/slide-13-thank-you-and-q-a.timings.json"
         },
         {
           "number": 14,
@@ -115,7 +128,8 @@
           "audio": "automation2026/slide-14-q-a-how-were-the-numbers-calculated.mp3",
           "spoken_transcript": "automation2026/slide-14-q-a-how-were-the-numbers-calculated.txt",
           "display_transcript": "automation2026/slide-14-q-a-how-were-the-numbers-calculated-display.txt",
-          "slide_image": "automation2026/slides/slide-14.png"
+          "slide_image": "automation2026/slides/slide-14.png",
+          "timings": "automation2026/slide-14-q-a-how-were-the-numbers-calculated.timings.json"
         },
         {
           "number": 15,
@@ -123,14 +137,16 @@
           "audio": "automation2026/slide-15-q-a-response-pack.mp3",
           "spoken_transcript": "automation2026/slide-15-q-a-response-pack.txt",
           "display_transcript": "automation2026/slide-15-q-a-response-pack-display.txt",
-          "slide_image": "automation2026/slides/slide-14.png"
+          "slide_image": "automation2026/slides/slide-14.png",
+          "timings": "automation2026/slide-15-q-a-response-pack.timings.json"
         },
         {
           "number": 16,
           "title": "Pronunciation: NILM and key terms",
           "audio": "automation2026/pronunciation-guide.mp3",
           "spoken_transcript": "automation2026/pronunciation-guide.txt",
-          "display_transcript": "automation2026/pronunciation-guide-display.txt"
+          "display_transcript": "automation2026/pronunciation-guide-display.txt",
+          "highlight": false
         }
       ]
     },

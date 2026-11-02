@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "a5f7c8d8d46fe545a12da64cf10aac645c52fb0c2bca7ed92c30133163f0baac",
+  "transcript_sha256": "8430de122f1149ec5c32b8496fc0edab2d7770013bb99ef516c02ce92f364f4b",
+  "duration_seconds": 53.03,
+  "cues": [
+    {
+      "text": "This is an exploratory validation-only audit.",
+      "start": 0.70124,
+      "end": 4.08725
+    },
+    {
+      "text": "We checked whether each wide-range joint configuration met every active engineering limit.",
+      "start": 4.80853,
+      "end": 10.55872
+    },
+    {
+      "text": "Only 5 out of 225 LLM configurations did so, or 2.22%.",
+      "start": 12.05109,
+      "end": 19.22959
+    },
+    {
+      "text": "For LHS, 54 out of 900 did so, or 6%.",
+      "start": 20.12134,
+      "end": 25.23936
+    },
+    {
+      "text": "The LLM proposals were closer to the ranges on average, but fewer met all the limits at once.",
+      "start": 26.13092,
+      "end": 33.26913
+    },
+    {
+      "text": "Also, none of the selected unbounded configurations from either source were fully compliant.",
+      "start": 34.80226,
+      "end": 41.17941
+    },
+    {
+      "text": "Being close to a range does not mean meeting every limit.",
+      "start": 42.23085,
+      "end": 45.37643
+    },
+    {
+      "text": "These figures describe candidate feasibility.",
+      "start": 46.47838,
+      "end": 49.24329
+    },
+    {
+      "text": "They add no new sealed-test result.",
+      "start": 50.06474,
+      "end": 52.34879
+    }
+  ]
+}

@@ -4,7 +4,9 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
+import math
 from pathlib import Path, PurePosixPath
 
 from PIL import Image, ImageDraw
@@ -29,11 +31,11 @@ APP_MANIFEST = {
         {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"},
     ],
 }
-SERVICE_WORKER = r'''const CACHE_NAME = 'personal-english-loop-v18';
+SERVICE_WORKER = r'''const CACHE_NAME = 'personal-english-loop-v19';
 const APP_SHELL = [
   './',
   './index.html',
-  './manifest.webmanifest?v=18',
+  './manifest.webmanifest?v=19',
   './icon-180.png',
   './icon-192.png',
   './icon-512.png'
@@ -94,6 +96,37 @@ def _safe_relative_name(value: object, field: str) -> str:
     return path.as_posix()
 
 
+def load_sentence_timings(path: Path, audio_path: Path, transcript: str) -> list[dict]:
+    timing = json.loads(path.read_text(encoding='utf-8'))
+    if timing.get('version') != 1:
+        raise ValueError(f'Unsupported timing version: {path}')
+    # 2026-11-02: text-weight estimates drifted after audio revision 23a7c8e.
+    # Bind actual time cues to both assets so stale timings cannot be published.
+    if timing.get('audio_sha256') != hashlib.sha256(audio_path.read_bytes()).hexdigest():
+        raise ValueError(f'Stale timing audio: {path}')
+    if timing.get('transcript_sha256') != hashlib.sha256(transcript.encode()).hexdigest():
+        raise ValueError(f'Stale timing transcript: {path}')
+    duration = timing.get('duration_seconds')
+    if not isinstance(duration, (int, float)) or not math.isfinite(duration) or duration <= 0:
+        raise ValueError(f'Invalid timing duration: {path}')
+    cues = timing.get('cues')
+    if not isinstance(cues, list) or not cues:
+        raise ValueError(f'Missing sentence cues: {path}')
+    previous_end = 0
+    for cue in cues:
+        if not isinstance(cue, dict) or not isinstance(cue.get('text'), str) or not cue['text'].strip():
+            raise ValueError(f'Invalid cue text: {path}')
+        start, end = cue.get('start'), cue.get('end')
+        if any(not isinstance(t,(int,float)) or not math.isfinite(t) for t in (start,end)):
+            raise ValueError(f'Invalid cue time: {path}')
+        if start < previous_end or end <= start or end > duration + 0.02:
+            raise ValueError(f'Invalid cue range: {path}')
+        previous_end = end
+    if ' '.join(' '.join(cue['text'] for cue in cues).split()) != ' '.join(transcript.split()):
+        raise ValueError(f'Cue transcript mismatch: {path}')
+    return cues
+
+
 def _load_items(manifest_path: Path, items: object) -> list[dict]:
     if not isinstance(items, list) or not items:
         raise ValueError("Every collection must contain at least one item")
@@ -129,6 +162,14 @@ def _load_items(manifest_path: Path, items: object) -> list[dict]:
             "audio": audio_name,
             "transcript": transcript,
         }
+        if item.get('highlight') is False:
+            loaded_item['highlight'] = False
+        if item.get('timings') is not None:
+            timing_path = manifest_path.parent / _safe_relative_name(item['timings'], 'timings')
+            loaded_item['sentence_cues'] = load_sentence_timings(timing_path, audio_path, transcript)
+            # Cache the exact audio version that these cues describe.
+            digest = hashlib.sha256(audio_path.read_bytes()).hexdigest()[:16]
+            loaded_item['audio'] = f'{audio_name}?v={digest}'
         if item.get("slide_image") is not None:
             slide_image = _safe_relative_name(item.get("slide_image"), "slide_image")
             slide_image_path = manifest_path.parent / slide_image
@@ -234,7 +275,7 @@ TEMPLATE = r'''<!doctype html>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Shadow">
-  <link rel="manifest" href="manifest.webmanifest?v=18">
+  <link rel="manifest" href="manifest.webmanifest?v=19">
   <link rel="apple-touch-icon" href="icon-180.png">
   <title>Personal English Loop</title>
   <style>
@@ -586,6 +627,8 @@ TEMPLATE = r'''<!doctype html>
 
     let stickyFrame = 0;
     let sentenceWeights = [];
+    let sentenceCues = [];
+    let highlightEnabled = true;
     let totalSentenceWeight = 0;
     let activeSentenceIndex = -1;
 
@@ -609,8 +652,9 @@ TEMPLATE = r'''<!doctype html>
     window.addEventListener('resize', queueStickyUpdate, {passive: true});
     updateStickyPlayer();
 
-    function renderTranscript(text) {
-      const sentences = sentenceParts(text);
+    function renderTranscript(text, cues = []) {
+      sentenceCues = cues;
+      const sentences = cues.length ? cues.map(cue => cue.text) : sentenceParts(text);
       sentenceWeights = sentences.map(speechUnits);
       totalSentenceWeight = sentenceWeights.reduce((total, weight) => total + weight, 0);
       activeSentenceIndex = -1;
@@ -630,7 +674,22 @@ TEMPLATE = r'''<!doctype html>
       activeSentenceIndex = index;
     }
 
+    function timedSentenceIndex(cues, currentTime) {
+      // currentTime is media time: do not multiply by playbackRate.
+      return cues.findIndex(cue => currentTime >= cue.start && currentTime < cue.end);
+    }
+
     function updateSentenceHighlight() {
+      if (!highlightEnabled) {
+        setActiveSentence(-1);
+        return;
+      }
+      if (sentenceCues.length) {
+        const ready = Number.isFinite(audio.duration) && audio.duration > 0;
+        setActiveSentence(!ready || audio.ended || (audio.paused && audio.currentTime <= 0)
+          ? -1 : timedSentenceIndex(sentenceCues, audio.currentTime));
+        return;
+      }
       if (!Number.isFinite(audio.duration) || audio.duration <= 0 || totalSentenceWeight <= 0) {
         setActiveSentence(-1);
         return;
@@ -664,7 +723,8 @@ TEMPLATE = r'''<!doctype html>
       setActiveSentence(-1);
       audio.src = item.audio;
       audio.playbackRate = speed;
-      playerStatus.textContent = '';
+      highlightEnabled = item.highlight !== false;
+      playerStatus.textContent = highlightEnabled ? '' : '此段顯示發音重點清單，不逐句高亮。';
       number.textContent = String(item.number).padStart(2, '0');
       collectionTitle.textContent = collections[activeCollectionIndex].title;
       title.textContent = item.title;
@@ -680,7 +740,7 @@ TEMPLATE = r'''<!doctype html>
         slideImage.alt = '';
         slideLink.removeAttribute('href');
       }
-      renderTranscript(item.transcript);
+      renderTranscript(item.transcript, item.sentence_cues || []);
       select.value = String(index);
       document.querySelectorAll('.page-button').forEach((button, buttonIndex) => {
         button.setAttribute('aria-current', buttonIndex === index ? 'true' : 'false');
@@ -736,6 +796,8 @@ TEMPLATE = r'''<!doctype html>
     audio.addEventListener('timeupdate', updateSentenceHighlight);
     audio.addEventListener('play', updateSentenceHighlight);
     audio.addEventListener('seeking', updateSentenceHighlight);
+    audio.addEventListener('seeked', updateSentenceHighlight);
+    audio.addEventListener('ratechange', updateSentenceHighlight);
     repeatPage.addEventListener('change', event => {
       audio.loop = event.target.checked;
       if (event.target.checked) repeatAll.setAttribute('aria-pressed', 'false');

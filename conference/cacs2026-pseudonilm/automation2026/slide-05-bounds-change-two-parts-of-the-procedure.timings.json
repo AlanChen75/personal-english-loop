@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "18976fd3f5fd70147e8565bfdaccf891e0878c04219f4967b185916859f9e4d9",
+  "transcript_sha256": "dd36faeb12894a361ec89170430ab63e67403697f4150163fcdad99c2f0edb40",
+  "duration_seconds": 55.57,
+  "cues": [
+    {
+      "text": "Here, bounds are declared engineering ranges.",
+      "start": 0.46085,
+      "end": 3.02556
+    },
+    {
+      "text": "Examples include power factor and on-ratio.",
+      "start": 3.86711,
+      "end": 6.89267
+    },
+    {
+      "text": "The table shows two places where bounds act.",
+      "start": 7.91455,
+      "end": 10.35904
+    },
+    {
+      "text": "First, they restrict candidate parameters.",
+      "start": 11.61252,
+      "end": 14.14921
+    },
+    {
+      "text": "Bounded LHS samples directly within the ranges, without clipping or rejecting wide samples.",
+      "start": 15.08119,
+      "end": 22.21959
+    },
+    {
+      "text": "Second, bounds restrict accepted events and cap reconstructed device power.",
+      "start": 23.23179,
+      "end": 28.22964
+    },
+    {
+      "text": "The wide procedure keeps wider candidate ranges and wider reconstruction rules.",
+      "start": 29.20176,
+      "end": 34.21871
+    },
+    {
+      "text": "So enabling bounds changes both candidate generation and reconstruction.",
+      "start": 35.3714,
+      "end": 40.68913
+    },
+    {
+      "text": "If performance changes, this experiment cannot tell us how much comes from each part.",
+      "start": 41.82181,
+      "end": 46.93958
+    },
+    {
+      "text": "Also, these declared ranges are engineering assumptions.",
+      "start": 47.95133,
+      "end": 51.31958
+    },
+    {
+      "text": "We have not measured the true feasible region.",
+      "start": 52.36214,
+      "end": 55.20912
+    }
+  ]
+}

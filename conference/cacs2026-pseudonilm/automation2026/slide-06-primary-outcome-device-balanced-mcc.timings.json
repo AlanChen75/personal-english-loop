@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "06fc1930333db2e1c8e2daf1b604eb4a9c3294a6d9a100074cdf677d5dad71a5",
+  "transcript_sha256": "e68d5c8a70406335b9da833790d13c0557a06354947e611b084dab2d1a28708b",
+  "duration_seconds": 59.17,
+  "cues": [
+    {
+      "text": "Our primary outcome is load-state detection.",
+      "start": 0.40093,
+      "end": 3.10719
+    },
+    {
+      "text": "MCC stands for Matthews correlation coefficient.",
+      "start": 4.41021,
+      "end": 8.19898
+    },
+    {
+      "text": "For each device, we compare predicted on and off states with test labels.",
+      "start": 9.37119,
+      "end": 14.82824
+    },
+    {
+      "text": "We count true positives, true negatives, false positives, and false negatives, then calculate one MCC for that device.",
+      "start": 16.46139,
+      "end": 25.39857
+    },
+    {
+      "text": "The reported macro MCC is the arithmetic mean of the 9 device MCC values.",
+      "start": 26.871,
+      "end": 33.88947
+    },
+    {
+      "text": "Each device receives equal weight, regardless of its duration or power rating.",
+      "start": 35.12224,
+      "end": 40.41967
+    },
+    {
+      "text": "We average device scores rather than combine all devices into one confusion matrix.",
+      "start": 41.93305,
+      "end": 47.6896
+    },
+    {
+      "text": "This test metric is separate from the aggregate-only selection score.",
+      "start": 48.50078,
+      "end": 52.57066
+    },
+    {
+      "text": "We use test labels only after selection is locked.",
+      "start": 53.25231,
+      "end": 56.25961
+    },
+    {
+      "text": "Event F-one is secondary.",
+      "start": 57.2742,
+      "end": 59.00866
+    }
+  ]
+}

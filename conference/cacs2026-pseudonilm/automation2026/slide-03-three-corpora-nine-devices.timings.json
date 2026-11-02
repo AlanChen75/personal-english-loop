@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "3d23f3c3722b478b7dbc804457a3ff24b3f79f3419a03f5607696735f2b34829",
+  "transcript_sha256": "b70888993b211af9ef6aa17d3c6397caac1c155c02f88ab9abb9bcb83fbaddde",
+  "duration_seconds": 62.05,
+  "cues": [
+    {
+      "text": "We used 3 industrial corpora: IMDELD, Case 1, and WELTRON, with 9 devices in total.",
+      "start": 0.42096,
+      "end": 8.69977
+    },
+    {
+      "text": "Each trace was aligned to 1 power sample per second.",
+      "start": 9.75296,
+      "end": 12.88833
+    },
+    {
+      "text": "We used a chronological 50%, 20%, 30% split for calibration, validation, and test.",
+      "start": 14.10142,
+      "end": 20.75951
+    },
+    {
+      "text": "The table shows four conditions: LLM wide, LLM bounded, LHS wide, and LHS bounded.",
+      "start": 21.59065,
+      "end": 30.4297
+    },
+    {
+      "text": "LHS means Latin hypercube sampling.",
+      "start": 31.32201,
+      "end": 34.7994
+    },
+    {
+      "text": "Each pool contained 15 joint configurations for each dataset, source, bounds condition, and seed.",
+      "start": 35.75125,
+      "end": 42.84974
+    },
+    {
+      "text": "For the LLM, device proposals were joined by index, rather than by every possible combination.",
+      "start": 43.72069,
+      "end": 51.73378
+    },
+    {
+      "text": "Both sources received the same candidate-count and calibration-sample budgets.",
+      "start": 56.21104,
+      "end": 61.80922
+    }
+  ]
+}

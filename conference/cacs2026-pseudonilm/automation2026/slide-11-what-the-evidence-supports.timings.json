@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "f31c3c8b57f331a3bdc249482c8b5873983ba0461e1ec5595a1e30f855bdf052",
+  "transcript_sha256": "8f1b9a890c778d80971aa20ac18e61f29b6310061f02bcc952a85dfb2cf18364",
+  "duration_seconds": 58.74,
+  "cues": [
+    {
+      "text": "The three rows summarize three evidence sets.",
+      "start": 0.38217,
+      "end": 3.31886
+    },
+    {
+      "text": "In validation, unbounded LLM pools had higher selected MCC, but we found no bounded LLM advantage.",
+      "start": 4.45115,
+      "end": 13.16845
+    },
+    {
+      "text": "In the frozen seed 101 test, the threshold-only baseline remained strongest.",
+      "start": 14.86176,
+      "end": 20.59969
+    },
+    {
+      "text": "Across 5 LLM test seeds, bounds reduced variation but also lowered mean MCC.",
+      "start": 21.47106,
+      "end": 28.74944
+    },
+    {
+      "text": "Together, these findings show why we need to check candidate feasibility, selection quality, and a simple baseline.",
+      "start": 30.06137,
+      "end": 39.35859
+    },
+    {
+      "text": "Bounds change both generation and reconstruction.",
+      "start": 40.93095,
+      "end": 43.89708
+    },
+    {
+      "text": "The generators receive different information, and repeated-test evidence is unequal.",
+      "start": 44.47828,
+      "end": 49.58884
+    },
+    {
+      "text": "We cannot isolate the effect of bounds alone or claim that the method will generalize to another facility.",
+      "start": 51.04131,
+      "end": 58.61971
+    }
+  ]
+}

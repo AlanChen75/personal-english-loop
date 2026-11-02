@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "e92045fe936bec9bed44eaf6c649027c4295c76019f234be2c130aa47d405b64",
+  "transcript_sha256": "f90cfeb8efec440ff71f5bd0adce598150cf444a90e619637b8db7dfbbaccf76",
+  "duration_seconds": 48.15,
+  "cues": [
+    {
+      "text": "Industrial NILM estimates individual device states from an aggregate power trace.",
+      "start": 0.76189,
+      "end": 7.35821
+    },
+    {
+      "text": "In a new site, device-level labels may be unavailable during calibration.",
+      "start": 8.93104,
+      "end": 13.26006
+    },
+    {
+      "text": "We therefore have to select parameters using aggregate data alone.",
+      "start": 14.04169,
+      "end": 17.82958
+    },
+    {
+      "text": "Those parameters control such things as power thresholds and the reconstruction of each device's signal.",
+      "start": 18.8614,
+      "end": 25.15971
+    },
+    {
+      "text": "A configuration that looks plausible by engineering intuition can still perform poorly on labeled device states.",
+      "start": 26.05113,
+      "end": 33.24949
+    },
+    {
+      "text": "This makes candidate generation and candidate selection separate problems.",
+      "start": 34.22173,
+      "end": 38.55951
+    },
+    {
+      "text": "Our experiment keeps the selection rule fixed and compares two ways to supply it with candidate configurations.",
+      "start": 40.0322,
+      "end": 47.78921
+    }
+  ]
+}

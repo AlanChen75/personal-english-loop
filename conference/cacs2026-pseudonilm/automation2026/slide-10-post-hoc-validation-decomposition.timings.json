@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "aecc048dd5460525d13634f2a32aa57a5818f294d4c0d1a2ca9cf30cc90b56fb",
+  "transcript_sha256": "7219af1a95766d4116c0fac8ef2e833059db02c9c3c29a2c8fdb70d64fe5d56e",
+  "duration_seconds": 72.08,
+  "cues": [
+    {
+      "text": "This page uses unbounded validation pools only.",
+      "start": 0.28056,
+      "end": 3.82766
+    },
+    {
+      "text": "Every delta means LLM minus LHS.",
+      "start": 4.78958,
+      "end": 9.51904
+    },
+    {
+      "text": "A pool ceiling is the best validation MCC available inside that fixed pool.",
+      "start": 10.99217,
+      "end": 16.2098
+    },
+    {
+      "text": "Selection regret is the gap between this ceiling and the score of the chosen candidate.",
+      "start": 17.1017,
+      "end": 22.09929
+    },
+    {
+      "text": "Selected MCC therefore equals ceiling minus regret.",
+      "start": 22.67008,
+      "end": 27.22908
+    },
+    {
+      "text": "In the first row, with equal device weights, the selected difference is 0.3150.",
+      "start": 28.18112,
+      "end": 34.53982
+    },
+    {
+      "text": "A higher pool ceiling and lower selection regret both contribute.",
+      "start": 35.61272,
+      "end": 39.68942
+    },
+    {
+      "text": "In the second row, with equal dataset weights, the selected difference is 0.2786.",
+      "start": 41.26229,
+      "end": 48.89847
+    },
+    {
+      "text": "The ceiling difference is close to zero, so lower regret explains most of the difference.",
+      "start": 50.31068,
+      "end": 56.06218
+    },
+    {
+      "text": "These are post-hoc diagnostics.",
+      "start": 57.36479,
+      "end": 59.30868
+    },
+    {
+      "text": "The oracle uses validation labels to find the ceiling.",
+      "start": 60.96109,
+      "end": 64.24668
+    },
+    {
+      "text": "We cannot use it as a label-free selector.",
+      "start": 65.26842,
+      "end": 68.07319
+    }
+  ]
+}

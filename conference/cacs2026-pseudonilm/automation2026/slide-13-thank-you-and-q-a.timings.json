@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "8d285e866201ba322c9cfa44315e46a4b627476e3c3fa2cdc2d0d4bc6fd5b9d7",
+  "transcript_sha256": "69464d0105f4eaf72b3f6931549206a714348e148563e81b7a4e15beb17f061a",
+  "duration_seconds": 19.31,
+  "cues": [
+    {
+      "text": "Thank you for listening.",
+      "start": 3.06816,
+      "end": 4.01067
+    },
+    {
+      "text": "I am happy to take your questions.",
+      "start": 5.35424,
+      "end": 7.33952
+    },
+    {
+      "text": "If we do not have enough time, please email me at d11351004@mail.ntust.edu.tw.",
+      "start": 8.23063,
+      "end": 18.88926
+    }
+  ]
+}

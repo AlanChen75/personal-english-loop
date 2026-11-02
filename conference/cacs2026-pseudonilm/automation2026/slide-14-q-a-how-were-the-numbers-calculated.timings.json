@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "e4303c23bf2c448094f87ddad039c052c20e0f4db54d0530f8175e7b5e2f3f4e",
+  "transcript_sha256": "da9350a3c8934d3fb881a4cb2a0ea502600722e9dea42774e0e7e6e35518cf49",
+  "duration_seconds": 35.16,
+  "cues": [
+    {
+      "text": "We compare predicted and true on/off states for each device.",
+      "start": 0.52229,
+      "end": 4.3993
+    },
+    {
+      "text": "We count the 4 outcomes, calculate an MCC for each device, and average the 9 device scores.",
+      "start": 5.29091,
+      "end": 12.8489
+    },
+    {
+      "text": "The configuration is locked before test labels are used.",
+      "start": 14.08093,
+      "end": 17.44838
+    },
+    {
+      "text": "The 5-seed result averages 5 macro MCCs.",
+      "start": 18.00962,
+      "end": 22.39933
+    },
+    {
+      "text": "The compliance figures are direct fractions.",
+      "start": 23.41201,
+      "end": 26.3081
+    },
+    {
+      "text": "The validation decomposition is a post-hoc diagnostic, and its oracle ceiling is not a deployable selector.",
+      "start": 27.56138,
+      "end": 34.91941
+    }
+  ]
+}

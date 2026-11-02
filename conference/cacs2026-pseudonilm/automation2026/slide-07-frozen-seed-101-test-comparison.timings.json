@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "7e3cf289ea7ea7625f832ede643f01acb55ecc200670b7a635ee00ffed24940c",
+  "transcript_sha256": "bb9a0ad1bf63744d643ff27ad48566e34a97ad1066022c71f56d53a5ed45bd5d",
+  "duration_seconds": 59.01,
+  "cues": [
+    {
+      "text": "In the frozen seed 101 test comparison, LHS rose from 0.0991 without bounds to 0.6244 with bounds.",
+      "start": 0.68349,
+      "end": 12.92804
+    },
+    {
+      "text": "The LLM arm rose from 0.4850 to 0.5577.",
+      "start": 14.54098,
+      "end": 20.61951
+    },
+    {
+      "text": "Those are differences between complete bounded and unbounded procedures, not isolated effects of the candidate limits.",
+      "start": 21.61123,
+      "end": 28.76949
+    },
+    {
+      "text": "The strongest pooled result was actually a simple threshold-only baseline, at 0.8059 MCC.",
+      "start": 29.90131,
+      "end": 37.83919
+    },
+    {
+      "text": "This is important to state plainly: our more elaborate candidate generators did not win the overall test comparison.",
+      "start": 38.89073,
+      "end": 47.52935
+    },
+    {
+      "text": "The observed gain in the bounded arms supports examining the role of engineering limits, while the baseline keeps the performance claim in perspective.",
+      "start": 48.54111,
+      "end": 58.9296
+    }
+  ]
+}

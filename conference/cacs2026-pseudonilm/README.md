@@ -15,6 +15,7 @@
 - 兩套研討會講稿都同步顯示投影片、逐頁音檔與英文講稿
 - 自我介紹與每日教材同步顯示音檔與英文逐字稿
 - 播放、拖曳或倒退音訊時，逐字稿會同步標示目前句子
+- Automation 第 1–15 段使用原始語音片段的 CTC 對齊時間戳，包含實際停頓；0.8×／0.9×／1.0× 都依音訊 currentTime 切換。發音重點清單不是完整逐字稿，不啟用逐句高亮。其他教材暫保留估算模式。
 - 點選投影片可開啟原尺寸圖片
 - 0.8×、0.9×、1.0× 播放速度
 - 倒退 5 秒
@@ -42,6 +43,7 @@
 - `automation2026/slides/slide-1...slide-14.png`：Automation 2026 投影片圖片
 - `practice-materials/automation2026/extension-v7.json`：對齊簡報 v7／講稿 v6 的第 1–12 頁覆寫、第 13 頁收尾與第 14 頁計算備答；第 3–6、8–11 頁補上研究條件、公式、指標定義與證據範圍
 - `automation2026/generation-manifest.json`：Automation 2026 音訊生成紀錄
+- `automation2026/*.timings.json`：逐句起訖秒數及音檔／字稿 SHA-256；重建播放器時若音檔或字稿變更卻未更新時間戳，會拒絕產出
 
 新增音檔由地端 RTX 3090 的 Qwen3-TTS 複製聲音產生。音檔為 24 kHz、單聲道、96 kbps MP3，輸出響度目標為 -16 LUFS，沒有改變原始生成語速。
 
@@ -50,5 +52,6 @@
 1. `python3 scripts/generate_automation_audio.py --prepare --work-root <work-dir>` 從 12 頁基礎講稿與 `extension-v7.json` 套用逐頁講稿、收尾及附錄後，建立固定的 x-vector 工作清單。顯示稿用數字；TTS 保留小數前的 zero 與 MCC 逐字母停頓。
 2. 在 `ac-3090` 以 `scripts/remote_qwen_clone_worker.py` 和既有參考聲音執行工作清單，參數維持 `--max-new-tokens 512 --x-vector-only`。
 3. `python3 scripts/generate_automation_audio.py --assemble --work-root <work-dir> --xvector-cache <wav-cache> --output-root <output-dir>` 合併、正規化並輸出 MP3。
-4. 將生成檔與投影片圖片放進 `automation2026/`，更新 `library-manifest.json` 後執行 `scripts/build_shadowing_player.py`。
-5. 跑完整測試、推送 GitHub Pages，並查回頁面與音檔 HTTP 200 後才視為上線。
+4. 將生成檔與投影片圖片放進 `automation2026/`。用 `scripts/remote_align_tts_chunks.py --jobs <jobs.json> --cache <wav-cache> --output <alignment.json>` 在 3090 對齊原始片段，再以 `scripts/build_automation_timings.py --plan <plan.json> --alignment <alignment.json> --cache <wav-cache> --audio-root conference/cacs2026-pseudonilm/automation2026` 產生時間戳。對齊流程不修改聲音或語速。
+5. 更新 `library-manifest.json` 的 `timings` 路徑後，執行 `scripts/build_shadowing_player.py`。時間戳必須與音檔、字稿版本一致，播放器會以音檔雜湊建立快取網址。
+6. 跑完整測試、推送 GitHub Pages，並查回頁面與音檔 HTTP 200 後才視為上線。

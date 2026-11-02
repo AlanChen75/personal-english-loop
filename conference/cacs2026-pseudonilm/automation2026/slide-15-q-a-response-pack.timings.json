@@ -1,0 +1,180 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "eaaa13c6435ccc4395e7682a6f9b0cd3db4d3377adfb74a42e44cd15570e6d00",
+  "transcript_sha256": "0dbe34cdf6224865d1a5dfd2571da284f3634d27a3d255c7bf80bbe4f2ff1bcf",
+  "duration_seconds": 202.23,
+  "cues": [
+    {
+      "text": "Q1.",
+      "start": 0.94144,
+      "end": 1.62249
+    },
+    {
+      "text": "How did you calculate the MCC values and the main conclusion?",
+      "start": 2.92449,
+      "end": 6.79041
+    },
+    {
+      "text": "Answer.",
+      "start": 7.65174,
+      "end": 7.97223
+    },
+    {
+      "text": "On the sealed test data, we calculate MCC from each device's on/off confusion matrix, then average the nine device MCCs equally.",
+      "start": 9.31429,
+      "end": 22.9889
+    },
+    {
+      "text": "The threshold-only baseline scores 0.8059; bounded LHS scores 0.6244 in the frozen seed 101 comparison.",
+      "start": 24.20145,
+      "end": 35.98895
+    },
+    {
+      "text": "So our conclusion concerns the role of bounds in this comparison, not an overall win for the generator.",
+      "start": 37.22091,
+      "end": 43.73384
+    },
+    {
+      "text": "Q2.",
+      "start": 45.21678,
+      "end": 45.77789
+    },
+    {
+      "text": "How did you get 2.22 percent, 6 percent, or the 0.3150 advantage?",
+      "start": 47.65063,
+      "end": 55.12083
+    },
+    {
+      "text": "Answer.",
+      "start": 55.88187,
+      "end": 56.18228
+    },
+    {
+      "text": "The compliance percentages are counts of complete configurations: 5/225 for LLM, and 54/900 for LHS.",
+      "start": 57.28379,
+      "end": 70.07955
+    },
+    {
+      "text": "The 0.3150 is different: unbounded LLM-minus-LHS selected MCC on validation data, weighted equally by device.",
+      "start": 71.05082,
+      "end": 83.7646
+    },
+    {
+      "text": "With equal dataset weighting, it becomes 0.2786.",
+      "start": 85.5086,
+      "end": 90.25949
+    },
+    {
+      "text": "That post-hoc analysis adds no new test result.",
+      "start": 91.31095,
+      "end": 94.75773
+    },
+    {
+      "text": "Q3.",
+      "start": 95.59939,
+      "end": 96.32081
+    },
+    {
+      "text": "Why do the bounded results seem contradictory?",
+      "start": 96.92199,
+      "end": 99.5672
+    },
+    {
+      "text": "Answer.",
+      "start": 100.28862,
+      "end": 100.54913
+    },
+    {
+      "text": "They answer different questions.",
+      "start": 101.76103,
+      "end": 103.14442
+    },
+    {
+      "text": "In the single frozen seed 101 test, both bounded arms scored higher.",
+      "start": 104.28722,
+      "end": 109.37971
+    },
+    {
+      "text": "Across 5 LLM test seeds, bounds lowered mean MCC from 0.6262 to 0.5951, while reducing variation.",
+      "start": 110.49124,
+      "end": 122.34456
+    },
+    {
+      "text": "The validation pool audit is a third, post-hoc analysis.",
+      "start": 123.62777,
+      "end": 128.17915
+    },
+    {
+      "text": "I would therefore not say “bounds always help”; the result depends on which comparison we report.",
+      "start": 129.33097,
+      "end": 135.70436
+    },
+    {
+      "text": "Q4.",
+      "start": 137.36785,
+      "end": 138.04928
+    },
+    {
+      "text": "What exactly is the future experiment?",
+      "start": 139.08066,
+      "end": 141.48532
+    },
+    {
+      "text": "Answer.",
+      "start": 142.2468,
+      "end": 142.5073
+    },
+    {
+      "text": "We would use an independent controlled system with device states, physical behavior, and a feasible region specified before candidate generation.",
+      "start": 143.40905,
+      "end": 152.90944
+    },
+    {
+      "text": "We would test correct, boundary-adjacent, and misspecified bounds, while varying candidate restrictions and reconstruction caps separately.",
+      "start": 153.82082,
+      "end": 164.11908
+    },
+    {
+      "text": "That would distinguish the mechanisms and show where the approach fails.",
+      "start": 165.43209,
+      "end": 169.02905
+    },
+    {
+      "text": "This validation is future work, not a completed experiment in this paper.",
+      "start": 170.06115,
+      "end": 174.51174
+    },
+    {
+      "text": "General response.",
+      "start": 175.11317,
+      "end": 176.13561
+    },
+    {
+      "text": "Answer.",
+      "start": 176.77714,
+      "end": 177.0578
+    },
+    {
+      "text": "Thank you.",
+      "start": 177.45876,
+      "end": 177.83967
+    },
+    {
+      "text": "This study does not directly test that case, so I do not want to infer a result from the current numbers.",
+      "start": 178.39017,
+      "end": 185.10948
+    },
+    {
+      "text": "We can report the fixed-budget comparison on these 3 datasets under a common aggregate-only selector.",
+      "start": 186.40194,
+      "end": 193.21934
+    },
+    {
+      "text": "Answering the broader question would require an independent controlled comparison or a held-out facility designed for that condition.",
+      "start": 194.45148,
+      "end": 202.06962
+    }
+  ]
+}
