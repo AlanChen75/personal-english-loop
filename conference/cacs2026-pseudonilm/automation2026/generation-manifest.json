@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T08:27:18.956417+00:00",
+  "generated_at": "2026-11-04T13:42:40.286636+00:00",
   "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "generation_mode": "voice_clone_x-vector-only_existing_parameters",
   "post_processing": "loudnorm I=-16 LUFS, TP=-1.5 dB, LRA=11; no speed change",
@@ -11,8 +11,8 @@
       "sha256": "3c6a9066c07e2bcfd109e840ac93793bf697e18eec67ff9590483f600e822d8a"
     },
     {
-      "path": "extension-v7.json",
-      "sha256": "be5464cb25466bc4d60e04222a25a8cd3fadd9aff84fc682ba70ad319937a96b"
+      "path": "extension-v9.json",
+      "sha256": "940591827f085f9ce5ffdb2132b44b62cf586497ca40ea011e6edba0ff53375f"
     }
   ],
   "items": [
@@ -23,7 +23,7 @@
       "spoken_transcript": "slide-01-engineering-bounds-constrain-candidate-selection-in-industri.txt",
       "display_transcript": "slide-01-engineering-bounds-constrain-candidate-selection-in-industri-display.txt",
       "slide_image": "automation2026/slides/slide-1.png",
-      "raw_duration_seconds": 38.52,
+      "raw_duration_seconds": 38.28,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -35,9 +35,9 @@
           }
         ],
         "format": {
-          "duration": "38.520000",
-          "size": "463149",
-          "bit_rate": "96188"
+          "duration": "38.280000",
+          "size": "460269",
+          "bit_rate": "96189"
         }
       }
     },
@@ -73,7 +73,7 @@
       "spoken_transcript": "slide-03-three-corpora-nine-devices.txt",
       "display_transcript": "slide-03-three-corpora-nine-devices-display.txt",
       "slide_image": "automation2026/slides/slide-3.png",
-      "raw_duration_seconds": 62.05,
+      "raw_duration_seconds": 66.85,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -85,9 +85,9 @@
           }
         ],
         "format": {
-          "duration": "62.050000",
-          "size": "745677",
-          "bit_rate": "96138"
+          "duration": "66.850000",
+          "size": "803277",
+          "bit_rate": "96128"
         }
       }
     },
@@ -148,7 +148,7 @@
       "spoken_transcript": "slide-06-primary-outcome-device-balanced-mcc.txt",
       "display_transcript": "slide-06-primary-outcome-device-balanced-mcc-display.txt",
       "slide_image": "automation2026/slides/slide-6.png",
-      "raw_duration_seconds": 59.17,
+      "raw_duration_seconds": 58.69,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -160,9 +160,9 @@
           }
         ],
         "format": {
-          "duration": "59.170000",
-          "size": "711117",
-          "bit_rate": "96145"
+          "duration": "58.690000",
+          "size": "705357",
+          "bit_rate": "96146"
         }
       }
     },
@@ -223,7 +223,7 @@
       "spoken_transcript": "slide-09-full-compliance-is-rare-without-bounds.txt",
       "display_transcript": "slide-09-full-compliance-is-rare-without-bounds-display.txt",
       "slide_image": "automation2026/slides/slide-9.png",
-      "raw_duration_seconds": 53.03,
+      "raw_duration_seconds": 50.26,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -235,9 +235,9 @@
           }
         ],
         "format": {
-          "duration": "53.030000",
-          "size": "637389",
-          "bit_rate": "96155"
+          "duration": "50.260000",
+          "size": "604269",
+          "bit_rate": "96182"
         }
       }
     },
@@ -416,7 +416,7 @@
     "audio": "automation2026-full-talk.mp3",
     "spoken_transcript": "automation2026-full-talk.txt",
     "display_transcript": "automation2026-full-talk-display.txt",
-    "raw_duration_seconds": 693.12,
+    "raw_duration_seconds": 694.43,
     "probe": {
       "programs": [],
       "stream_groups": [],
@@ -428,9 +428,9 @@
         }
       ],
       "format": {
-        "duration": "693.120000",
-        "size": "8318349",
-        "bit_rate": "96010"
+        "duration": "694.430000",
+        "size": "8334189",
+        "bit_rate": "96011"
       }
     }
   }

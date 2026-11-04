@@ -2,54 +2,54 @@
   "version": 1,
   "method": "CTC forced alignment on original TTS WAV chunks",
   "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
-  "audio_sha256": "a5f7c8d8d46fe545a12da64cf10aac645c52fb0c2bca7ed92c30133163f0baac",
-  "transcript_sha256": "8430de122f1149ec5c32b8496fc0edab2d7770013bb99ef516c02ce92f364f4b",
-  "duration_seconds": 53.03,
+  "audio_sha256": "24011e30ea401c23968214ab484dc821e86e1ea969396be75b72d4d1c6fc982f",
+  "transcript_sha256": "05e7bb069fd663f24e639322a874af0631e9973b96d5629d1e81552b6c45e80a",
+  "duration_seconds": 50.26,
   "cues": [
     {
-      "text": "This is an exploratory validation-only audit.",
-      "start": 0.70124,
-      "end": 4.08725
+      "text": "Here, we use only validation data for an extra check.",
+      "start": 0.50122,
+      "end": 3.94959
     },
     {
-      "text": "We checked whether each wide-range joint configuration met every active engineering limit.",
-      "start": 4.80853,
-      "end": 10.55872
+      "text": "We check how many candidates meet all the engineering limits.",
+      "start": 4.85178,
+      "end": 8.13976
     },
     {
       "text": "Only 5 out of 225 LLM configurations did so, or 2.22%.",
-      "start": 12.05109,
-      "end": 19.22959
+      "start": 9.01109,
+      "end": 16.18959
     },
     {
       "text": "For LHS, 54 out of 900 did so, or 6%.",
-      "start": 20.12134,
-      "end": 25.23936
+      "start": 17.08134,
+      "end": 22.19936
     },
     {
       "text": "The LLM proposals were closer to the ranges on average, but fewer met all the limits at once.",
-      "start": 26.13092,
-      "end": 33.26913
+      "start": 23.09092,
+      "end": 30.22913
     },
     {
       "text": "Also, none of the selected unbounded configurations from either source were fully compliant.",
-      "start": 34.80226,
-      "end": 41.17941
+      "start": 31.76226,
+      "end": 38.13941
     },
     {
       "text": "Being close to a range does not mean meeting every limit.",
-      "start": 42.23085,
-      "end": 45.37643
+      "start": 39.09098,
+      "end": 42.21904
     },
     {
-      "text": "These figures describe candidate feasibility.",
-      "start": 46.47838,
-      "end": 49.24329
+      "text": "These numbers show whether candidates meet the engineering limits.",
+      "start": 42.92085,
+      "end": 46.38979
     },
     {
-      "text": "They add no new sealed-test result.",
-      "start": 50.06474,
-      "end": 52.34879
+      "text": "This check adds no new test results.",
+      "start": 47.40339,
+      "end": 50.09906
     }
   ]
 }

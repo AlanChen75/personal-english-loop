@@ -1,0 +1,93 @@
+{
+  "version": "9.0",
+  "source_deck": "automation2026_13min_deck_v9.pptx",
+  "overrides": [
+    {
+      "slide": 1,
+      "spoken_transcript": "Good morning. My name is Chung-Kuang Chen. I am a doctoral student at National Taiwan University of Science and Technology. My institute is the Graduate Institute of Intelligent Manufacturing Technology. Today, I will present our work on engineering bounds in industrial NILM. We compare candidates proposed by a large language model with candidates from structured sampling. We ask how engineering limits change the results.",
+      "display_transcript": "Good morning. My name is Chung-Kuang Chen. I am a doctoral student at National Taiwan University of Science and Technology. My institute is the Graduate Institute of Intelligent Manufacturing Technology. Today, I will present our work on engineering bounds in industrial NILM. We compare candidates proposed by a large language model with candidates from structured sampling. We ask how engineering limits change the results."
+    },
+    {
+      "slide": 2,
+      "spoken_transcript": "Industrial NILM estimates individual device states from an aggregate power trace. In a new site, device-level labels may be unavailable during calibration. We therefore have to select parameters using aggregate data alone. Those parameters control such things as power thresholds and the reconstruction of each device's signal. A configuration that looks plausible by engineering intuition can still perform poorly on labeled device states. This makes candidate generation and candidate selection separate problems. Our experiment keeps the selection rule fixed and compares two ways to supply it with candidate configurations.",
+      "display_transcript": "Industrial NILM estimates individual device states from an aggregate power trace. In a new site, device-level labels may be unavailable during calibration. We therefore have to select parameters using aggregate data alone. Those parameters control such things as power thresholds and the reconstruction of each device's signal. A configuration that looks plausible by engineering intuition can still perform poorly on labeled device states. This makes candidate generation and candidate selection separate problems. Our experiment keeps the selection rule fixed and compares two ways to supply it with candidate configurations."
+    },
+    {
+      "slide": 3,
+      "spoken_transcript": "We used three industrial corpora: IMDELD, Case 1, and WELTRON, with nine devices in total. Each trace was aligned to one power sample per second. We split the data in time order. The first fifty percent is for calibration. The next twenty percent is for validation. The last thirty percent is for testing. The table shows four conditions: LLM wide, LLM bounded, LHS wide, and LHS bounded. LHS means Latin hypercube sampling. Each pool contained fifteen joint configurations for each dataset, source, bounds condition, and seed. For the LLM, device proposals were joined by index, rather than by every possible combination. Both sources received the same candidate-count and calibration-sample budgets.",
+      "display_transcript": "We used 3 industrial corpora: IMDELD, Case 1, and WELTRON, with 9 devices in total. Each trace was aligned to 1 power sample per second. We split the data in time order. The first 50% is for calibration. The next 20% is for validation. The last 30% is for testing. The table shows four conditions: LLM wide, LLM bounded, LHS wide, and LHS bounded. LHS means Latin hypercube sampling. Each pool contained 15 joint configurations for each dataset, source, bounds condition, and seed. For the LLM, device proposals were joined by index, rather than by every possible combination. Both sources received the same candidate-count and calibration-sample budgets."
+    },
+    {
+      "slide": 4,
+      "spoken_transcript": "First, we form the LLM and LHS candidate pools. The same selector then ranks every pool using aggregate data only. The formula on the right combines residual fit, event agreement, state consistency, and separation. Their weights are zero point three five, zero point three zero, zero point two zero, and zero point one five. No device-level labels enter selection. We freeze the selected configuration first, and only then evaluate it with test labels. Candidate-count and calibration-sample budgets are equal. Generation information differs: the LLM also sees device information, aggregate statistics, and the scorer description. LHS uses the parameter ranges and a seed. Generation time and cost are not matched.",
+      "display_transcript": "First, we form the LLM and LHS candidate pools. The same selector then ranks every pool using aggregate data only. The formula on the right combines residual fit, event agreement, state consistency, and separation. Their weights are 0.35, 0.30, 0.20, and 0.15. No device-level labels enter selection. We freeze the selected configuration first, and only then evaluate it with test labels. Candidate-count and calibration-sample budgets are equal. Generation information differs: the LLM also sees device information, aggregate statistics, and the scorer description. LHS uses the parameter ranges and a seed. Generation time and cost are not matched."
+    },
+    {
+      "slide": 5,
+      "spoken_transcript": "Here, bounds are declared engineering ranges. Examples include power factor and on-ratio. The table shows two places where bounds act. First, they restrict candidate parameters. Bounded LHS samples directly within the ranges, without clipping or rejecting wide samples. Second, bounds restrict accepted events and cap reconstructed device power. The wide procedure keeps wider candidate ranges and wider reconstruction rules. So enabling bounds changes both candidate generation and reconstruction. If performance changes, this experiment cannot tell us how much comes from each part. Also, these declared ranges are engineering assumptions. We have not measured the true feasible region.",
+      "display_transcript": "Here, bounds are declared engineering ranges. Examples include power factor and on-ratio. The table shows two places where bounds act. First, they restrict candidate parameters. Bounded LHS samples directly within the ranges, without clipping or rejecting wide samples. Second, bounds restrict accepted events and cap reconstructed device power. The wide procedure keeps wider candidate ranges and wider reconstruction rules. So enabling bounds changes both candidate generation and reconstruction. If performance changes, this experiment cannot tell us how much comes from each part. Also, these declared ranges are engineering assumptions. We have not measured the true feasible region."
+    },
+    {
+      "slide": 6,
+      "spoken_transcript": "Our primary outcome is load-state detection. MCC stands for Matthews correlation coefficient. For each device, we compare predicted on and off states with test labels. We count true positives, true negatives, false positives, and false negatives, then calculate one MCC for that device. To calculate macro MCC, we add the nine MCC scores and divide by nine. Each device receives equal weight, regardless of its duration or power rating. We average device scores rather than combine all devices into one confusion matrix. This test metric is separate from the aggregate-only selection score. We use test labels only after selection is locked. Event F-one is secondary.",
+      "display_transcript": "Our primary outcome is load-state detection. MCC stands for Matthews correlation coefficient. For each device, we compare predicted on and off states with test labels. We count true positives, true negatives, false positives, and false negatives, then calculate one MCC for that device. To calculate macro MCC, we add the 9 MCC scores and divide by 9. Each device receives equal weight, regardless of its duration or power rating. We average device scores rather than combine all devices into one confusion matrix. This test metric is separate from the aggregate-only selection score. We use test labels only after selection is locked. Event F-one is secondary."
+    },
+    {
+      "slide": 7,
+      "spoken_transcript": "In the frozen seed-one-oh-one test comparison, LHS rose from zero point zero nine nine one without bounds to zero point six two four four with bounds. The LLM arm rose from zero point four eight five zero to zero point five five seven seven. Those are differences between complete bounded and unbounded procedures, not isolated effects of the candidate limits. The strongest pooled result was actually a simple threshold-only baseline, at zero point eight zero five nine MCC. This is important to state plainly: our more elaborate candidate generators did not win the overall test comparison. The observed gain in the bounded arms supports examining the role of engineering limits, while the baseline keeps the performance claim in perspective.",
+      "display_transcript": "In the frozen seed 101 test comparison, LHS rose from 0.0991 without bounds to 0.6244 with bounds. The LLM arm rose from 0.4850 to 0.5577. Those are differences between complete bounded and unbounded procedures, not isolated effects of the candidate limits. The strongest pooled result was actually a simple threshold-only baseline, at 0.8059 MCC. This is important to state plainly: our more elaborate candidate generators did not win the overall test comparison. The observed gain in the bounded arms supports examining the role of engineering limits, while the baseline keeps the performance claim in perspective."
+    },
+    {
+      "slide": 8,
+      "spoken_transcript": "Across five LLM test seeds, mean MCC was zero point six two six two without bounds, with a sample standard deviation of zero point one one three one. With bounds, the mean was zero point five nine five one, with a smaller standard deviation of zero point zero four one three. So bounds reduced variation, but the mean was also lower. The table below shows the evidence available: five LLM test seeds, one LHS test seed, and twenty LHS validation seeds. The twenty LHS seeds add no repeated test result. We therefore cannot treat this as a matched repeated-test comparison between LLM and LHS.",
+      "display_transcript": "Across 5 LLM test seeds, mean MCC was 0.6262 without bounds, with a sample standard deviation of 0.1131. With bounds, the mean was 0.5951, with a smaller standard deviation of 0.0413. So bounds reduced variation, but the mean was also lower. The table below shows the evidence available: 5 LLM test seeds, 1 LHS test seed, and 20 LHS validation seeds. The 20 LHS seeds add no repeated test result. We therefore cannot treat this as a matched repeated-test comparison between LLM and LHS."
+    },
+    {
+      "slide": 9,
+      "spoken_transcript": "Here, we use only validation data for an extra check. We check how many candidates meet all the engineering limits. Only five out of two hundred twenty-five LLM configurations did so, or two point two two percent. For LHS, fifty-four out of nine hundred did so, or six percent. The LLM proposals were closer to the ranges on average, but fewer met all the limits at once. Also, none of the selected unbounded configurations from either source were fully compliant. Being close to a range does not mean meeting every limit. These numbers show whether candidates meet the engineering limits. This check adds no new test results.",
+      "display_transcript": "Here, we use only validation data for an extra check. We check how many candidates meet all the engineering limits. Only 5 out of 225 LLM configurations did so, or 2.22%. For LHS, 54 out of 900 did so, or 6%. The LLM proposals were closer to the ranges on average, but fewer met all the limits at once. Also, none of the selected unbounded configurations from either source were fully compliant. Being close to a range does not mean meeting every limit. These numbers show whether candidates meet the engineering limits. This check adds no new test results."
+    },
+    {
+      "slide": 10,
+      "spoken_transcript": "This page uses unbounded validation pools only. Every delta means LLM minus LHS. A pool ceiling is the best validation MCC available inside that fixed pool. Selection regret is the gap between this ceiling and the score of the chosen candidate. Selected MCC therefore equals ceiling minus regret. In the first row, with equal device weights, the selected difference is zero point three one five zero. A higher pool ceiling and lower selection regret both contribute. In the second row, with equal dataset weights, the selected difference is zero point two seven eight six. The ceiling difference is close to zero, so lower regret explains most of the difference. These are post-hoc diagnostics. The oracle uses validation labels to find the ceiling. We cannot use it as a label-free selector.",
+      "display_transcript": "This page uses unbounded validation pools only. Every delta means LLM minus LHS. A pool ceiling is the best validation MCC available inside that fixed pool. Selection regret is the gap between this ceiling and the score of the chosen candidate. Selected MCC therefore equals ceiling minus regret. In the first row, with equal device weights, the selected difference is 0.3150. A higher pool ceiling and lower selection regret both contribute. In the second row, with equal dataset weights, the selected difference is 0.2786. The ceiling difference is close to zero, so lower regret explains most of the difference. These are post-hoc diagnostics. The oracle uses validation labels to find the ceiling. We cannot use it as a label-free selector."
+    },
+    {
+      "slide": 11,
+      "spoken_transcript": "The three rows summarize three evidence sets. In validation, unbounded LLM pools had higher selected MCC, but we found no bounded LLM advantage. In the frozen seed-one-oh-one test, the threshold-only baseline remained strongest. Across five LLM test seeds, bounds reduced variation but also lowered mean MCC. Together, these findings show why we need to check candidate feasibility, selection quality, and a simple baseline. Bounds change both generation and reconstruction. The generators receive different information, and repeated-test evidence is unequal. We cannot isolate the effect of bounds alone or claim that the method will generalize to another facility.",
+      "display_transcript": "The three rows summarize three evidence sets. In validation, unbounded LLM pools had higher selected MCC, but we found no bounded LLM advantage. In the frozen seed 101 test, the threshold-only baseline remained strongest. Across 5 LLM test seeds, bounds reduced variation but also lowered mean MCC. Together, these findings show why we need to check candidate feasibility, selection quality, and a simple baseline. Bounds change both generation and reconstruction. The generators receive different information, and repeated-test evidence is unequal. We cannot isolate the effect of bounds alone or claim that the method will generalize to another facility."
+    },
+    {
+      "slide": 12,
+      "spoken_transcript": "The next step is independent controlled validation. We would specify device states, physical behavior, and a feasible region independently of the generators. Then we would test correct, boundary-adjacent, and misspecified bounds while separating candidate restrictions from reconstruction caps. That would show when bounds help, when generation adds value, and when the procedure fails. For now, assess bounds, the selector, and a simple baseline together.",
+      "display_transcript": "The next step is independent controlled validation. We would specify device states, physical behavior, and a feasible region independently of the generators. Then we would test correct, boundary-adjacent, and misspecified bounds while separating candidate restrictions from reconstruction caps. That would show when bounds help, when generation adds value, and when the procedure fails. For now, assess bounds, the selector, and a simple baseline together."
+    }
+  ],
+  "additional_slides": [
+    {
+      "slide": 13,
+      "title": "Thank you and Q&A",
+      "spoken_transcript": "Thank you for listening. I am happy to take your questions. If we do not have enough time, please email me at d11351004@mail.ntust.edu.tw.",
+      "display_transcript": "Thank you for listening. I am happy to take your questions. If we do not have enough time, please email me at d11351004@mail.ntust.edu.tw."
+    }
+  ],
+  "appendices": [
+    {
+      "slide": 14,
+      "title": "Q&A: How were the numbers calculated?",
+      "spoken_transcript": "We compare predicted and true on and off states for each device. We count the four outcomes, calculate an MCC for each device, and average the nine device scores. The configuration is locked before test labels are used. The five-seed result averages five macro MCCs. The compliance figures are direct fractions. The validation decomposition is a post-hoc diagnostic, and its oracle ceiling is not a deployable selector.",
+      "display_transcript": "We compare predicted and true on/off states for each device. We count the 4 outcomes, calculate an MCC for each device, and average the 9 device scores. The configuration is locked before test labels are used. The 5-seed result averages 5 macro MCCs. The compliance figures are direct fractions. The validation decomposition is a post-hoc diagnostic, and its oracle ceiling is not a deployable selector."
+    }
+  ],
+  "source_script": "automation2026_13min_script_v8.md",
+  "presentation_identity": {
+    "header_scope": "all_slides",
+    "header_source": "https://secretariat-r.ntust.edu.tw/p/404-1063-74346.php?Lang=zh-tw",
+    "header_asset": "https://secretariat-r.ntust.edu.tw/var/file/63/1063/img/2435/10420408.png",
+    "speaker": "Chung-Kuang Chen",
+    "role": "PhD Student",
+    "institute": "Graduate Institute of Intelligent Manufacturing Technology",
+    "university": "National Taiwan University of Science and Technology",
+    "portrait_source": "CACS v7 presenter-supplied speaker_chung_kuang_chen.jpg"
+  }
+}

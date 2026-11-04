@@ -90,6 +90,16 @@ personal-english-loop/
 - GitHub 是教材唯一來源；SB 是私人學習進度唯一來源。
 - SB 每週一份紀錄，每次練習追加一個 Session；每週日產生總結並討論教材調整方向。
 
+## Automation 2026 簡報來源
+
+2026-11-04 本地修訂：簡報 v9、講稿 v8。沿用 14 頁台科大標頭與講者封面，只簡化第 3 頁時間切分、第 6 頁平均計算、第 9 頁補充檢查與數字說明的指定講稿；簡報畫面、其餘講稿、Q&A 與 CACS 素材不變。來源註記不放入講者備註。此紀錄不代表已部署；線上狀態以 GitHub Pages 成功部署為準。
+
+- 講稿來源：`practice-materials/automation2026/extension-v9.json`；音訊產生器預設讀取此版。
+- 簡報產生器：`scripts/build_automation_identity.mjs`，依固定雜湊的原始 v7 產生器製作，不改研究表格與圖表。
+- 本機交付：`outputs/automation2026-v9/automation2026_13min_deck_v9.pptx`、同目錄 `automation2026_13min_script_v8.md` 與 `automation2026_13min_display_script_v8.md`。
+- 校方識別素材：[台科大官方下載頁](https://secretariat-r.ntust.edu.tw/p/404-1063-74346.php?Lang=zh-tw)。
+- 更新音訊後必須重新產生並驗證 `.timings.json` 的音訊與字稿雜湊，再重建播放器，不能沿用舊時間戳。
+
 ## 免費資源
 
 播放器內的自我介紹、Day 01–02、Automation 2026 與 CACS 2026 講稿都使用地端 RTX 3090 上的 Qwen3-TTS 聲音複製模型產生，並統一做響度校正。MP3 儲存在本 repository，手機版入口由 GitHub Pages 免費提供。

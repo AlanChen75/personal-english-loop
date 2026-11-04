@@ -2,9 +2,9 @@
   "version": 1,
   "method": "CTC forced alignment on original TTS WAV chunks",
   "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
-  "audio_sha256": "3d23f3c3722b478b7dbc804457a3ff24b3f79f3419a03f5607696735f2b34829",
-  "transcript_sha256": "b70888993b211af9ef6aa17d3c6397caac1c155c02f88ab9abb9bcb83fbaddde",
-  "duration_seconds": 62.05,
+  "audio_sha256": "f8ae9bb0c0413b29dc5f76ef1ec47b5eb9b4685ad06cf6461b8a47a7d303949b",
+  "transcript_sha256": "3f3011297347ecb15eb3058c3dfea398e29c3dd53a38769934f9158ef08c75a1",
+  "duration_seconds": 66.85,
   "cues": [
     {
       "text": "We used 3 industrial corpora: IMDELD, Case 1, and WELTRON, with 9 devices in total.",
@@ -13,38 +13,53 @@
     },
     {
       "text": "Each trace was aligned to 1 power sample per second.",
-      "start": 9.75296,
-      "end": 12.88833
+      "start": 9.59082,
+      "end": 12.93707
     },
     {
-      "text": "We used a chronological 50%, 20%, 30% split for calibration, validation, and test.",
-      "start": 14.10142,
-      "end": 20.75951
+      "text": "We split the data in time order.",
+      "start": 13.79867,
+      "end": 15.92264
+    },
+    {
+      "text": "The first 50% is for calibration.",
+      "start": 16.50372,
+      "end": 19.34903
+    },
+    {
+      "text": "The next 20% is for validation.",
+      "start": 20.6616,
+      "end": 22.72909
+    },
+    {
+      "text": "The last 30% is for testing.",
+      "start": 23.57215,
+      "end": 25.61956
     },
     {
       "text": "The table shows four conditions: LLM wide, LLM bounded, LHS wide, and LHS bounded.",
-      "start": 21.59065,
-      "end": 30.4297
+      "start": 26.39065,
+      "end": 35.2297
     },
     {
       "text": "LHS means Latin hypercube sampling.",
-      "start": 31.32201,
-      "end": 34.7994
+      "start": 36.12201,
+      "end": 39.5994
     },
     {
       "text": "Each pool contained 15 joint configurations for each dataset, source, bounds condition, and seed.",
-      "start": 35.75125,
-      "end": 42.84974
+      "start": 40.55125,
+      "end": 47.64974
     },
     {
       "text": "For the LLM, device proposals were joined by index, rather than by every possible combination.",
-      "start": 43.72069,
-      "end": 51.73378
+      "start": 48.52069,
+      "end": 56.53378
     },
     {
       "text": "Both sources received the same candidate-count and calibration-sample budgets.",
-      "start": 56.21104,
-      "end": 61.80922
+      "start": 61.01104,
+      "end": 66.60922
     }
   ]
 }
