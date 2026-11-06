@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "40b9ec4f747d9743c3fe60177a11bc76a1f13206892ec7e9eb73c334932411d3",
+  "transcript_sha256": "9dcbdaa9dcaf5a5bc131387f36ed5eb9a02f663a4f6150af30cc8e746d36c365",
+  "duration_seconds": 12.35,
+  "cues": [
+    {
+      "text": "Hello, my name is Chung-Kuang Chen.",
+      "start": 0.0,
+      "end": 2.10521
+    },
+    {
+      "text": "I am from Taiwan.",
+      "start": 2.7067,
+      "end": 3.60893
+    },
+    {
+      "text": "I am from National Taiwan University of Science and Technology.",
+      "start": 4.21042,
+      "end": 7.9998
+    },
+    {
+      "text": "My work is about AI and energy management.",
+      "start": 8.77174,
+      "end": 12.22938
+    }
+  ]
+}

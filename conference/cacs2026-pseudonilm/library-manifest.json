@@ -258,33 +258,57 @@
       "items": [
         {
           "number": 1,
-          "title": "10-second introduction",
-          "audio": "learning/about-me-01-10-seconds.mp3",
-          "spoken_transcript": "learning/about-me-01-10-seconds.txt"
+          "title": "我是誰 · Who I Am",
+          "material_id": "B01-U01",
+          "audio": "learning/about-v2/about-v2-01.mp3",
+          "spoken_transcript": "learning/about-v2/about-v2-01.txt",
+          "display_transcript": "learning/about-v2/about-v2-01-display.txt",
+          "timings": "learning/about-v2/about-v2-01.timings.json"
         },
         {
           "number": 2,
-          "title": "30-second introduction",
-          "audio": "learning/about-me-02-30-seconds.mp3",
-          "spoken_transcript": "learning/about-me-02-30-seconds.txt"
+          "title": "我的工作 · What I Do",
+          "material_id": "B01-U02",
+          "audio": "learning/about-v2/about-v2-02.mp3",
+          "spoken_transcript": "learning/about-v2/about-v2-02.txt",
+          "display_transcript": "learning/about-v2/about-v2-02-display.txt",
+          "timings": "learning/about-v2/about-v2-02.timings.json"
         },
         {
           "number": 3,
-          "title": "60-second introduction",
-          "audio": "learning/about-me-03-60-seconds.mp3",
-          "spoken_transcript": "learning/about-me-03-60-seconds.txt"
+          "title": "我的研究 · My Research",
+          "material_id": "B01-U03",
+          "audio": "learning/about-v2/about-v2-03.mp3",
+          "spoken_transcript": "learning/about-v2/about-v2-03.txt",
+          "display_transcript": "learning/about-v2/about-v2-03-display.txt",
+          "timings": "learning/about-v2/about-v2-03.timings.json"
         },
         {
           "number": 4,
-          "title": "Listen and repeat",
-          "audio": "learning/about-me-04-listen-repeat.mp3",
-          "spoken_transcript": "learning/about-me-04-listen-repeat.txt"
+          "title": "為什麼做這件事 · Why This Matters",
+          "material_id": "B01-U04",
+          "audio": "learning/about-v2/about-v2-04.mp3",
+          "spoken_transcript": "learning/about-v2/about-v2-04.txt",
+          "display_transcript": "learning/about-v2/about-v2-04-display.txt",
+          "timings": "learning/about-v2/about-v2-04.timings.json"
         },
         {
           "number": 5,
-          "title": "Question and answer",
-          "audio": "learning/about-me-05-qa.mp3",
-          "spoken_transcript": "learning/about-me-05-qa.txt"
+          "title": "最近做了什麼 · A Recent Task",
+          "material_id": "B01-U05",
+          "audio": "learning/about-v2/about-v2-05.mp3",
+          "spoken_transcript": "learning/about-v2/about-v2-05.txt",
+          "display_transcript": "learning/about-v2/about-v2-05-display.txt",
+          "timings": "learning/about-v2/about-v2-05.timings.json"
+        },
+        {
+          "number": 6,
+          "title": "接下來想做什麼 · My Next Step",
+          "material_id": "B01-U06",
+          "audio": "learning/about-v2/about-v2-06.mp3",
+          "spoken_transcript": "learning/about-v2/about-v2-06.txt",
+          "display_transcript": "learning/about-v2/about-v2-06-display.txt",
+          "timings": "learning/about-v2/about-v2-06.timings.json"
         }
       ]
     },

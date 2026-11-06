@@ -1,0 +1,110 @@
+{
+  "lesson_id": "B01",
+  "version": "2.0",
+  "content_type": "personalized derivative learning material; not a replacement of the PEL100 original corpus",
+  "evidence_policy": "Listening and repeating are practice, not independent mastery evidence. Never invent personal facts or learner scores.",
+  "units": [
+    {
+      "number": 1,
+      "material_id": "B01-U01",
+      "title": "我是誰 · Who I Am",
+      "sentences": [
+        "Hello, my name is Chung-Kuang Chen.",
+        "I am from Taiwan.",
+        "I am from National Taiwan University of Science and Technology.",
+        "My work is about AI and energy management."
+      ],
+      "focus": {"T": "現在式：目前身分與領域", "L": "姓名 → 來自哪裡 → 學校 → 領域", "E": ["My name is", "I am from", "My work is about"]},
+      "recombine_task": "只選兩項符合當下場合的真實資訊，不必照原順序，也不必說完整四句。",
+      "practice_question": "Could you tell me a little about yourself?",
+      "transfer_task": "You meet someone on a train. How would you introduce yourself?",
+      "related_pel100": ["pel100-origin-001"],
+      "source_refs": ["git:fd30f34:lessons/about-me-introduction/lesson.md#10-seconds", "git:fd30f34:practice-materials/automation2026/extension-v10.json:overrides[0]"]
+    },
+    {
+      "number": 2,
+      "material_id": "B01-U02",
+      "title": "我的工作 · What I Do",
+      "sentences": [
+        "I work with AI and power data.",
+        "I use data from buildings and machines.",
+        "I look for changes in how machines use energy.",
+        "My goal is to help people save energy."
+      ],
+      "focus": {"T": "現在式：日常工作", "L": "領域 → 資料 → 做什麼 → 目的", "E": ["work with", "look for", "help people"]},
+      "recombine_task": "改用自己當前專案的真實資料或對象；一次只替換一項，不新增職稱。",
+      "practice_question": "What do you do in your work?",
+      "transfer_task": "A new coworker asks what you do. How would you explain it without using AI as an abbreviation?",
+      "related_pel100": ["pel100-origin-041"],
+      "source_refs": ["git:fd30f34:lessons/about-me-introduction/lesson.md#30-seconds"]
+    },
+    {
+      "number": 3,
+      "material_id": "B01-U03",
+      "title": "我的研究 · My Research",
+      "sentences": [
+        "My research is about power data.",
+        "I study how machines use electricity.",
+        "I use AI to find patterns in the data.",
+        "The goal is to understand how machines work."
+      ],
+      "focus": {"T": "現在式：研究範圍與方法", "L": "研究主題 → 觀察對象 → 方法 → 目的", "E": ["is about", "use something to", "The goal is to"]},
+      "recombine_task": "用兩句連接研究對象與目的；不要加入未確認的實驗數字或成果。",
+      "practice_question": "What is your research about?",
+      "transfer_task": "A friend does not know your field. How would you explain your research?",
+      "related_pel100": ["pel100-origin-091"],
+      "source_refs": ["git:fd30f34:lessons/about-me-introduction/lesson.md#60-seconds", "git:fd30f34:practice-materials/automation2026/extension-v10.json:overrides[0]"]
+    },
+    {
+      "number": 4,
+      "material_id": "B01-U04",
+      "title": "為什麼做這件事 · Why This Matters",
+      "sentences": [
+        "I study power data because I want to understand energy use.",
+        "The data can show changes in a machine.",
+        "These changes can help us find possible problems.",
+        "I want to make this information easier to use."
+      ],
+      "focus": {"T": "現在式與 can：目的及可能用途，不宣稱已證實效果", "L": "原因 → 資訊 → 可能用途 → 目標", "E": ["because I want to", "can help", "make something easier"]},
+      "recombine_task": "以 because 連接一項工作與真實原因；區分『希望做到』與『已證明做到』。",
+      "practice_question": "Why do you study power data?",
+      "transfer_task": "Someone asks how your work could help them. What would you say?",
+      "related_pel100": ["pel100-origin-091"],
+      "source_refs": ["git:fd30f34:lessons/about-me-introduction/lesson.md#30-seconds", "git:fd30f34:lessons/about-me-introduction/lesson.md#60-seconds"]
+    },
+    {
+      "number": 5,
+      "material_id": "B01-U05",
+      "title": "最近做了什麼 · A Recent Task",
+      "sentences": [
+        "I worked on an English talk for a conference.",
+        "I checked the script and the slides.",
+        "I asked for simpler words.",
+        "I also asked for audio to practice with."
+      ],
+      "focus": {"T": "過去式：worked、checked、asked", "L": "任務 → 檢查 → 調整 → 練習準備", "E": ["worked on", "asked for", "practice with"]},
+      "recombine_task": "回想自己最近一件真實任務，替換任務與兩項行動；不知道結果就不補結果。",
+      "practice_question": "What did you work on recently?",
+      "transfer_task": "A colleague asks what you did to prepare for your talk. How would you answer?",
+      "related_pel100": ["pel100-origin-046"],
+      "source_refs": ["Current PEL conversation: user requested conference scripts/audio, compared slides and script, and requested simpler words. This describes preparation, not a claim that the conference talk has already been delivered."]
+    },
+    {
+      "number": 6,
+      "material_id": "B01-U06",
+      "title": "接下來想做什麼 · My Next Step",
+      "sentences": [
+        "I want to explain my work in simple English.",
+        "I plan to practice with short audio lessons.",
+        "I would like to answer questions in my own words.",
+        "I want to use these sentences in real conversations."
+      ],
+      "focus": {"T": "want to、plan to、would like to：目標與計畫，不是已達成", "L": "目標 → 練習方式 → 自主回答 → 實際應用", "E": ["want to", "plan to", "in my own words"]},
+      "recombine_task": "把目標換成自己下一次真正想做的事，說出一項可行的練習方式。",
+      "practice_question": "What would you like to do next?",
+      "transfer_task": "You have only a short time to practice today. What is your plan?",
+      "related_pel100": ["pel100-origin-009", "pel100-origin-020"],
+      "source_refs": ["Current PEL conversation: user requested basic English for explaining their work, listening/shadowing audio, and the 100-episode practice collection. These sentences state learning intentions, not measured ability."]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "bbfac0705787fdb7e544c7fffdee822dc3d8494b7e12ddd0746a9b6a999c47c9",
+  "transcript_sha256": "17dea875f10af04d1a2e4f46c000b838e1b0960029de56dd81ea12e993d7d438",
+  "duration_seconds": 19.95,
+  "cues": [
+    {
+      "text": "I study power data because I want to understand energy use.",
+      "start": 0.58112,
+      "end": 4.40848
+    },
+    {
+      "text": "The data can show changes in a machine.",
+      "start": 7.81503,
+      "end": 9.95915
+    },
+    {
+      "text": "These changes can help us find possible problems.",
+      "start": 11.09074,
+      "end": 14.09728
+    },
+    {
+      "text": "I want to make this information easier to use.",
+      "start": 16.70294,
+      "end": 19.52908
+    }
+  ]
+}

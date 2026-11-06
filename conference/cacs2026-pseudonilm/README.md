@@ -14,10 +14,11 @@
 - CACS 2026 保留原分類，依序收錄 1–10 正式講稿、11 結尾與 Q&A 畫面、12 一份完整 Q&A Response Pack
 - 兩套研討會講稿都同步顯示投影片、逐頁音檔與英文講稿
 - 自我介紹與每日教材同步顯示音檔與英文逐字稿
+- 自我介紹 v2：六個各四句的可組合單元，逐句 CTC 高亮；教材與 Coach 提問位於 `lessons/about-me-introduction/lesson.md`，來源與 T/L/E 位於 `units-v2.json`。舊版 10／30／60 秒、跟讀與 Q&A 檔案保留但不列於目前清單。
 - 每日練習使用 OLMCP「PEL 100 段情境英文 v1.1」：001–100 各一集、各 4 句，原文不改寫；舊 Day 01–02 音檔保留但不列於此清單
 - 100 集使用原始 WAV 的 CTC 對齊時間戳；教材 metadata、原版 ID 與 T/L/E 重點位於 `lessons/pel-100/`
 - 播放、拖曳或倒退音訊時，逐字稿會同步標示目前句子
-- Automation 第 1–15 段使用原始語音片段的 CTC 對齊時間戳，包含實際停頓；0.8×／0.9×／1.0× 都依音訊 currentTime 切換。發音重點清單不是完整逐字稿，不啟用逐句高亮。其他教材暫保留估算模式。
+- Automation 第 1–15 段、每日 100 集及自我介紹 v2 使用原始語音片段的 CTC 對齊時間戳，包含實際停頓；0.8×／0.9×／1.0× 都依音訊 currentTime 切換。發音重點清單不是完整逐字稿，不啟用逐句高亮；沒有時間戳的其他教材仍使用估算模式。
 - 點選投影片可開啟原尺寸圖片
 - 0.8×、0.9×、1.0× 播放速度
 - 倒退 5 秒
@@ -64,3 +65,10 @@
 `lessons/shadowing-library.json` 的 Day 01–02 清單覆蓋新的每日練習。
 完整契約、生成步驟、失敗處理及復原方式見 `lessons/pel-100/README.md`。
 只更新 `daily-practice` 清單；研討會、自我介紹及預設 Automation 分類不動。
+
+## 自我介紹六單元更新流程
+
+使用 `scripts/build_about_me_v2.py` 及 `lessons/about-me-introduction/units-v2.json`。
+資料契約、生成、驗證與還原方式見該教材的 `lesson.md`。只更新 about-me 清單，
+不得用舊 `lessons/shadowing-library.json` 覆蓋每日 100 集或六單元清單。
+課程 ID 仍為 B01，材料 ID 為 B01-U01 至 B01-U06；不改寫舊學習紀錄。

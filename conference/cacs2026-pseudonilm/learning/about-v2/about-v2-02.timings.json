@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "6a920e49a5da191c265c5a8b3d0d21d230eb5f3b8cf1532581761f686a91f789",
+  "transcript_sha256": "d027276adb0401bed54229f6304134ca18d4cb0b2c89323e1904b1e54a6009ad",
+  "duration_seconds": 13.07,
+  "cues": [
+    {
+      "text": "I work with AI and power data.",
+      "start": 0.44088,
+      "end": 2.58517
+    },
+    {
+      "text": "I use data from buildings and machines.",
+      "start": 3.50701,
+      "end": 5.59118
+    },
+    {
+      "text": "I look for changes in how machines use energy.",
+      "start": 6.25251,
+      "end": 9.33868
+    },
+    {
+      "text": "My goal is to help people save energy.",
+      "start": 10.8537,
+      "end": 12.90881
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "6759c089fc49155fc3a2fe426ade64aaad0ae1a2a5e22957103b5eebee7e526b",
+  "transcript_sha256": "90baea2dd045cc77e733a441d6bea1ce90482549c018571386533ba9bbbf9833",
+  "duration_seconds": 11.31,
+  "cues": [
+    {
+      "text": "I worked on an English talk for a conference.",
+      "start": 0.56139,
+      "end": 3.18789
+    },
+    {
+      "text": "I checked the script and the slides.",
+      "start": 3.66908,
+      "end": 5.654
+    },
+    {
+      "text": "I asked for simpler words.",
+      "start": 6.33568,
+      "end": 7.9998
+    },
+    {
+      "text": "I also asked for audio to practice with.",
+      "start": 8.91336,
+      "end": 11.26972
+    }
+  ]
+}

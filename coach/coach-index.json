@@ -1,6 +1,6 @@
 {
   "course": "Personal English Loop",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "language_level": "A2-B1",
   "base_url": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main",
   "coach_instructions": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/coach/CHATGPT_COACH.md",
@@ -1320,15 +1320,59 @@
     },
     {
       "id": "B01",
-      "title": "Introducing Myself",
+      "version": "2.0",
+      "title": "Introducing Myself · 六個可組合單元",
       "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/about-me-introduction/lesson.md",
       "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#about-me",
-      "audio": {
-        "10_seconds": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-me-01-10-seconds.mp3",
-        "30_seconds": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-me-02-30-seconds.mp3",
-        "60_seconds": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-me-03-60-seconds.mp3",
-        "listen_repeat": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-me-04-listen-repeat.mp3",
-        "qa": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-me-05-qa.mp3"
+      "unit_catalog": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/about-me-introduction/units-v2.json",
+      "units": [
+        {
+          "number": 1,
+          "material_id": "B01-U01",
+          "title": "我是誰 · Who I Am",
+          "audio": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-v2/about-v2-01.mp3"
+        },
+        {
+          "number": 2,
+          "material_id": "B01-U02",
+          "title": "我的工作 · What I Do",
+          "audio": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-v2/about-v2-02.mp3"
+        },
+        {
+          "number": 3,
+          "material_id": "B01-U03",
+          "title": "我的研究 · My Research",
+          "audio": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-v2/about-v2-03.mp3"
+        },
+        {
+          "number": 4,
+          "material_id": "B01-U04",
+          "title": "為什麼做這件事 · Why This Matters",
+          "audio": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-v2/about-v2-04.mp3"
+        },
+        {
+          "number": 5,
+          "material_id": "B01-U05",
+          "title": "最近做了什麼 · A Recent Task",
+          "audio": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-v2/about-v2-05.mp3"
+        },
+        {
+          "number": 6,
+          "material_id": "B01-U06",
+          "title": "接下來想做什麼 · My Next Step",
+          "audio": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-v2/about-v2-06.mp3"
+        }
+      ],
+      "legacy": {
+        "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/about-me-introduction/archive-v1.md",
+        "audio": {
+          "10_seconds": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-me-01-10-seconds.mp3",
+          "30_seconds": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-me-02-30-seconds.mp3",
+          "60_seconds": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-me-03-60-seconds.mp3",
+          "listen_repeat": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-me-04-listen-repeat.mp3",
+          "qa": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/about-me-05-qa.mp3"
+        },
+        "status": "archived; files preserved; not used by the v2 unit sequence"
       }
     },
     {

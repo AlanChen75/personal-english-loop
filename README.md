@@ -33,7 +33,7 @@
 |---|---|---|
 | Automation 2026 講稿 | 第 1–13 頁（含封面介紹與 Thank you／email 收尾）、計算方式備用頁與合併 Q&A，預設優先顯示 | [開啟 Automation 2026](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#automation-2026) |
 | CACS 2026 講稿 | 第 1–10 頁、結尾與合併 Q&A | [開啟 CACS 2026](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#conference) |
-| 自我介紹 | 10 秒、30 秒、60 秒、跟讀、Q&A | [開啟自我介紹](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#about-me) |
+| 自我介紹 | 六個可組合單元：我是誰、工作、研究、原因、最近任務、下一步；各四句，附 T/L/E 與重組／換情境練習 | [開啟自我介紹](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/?v=24#about-me) |
 | 每日練習 · 100 集 | OLMCP v1.1 的 001–100 原文、逐集音檔與逐句高亮 | [開啟每日練習](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice) |
 
 播放器支援安裝到手機桌面、分類切換、0.8×、0.9×、1.0×、倒退 5 秒、重複本頁與分類內全部循環播放。開車時請勿閱讀或操作畫面。

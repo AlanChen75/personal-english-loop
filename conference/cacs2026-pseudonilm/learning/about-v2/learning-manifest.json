@@ -1,0 +1,161 @@
+{
+  "generated_at": "2026-11-06T15:40:11.639942+00:00",
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "generation_mode": "voice_clone_x-vector-only_existing_parameters",
+  "post_processing": "loudnorm I=-16 LUFS, TP=-1.5 dB, LRA=11; no speed change",
+  "language": "English",
+  "reference_audio_sha256": "f191156890b60d505173f5ef33e0a72736297728f938f5884f244e86efbee8ba",
+  "catalog_sha256": "d2596e74fc9d2712aa34277de35f123b4084a2a8006355799d70487483e9f3f0",
+  "collections": [
+    {
+      "id": "about-me",
+      "title": "自我介紹",
+      "items": [
+        {
+          "number": 1,
+          "title": "我是誰 · Who I Am",
+          "audio": "about-v2-01.mp3",
+          "spoken_transcript": "about-v2-01.txt",
+          "raw_duration_seconds": 12.35,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.350000",
+              "size": "149229",
+              "bit_rate": "96666"
+            }
+          }
+        },
+        {
+          "number": 2,
+          "title": "我的工作 · What I Do",
+          "audio": "about-v2-02.mp3",
+          "spoken_transcript": "about-v2-02.txt",
+          "raw_duration_seconds": 13.07,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "13.070000",
+              "size": "157869",
+              "bit_rate": "96629"
+            }
+          }
+        },
+        {
+          "number": 3,
+          "title": "我的研究 · My Research",
+          "audio": "about-v2-03.mp3",
+          "spoken_transcript": "about-v2-03.txt",
+          "raw_duration_seconds": 12.51,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.510000",
+              "size": "151245",
+              "bit_rate": "96719"
+            }
+          }
+        },
+        {
+          "number": 4,
+          "title": "為什麼做這件事 · Why This Matters",
+          "audio": "about-v2-04.mp3",
+          "spoken_transcript": "about-v2-04.txt",
+          "raw_duration_seconds": 19.95,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "19.950000",
+              "size": "240525",
+              "bit_rate": "96451"
+            }
+          }
+        },
+        {
+          "number": 5,
+          "title": "最近做了什麼 · A Recent Task",
+          "audio": "about-v2-05.mp3",
+          "spoken_transcript": "about-v2-05.txt",
+          "raw_duration_seconds": 11.31,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "11.310000",
+              "size": "136845",
+              "bit_rate": "96795"
+            }
+          }
+        },
+        {
+          "number": 6,
+          "title": "接下來想做什麼 · My Next Step",
+          "audio": "about-v2-06.mp3",
+          "spoken_transcript": "about-v2-06.txt",
+          "raw_duration_seconds": 14.27,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "14.270000",
+              "size": "172269",
+              "bit_rate": "96576"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

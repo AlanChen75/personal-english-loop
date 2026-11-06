@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "553acede47a8ea17be00f0ad16d77c1709072872b8d3704bc1e2703967799971",
+  "transcript_sha256": "0c2b1b1341c1c7205cfb901ad18162e35559d3aaabf45799c4212d499e71d2de",
+  "duration_seconds": 12.51,
+  "cues": [
+    {
+      "text": "My research is about power data.",
+      "start": 0.34076,
+      "end": 2.26506
+    },
+    {
+      "text": "I study how machines use electricity.",
+      "start": 2.94658,
+      "end": 5.25172
+    },
+    {
+      "text": "I use AI to find patterns in the data.",
+      "start": 5.81298,
+      "end": 8.67937
+    },
+    {
+      "text": "The goal is to understand how machines work.",
+      "start": 9.8534,
+      "end": 12.40937
+    }
+  ]
+}
