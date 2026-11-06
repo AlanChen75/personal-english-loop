@@ -2,9 +2,9 @@
   "version": 1,
   "method": "CTC forced alignment on original TTS WAV chunks",
   "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
-  "audio_sha256": "aecc048dd5460525d13634f2a32aa57a5818f294d4c0d1a2ca9cf30cc90b56fb",
-  "transcript_sha256": "7219af1a95766d4116c0fac8ef2e833059db02c9c3c29a2c8fdb70d64fe5d56e",
-  "duration_seconds": 72.08,
+  "audio_sha256": "7fa935196a76de23b8d926a3a3c98207b92d0a0553edfbefb01af81d1f3bce85",
+  "transcript_sha256": "3b5dcd9011d009058b02778c75290a051cd3841f71fbb289b71d5bf4c2244dae",
+  "duration_seconds": 72.32,
   "cues": [
     {
       "text": "This page uses unbounded validation pools only.",
@@ -48,23 +48,23 @@
     },
     {
       "text": "The ceiling difference is close to zero, so lower regret explains most of the difference.",
-      "start": 50.31068,
-      "end": 56.06218
+      "start": 50.37078,
+      "end": 56.40256
     },
     {
-      "text": "These are post-hoc diagnostics.",
-      "start": 57.36479,
-      "end": 59.30868
+      "text": "We do this extra analysis after selection.",
+      "start": 57.08389,
+      "end": 59.60883
     },
     {
       "text": "The oracle uses validation labels to find the ceiling.",
-      "start": 60.96109,
-      "end": 64.24668
+      "start": 61.20109,
+      "end": 64.48668
     },
     {
       "text": "We cannot use it as a label-free selector.",
-      "start": 65.26842,
-      "end": 68.07319
+      "start": 65.50842,
+      "end": 68.31319
     }
   ]
 }

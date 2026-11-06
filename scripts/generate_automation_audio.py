@@ -36,7 +36,7 @@ DEFAULT_SOURCE = Path(
     "/Users/user/Desktop/NILM+LLM/automation2026-nilm-llm/"
     "presentation/tts_13min_v3/spoken_segments.json"
 )
-DEFAULT_APPENDIX_SOURCE = ROOT / "practice-materials/automation2026/extension-v10.json"
+DEFAULT_APPENDIX_SOURCE = ROOT / "practice-materials/automation2026/extension-v11.json"
 DEFAULT_REF_AUDIO_SSH = "ac-3090:/home/ac3090/alan_voice.wav"
 PRONUNCIATION_REPLACEMENTS = (
     (

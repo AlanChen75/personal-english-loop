@@ -2,9 +2,9 @@
   "version": 1,
   "method": "CTC forced alignment on original TTS WAV chunks",
   "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
-  "audio_sha256": "721267dbb5d498bfa4405fd3e6749ca6e30f38bbaf75b64be7d7ed5e160ba1fd",
-  "transcript_sha256": "89bb391ec28a1fd02ed773463c8c9e27051e07486a2ff5bf2f8ecf6e65a5e7a7",
-  "duration_seconds": 51.83,
+  "audio_sha256": "3ea02b2fe99b515e918c49de2144a7f26a2fc2cde7bf6e8b77360666165f534b",
+  "transcript_sha256": "375c5def372672557c5aec33be0d4e23b30a9167abdfe63663c1e9b1bc12313d",
+  "duration_seconds": 46.87,
   "cues": [
     {
       "text": "Across 5 LLM test seeds, mean MCC was 0.6262 without bounds, with a sample standard deviation of 0.1131.",
@@ -18,23 +18,28 @@
     },
     {
       "text": "So bounds reduced variation, but the mean was also lower.",
-      "start": 22.67079,
-      "end": 26.33768
+      "start": 22.67106,
+      "end": 26.24008
     },
     {
-      "text": "The table below shows the evidence available: 5 LLM test seeds, 1 LHS test seed, and 20 LHS validation seeds.",
-      "start": 27.15923,
-      "end": 38.7506
+      "text": "The table shows only 1 LHS test seed.",
+      "start": 27.0421,
+      "end": 29.94944
     },
     {
-      "text": "The 20 LHS seeds add no repeated test result.",
-      "start": 39.55214,
-      "end": 43.43961
+      "text": "There are also 20 LHS validation seeds.",
+      "start": 30.90093,
+      "end": 34.46968
+    },
+    {
+      "text": "These add no repeated test result.",
+      "start": 35.49219,
+      "end": 38.27902
     },
     {
       "text": "We therefore cannot treat this as a matched repeated-test comparison between LLM and LHS.",
-      "start": 44.47123,
-      "end": 51.50918
+      "start": 39.51123,
+      "end": 46.54918
     }
   ]
 }

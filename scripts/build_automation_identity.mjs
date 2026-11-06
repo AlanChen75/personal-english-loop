@@ -13,12 +13,14 @@ if (createHash('sha256').update(original).digest('hex') !== 'bd05cf4fd55d1a1a003
   throw new Error('The v7 source changed; review it before applying the cover revision.');
 }
 const work = path.join(root, 'work/automation2026-v8');
-const output = path.join(root, 'outputs/automation2026-v10');
-const finalDeck = process.argv[2] ? path.resolve(process.argv[2]) : path.join(output, 'automation2026_13min_deck_v10.pptx');
+const output = path.join(root, 'outputs/automation2026-v11');
+const finalDeck = process.argv[2] ? path.resolve(process.argv[2]) : path.join(output, 'automation2026_13min_deck_v11.pptx');
 await fs.mkdir(output, { recursive: true });
 // 2026-11-06: restore the approved v7 opening after edbbc56 retained an unsolicited
 // introduction. Cover identity is visual only; do not add it to narration without approval.
-const extension = JSON.parse(await fs.readFile(path.join(root, 'practice-materials/automation2026/extension-v10.json'), 'utf8'));
+// 2026-11-07: approved simplification of slides 3,5,6,8,9,10,12 only.
+// Preserve opening, results, limits and visual slide content; see revision-v11.md.
+const extension = JSON.parse(await fs.readFile(path.join(root, 'practice-materials/automation2026/extension-v11.json'), 'utf8'));
 const oldScript = await fs.readFile(path.join(sourceDir, 'automation2026_13min_script_v6.md'), 'utf8');
 const oldExtension = JSON.parse(await fs.readFile(path.join(root, 'practice-materials/automation2026/extension-v7.json'), 'utf8'));
 function updateApprovedPassages(source, field) {
@@ -30,20 +32,24 @@ function updateApprovedPassages(source, field) {
   }, source).replaceAll('automation2026_13min_deck_v7_final.pptx', extension.source_deck);
 }
 const script = updateApprovedPassages(oldScript, 'spoken_transcript')
-  .replace('2026-11-02', '2026-11-06');
+  .replace('2026-11-02', '2026-11-07');
 await fs.writeFile(path.join(output, extension.source_script), script);
 const display = await fs.readFile(path.join(sourceDir, 'automation2026_13min_display_script_v6.md'), 'utf8');
-await fs.writeFile(path.join(output, 'automation2026_13min_display_script_v9.md'),
+await fs.writeFile(path.join(output, 'automation2026_13min_display_script_v11.md'),
   updateApprovedPassages(display, 'display_transcript'));
 
 function replaceOnce(source, from, to) {
-  if (source.split(from).length !== 2) throw new Error(`Ambiguous source anchor: ${from.slice(0, 90)}`);
-  return source.replace(from, to);
+  // v7 Markdown emphasizes this phrase; JSON stores plain spoken text.
+  // Accept only that known formatting variant, retaining the unique-anchor guard.
+  const anchor = source.includes(from) ? from : from.replace(
+    'independent controlled validation', '**independent controlled validation**');
+  if (source.split(anchor).length !== 2) throw new Error(`Ambiguous source anchor: ${from.slice(0, 90)}`);
+  return source.replace(anchor, to);
 }
 let generated = replaceOnce(original,
   "const workspaceDir = '/Users/user/Desktop/NILM+LLM/automation2026-nilm-llm';",
   `const workspaceDir = ${JSON.stringify(root)};`);
-generated = replaceOnce(generated, "path.join(workspaceDir, 'tmp', 'automation-deck-v7-build')", JSON.stringify(path.join(work, 'build-v10')));
+generated = replaceOnce(generated, "path.join(workspaceDir, 'tmp', 'automation-deck-v7-build')", JSON.stringify(path.join(work, 'build-v11')));
 generated = replaceOnce(generated, "path.join(workspaceDir, 'presentation', 'automation2026_13min_deck_v7_final.pptx')", JSON.stringify(finalDeck));
 generated = replaceOnce(generated, "path.join(workspaceDir, 'presentation', 'automation2026_13min_script_v6.md')", JSON.stringify(path.join(output, extension.source_script)));
 generated = replaceOnce(generated, "text(slide,title,62,43,1130,62,35,C.navy,true);", "text(slide,title,62,78,1130,46,34,C.navy,true);");

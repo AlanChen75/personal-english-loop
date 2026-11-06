@@ -44,7 +44,7 @@
 - `automation2026/slide-01...slide-15.*`：Automation 2026 逐頁講稿、收尾、計算方式備答、合併 Q&A 與音檔
 - `automation2026/pronunciation-guide.*`：NILM、MCC 與較少使用術語的重點發音練習
 - `automation2026/slides/slide-1...slide-14.png`：Automation 2026 投影片圖片
-- `practice-materials/automation2026/extension-v7.json`：對齊簡報 v7／講稿 v6 的第 1–12 頁覆寫、第 13 頁收尾與第 14 頁計算備答；第 3–6、8–11 頁補上研究條件、公式、指標定義與證據範圍
+- `practice-materials/automation2026/extension-v11.json`：目前核准講稿；第 3、5、6、8、9、10、12 頁口說簡化，第 13 頁收尾與第 14 頁計算備答不變。`revision-v11.md` 保留逐頁差異、備答細節與驗收契約。
 - `automation2026/generation-manifest.json`：Automation 2026 音訊生成紀錄
 - `automation2026/*.timings.json`：逐句起訖秒數及音檔／字稿 SHA-256；重建播放器時若音檔或字稿變更卻未更新時間戳，會拒絕產出
 
@@ -52,7 +52,7 @@
 
 ## Automation 2026 更新流程
 
-1. `python3 scripts/generate_automation_audio.py --prepare --work-root <work-dir>` 從 12 頁基礎講稿與 `extension-v10.json` 套用逐頁講稿、收尾及附錄後，建立固定的 x-vector 工作清單。顯示稿用數字；TTS 保留小數前的 zero 與 MCC 逐字母停頓。2026-11-06 僅恢復第 1 頁 v7 原稿，保留第 3、6、9 頁核准簡化；不得因封面資訊變更自行增加口播。
+1. `python3 scripts/generate_automation_audio.py --prepare --work-root <work-dir>` 從 12 頁基礎講稿與 `extension-v11.json` 套用逐頁講稿、收尾及附錄後，建立固定的 x-vector 工作清單。顯示稿用數字；TTS 保留小數前的 zero 與 MCC 逐字母停頓。2026-11-07 核准簡化第 3、5、6、8、9、10、12 頁；不得因封面資訊變更自行增加口播。只生成新輸入片段，重用片段需先核對文字與 WAV hash。
 2. 在 `ac-3090` 以 `scripts/remote_qwen_clone_worker.py` 和既有參考聲音執行工作清單，參數維持 `--max-new-tokens 512 --x-vector-only`。
 3. `python3 scripts/generate_automation_audio.py --assemble --work-root <work-dir> --xvector-cache <wav-cache> --output-root <output-dir>` 合併、正規化並輸出 MP3。
 4. 將生成檔與投影片圖片放進 `automation2026/`。用 `scripts/remote_align_tts_chunks.py --jobs <jobs.json> --cache <wav-cache> --output <alignment.json>` 在 3090 對齊原始片段，再以 `scripts/build_automation_timings.py --plan <plan.json> --alignment <alignment.json> --cache <wav-cache> --audio-root conference/cacs2026-pseudonilm/automation2026` 產生時間戳。對齊流程不修改聲音或語速。

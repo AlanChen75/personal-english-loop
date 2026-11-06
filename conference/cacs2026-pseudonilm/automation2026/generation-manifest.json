@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T08:51:06.438169+00:00",
+  "generated_at": "2026-11-06T23:42:21.722383+00:00",
   "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "generation_mode": "voice_clone_x-vector-only_existing_parameters",
   "post_processing": "loudnorm I=-16 LUFS, TP=-1.5 dB, LRA=11; no speed change",
@@ -11,8 +11,8 @@
       "sha256": "3c6a9066c07e2bcfd109e840ac93793bf697e18eec67ff9590483f600e822d8a"
     },
     {
-      "path": "extension-v10.json",
-      "sha256": "0758ed76acff6055f04cc9c79452f64ae26a9838aae443044f83e4ce70c4305d"
+      "path": "extension-v11.json",
+      "sha256": "65110f057138431f46233ac744b9953078981067d0b2cabe0fb8a7cfea8000a6"
     }
   ],
   "items": [
@@ -73,7 +73,7 @@
       "spoken_transcript": "slide-03-three-corpora-nine-devices.txt",
       "display_transcript": "slide-03-three-corpora-nine-devices-display.txt",
       "slide_image": "automation2026/slides/slide-3.png",
-      "raw_duration_seconds": 66.85,
+      "raw_duration_seconds": 54.23,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -85,9 +85,9 @@
           }
         ],
         "format": {
-          "duration": "66.850000",
-          "size": "803277",
-          "bit_rate": "96128"
+          "duration": "54.230000",
+          "size": "651789",
+          "bit_rate": "96151"
         }
       }
     },
@@ -123,7 +123,7 @@
       "spoken_transcript": "slide-05-bounds-change-two-parts-of-the-procedure.txt",
       "display_transcript": "slide-05-bounds-change-two-parts-of-the-procedure-display.txt",
       "slide_image": "automation2026/slides/slide-5.png",
-      "raw_duration_seconds": 55.57,
+      "raw_duration_seconds": 43.43,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -135,9 +135,9 @@
           }
         ],
         "format": {
-          "duration": "55.570000",
-          "size": "667917",
-          "bit_rate": "96155"
+          "duration": "43.430000",
+          "size": "522189",
+          "bit_rate": "96189"
         }
       }
     },
@@ -148,7 +148,7 @@
       "spoken_transcript": "slide-06-primary-outcome-device-balanced-mcc.txt",
       "display_transcript": "slide-06-primary-outcome-device-balanced-mcc-display.txt",
       "slide_image": "automation2026/slides/slide-6.png",
-      "raw_duration_seconds": 58.69,
+      "raw_duration_seconds": 39.16,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -160,9 +160,9 @@
           }
         ],
         "format": {
-          "duration": "58.690000",
-          "size": "705357",
-          "bit_rate": "96146"
+          "duration": "39.160000",
+          "size": "470925",
+          "bit_rate": "96205"
         }
       }
     },
@@ -198,7 +198,7 @@
       "spoken_transcript": "slide-08-five-llm-test-seeds.txt",
       "display_transcript": "slide-08-five-llm-test-seeds-display.txt",
       "slide_image": "automation2026/slides/slide-8.png",
-      "raw_duration_seconds": 51.83,
+      "raw_duration_seconds": 46.87,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -210,9 +210,9 @@
           }
         ],
         "format": {
-          "duration": "51.830000",
-          "size": "622989",
-          "bit_rate": "96158"
+          "duration": "46.870000",
+          "size": "563373",
+          "bit_rate": "96159"
         }
       }
     },
@@ -223,7 +223,7 @@
       "spoken_transcript": "slide-09-full-compliance-is-rare-without-bounds.txt",
       "display_transcript": "slide-09-full-compliance-is-rare-without-bounds-display.txt",
       "slide_image": "automation2026/slides/slide-9.png",
-      "raw_duration_seconds": 50.26,
+      "raw_duration_seconds": 37.37,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -235,9 +235,9 @@
           }
         ],
         "format": {
-          "duration": "50.260000",
-          "size": "604269",
-          "bit_rate": "96182"
+          "duration": "37.370000",
+          "size": "449613",
+          "bit_rate": "96251"
         }
       }
     },
@@ -248,7 +248,7 @@
       "spoken_transcript": "slide-10-post-hoc-validation-decomposition.txt",
       "display_transcript": "slide-10-post-hoc-validation-decomposition-display.txt",
       "slide_image": "automation2026/slides/slide-10.png",
-      "raw_duration_seconds": 72.08,
+      "raw_duration_seconds": 72.32,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -260,9 +260,9 @@
           }
         ],
         "format": {
-          "duration": "72.080000",
-          "size": "866061",
-          "bit_rate": "96122"
+          "duration": "72.320000",
+          "size": "868941",
+          "bit_rate": "96121"
         }
       }
     },
@@ -298,7 +298,7 @@
       "spoken_transcript": "slide-12-future-work.txt",
       "display_transcript": "slide-12-future-work-display.txt",
       "slide_image": "automation2026/slides/slide-12.png",
-      "raw_duration_seconds": 34.84,
+      "raw_duration_seconds": 37.99,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -310,9 +310,9 @@
           }
         ],
         "format": {
-          "duration": "34.840000",
-          "size": "419085",
-          "bit_rate": "96230"
+          "duration": "37.990000",
+          "size": "456813",
+          "bit_rate": "96196"
         }
       }
     },
@@ -416,7 +416,7 @@
     "audio": "automation2026-full-talk.mp3",
     "spoken_transcript": "automation2026-full-talk.txt",
     "display_transcript": "automation2026-full-talk-display.txt",
-    "raw_duration_seconds": 694.67,
+    "raw_duration_seconds": 635.92,
     "probe": {
       "programs": [],
       "stream_groups": [],
@@ -428,9 +428,9 @@
         }
       ],
       "format": {
-        "duration": "694.670000",
-        "size": "8337069",
-        "bit_rate": "96011"
+        "duration": "635.920000",
+        "size": "7632045",
+        "bit_rate": "96012"
       }
     }
   }

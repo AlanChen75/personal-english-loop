@@ -206,7 +206,7 @@ class AutomationAudioTest(unittest.TestCase):
 
         slide_four = tracks[3]
         self.assertEqual(
-            self.pipeline.DEFAULT_APPENDIX_SOURCE.name, "extension-v10.json"
+            self.pipeline.DEFAULT_APPENDIX_SOURCE.name, "extension-v11.json"
         )
         self.assertIn("residual fit", slide_four["script"])
         self.assertIn("event agreement", slide_four["script"])

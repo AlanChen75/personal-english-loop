@@ -2,9 +2,9 @@
   "version": 1,
   "method": "CTC forced alignment on original TTS WAV chunks",
   "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
-  "audio_sha256": "f8ae9bb0c0413b29dc5f76ef1ec47b5eb9b4685ad06cf6461b8a47a7d303949b",
-  "transcript_sha256": "3f3011297347ecb15eb3058c3dfea398e29c3dd53a38769934f9158ef08c75a1",
-  "duration_seconds": 66.85,
+  "audio_sha256": "70d066f75f69e1ac9d14982356270022cb796e35d248d45f3741cb731004984b",
+  "transcript_sha256": "dbf81e16146970727cc883efdd930b11c0323eacd072bc95c210b59790de1e06",
+  "duration_seconds": 54.23,
   "cues": [
     {
       "text": "We used 3 industrial corpora: IMDELD, Case 1, and WELTRON, with 9 devices in total.",
@@ -28,38 +28,38 @@
     },
     {
       "text": "The next 20% is for validation.",
-      "start": 20.6616,
-      "end": 22.72909
+      "start": 20.74109,
+      "end": 23.10606
     },
     {
       "text": "The last 30% is for testing.",
-      "start": 23.57215,
-      "end": 25.61956
+      "start": 23.86766,
+      "end": 25.97208
     },
     {
-      "text": "The table shows four conditions: LLM wide, LLM bounded, LHS wide, and LHS bounded.",
-      "start": 26.39065,
-      "end": 35.2297
+      "text": "The table shows two candidate sources.",
+      "start": 26.71364,
+      "end": 29.21891
+    },
+    {
+      "text": "Each uses wide or bounded ranges.",
+      "start": 30.43071,
+      "end": 32.79564
     },
     {
       "text": "LHS means Latin hypercube sampling.",
-      "start": 36.12201,
-      "end": 39.5994
+      "start": 33.63739,
+      "end": 39.10879
     },
     {
       "text": "Each pool contained 15 joint configurations for each dataset, source, bounds condition, and seed.",
-      "start": 40.55125,
-      "end": 47.64974
-    },
-    {
-      "text": "For the LLM, device proposals were joined by index, rather than by every possible combination.",
-      "start": 48.52069,
-      "end": 56.53378
+      "start": 40.52125,
+      "end": 47.61974
     },
     {
       "text": "Both sources received the same candidate-count and calibration-sample budgets.",
-      "start": 61.01104,
-      "end": 66.60922
+      "start": 48.39104,
+      "end": 53.98922
     }
   ]
 }

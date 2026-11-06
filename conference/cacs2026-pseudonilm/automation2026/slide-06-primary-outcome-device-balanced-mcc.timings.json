@@ -2,9 +2,9 @@
   "version": 1,
   "method": "CTC forced alignment on original TTS WAV chunks",
   "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
-  "audio_sha256": "8f4f9df8aa520183126c398ba6d51194a51dc3e146de3236ae70a1ca93ae81d9",
-  "transcript_sha256": "dbb2facd3da68b45466e722e621c9c96931463581690e268f42022335163a26e",
-  "duration_seconds": 58.69,
+  "audio_sha256": "09810d0162748ac6edc89f275295a53175d674878b7a36e293c26c1df46b95bc",
+  "transcript_sha256": "5dc9168ac09586f619720323bbbd1c29fc8f2edf2a46f75c446364b7e9894c08",
+  "duration_seconds": 39.16,
   "cues": [
     {
       "text": "Our primary outcome is load-state detection.",
@@ -17,44 +17,39 @@
       "end": 8.19898
     },
     {
-      "text": "For each device, we compare predicted on and off states with test labels.",
-      "start": 9.37119,
-      "end": 14.82824
+      "text": "For each device, we compare its predicted on and off states with the test labels.",
+      "start": 9.43087,
+      "end": 14.54101
     },
     {
-      "text": "We count true positives, true negatives, false positives, and false negatives, then calculate one MCC for that device.",
-      "start": 16.46139,
-      "end": 25.39857
+      "text": "We calculate one MCC score for each device.",
+      "start": 15.12217,
+      "end": 18.38865
     },
     {
-      "text": "To calculate macro MCC, we add the 9 MCC scores and divide by 9.",
-      "start": 26.83096,
-      "end": 33.48966
+      "text": "For macro MCC, we add the 9 scores and divide by 9.",
+      "start": 19.86105,
+      "end": 25.01332
     },
     {
-      "text": "Each device receives equal weight, regardless of its duration or power rating.",
-      "start": 34.64224,
-      "end": 39.93967
-    },
-    {
-      "text": "We average device scores rather than combine all devices into one confusion matrix.",
-      "start": 41.45305,
-      "end": 47.2096
+      "text": "Each device has equal weight.",
+      "start": 25.97561,
+      "end": 27.69971
     },
     {
       "text": "This test metric is separate from the aggregate-only selection score.",
-      "start": 48.02078,
-      "end": 52.09066
+      "start": 28.49078,
+      "end": 32.56066
     },
     {
       "text": "We use test labels only after selection is locked.",
-      "start": 52.77231,
-      "end": 55.77961
+      "start": 33.24231,
+      "end": 36.24961
     },
     {
       "text": "Event F-one is secondary.",
-      "start": 56.7942,
-      "end": 58.52866
+      "start": 37.2642,
+      "end": 38.99866
     }
   ]
 }

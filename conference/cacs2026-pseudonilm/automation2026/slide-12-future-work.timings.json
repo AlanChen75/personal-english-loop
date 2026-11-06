@@ -2,9 +2,9 @@
   "version": 1,
   "method": "CTC forced alignment on original TTS WAV chunks",
   "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
-  "audio_sha256": "bd841ee6e103607411ebc8e8616065653bccdb58cd8610c49c070373d92f510c",
-  "transcript_sha256": "0480eb8855db041b3ef82a2aae8fe1ab2eb3344acc578a858f8a25586f706478",
-  "duration_seconds": 34.84,
+  "audio_sha256": "836fcd0270b2f299c7d48cee4e93a8755164de661ae5788286ae59d68da549eb",
+  "transcript_sha256": "8916f25fd32c735d93657621eb7fc38d543359534618515de14f76fda9f0b6eb",
+  "duration_seconds": 37.99,
   "cues": [
     {
       "text": "The next step is independent controlled validation.",
@@ -17,19 +17,24 @@
       "end": 12.38953
     },
     {
-      "text": "Then we would test correct, boundary-adjacent, and misspecified bounds while separating candidate restrictions from reconstruction caps.",
-      "start": 13.3008,
-      "end": 21.73947
+      "text": "We would test correct bounds, bounds near the boundary, and incorrect bounds.",
+      "start": 13.52191,
+      "end": 18.37789
+    },
+    {
+      "text": "We would test candidate limits and reconstruction caps separately.",
+      "start": 20.47383,
+      "end": 24.68847
     },
     {
       "text": "That would show when bounds help, when generation adds value, and when the procedure fails.",
-      "start": 22.63088,
-      "end": 28.84917
+      "start": 25.78088,
+      "end": 31.99917
     },
     {
       "text": "For now, assess bounds, the selector, and a simple baseline together.",
-      "start": 29.86142,
-      "end": 34.71955
+      "start": 33.01142,
+      "end": 37.86955
     }
   ]
 }

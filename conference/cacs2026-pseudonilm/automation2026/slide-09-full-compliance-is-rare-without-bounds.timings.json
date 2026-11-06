@@ -2,9 +2,9 @@
   "version": 1,
   "method": "CTC forced alignment on original TTS WAV chunks",
   "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
-  "audio_sha256": "24011e30ea401c23968214ab484dc821e86e1ea969396be75b72d4d1c6fc982f",
-  "transcript_sha256": "05e7bb069fd663f24e639322a874af0631e9973b96d5629d1e81552b6c45e80a",
-  "duration_seconds": 50.26,
+  "audio_sha256": "efd258c3a952ef31842d0d5d9d3bd982d36eb0b9d6c298fcd7aeef4f371e64e7",
+  "transcript_sha256": "1f1f0e53fb2c23cabc7a7787a100f8da35bff9e43127feacbfa8ff488efb5b92",
+  "duration_seconds": 37.37,
   "cues": [
     {
       "text": "Here, we use only validation data for an extra check.",
@@ -17,39 +17,29 @@
       "end": 8.13976
     },
     {
-      "text": "Only 5 out of 225 LLM configurations did so, or 2.22%.",
-      "start": 9.01109,
-      "end": 16.18959
+      "text": "Only 2.22% of LLM configurations met all the limits.",
+      "start": 9.21119,
+      "end": 14.48124
     },
     {
-      "text": "For LHS, 54 out of 900 did so, or 6%.",
-      "start": 17.08134,
-      "end": 22.19936
+      "text": "For LHS, the figure was 6%.",
+      "start": 15.18258,
+      "end": 18.26847
     },
     {
       "text": "The LLM proposals were closer to the ranges on average, but fewer met all the limits at once.",
-      "start": 23.09092,
-      "end": 30.22913
+      "start": 19.78092,
+      "end": 26.91913
     },
     {
       "text": "Also, none of the selected unbounded configurations from either source were fully compliant.",
-      "start": 31.76226,
-      "end": 38.13941
-    },
-    {
-      "text": "Being close to a range does not mean meeting every limit.",
-      "start": 39.09098,
-      "end": 42.21904
-    },
-    {
-      "text": "These numbers show whether candidates meet the engineering limits.",
-      "start": 42.92085,
-      "end": 46.38979
+      "start": 28.15111,
+      "end": 33.62232
     },
     {
       "text": "This check adds no new test results.",
-      "start": 47.40339,
-      "end": 50.09906
+      "start": 34.52417,
+      "end": 36.98922
     }
   ]
 }

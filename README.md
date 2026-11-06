@@ -109,11 +109,11 @@ personal-english-loop/
 
 ## Automation 2026 簡報來源
 
-2026-11-06 修訂：簡報 v10、講稿 v9。第 1 頁恢復加入未核准自我介紹前的 v7 原稿與對應音訊；保留第 3、6、9 頁已核准的用字簡化。14 頁台科大標頭、封面照片與身分資訊、其餘講稿、Q&A 與 CACS 素材不變。來源註記不放入講者備註。線上狀態以 GitHub Pages 成功部署為準。
+2026-11-07 修訂：簡報／講稿 v11，Shadow 快取 v25。核准簡化第 3、5、6、8、9、10、12 頁；第 10 頁改為 “We do this extra analysis after selection.”。保留原開場、權重、主要結果、研究限制與 Q&A，14 頁簡報畫面及其他教材不變。來源註記不放入講者備註。線上狀態以 GitHub Pages 成功部署為準。
 
-- 講稿來源：`practice-materials/automation2026/extension-v10.json`；音訊產生器預設讀取此版。
+- 講稿來源：`practice-materials/automation2026/extension-v11.json`；音訊產生器預設讀取此版。逐頁差異、保留的備答細節與驗收契約見 [v11 修訂說明](practice-materials/automation2026/revision-v11.md)。
 - 簡報產生器：`scripts/build_automation_identity.mjs`，依固定雜湊的原始 v7 產生器製作，不改研究表格與圖表。
-- 本機交付：`outputs/automation2026-v10/automation2026_13min_deck_v10.pptx`、同目錄 `automation2026_13min_script_v9.md` 與 `automation2026_13min_display_script_v9.md`。
+- 本機交付：`outputs/automation2026-v11/automation2026_13min_deck_v11.pptx`、同目錄 `automation2026_13min_script_v11.md` 與 `automation2026_13min_display_script_v11.md`。
 - 講稿變更界線：只修改使用者指定並核准的句段；增加封面身分資訊不代表可以增加口播。新增或改寫其他句段前須取得同意。
 - 校方識別素材：[台科大官方下載頁](https://secretariat-r.ntust.edu.tw/p/404-1063-74346.php?Lang=zh-tw)。
 - 更新音訊後必須重新產生並驗證 `.timings.json` 的音訊與字稿雜湊，再重建播放器，不能沿用舊時間戳。

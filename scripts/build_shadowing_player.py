@@ -31,11 +31,11 @@ APP_MANIFEST = {
         {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"},
     ],
 }
-SERVICE_WORKER = r'''const CACHE_NAME = 'personal-english-loop-v24';
+SERVICE_WORKER = r'''const CACHE_NAME = 'personal-english-loop-v25';
 const APP_SHELL = [
   './',
   './index.html',
-  './manifest.webmanifest?v=24',
+  './manifest.webmanifest?v=25',
   './icon-180.png',
   './icon-192.png',
   './icon-512.png'
@@ -275,7 +275,7 @@ TEMPLATE = r'''<!doctype html>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Shadow">
-  <link rel="manifest" href="manifest.webmanifest?v=24">
+  <link rel="manifest" href="manifest.webmanifest?v=25">
   <link rel="apple-touch-icon" href="icon-180.png">
   <title>Personal English Loop</title>
   <style>

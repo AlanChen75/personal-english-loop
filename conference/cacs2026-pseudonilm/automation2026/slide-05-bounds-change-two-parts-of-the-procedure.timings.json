@@ -2,64 +2,54 @@
   "version": 1,
   "method": "CTC forced alignment on original TTS WAV chunks",
   "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
-  "audio_sha256": "18976fd3f5fd70147e8565bfdaccf891e0878c04219f4967b185916859f9e4d9",
-  "transcript_sha256": "dd36faeb12894a361ec89170430ab63e67403697f4150163fcdad99c2f0edb40",
-  "duration_seconds": 55.57,
+  "audio_sha256": "06461cead9a2fc52f5fad3e64f0d240b5f5a429941c6f1dc3ae920bbc7258163",
+  "transcript_sha256": "e961a4cec4a2430c7bf55c11eb745004dc93816656f7cdab39544996f26dd5b2",
+  "duration_seconds": 43.43,
   "cues": [
     {
       "text": "Here, bounds are declared engineering ranges.",
-      "start": 0.46085,
-      "end": 3.02556
-    },
-    {
-      "text": "Examples include power factor and on-ratio.",
-      "start": 3.86711,
-      "end": 6.89267
+      "start": 0.40078,
+      "end": 3.00587
     },
     {
       "text": "The table shows two places where bounds act.",
-      "start": 7.91455,
-      "end": 10.35904
+      "start": 3.64712,
+      "end": 6.39249
     },
     {
       "text": "First, they restrict candidate parameters.",
-      "start": 11.61252,
-      "end": 14.14921
-    },
-    {
-      "text": "Bounded LHS samples directly within the ranges, without clipping or rejecting wide samples.",
-      "start": 15.08119,
-      "end": 22.21959
+      "start": 7.17401,
+      "end": 9.6789
     },
     {
       "text": "Second, bounds restrict accepted events and cap reconstructed device power.",
-      "start": 23.23179,
-      "end": 28.22964
+      "start": 11.09179,
+      "end": 16.08964
     },
     {
       "text": "The wide procedure keeps wider candidate ranges and wider reconstruction rules.",
-      "start": 29.20176,
-      "end": 34.21871
+      "start": 17.06176,
+      "end": 22.07871
     },
     {
       "text": "So enabling bounds changes both candidate generation and reconstruction.",
-      "start": 35.3714,
-      "end": 40.68913
+      "start": 23.2314,
+      "end": 28.54913
     },
     {
       "text": "If performance changes, this experiment cannot tell us how much comes from each part.",
-      "start": 41.82181,
-      "end": 46.93958
+      "start": 29.68181,
+      "end": 34.79958
     },
     {
       "text": "Also, these declared ranges are engineering assumptions.",
-      "start": 47.95133,
-      "end": 51.31958
+      "start": 35.81133,
+      "end": 39.17958
     },
     {
       "text": "We have not measured the true feasible region.",
-      "start": 52.36214,
-      "end": 55.20912
+      "start": 40.22214,
+      "end": 43.06912
     }
   ]
 }
