@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "4e3ce4d495dc07e7498d55ecd12debee673bc0623326ca565641c174ce9dae44",
+  "transcript_sha256": "0daac395edcafd612ce932349b5d866236a1342cbbc52d76b3ff1e914050f31d",
+  "duration_seconds": 17.47,
+  "cues": [
+    {
+      "text": "Many small businesses want to use AI but don't know where to start.",
+      "start": 1.20276,
+      "end": 4.7509
+    },
+    {
+      "text": "Existing solutions can be expensive or difficult to manage.",
+      "start": 5.27209,
+      "end": 8.61977
+    },
+    {
+      "text": "As a result, some companies give up before seeing any benefits.",
+      "start": 9.491,
+      "end": 13.70103
+    },
+    {
+      "text": "We believe there is a better way to solve this problem.",
+      "start": 14.66332,
+      "end": 17.36976
+    }
+  ]
+}

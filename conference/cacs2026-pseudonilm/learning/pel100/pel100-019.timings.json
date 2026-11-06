@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "8d067509d901a2eea3cb2f46f83caf0c30a5d237c500b3b9b8008b0bc572c553",
+  "transcript_sha256": "4f9dce51cb7263fc2abf79fc3cb54d147ad0cbb25bddb2c10774ba2284ebdebd",
+  "duration_seconds": 13.79,
+  "cues": [
+    {
+      "text": "I'm going to visit my friends this weekend.",
+      "start": 0.72136,
+      "end": 3.0858
+    },
+    {
+      "text": "We plan to have lunch together.",
+      "start": 3.78712,
+      "end": 5.41017
+    },
+    {
+      "text": "If the weather is nice, we'll go for a walk.",
+      "start": 6.31186,
+      "end": 8.9368
+    },
+    {
+      "text": "I hope we can spend more time together.",
+      "start": 11.53388,
+      "end": 13.70942
+    }
+  ]
+}

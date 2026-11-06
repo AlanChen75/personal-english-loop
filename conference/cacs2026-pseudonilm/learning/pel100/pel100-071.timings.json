@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "acc4e7c04688750c355901c71dab7eb45d84abdbfced716b4c818f05614d8777",
+  "transcript_sha256": "bb77d01e233694ed1f79980c971357f9f5b98e601a9b8ef345f0f27655506d2d",
+  "duration_seconds": 16.43,
+  "cues": [
+    {
+      "text": "AI has changed how people learn new skills.",
+      "start": 0.66176,
+      "end": 3.48928
+    },
+    {
+      "text": "Students can now ask questions and get feedback quickly.",
+      "start": 4.2112,
+      "end": 7.39968
+    },
+    {
+      "text": "However, getting an answer doesn't always mean understanding it.",
+      "start": 8.33108,
+      "end": 11.51852
+    },
+    {
+      "text": "I think students still need to practice and explain things themselves.",
+      "start": 12.54091,
+      "end": 16.10925
+    }
+  ]
+}

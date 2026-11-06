@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "a8df2e9a8ae66c048213f885b6409d4147a6ef2ae2e35af15ddd15c13b2d0d1a",
+  "transcript_sha256": "e628db9bd005068bf27334b724f743f9b0b92e6de16f570072db5401e1b2cce9",
+  "duration_seconds": 15.07,
+  "cues": [
+    {
+      "text": "We have different opinions about this design.",
+      "start": 0.46085,
+      "end": 2.86531
+    },
+    {
+      "text": "I understand why you prefer the first option.",
+      "start": 3.96735,
+      "end": 6.61224
+    },
+    {
+      "text": "However, I'm concerned about its long-term cost.",
+      "start": 7.35362,
+      "end": 10.259
+    },
+    {
+      "text": "Could we compare both options before making a decision?",
+      "start": 11.69277,
+      "end": 15.00969
+    }
+  ]
+}

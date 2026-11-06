@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "90776d1ac5c346f19925a44686595f518883860528080f3f4ef22c13160ca6c4",
+  "transcript_sha256": "58861e48f6746f821cde4b50b5c20422562235ae7ae57c78915737a2b1d602a3",
+  "duration_seconds": 12.51,
+  "cues": [
+    {
+      "text": "I've had a sore throat since yesterday.",
+      "start": 0.82171,
+      "end": 2.82589
+    },
+    {
+      "text": "I don't have a fever, but it hurts when I swallow.",
+      "start": 3.44718,
+      "end": 5.99248
+    },
+    {
+      "text": "Is there anything that might help?",
+      "start": 7.11482,
+      "end": 8.71816
+    },
+    {
+      "text": "Could you explain how to use it safely?",
+      "start": 10.43378,
+      "end": 12.40921
+    }
+  ]
+}

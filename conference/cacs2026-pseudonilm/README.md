@@ -14,6 +14,8 @@
 - CACS 2026 保留原分類，依序收錄 1–10 正式講稿、11 結尾與 Q&A 畫面、12 一份完整 Q&A Response Pack
 - 兩套研討會講稿都同步顯示投影片、逐頁音檔與英文講稿
 - 自我介紹與每日教材同步顯示音檔與英文逐字稿
+- 每日練習使用 OLMCP「PEL 100 段情境英文 v1.1」：001–100 各一集、各 4 句，原文不改寫；舊 Day 01–02 音檔保留但不列於此清單
+- 100 集使用原始 WAV 的 CTC 對齊時間戳；教材 metadata、原版 ID 與 T/L/E 重點位於 `lessons/pel-100/`
 - 播放、拖曳或倒退音訊時，逐字稿會同步標示目前句子
 - Automation 第 1–15 段使用原始語音片段的 CTC 對齊時間戳，包含實際停頓；0.8×／0.9×／1.0× 都依音訊 currentTime 切換。發音重點清單不是完整逐字稿，不啟用逐句高亮。其他教材暫保留估算模式。
 - 點選投影片可開啟原尺寸圖片
@@ -55,3 +57,10 @@
 4. 將生成檔與投影片圖片放進 `automation2026/`。用 `scripts/remote_align_tts_chunks.py --jobs <jobs.json> --cache <wav-cache> --output <alignment.json>` 在 3090 對齊原始片段，再以 `scripts/build_automation_timings.py --plan <plan.json> --alignment <alignment.json> --cache <wav-cache> --audio-root conference/cacs2026-pseudonilm/automation2026` 產生時間戳。對齊流程不修改聲音或語速。
 5. 更新 `library-manifest.json` 的 `timings` 路徑後，執行 `scripts/build_shadowing_player.py`。時間戳必須與音檔、字稿版本一致，播放器會以音檔雜湊建立快取網址。
 6. 跑完整測試、推送 GitHub Pages，並查回頁面與音檔 HTTP 200 後才視為上線。
+
+## 每日練習 100 集更新流程
+
+使用 `scripts/build_pel100.py` 與 `lessons/pel-100/source-v1.1.md`；不可用舊版
+`lessons/shadowing-library.json` 的 Day 01–02 清單覆蓋新的每日練習。
+完整契約、生成步驟、失敗處理及復原方式見 `lessons/pel-100/README.md`。
+只更新 `daily-practice` 清單；研討會、自我介紹及預設 Automation 分類不動。

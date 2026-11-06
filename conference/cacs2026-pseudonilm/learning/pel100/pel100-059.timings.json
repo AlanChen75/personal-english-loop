@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "b46184185d364f081c0f053fa4517725945bf8d1bb0dc6daa2a8533d6077c602",
+  "transcript_sha256": "928cf9eaaacbe8d08953ff175667c68f6e687e6d84703d65f325a65c1a9102d1",
+  "duration_seconds": 12.83,
+  "cues": [
+    {
+      "text": "My cat usually eats twice a day.",
+      "start": 0.48105,
+      "end": 2.26497
+    },
+    {
+      "text": "Recently, she has been eating less than usual.",
+      "start": 2.86629,
+      "end": 5.67244
+    },
+    {
+      "text": "I've started keeping a record of her meals.",
+      "start": 6.57442,
+      "end": 8.85943
+    },
+    {
+      "text": "I want to understand whether something has changed.",
+      "start": 10.23455,
+      "end": 12.76964
+    }
+  ]
+}

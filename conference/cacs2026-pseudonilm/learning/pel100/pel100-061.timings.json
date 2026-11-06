@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "40826b74e03cfd3fb8c77c759baefee4aac68258b254f203fb4c5ee87fc3ca57",
+  "transcript_sha256": "a5faf64297f9698d57fd8af9201f8661a481a1d46e26a11851b965ae91d06336",
+  "duration_seconds": 16.51,
+  "cues": [
+    {
+      "text": "I got my first job when I was twenty-two.",
+      "start": 0.40098,
+      "end": 3.22791
+    },
+    {
+      "text": "At that time, I didn't know much about business.",
+      "start": 5.17268,
+      "end": 8.05975
+    },
+    {
+      "text": "My manager taught me how to solve problems step by step.",
+      "start": 8.89095,
+      "end": 12.41977
+    },
+    {
+      "text": "That experience helped me become more confident.",
+      "start": 13.42228,
+      "end": 16.3496
+    }
+  ]
+}

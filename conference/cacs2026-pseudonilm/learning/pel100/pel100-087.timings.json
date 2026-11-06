@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "1f94592ff99079c6e29a2a0e1035b5faac29eca3aeb60aff36290aa94a687c66",
+  "transcript_sha256": "94dac6de21b5078528524260000894838bf28e0bbc218123150bd4433cf54089",
+  "duration_seconds": 17.31,
+  "cues": [
+    {
+      "text": "Our customers pay a monthly fee to use the service.",
+      "start": 0.84188,
+      "end": 4.18935
+    },
+    {
+      "text": "The price depends on how many devices they connect.",
+      "start": 5.39204,
+      "end": 8.51902
+    },
+    {
+      "text": "This gives small companies a lower starting cost.",
+      "start": 9.69095,
+      "end": 12.57817
+    },
+    {
+      "text": "As their needs grow, they can upgrade to a larger plan.",
+      "start": 14.30248,
+      "end": 17.12955
+    }
+  ]
+}

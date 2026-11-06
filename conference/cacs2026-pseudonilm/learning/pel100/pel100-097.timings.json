@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "de51f00726b2ebabedcece2a150b52bf54cb2141e887ccdaf96c7911f888bfab",
+  "transcript_sha256": "77effcfba4d10ed46100b9d71941e5b613c1b25db443580aec657d64f49292a3",
+  "duration_seconds": 17.87,
+  "cues": [
+    {
+      "text": "We understand that the price is an important concern.",
+      "start": 0.66148,
+      "end": 3.86864
+    },
+    {
+      "text": "However, we also need to maintain the quality of our service.",
+      "start": 4.40984,
+      "end": 8.59919
+    },
+    {
+      "text": "If you can commit to a longer contract, we may be able to offer a discount.",
+      "start": 9.9515,
+      "end": 14.60237
+    },
+    {
+      "text": "Would that be an acceptable option for your team?",
+      "start": 15.44433,
+      "end": 17.72967
+    }
+  ]
+}

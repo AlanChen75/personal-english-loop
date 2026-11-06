@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "d04e32fe32b4562be04a749406e655308074ef82fc7d2377e12f690b6c3c8c83",
+  "transcript_sha256": "60fe632cff9b8f78e7c91edea41689082f10ed93abd483cac8193124e8857541",
+  "duration_seconds": 10.64,
+  "cues": [
+    {
+      "text": "I usually wake up at seven.",
+      "start": 0.54102,
+      "end": 2.10395
+    },
+    {
+      "text": "After breakfast, I check my messages.",
+      "start": 2.7652,
+      "end": 5.00942
+    },
+    {
+      "text": "Then I make a plan for the day.",
+      "start": 5.61055,
+      "end": 7.27367
+    },
+    {
+      "text": "This helps me stay organized.",
+      "start": 8.1954,
+      "end": 10.1591
+    }
+  ]
+}

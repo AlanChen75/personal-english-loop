@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "de7a7f3d94e0e67f79064d65a70285b82d00371f5d6dc57940deea0bf3a58de3",
+  "transcript_sha256": "bdd19af4e98280e4bfed6b3e21af79d5ad7956169f66a7f9a3541d42cd58c9e0",
+  "duration_seconds": 15.39,
+  "cues": [
+    {
+      "text": "Our team works in different cities.",
+      "start": 0.5816,
+      "end": 2.50689
+    },
+    {
+      "text": "We use online tools to share files and discuss ideas.",
+      "start": 3.42942,
+      "end": 7.07945
+    },
+    {
+      "text": "Sometimes communication takes longer than expected.",
+      "start": 8.1714,
+      "end": 11.1591
+    },
+    {
+      "text": "That's why we write down important decisions after each meeting.",
+      "start": 11.80075,
+      "end": 15.32984
+    }
+  ]
+}

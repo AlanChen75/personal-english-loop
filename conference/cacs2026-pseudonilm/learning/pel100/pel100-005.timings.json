@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "78f14fb0670db9ce4c406b236733381e147bd17bdff3d711eaa9c659f5f35a60",
+  "transcript_sha256": "d199b748c1c6f8cbffa1abd60efe21170734f94a4a077677bd2930456b6336ee",
+  "duration_seconds": 17.23,
+  "cues": [
+    {
+      "text": "I try to eat healthy food every day.",
+      "start": 0.52071,
+      "end": 2.68367
+    },
+    {
+      "text": "I usually have vegetables and rice for lunch.",
+      "start": 3.26446,
+      "end": 5.98818
+    },
+    {
+      "text": "Sometimes I eat too much when I'm busy.",
+      "start": 11.69598,
+      "end": 14.03918
+    },
+    {
+      "text": "I'm trying to change that habit.",
+      "start": 15.33306,
+      "end": 17.08874
+    }
+  ]
+}

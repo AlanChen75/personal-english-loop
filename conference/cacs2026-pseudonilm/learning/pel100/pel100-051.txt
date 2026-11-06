@@ -1,0 +1,1 @@
+Let me show you how the system works. First, you connect the device to the network. The system then collects data automatically. If it detects a problem, it sends you a notification.

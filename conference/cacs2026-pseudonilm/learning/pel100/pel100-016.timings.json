@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "8e88c92b2f097e21408241996a9c211ae4b2ff5a69f2006db8adff53baa9ffd1",
+  "transcript_sha256": "689b926308968d5dfbe3d77a00e2dc7f052e01479b7839ef59f188c46720667b",
+  "duration_seconds": 11.95,
+  "cues": [
+    {
+      "text": "I'm learning to cook simple meals.",
+      "start": 0.461,
+      "end": 2.14466
+    },
+    {
+      "text": "Yesterday, I made dinner for my family.",
+      "start": 3.36732,
+      "end": 5.39172
+    },
+    {
+      "text": "The food wasn't perfect, but everyone enjoyed it.",
+      "start": 6.03312,
+      "end": 8.69891
+    },
+    {
+      "text": "I'll try a different recipe next time.",
+      "start": 9.93319,
+      "end": 11.84916
+    }
+  ]
+}

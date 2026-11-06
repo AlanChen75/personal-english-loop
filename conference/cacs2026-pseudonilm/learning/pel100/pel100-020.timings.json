@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "a26b448eedee7b83a593f7b441c6e4c76665622b0f4c360236704de12bb6f65c",
+  "transcript_sha256": "fb59c5a62d4cb4c12558ba43b22bdcce1e59243403f12fe3770b7560ea85e47d",
+  "duration_seconds": 11.36,
+  "cues": [
+    {
+      "text": "Welcome to the team.",
+      "start": 0.54095,
+      "end": 1.48261
+    },
+    {
+      "text": "I joined this company three years ago.",
+      "start": 2.4443,
+      "end": 4.4278
+    },
+    {
+      "text": "I mainly work on product development.",
+      "start": 5.24924,
+      "end": 7.51323
+    },
+    {
+      "text": "If you need any help, feel free to ask me.",
+      "start": 8.43485,
+      "end": 10.71887
+    }
+  ]
+}

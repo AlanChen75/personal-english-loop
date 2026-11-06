@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "8ef99b071145ad795298c577b89e64513f0747c9eaa7ad9ca90c8015dbf97407",
+  "transcript_sha256": "7b68882507568de95ad8ac5a12756d14aef960fc1b7eea01cf80111be335d3a2",
+  "duration_seconds": 12.75,
+  "cues": [
+    {
+      "text": "Before I start, I'd like to confirm the requirements.",
+      "start": 0.32074,
+      "end": 3.16733
+    },
+    {
+      "text": "Do you need a short summary or a detailed report?",
+      "start": 3.96919,
+      "end": 6.61531
+    },
+    {
+      "text": "I can prepare either one.",
+      "start": 7.33698,
+      "end": 8.43954
+    },
+    {
+      "text": "I just want to make sure we're working toward the same goal.",
+      "start": 9.83449,
+      "end": 12.66957
+    }
+  ]
+}

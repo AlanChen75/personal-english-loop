@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "e83b09776fce4f943c6db7ff45e32667c60853545af481bbad5c8ef81e3bbcdb",
+  "transcript_sha256": "4123035d2ee701f4aaaf7ddc89f2f593fa1044767612c74568ed6fc142a67b08",
+  "duration_seconds": 14.59,
+  "cues": [
+    {
+      "text": "I sometimes feel stressed when I have too much work.",
+      "start": 0.54154,
+      "end": 3.5902
+    },
+    {
+      "text": "When that happens, I take a short break.",
+      "start": 4.35236,
+      "end": 6.81937
+    },
+    {
+      "text": "A few minutes of walking helps me think clearly.",
+      "start": 8.09195,
+      "end": 10.7393
+    },
+    {
+      "text": "I've learned that rest is also important.",
+      "start": 11.9627,
+      "end": 14.44961
+    }
+  ]
+}

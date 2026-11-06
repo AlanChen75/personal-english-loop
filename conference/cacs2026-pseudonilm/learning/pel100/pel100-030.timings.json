@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "378bbbfa7e126e84a608c4ffb739574bdf739124023146c2d272da60d2707f53",
+  "transcript_sha256": "6da74b7ef94d1bcbe32c5f35b7acfe280149f27ca9ed160a3863e349eb979ae4",
+  "duration_seconds": 12.83,
+  "cues": [
+    {
+      "text": "We need to discuss the new project.",
+      "start": 0.32064,
+      "end": 2.14425
+    },
+    {
+      "text": "Are you available on Thursday afternoon?",
+      "start": 2.86569,
+      "end": 4.9899
+    },
+    {
+      "text": "If that doesn't work, we can meet on Friday morning.",
+      "start": 5.89169,
+      "end": 9.05797
+    },
+    {
+      "text": "Let me know which time is better for you.",
+      "start": 10.97454,
+      "end": 12.72916
+    }
+  ]
+}

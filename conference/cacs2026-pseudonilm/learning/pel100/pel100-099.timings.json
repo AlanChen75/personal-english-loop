@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "f844caa8482f52f0ad3924927f7956d63be129e868dfe9dde4f168bd93226d93",
+  "transcript_sha256": "4f8c6d9237c12c4c96e69ffd3d5e6a5ecdfd0aeb12fbb7a3fb0654ca22bafe19",
+  "duration_seconds": 17.9,
+  "cues": [
+    {
+      "text": "Let's consider three possible outcomes.",
+      "start": 0.46128,
+      "end": 2.60724
+    },
+    {
+      "text": "If demand grows quickly, we'll need more resources.",
+      "start": 3.44958,
+      "end": 6.99944
+    },
+    {
+      "text": "If growth is slower than expected, we can control costs and improve the product.",
+      "start": 7.89124,
+      "end": 12.94956
+    },
+    {
+      "text": "By preparing for both situations, we can make better decisions.",
+      "start": 13.88206,
+      "end": 17.6991
+    }
+  ]
+}

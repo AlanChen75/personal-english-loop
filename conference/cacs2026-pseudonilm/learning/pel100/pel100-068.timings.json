@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "2819e3ad7269a9a05b5af505e87d572160ede4f3bea7b8f42ffb63ae109f8ece",
+  "transcript_sha256": "4576a1c6bd62e041dca153ed8b84d6194c72d245fd8c86482dcb53df14c52b6d",
+  "duration_seconds": 16.19,
+  "cues": [
+    {
+      "text": "There are many tools that can do similar things.",
+      "start": 0.32097,
+      "end": 3.18961
+    },
+    {
+      "text": "The most expensive one isn't always the best.",
+      "start": 3.651,
+      "end": 6.4394
+    },
+    {
+      "text": "I usually compare cost, reliability, and ease of use.",
+      "start": 7.451,
+      "end": 11.15906
+    },
+    {
+      "text": "What matters most is whether the tool solves the real problem.",
+      "start": 12.50198,
+      "end": 16.12987
+    }
+  ]
+}

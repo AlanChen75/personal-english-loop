@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "b5aa8384a685db6461a884a4548018a50138aa69ea26608586e6c17ed0934c5f",
+  "transcript_sha256": "0c7cf66d7467a2d8d0a7e93602eabeb68c65cd64fd3fb44278ac8468689cd24f",
+  "duration_seconds": 17.58,
+  "cues": [
+    {
+      "text": "I understand your concern about the cost.",
+      "start": 0.46127,
+      "end": 2.66733
+    },
+    {
+      "text": "However, we should also consider the time saved by automation.",
+      "start": 3.16871,
+      "end": 6.97917
+    },
+    {
+      "text": "A lower purchase price doesn't always mean a lower total cost.",
+      "start": 7.99185,
+      "end": 11.42938
+    },
+    {
+      "text": "That's why I suggest comparing the overall value rather than the initial price alone.",
+      "start": 12.28134,
+      "end": 17.55993
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "69034f0cacb98533cd7444c08d4f91bff73db79e4dd00b53a45d097935883159",
+  "transcript_sha256": "3faf1ed48c25f7bb813809eccbb924539ef9b0494b7710ca300ddef382e4eccd",
+  "duration_seconds": 12.83,
+  "cues": [
+    {
+      "text": "My flight has been delayed by two hours.",
+      "start": 0.40092,
+      "end": 3.14722
+    },
+    {
+      "text": "I was supposed to arrive before dinner.",
+      "start": 4.08938,
+      "end": 6.13407
+    },
+    {
+      "text": "Now I need to change my plans.",
+      "start": 6.61517,
+      "end": 8.57968
+    },
+    {
+      "text": "I'll let my friends know as soon as I have a new arrival time.",
+      "start": 9.47214,
+      "end": 12.76968
+    }
+  ]
+}

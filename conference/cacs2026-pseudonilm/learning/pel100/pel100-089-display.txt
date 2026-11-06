@@ -1,0 +1,1 @@
+Today, our product solves one specific problem. In the future, we hope to connect several related services. This would allow customers to manage their work more easily. Our long-term goal is to build a system that grows with their needs.

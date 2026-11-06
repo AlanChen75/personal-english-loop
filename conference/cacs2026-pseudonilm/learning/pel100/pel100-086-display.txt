@@ -1,0 +1,1 @@
+We tested our first product with a small group of users. Most of them were able to complete the main task. However, some users needed help during setup. We've used their feedback to improve the process.

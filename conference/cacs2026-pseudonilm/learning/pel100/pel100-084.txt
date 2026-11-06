@@ -1,0 +1,1 @@
+We don't need to build every feature at the beginning. Instead, we can start with a simple version of the product. This allows us to test whether customers actually need it. If the results are positive, we can add more features later.

@@ -1,0 +1,2417 @@
+{
+  "generated_at": "2026-11-06T13:16:52.743804+00:00",
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "generation_mode": "voice_clone_x-vector-only_existing_parameters",
+  "post_processing": "loudnorm I=-16 LUFS, TP=-1.5 dB, LRA=11; no speed change",
+  "language": "English",
+  "reference_audio_sha256": "f191156890b60d505173f5ef33e0a72736297728f938f5884f244e86efbee8ba",
+  "catalog_sha256": "9f83471bcd768443a6ec40f02829b860c7d4433bfca6718315b385c797f61fd1",
+  "collections": [
+    {
+      "id": "daily-practice",
+      "title": "每日練習 · 100 集",
+      "items": [
+        {
+          "number": 1,
+          "title": "自我介紹 · Introducing Myself",
+          "audio": "pel100-001.mp3",
+          "spoken_transcript": "pel100-001.txt",
+          "raw_duration_seconds": 10.8,
+          "chunk_count": 1,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "10.800000",
+              "size": "130509",
+              "bit_rate": "96673"
+            }
+          }
+        },
+        {
+          "number": 2,
+          "title": "早晨習慣 · My Morning Routine",
+          "audio": "pel100-002.mp3",
+          "spoken_transcript": "pel100-002.txt",
+          "raw_duration_seconds": 10.64,
+          "chunk_count": 1,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "10.640000",
+              "size": "128781",
+              "bit_rate": "96827"
+            }
+          }
+        },
+        {
+          "number": 3,
+          "title": "我的家庭 · My Family",
+          "audio": "pel100-003.mp3",
+          "spoken_transcript": "pel100-003.txt",
+          "raw_duration_seconds": 10.16,
+          "chunk_count": 1,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "10.160000",
+              "size": "123021",
+              "bit_rate": "96866"
+            }
+          }
+        },
+        {
+          "number": 4,
+          "title": "住家附近 · My Neighborhood",
+          "audio": "pel100-004.mp3",
+          "spoken_transcript": "pel100-004.txt",
+          "raw_duration_seconds": 10.8,
+          "chunk_count": 1,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "10.800000",
+              "size": "130509",
+              "bit_rate": "96673"
+            }
+          }
+        },
+        {
+          "number": 5,
+          "title": "飲食習慣 · Eating Habits",
+          "audio": "pel100-005.mp3",
+          "spoken_transcript": "pel100-005.txt",
+          "raw_duration_seconds": 17.23,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "17.230000",
+              "size": "207693",
+              "bit_rate": "96433"
+            }
+          }
+        },
+        {
+          "number": 6,
+          "title": "介紹自己的工作 · Describing My Job",
+          "audio": "pel100-006.mp3",
+          "spoken_transcript": "pel100-006.txt",
+          "raw_duration_seconds": 13.95,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "13.950000",
+              "size": "168525",
+              "bit_rate": "96645"
+            }
+          }
+        },
+        {
+          "number": 7,
+          "title": "在咖啡店點餐 · Ordering Coffee",
+          "audio": "pel100-007.mp3",
+          "spoken_transcript": "pel100-007.txt",
+          "raw_duration_seconds": 10.48,
+          "chunk_count": 1,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "10.480000",
+              "size": "126765",
+              "bit_rate": "96767"
+            }
+          }
+        },
+        {
+          "number": 8,
+          "title": "結帳付款 · Paying the Bill",
+          "audio": "pel100-008.mp3",
+          "spoken_transcript": "pel100-008.txt",
+          "raw_duration_seconds": 11.04,
+          "chunk_count": 1,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "11.040000",
+              "size": "133389",
+              "bit_rate": "96658"
+            }
+          }
+        },
+        {
+          "number": 9,
+          "title": "買衣服 · Buying Clothes",
+          "audio": "pel100-009.mp3",
+          "spoken_transcript": "pel100-009.txt",
+          "raw_duration_seconds": 11.07,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "11.070000",
+              "size": "133965",
+              "bit_rate": "96813"
+            }
+          }
+        },
+        {
+          "number": 10,
+          "title": "購買日用品 · Grocery Shopping",
+          "audio": "pel100-010.mp3",
+          "spoken_transcript": "pel100-010.txt",
+          "raw_duration_seconds": 15.07,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "15.070000",
+              "size": "181773",
+              "bit_rate": "96495"
+            }
+          }
+        },
+        {
+          "number": 11,
+          "title": "問路 · Asking for Directions",
+          "audio": "pel100-011.mp3",
+          "spoken_transcript": "pel100-011.txt",
+          "raw_duration_seconds": 11.71,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "11.710000",
+              "size": "141453",
+              "bit_rate": "96637"
+            }
+          }
+        },
+        {
+          "number": 12,
+          "title": "搭火車 · Taking a Train",
+          "audio": "pel100-012.mp3",
+          "spoken_transcript": "pel100-012.txt",
+          "raw_duration_seconds": 13.39,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "13.390000",
+              "size": "161613",
+              "bit_rate": "96557"
+            }
+          }
+        },
+        {
+          "number": 13,
+          "title": "預訂餐廳 · Booking a Restaurant",
+          "audio": "pel100-013.mp3",
+          "spoken_transcript": "pel100-013.txt",
+          "raw_duration_seconds": 12.75,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.750000",
+              "size": "154125",
+              "bit_rate": "96705"
+            }
+          }
+        },
+        {
+          "number": 14,
+          "title": "飯店入住 · Checking Into a Hotel",
+          "audio": "pel100-014.mp3",
+          "spoken_transcript": "pel100-014.txt",
+          "raw_duration_seconds": 12.19,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.190000",
+              "size": "147213",
+              "bit_rate": "96612"
+            }
+          }
+        },
+        {
+          "number": 15,
+          "title": "慶祝生日 · Celebrating a Birthday",
+          "audio": "pel100-015.mp3",
+          "spoken_transcript": "pel100-015.txt",
+          "raw_duration_seconds": 11.55,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "11.550000",
+              "size": "139725",
+              "bit_rate": "96779"
+            }
+          }
+        },
+        {
+          "number": 16,
+          "title": "在家煮飯 · Cooking at Home",
+          "audio": "pel100-016.mp3",
+          "spoken_transcript": "pel100-016.txt",
+          "raw_duration_seconds": 11.95,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "11.950000",
+              "size": "144333",
+              "bit_rate": "96624"
+            }
+          }
+        },
+        {
+          "number": 17,
+          "title": "我的興趣 · My Hobbies",
+          "audio": "pel100-017.mp3",
+          "spoken_transcript": "pel100-017.txt",
+          "raw_duration_seconds": 12.27,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.270000",
+              "size": "148365",
+              "bit_rate": "96733"
+            }
+          }
+        },
+        {
+          "number": 18,
+          "title": "忙碌的一天 · A Busy Day",
+          "audio": "pel100-018.mp3",
+          "spoken_transcript": "pel100-018.txt",
+          "raw_duration_seconds": 15.31,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "15.310000",
+              "size": "184653",
+              "bit_rate": "96487"
+            }
+          }
+        },
+        {
+          "number": 19,
+          "title": "週末計畫 · Weekend Plans",
+          "audio": "pel100-019.mp3",
+          "spoken_transcript": "pel100-019.txt",
+          "raw_duration_seconds": 13.79,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "13.790000",
+              "size": "166509",
+              "bit_rate": "96596"
+            }
+          }
+        },
+        {
+          "number": 20,
+          "title": "認識新同事 · Meeting a New Colleague",
+          "audio": "pel100-020.mp3",
+          "spoken_transcript": "pel100-020.txt",
+          "raw_duration_seconds": 11.36,
+          "chunk_count": 1,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "11.360000",
+              "size": "137421",
+              "bit_rate": "96775"
+            }
+          }
+        },
+        {
+          "number": 21,
+          "title": "搭計程車 · Taking a Taxi",
+          "audio": "pel100-021.mp3",
+          "spoken_transcript": "pel100-021.txt",
+          "raw_duration_seconds": 12.99,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.990000",
+              "size": "157005",
+              "bit_rate": "96692"
+            }
+          }
+        },
+        {
+          "number": 22,
+          "title": "機場報到 · Airport Check-In",
+          "audio": "pel100-022.mp3",
+          "spoken_transcript": "pel100-022.txt",
+          "raw_duration_seconds": 14.59,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "14.590000",
+              "size": "176013",
+              "bit_rate": "96511"
+            }
+          }
+        },
+        {
+          "number": 23,
+          "title": "特殊飲食需求 · Food Preferences",
+          "audio": "pel100-023.mp3",
+          "spoken_transcript": "pel100-023.txt",
+          "raw_duration_seconds": 12.91,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.910000",
+              "size": "155853",
+              "bit_rate": "96578"
+            }
+          }
+        },
+        {
+          "number": 24,
+          "title": "寄送包裹 · Sending a Package",
+          "audio": "pel100-024.mp3",
+          "spoken_transcript": "pel100-024.txt",
+          "raw_duration_seconds": 11.55,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "11.550000",
+              "size": "139725",
+              "bit_rate": "96779"
+            }
+          }
+        },
+        {
+          "number": 25,
+          "title": "銀行開戶 · Opening a Bank Account",
+          "audio": "pel100-025.mp3",
+          "spoken_transcript": "pel100-025.txt",
+          "raw_duration_seconds": 14.91,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "14.910000",
+              "size": "180045",
+              "bit_rate": "96603"
+            }
+          }
+        },
+        {
+          "number": 26,
+          "title": "網路故障 · An Internet Problem",
+          "audio": "pel100-026.mp3",
+          "spoken_transcript": "pel100-026.txt",
+          "raw_duration_seconds": 12.35,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.350000",
+              "size": "149229",
+              "bit_rate": "96666"
+            }
+          }
+        },
+        {
+          "number": 27,
+          "title": "飯店房間問題 · A Problem With the Room",
+          "audio": "pel100-027.mp3",
+          "spoken_transcript": "pel100-027.txt",
+          "raw_duration_seconds": 15.15,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "15.150000",
+              "size": "182925",
+              "bit_rate": "96594"
+            }
+          }
+        },
+        {
+          "number": 28,
+          "title": "商品退貨 · Returning an Item",
+          "audio": "pel100-028.mp3",
+          "spoken_transcript": "pel100-028.txt",
+          "raw_duration_seconds": 10.67,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "10.670000",
+              "size": "129069",
+              "bit_rate": "96771"
+            }
+          }
+        },
+        {
+          "number": 29,
+          "title": "化解誤會 · Clearing Up a Misunderstanding",
+          "audio": "pel100-029.mp3",
+          "spoken_transcript": "pel100-029.txt",
+          "raw_duration_seconds": 11.55,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "11.550000",
+              "size": "139725",
+              "bit_rate": "96779"
+            }
+          }
+        },
+        {
+          "number": 30,
+          "title": "安排會議 · Scheduling a Meeting",
+          "audio": "pel100-030.mp3",
+          "spoken_transcript": "pel100-030.txt",
+          "raw_duration_seconds": 12.83,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.830000",
+              "size": "154989",
+              "bit_rate": "96641"
+            }
+          }
+        },
+        {
+          "number": 31,
+          "title": "說明議程 · Explaining the Agenda",
+          "audio": "pel100-031.mp3",
+          "spoken_transcript": "pel100-031.txt",
+          "raw_duration_seconds": 12.27,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.270000",
+              "size": "148365",
+              "bit_rate": "96733"
+            }
+          }
+        },
+        {
+          "number": 32,
+          "title": "工作優先順序 · Setting Priorities",
+          "audio": "pel100-032.mp3",
+          "spoken_transcript": "pel100-032.txt",
+          "raw_duration_seconds": 13.15,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "13.150000",
+              "size": "158733",
+              "bit_rate": "96567"
+            }
+          }
+        },
+        {
+          "number": 33,
+          "title": "確認任務 · Clarifying a Task",
+          "audio": "pel100-033.mp3",
+          "spoken_transcript": "pel100-033.txt",
+          "raw_duration_seconds": 12.75,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.750000",
+              "size": "154125",
+              "bit_rate": "96705"
+            }
+          }
+        },
+        {
+          "number": 34,
+          "title": "尋求協助 · Asking for Help",
+          "audio": "pel100-034.mp3",
+          "spoken_transcript": "pel100-034.txt",
+          "raw_duration_seconds": 12.19,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.190000",
+              "size": "147213",
+              "bit_rate": "96612"
+            }
+          }
+        },
+        {
+          "number": 35,
+          "title": "和朋友見面 · Meeting an Old Friend",
+          "audio": "pel100-035.mp3",
+          "spoken_transcript": "pel100-035.txt",
+          "raw_duration_seconds": 11.28,
+          "chunk_count": 1,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "11.280000",
+              "size": "136269",
+              "bit_rate": "96644"
+            }
+          }
+        },
+        {
+          "number": 36,
+          "title": "睡眠與健康 · Getting Enough Sleep",
+          "audio": "pel100-036.mp3",
+          "spoken_transcript": "pel100-036.txt",
+          "raw_duration_seconds": 11.15,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "11.150000",
+              "size": "134829",
+              "bit_rate": "96738"
+            }
+          }
+        },
+        {
+          "number": 37,
+          "title": "運動習慣 · Staying Active",
+          "audio": "pel100-037.mp3",
+          "spoken_transcript": "pel100-037.txt",
+          "raw_duration_seconds": 12.59,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.590000",
+              "size": "152109",
+              "bit_rate": "96653"
+            }
+          }
+        },
+        {
+          "number": 38,
+          "title": "我的家鄉 · My Hometown",
+          "audio": "pel100-038.mp3",
+          "spoken_transcript": "pel100-038.txt",
+          "raw_duration_seconds": 15.15,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "15.150000",
+              "size": "182925",
+              "bit_rate": "96594"
+            }
+          }
+        },
+        {
+          "number": 39,
+          "title": "面對壓力 · Dealing with Stress",
+          "audio": "pel100-039.mp3",
+          "spoken_transcript": "pel100-039.txt",
+          "raw_duration_seconds": 14.59,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "14.590000",
+              "size": "176013",
+              "bit_rate": "96511"
+            }
+          }
+        },
+        {
+          "number": 40,
+          "title": "錯過公車 · Missing the Bus",
+          "audio": "pel100-040.mp3",
+          "spoken_transcript": "pel100-040.txt",
+          "raw_duration_seconds": 14.19,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "14.190000",
+              "size": "171405",
+              "bit_rate": "96634"
+            }
+          }
+        },
+        {
+          "number": 41,
+          "title": "每日工作會議 · Daily Team Meeting",
+          "audio": "pel100-041.mp3",
+          "spoken_transcript": "pel100-041.txt",
+          "raw_duration_seconds": 13.95,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "13.950000",
+              "size": "168525",
+              "bit_rate": "96645"
+            }
+          }
+        },
+        {
+          "number": 42,
+          "title": "進度報告 · Giving a Progress Update",
+          "audio": "pel100-042.mp3",
+          "spoken_transcript": "pel100-042.txt",
+          "raw_duration_seconds": 12.51,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.510000",
+              "size": "151245",
+              "bit_rate": "96719"
+            }
+          }
+        },
+        {
+          "number": 43,
+          "title": "期限延後 · Explaining a Delay",
+          "audio": "pel100-043.mp3",
+          "spoken_transcript": "pel100-043.txt",
+          "raw_duration_seconds": 14.35,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "14.350000",
+              "size": "173133",
+              "bit_rate": "96520"
+            }
+          }
+        },
+        {
+          "number": 44,
+          "title": "回報問題 · Reporting an Issue",
+          "audio": "pel100-044.mp3",
+          "spoken_transcript": "pel100-044.txt",
+          "raw_duration_seconds": 12.19,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.190000",
+              "size": "147213",
+              "bit_rate": "96612"
+            }
+          }
+        },
+        {
+          "number": 45,
+          "title": "提出解決方案 · Suggesting a Solution",
+          "audio": "pel100-045.mp3",
+          "spoken_transcript": "pel100-045.txt",
+          "raw_duration_seconds": 13.39,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "13.390000",
+              "size": "161613",
+              "bit_rate": "96557"
+            }
+          }
+        },
+        {
+          "number": 46,
+          "title": "給予建設性回饋 · Giving Feedback",
+          "audio": "pel100-046.mp3",
+          "spoken_transcript": "pel100-046.txt",
+          "raw_duration_seconds": 13.31,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "13.310000",
+              "size": "160749",
+              "bit_rate": "96618"
+            }
+          }
+        },
+        {
+          "number": 47,
+          "title": "接受批評 · Receiving Feedback",
+          "audio": "pel100-047.mp3",
+          "spoken_transcript": "pel100-047.txt",
+          "raw_duration_seconds": 13.31,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "13.310000",
+              "size": "160749",
+              "bit_rate": "96618"
+            }
+          }
+        },
+        {
+          "number": 48,
+          "title": "說明數據 · Explaining Data",
+          "audio": "pel100-048.mp3",
+          "spoken_transcript": "pel100-048.txt",
+          "raw_duration_seconds": 14.83,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "14.830000",
+              "size": "178893",
+              "bit_rate": "96503"
+            }
+          }
+        },
+        {
+          "number": 49,
+          "title": "遠端協作 · Working Remotely",
+          "audio": "pel100-049.mp3",
+          "spoken_transcript": "pel100-049.txt",
+          "raw_duration_seconds": 15.39,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "15.390000",
+              "size": "185805",
+              "bit_rate": "96584"
+            }
+          }
+        },
+        {
+          "number": 50,
+          "title": "了解客戶需求 · Understanding a Customer",
+          "audio": "pel100-050.mp3",
+          "spoken_transcript": "pel100-050.txt",
+          "raw_duration_seconds": 16.67,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "16.670000",
+              "size": "201069",
+              "bit_rate": "96493"
+            }
+          }
+        },
+        {
+          "number": 51,
+          "title": "產品展示 · Demonstrating a Product",
+          "audio": "pel100-051.mp3",
+          "spoken_transcript": "pel100-051.txt",
+          "raw_duration_seconds": 13.07,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "13.070000",
+              "size": "157869",
+              "bit_rate": "96629"
+            }
+          }
+        },
+        {
+          "number": 52,
+          "title": "處理團隊意見分歧 · Handling Disagreement",
+          "audio": "pel100-052.mp3",
+          "spoken_transcript": "pel100-052.txt",
+          "raw_duration_seconds": 15.07,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "15.070000",
+              "size": "181773",
+              "bit_rate": "96495"
+            }
+          }
+        },
+        {
+          "number": 53,
+          "title": "專案檢討 · Reviewing a Project",
+          "audio": "pel100-053.mp3",
+          "spoken_transcript": "pel100-053.txt",
+          "raw_duration_seconds": 17.87,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "17.870000",
+              "size": "215469",
+              "bit_rate": "96460"
+            }
+          }
+        },
+        {
+          "number": 54,
+          "title": "學英文的原因 · Why I Learn English",
+          "audio": "pel100-054.mp3",
+          "spoken_transcript": "pel100-054.txt",
+          "raw_duration_seconds": 12.27,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.270000",
+              "size": "148365",
+              "bit_rate": "96733"
+            }
+          }
+        },
+        {
+          "number": 55,
+          "title": "今年的目標 · My Goals This Year",
+          "audio": "pel100-055.mp3",
+          "spoken_transcript": "pel100-055.txt",
+          "raw_duration_seconds": 15.71,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "15.710000",
+              "size": "189549",
+              "bit_rate": "96523"
+            }
+          }
+        },
+        {
+          "number": 56,
+          "title": "班機延誤 · A Delayed Flight",
+          "audio": "pel100-056.mp3",
+          "spoken_transcript": "pel100-056.txt",
+          "raw_duration_seconds": 12.83,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.830000",
+              "size": "154989",
+              "bit_rate": "96641"
+            }
+          }
+        },
+        {
+          "number": 57,
+          "title": "在藥局詢問 · At the Pharmacy",
+          "audio": "pel100-057.mp3",
+          "spoken_transcript": "pel100-057.txt",
+          "raw_duration_seconds": 12.51,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.510000",
+              "size": "151245",
+              "bit_rate": "96719"
+            }
+          }
+        },
+        {
+          "number": 58,
+          "title": "醫生看診 · Visiting a Doctor",
+          "audio": "pel100-058.mp3",
+          "spoken_transcript": "pel100-058.txt",
+          "raw_duration_seconds": 13.07,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "13.070000",
+              "size": "157869",
+              "bit_rate": "96629"
+            }
+          }
+        },
+        {
+          "number": 59,
+          "title": "照顧寵物 · Taking Care of a Pet",
+          "audio": "pel100-059.mp3",
+          "spoken_transcript": "pel100-059.txt",
+          "raw_duration_seconds": 12.83,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.830000",
+              "size": "154989",
+              "bit_rate": "96641"
+            }
+          }
+        },
+        {
+          "number": 60,
+          "title": "天氣影響計畫 · Weather and Plans",
+          "audio": "pel100-060.mp3",
+          "spoken_transcript": "pel100-060.txt",
+          "raw_duration_seconds": 12.43,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "12.430000",
+              "size": "150093",
+              "bit_rate": "96600"
+            }
+          }
+        },
+        {
+          "number": 61,
+          "title": "第一份工作 · My First Job",
+          "audio": "pel100-061.mp3",
+          "spoken_transcript": "pel100-061.txt",
+          "raw_duration_seconds": 16.51,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "16.510000",
+              "size": "199053",
+              "bit_rate": "96452"
+            }
+          }
+        },
+        {
+          "number": 62,
+          "title": "從錯誤中學習 · Learning From Mistakes",
+          "audio": "pel100-062.mp3",
+          "spoken_transcript": "pel100-062.txt",
+          "raw_duration_seconds": 17.95,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "17.950000",
+              "size": "216333",
+              "bit_rate": "96415"
+            }
+          }
+        },
+        {
+          "number": 63,
+          "title": "面對失敗 · Dealing With Failure",
+          "audio": "pel100-063.mp3",
+          "spoken_transcript": "pel100-063.txt",
+          "raw_duration_seconds": 16.27,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "16.270000",
+              "size": "196173",
+              "bit_rate": "96458"
+            }
+          }
+        },
+        {
+          "number": 64,
+          "title": "計畫突然改變 · An Unexpected Change",
+          "audio": "pel100-064.mp3",
+          "spoken_transcript": "pel100-064.txt",
+          "raw_duration_seconds": 16.59,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "16.590000",
+              "size": "200205",
+              "bit_rate": "96542"
+            }
+          }
+        },
+        {
+          "number": 65,
+          "title": "最有成就感的事情 · A Personal Achievement",
+          "audio": "pel100-065.mp3",
+          "spoken_transcript": "pel100-065.txt",
+          "raw_duration_seconds": 15.07,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "15.070000",
+              "size": "181773",
+              "bit_rate": "96495"
+            }
+          }
+        },
+        {
+          "number": 66,
+          "title": "困難的選擇 · Making a Difficult Decision",
+          "audio": "pel100-066.mp3",
+          "spoken_transcript": "pel100-066.txt",
+          "raw_duration_seconds": 15.95,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "15.950000",
+              "size": "192429",
+              "bit_rate": "96516"
+            }
+          }
+        },
+        {
+          "number": 67,
+          "title": "兩種工作方式 · Comparing Work Methods",
+          "audio": "pel100-067.mp3",
+          "spoken_transcript": "pel100-067.txt",
+          "raw_duration_seconds": 14.59,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "14.590000",
+              "size": "176013",
+              "bit_rate": "96511"
+            }
+          }
+        },
+        {
+          "number": 68,
+          "title": "選擇工具 · Choosing the Right Tool",
+          "audio": "pel100-068.mp3",
+          "spoken_transcript": "pel100-068.txt",
+          "raw_duration_seconds": 16.19,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "16.190000",
+              "size": "195309",
+              "bit_rate": "96508"
+            }
+          }
+        },
+        {
+          "number": 69,
+          "title": "別人的建議 · Learning From Others",
+          "audio": "pel100-069.mp3",
+          "spoken_transcript": "pel100-069.txt",
+          "raw_duration_seconds": 14.91,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "14.910000",
+              "size": "180045",
+              "bit_rate": "96603"
+            }
+          }
+        },
+        {
+          "number": 70,
+          "title": "遠端工作好不好 · Is Remote Work Better?",
+          "audio": "pel100-070.mp3",
+          "spoken_transcript": "pel100-070.txt",
+          "raw_duration_seconds": 18.27,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "18.270000",
+              "size": "220365",
+              "bit_rate": "96492"
+            }
+          }
+        },
+        {
+          "number": 71,
+          "title": "AI與學習 · AI and Learning",
+          "audio": "pel100-071.mp3",
+          "spoken_transcript": "pel100-071.txt",
+          "raw_duration_seconds": 16.43,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "16.430000",
+              "size": "198189",
+              "bit_rate": "96501"
+            }
+          }
+        },
+        {
+          "number": 72,
+          "title": "再生能源 · Renewable Energy",
+          "audio": "pel100-072.mp3",
+          "spoken_transcript": "pel100-072.txt",
+          "raw_duration_seconds": 16.99,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "16.990000",
+              "size": "204813",
+              "bit_rate": "96439"
+            }
+          }
+        },
+        {
+          "number": 73,
+          "title": "永續生活 · Living More Sustainably",
+          "audio": "pel100-073.mp3",
+          "spoken_transcript": "pel100-073.txt",
+          "raw_duration_seconds": 18.51,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "18.510000",
+              "size": "223245",
+              "bit_rate": "96486"
+            }
+          }
+        },
+        {
+          "number": 74,
+          "title": "城市與鄉村 · City Life or Country Life",
+          "audio": "pel100-074.mp3",
+          "spoken_transcript": "pel100-074.txt",
+          "raw_duration_seconds": 17.79,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "17.790000",
+              "size": "214605",
+              "bit_rate": "96505"
+            }
+          }
+        },
+        {
+          "number": 75,
+          "title": "公共運輸 · Public Transportation",
+          "audio": "pel100-075.mp3",
+          "spoken_transcript": "pel100-075.txt",
+          "raw_duration_seconds": 16.51,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "16.510000",
+              "size": "199053",
+              "bit_rate": "96452"
+            }
+          }
+        },
+        {
+          "number": 76,
+          "title": "消費與儲蓄 · Spending and Saving",
+          "audio": "pel100-076.mp3",
+          "spoken_transcript": "pel100-076.txt",
+          "raw_duration_seconds": 17.98,
+          "chunk_count": 3,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "17.980000",
+              "size": "216909",
+              "bit_rate": "96511"
+            }
+          }
+        },
+        {
+          "number": 77,
+          "title": "閱讀與思考 · Reading and Thinking",
+          "audio": "pel100-077.mp3",
+          "spoken_transcript": "pel100-077.txt",
+          "raw_duration_seconds": 18.11,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "18.110000",
+              "size": "218349",
+              "bit_rate": "96454"
+            }
+          }
+        },
+        {
+          "number": 78,
+          "title": "難忘的旅行 · A Memorable Trip",
+          "audio": "pel100-078.mp3",
+          "spoken_transcript": "pel100-078.txt",
+          "raw_duration_seconds": 17.87,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "17.870000",
+              "size": "215469",
+              "bit_rate": "96460"
+            }
+          }
+        },
+        {
+          "number": 79,
+          "title": "文化差異 · Cultural Differences",
+          "audio": "pel100-079.mp3",
+          "spoken_transcript": "pel100-079.txt",
+          "raw_duration_seconds": 16.75,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "16.750000",
+              "size": "201933",
+              "bit_rate": "96445"
+            }
+          }
+        },
+        {
+          "number": 80,
+          "title": "改變自己的想法 · Changing My Mind",
+          "audio": "pel100-080.mp3",
+          "spoken_transcript": "pel100-080.txt",
+          "raw_duration_seconds": 21.07,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "21.070000",
+              "size": "253773",
+              "bit_rate": "96354"
+            }
+          }
+        },
+        {
+          "number": 81,
+          "title": "一分鐘自我介紹 · A Short Professional Introduction",
+          "audio": "pel100-081.mp3",
+          "spoken_transcript": "pel100-081.txt",
+          "raw_duration_seconds": 20.03,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "20.030000",
+              "size": "241389",
+              "bit_rate": "96410"
+            }
+          }
+        },
+        {
+          "number": 82,
+          "title": "說明市場問題 · Explaining a Market Problem",
+          "audio": "pel100-082.mp3",
+          "spoken_transcript": "pel100-082.txt",
+          "raw_duration_seconds": 17.47,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "17.470000",
+              "size": "210573",
+              "bit_rate": "96427"
+            }
+          }
+        },
+        {
+          "number": 83,
+          "title": "訪談客戶 · Interviewing a Customer",
+          "audio": "pel100-083.mp3",
+          "spoken_transcript": "pel100-083.txt",
+          "raw_duration_seconds": 17.31,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "17.310000",
+              "size": "208845",
+              "bit_rate": "96519"
+            }
+          }
+        },
+        {
+          "number": 84,
+          "title": "最小可行產品 · Building a Simple First Version",
+          "audio": "pel100-084.mp3",
+          "spoken_transcript": "pel100-084.txt",
+          "raw_duration_seconds": 16.67,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "16.670000",
+              "size": "201069",
+              "bit_rate": "96493"
+            }
+          }
+        },
+        {
+          "number": 85,
+          "title": "競爭優勢 · Explaining Our Advantage",
+          "audio": "pel100-085.mp3",
+          "spoken_transcript": "pel100-085.txt",
+          "raw_duration_seconds": 17.79,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "17.790000",
+              "size": "214605",
+              "bit_rate": "96505"
+            }
+          }
+        },
+        {
+          "number": 86,
+          "title": "市場驗證 · Showing Early Results",
+          "audio": "pel100-086.mp3",
+          "spoken_transcript": "pel100-086.txt",
+          "raw_duration_seconds": 16.67,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "16.670000",
+              "size": "201069",
+              "bit_rate": "96493"
+            }
+          }
+        },
+        {
+          "number": 87,
+          "title": "商業模式 · Explaining How We Make Money",
+          "audio": "pel100-087.mp3",
+          "spoken_transcript": "pel100-087.txt",
+          "raw_duration_seconds": 17.31,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "17.310000",
+              "size": "208845",
+              "bit_rate": "96519"
+            }
+          }
+        },
+        {
+          "number": 88,
+          "title": "評估風險 · Understanding Business Risks",
+          "audio": "pel100-088.mp3",
+          "spoken_transcript": "pel100-088.txt",
+          "raw_duration_seconds": 17.95,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "17.950000",
+              "size": "216333",
+              "bit_rate": "96415"
+            }
+          }
+        },
+        {
+          "number": 89,
+          "title": "長期願景 · Sharing a Long-Term Vision",
+          "audio": "pel100-089.mp3",
+          "spoken_transcript": "pel100-089.txt",
+          "raw_duration_seconds": 17.47,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "17.470000",
+              "size": "210573",
+              "bit_rate": "96427"
+            }
+          }
+        },
+        {
+          "number": 90,
+          "title": "資料隱私 · Protecting User Data",
+          "audio": "pel100-090.mp3",
+          "spoken_transcript": "pel100-090.txt",
+          "raw_duration_seconds": 17.63,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "17.630000",
+              "size": "212589",
+              "bit_rate": "96466"
+            }
+          }
+        },
+        {
+          "number": 91,
+          "title": "介紹研究主題 · Introducing My Research",
+          "audio": "pel100-091.mp3",
+          "spoken_transcript": "pel100-091.txt",
+          "raw_duration_seconds": 20.14,
+          "chunk_count": 3,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "20.140000",
+              "size": "242829",
+              "bit_rate": "96456"
+            }
+          }
+        },
+        {
+          "number": 92,
+          "title": "提出研究假設 · Explaining a Hypothesis",
+          "audio": "pel100-092.mp3",
+          "spoken_transcript": "pel100-092.txt",
+          "raw_duration_seconds": 21.5,
+          "chunk_count": 3,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "21.500000",
+              "size": "258957",
+              "bit_rate": "96356"
+            }
+          }
+        },
+        {
+          "number": 93,
+          "title": "說明研究方法 · Explaining a Research Method",
+          "audio": "pel100-093.mp3",
+          "spoken_transcript": "pel100-093.txt",
+          "raw_duration_seconds": 17.39,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "17.390000",
+              "size": "209709",
+              "bit_rate": "96473"
+            }
+          }
+        },
+        {
+          "number": 94,
+          "title": "解釋意外的結果 · Explaining an Unexpected Result",
+          "audio": "pel100-094.mp3",
+          "spoken_transcript": "pel100-094.txt",
+          "raw_duration_seconds": 19.42,
+          "chunk_count": 3,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "19.420000",
+              "size": "234189",
+              "bit_rate": "96473"
+            }
+          }
+        },
+        {
+          "number": 95,
+          "title": "研究限制 · Discussing Research Limitations",
+          "audio": "pel100-095.mp3",
+          "spoken_transcript": "pel100-095.txt",
+          "raw_duration_seconds": 16.99,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "16.990000",
+              "size": "204813",
+              "bit_rate": "96439"
+            }
+          }
+        },
+        {
+          "number": 96,
+          "title": "回答聽眾問題 · Answering a Difficult Question",
+          "audio": "pel100-096.mp3",
+          "spoken_transcript": "pel100-096.txt",
+          "raw_duration_seconds": 18.75,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "18.750000",
+              "size": "226125",
+              "bit_rate": "96480"
+            }
+          }
+        },
+        {
+          "number": 97,
+          "title": "商業協商 · Negotiating a Deal",
+          "audio": "pel100-097.mp3",
+          "spoken_transcript": "pel100-097.txt",
+          "raw_duration_seconds": 17.87,
+          "chunk_count": 2,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "17.870000",
+              "size": "215469",
+              "bit_rate": "96460"
+            }
+          }
+        },
+        {
+          "number": 98,
+          "title": "回應反對意見 · Responding to an Objection",
+          "audio": "pel100-098.mp3",
+          "spoken_transcript": "pel100-098.txt",
+          "raw_duration_seconds": 17.58,
+          "chunk_count": 3,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "17.580000",
+              "size": "212013",
+              "bit_rate": "96479"
+            }
+          }
+        },
+        {
+          "number": 99,
+          "title": "情境推演 · Planning for Different Scenarios",
+          "audio": "pel100-099.mp3",
+          "spoken_transcript": "pel100-099.txt",
+          "raw_duration_seconds": 17.9,
+          "chunk_count": 3,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "17.900000",
+              "size": "215757",
+              "bit_rate": "96427"
+            }
+          }
+        },
+        {
+          "number": 100,
+          "title": "總結與下一步 · Summarizing and Moving Forward",
+          "audio": "pel100-100.mp3",
+          "spoken_transcript": "pel100-100.txt",
+          "raw_duration_seconds": 19.74,
+          "chunk_count": 3,
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "24000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "19.740000",
+              "size": "237933",
+              "bit_rate": "96426"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

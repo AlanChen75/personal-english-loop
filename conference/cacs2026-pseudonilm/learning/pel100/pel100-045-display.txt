@@ -1,0 +1,1 @@
+I think we should try a simpler approach. The current process takes too much time. If we automate one part of it, we could reduce manual work. Let's test the idea before making a larger change.

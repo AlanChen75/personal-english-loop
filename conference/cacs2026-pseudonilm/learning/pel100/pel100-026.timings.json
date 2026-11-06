@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "d3a8e17c475a7137c8f5853296eea2ec45694ea924df0c3dda881522b2ab6b2b",
+  "transcript_sha256": "4de0793b0f56df302a0c9cf43590b8285907c7723ded28fb05326e3165a28221",
+  "duration_seconds": 12.35,
+  "cues": [
+    {
+      "text": "My internet connection stopped working this morning.",
+      "start": 0.46109,
+      "end": 3.06723
+    },
+    {
+      "text": "I've already restarted the router twice.",
+      "start": 4.0696,
+      "end": 6.6557
+    },
+    {
+      "text": "The problem is still there.",
+      "start": 7.09674,
+      "end": 8.37976
+    },
+    {
+      "text": "Could you help me check whether there's a service outage?",
+      "start": 9.27251,
+      "end": 12.22931
+    }
+  ]
+}

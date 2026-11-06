@@ -1,0 +1,1 @@
+First, we collect electricity data from different machines. Next, we prepare the data and remove obvious errors. Then we train a model to recognize operating patterns. Finally, we evaluate how well the model works on unseen data.

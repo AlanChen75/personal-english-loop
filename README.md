@@ -2,11 +2,23 @@
 
 一套以「敢講、敢用」為核心的個人化英語口說循環系統。
 
-教材不是按文法章節排列，而是按真實使用場景排列。第一階段依指定順序進行：
+教材按真實使用場景排列。每日練習使用 OLMCP「PEL 100 段情境英文 v1.1」，
+每段各做成一集、每集保留原本 4 句，使用既有複製聲音。
+
+[開始每日練習 100 集](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice)
+｜[完整教材與來源](lessons/pel-100/README.md)
+｜[機器可讀教材索引](lessons/pel-100/corpus.json)
+
+001–020 生活基礎、021–040 日常互動與問題處理、041–060 經驗與工作、
+061–080 比較與觀點、081–100 專業溝通。A2–B1 是設計意圖，並非正式難度認證。
+先聽一集，再以 0.8×／0.9× 跟讀；可重複本集或 Repeat All。
+教材中的角色、工作與研究情境不代表使用者真實經歷，原文未自行改寫。
+
+原第一階段主題安排保留供歷史教材參照：
 
 > D Professional → E Academic → B About Me → C Work & Projects → F Discussion → A Daily Life
 
-## 前兩天直接開始
+## 舊版 Day 01–02（保留，不列於每日播放器）
 
 | Day | 主題 | 教材 | 完整通勤音訊 |
 |---|---|---|---|
@@ -22,11 +34,11 @@
 | Automation 2026 講稿 | 第 1–13 頁（含封面介紹與 Thank you／email 收尾）、計算方式備用頁與合併 Q&A，預設優先顯示 | [開啟 Automation 2026](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#automation-2026) |
 | CACS 2026 講稿 | 第 1–10 頁、結尾與合併 Q&A | [開啟 CACS 2026](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#conference) |
 | 自我介紹 | 10 秒、30 秒、60 秒、跟讀、Q&A | [開啟自我介紹](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#about-me) |
-| 每日練習 | Day 1–2 的 slow、natural、跟讀、Q&A、通勤包 | [開啟每日練習](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice) |
+| 每日練習 · 100 集 | OLMCP v1.1 的 001–100 原文、逐集音檔與逐句高亮 | [開啟每日練習](https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice) |
 
 播放器支援安裝到手機桌面、分類切換、0.8×、0.9×、1.0×、倒退 5 秒、重複本頁與分類內全部循環播放。開車時請勿閱讀或操作畫面。
 
-## 每日使用方式
+## 舊版通勤包使用方式
 
 ### 去程：輸入（約 30–45 分鐘）
 
@@ -51,6 +63,10 @@ personal-english-loop/
 ├── curriculum/
 │   └── phase-1.md
 ├── lessons/
+│   ├── pel-100/
+│   │   ├── source-v1.1.md
+│   │   ├── corpus.json
+│   │   └── units/pel100-001...pel100-100.md
 │   ├── day-01-energy-management/
 │   │   ├── lesson.md
 │   │   └── audio-scripts/
@@ -66,6 +82,7 @@ personal-english-loop/
 ├── conference/
 │   └── cacs2026-pseudonilm/
 │       ├── index.html
+│       ├── learning/pel100/  # 100 集音檔、字稿與時間戳
 │       ├── cacs2026-full-talk.mp3
 │       ├── slide-01...slide-12.*
 │       └── automation2026/

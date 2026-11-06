@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "ce19a3175f5fa13ab2f5170d8d1f9685fe9005805d4c5c0a7935ccbd3ed7cbca",
+  "transcript_sha256": "7de8c8c4f4b179b3565bf4ff6e9991b824987770092c646561bf683f6a21133b",
+  "duration_seconds": 13.95,
+  "cues": [
+    {
+      "text": "Yesterday, I finished the first version of the report.",
+      "start": 0.40124,
+      "end": 3.47071
+    },
+    {
+      "text": "Today, I'll review it with the team.",
+      "start": 4.33337,
+      "end": 6.35963
+    },
+    {
+      "text": "I still need some data from the sales department.",
+      "start": 7.2913,
+      "end": 10.09918
+    },
+    {
+      "text": "Once I get it, I can finish the analysis.",
+      "start": 11.26245,
+      "end": 13.68927
+    }
+  ]
+}

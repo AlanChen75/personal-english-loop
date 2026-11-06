@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "e4eb0582af69ad8619c0e8519f8b0b1f0d06f2fdde7b62505eb7fc117ee60d56",
+  "transcript_sha256": "598043f9c84b7e31da5962af68a4a40fd38f1592fe0a845b0c1f74ad7769f482",
+  "duration_seconds": 15.31,
+  "cues": [
+    {
+      "text": "I had a busy day yesterday.",
+      "start": 1.26212,
+      "end": 2.78467
+    },
+    {
+      "text": "I attended two meetings and finished a report.",
+      "start": 5.30891,
+      "end": 7.89324
+    },
+    {
+      "text": "I felt tired when I got home.",
+      "start": 9.33566,
+      "end": 11.17876
+    },
+    {
+      "text": "However, I was happy with my progress.",
+      "start": 12.71291,
+      "end": 15.16907
+    }
+  ]
+}

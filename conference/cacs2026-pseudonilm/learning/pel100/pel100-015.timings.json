@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "50b96e77ebdf00871ffbd7efb7d6b593122c459a6da2bdbbfa3647e753d86567",
+  "transcript_sha256": "b9cac7031179eed6d9b69ae7835132d2d23e0e07dcd77964b7227bd345483e2b",
+  "duration_seconds": 11.55,
+  "cues": [
+    {
+      "text": "Today is my mother's birthday.",
+      "start": 0.32073,
+      "end": 1.88428
+    },
+    {
+      "text": "We're having dinner at her favorite restaurant.",
+      "start": 3.06697,
+      "end": 5.4123
+    },
+    {
+      "text": "I bought her a small gift yesterday.",
+      "start": 6.23417,
+      "end": 8.15854
+    },
+    {
+      "text": "I hope she enjoys the surprise.",
+      "start": 9.55336,
+      "end": 11.28782
+    }
+  ]
+}

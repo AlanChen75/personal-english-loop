@@ -1,0 +1,1 @@
+AI systems often need data to provide useful services. However, users should know what information is collected. They should also be able to control who can access it. We believe trust is essential for long-term success.

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "79251adcae6545958a83e5d5124debbd83433101b0fb617e6098437013efa81e",
+  "transcript_sha256": "b14de9e43fd1c2804493b31f1f2b788407cca547124f751f99b8adb164d86b49",
+  "duration_seconds": 17.79,
+  "cues": [
+    {
+      "text": "There are already several products in this market.",
+      "start": 0.50136,
+      "end": 3.24883
+    },
+    {
+      "text": "However, most of them require expensive equipment.",
+      "start": 3.66997,
+      "end": 7.23967
+    },
+    {
+      "text": "Our solution uses simpler hardware and a flexible software system.",
+      "start": 8.23103,
+      "end": 12.67986
+    },
+    {
+      "text": "This could make it easier for small companies to get started.",
+      "start": 13.64177,
+      "end": 17.02849
+    }
+  ]
+}

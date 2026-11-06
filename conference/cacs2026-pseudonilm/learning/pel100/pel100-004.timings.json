@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "bea02f9e931486d2153453341a2f7db669e9902d24ee04c97744d31aacff8e75",
+  "transcript_sha256": "420bf896962fbbbb253d14cee4a13beb50463681e84420bddec0279cb1ad12e2",
+  "duration_seconds": 10.8,
+  "cues": [
+    {
+      "text": "There is a small park near my home.",
+      "start": 0.38071,
+      "end": 2.28423
+    },
+    {
+      "text": "Many people go there in the evening.",
+      "start": 3.14583,
+      "end": 5.00928
+    },
+    {
+      "text": "I sometimes walk there after dinner.",
+      "start": 6.11132,
+      "end": 8.05492
+    },
+    {
+      "text": "It's a nice place to relax.",
+      "start": 8.87644,
+      "end": 10.29907
+    }
+  ]
+}

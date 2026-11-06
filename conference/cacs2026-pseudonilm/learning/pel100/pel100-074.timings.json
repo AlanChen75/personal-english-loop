@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "c485577ff7543d39f75571ed3329ab1f1213d59893a5992965e8db8245477652",
+  "transcript_sha256": "1a3cd4deead024cedeb84bca909ba4143d72440fe22b7ecaa5d544cc60d8a3d7",
+  "duration_seconds": 17.79,
+  "cues": [
+    {
+      "text": "Living in a city offers more job opportunities.",
+      "start": 0.48138,
+      "end": 3.57026
+    },
+    {
+      "text": "Public transportation is also more convenient.",
+      "start": 4.17199,
+      "end": 6.77948
+    },
+    {
+      "text": "On the other hand, the countryside is often quieter and less crowded.",
+      "start": 7.97126,
+      "end": 12.31956
+    },
+    {
+      "text": "I'd prefer the city for work but the countryside for relaxation.",
+      "start": 13.22128,
+      "end": 17.12874
+    }
+  ]
+}

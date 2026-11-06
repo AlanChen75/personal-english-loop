@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "daab1bee3bd01b992d491d8e2c490ee7ae6b29a442f2af536397eb347bcd9b0e",
+  "transcript_sha256": "213f34153a8d1c595b83d5e3d603a5fff4b79b5e96c5849526153faa2c095b9c",
+  "duration_seconds": 17.39,
+  "cues": [
+    {
+      "text": "First, we collect electricity data from different machines.",
+      "start": 0.66153,
+      "end": 4.16965
+    },
+    {
+      "text": "Next, we prepare the data and remove obvious errors.",
+      "start": 5.05169,
+      "end": 8.51972
+    },
+    {
+      "text": "Then we train a model to recognize operating patterns.",
+      "start": 9.411,
+      "end": 12.33797
+    },
+    {
+      "text": "Finally, we evaluate how well the model works on unseen data.",
+      "start": 12.91936,
+      "end": 17.02914
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "cd3d9c4f35435431fa04b970dd386e5ea24422f03e30ae3e9c8575800f7bb2f0",
+  "transcript_sha256": "0e7ef68da126257b2b8564aacbfbc6eda7d542cffc604fb3436d850ca573c528",
+  "duration_seconds": 21.07,
+  "cues": [
+    {
+      "text": "I used to believe that working longer meant getting more done.",
+      "start": 0.74146,
+      "end": 4.34856
+    },
+    {
+      "text": "Then I noticed that tired people often make more mistakes.",
+      "start": 5.77136,
+      "end": 9.05783
+    },
+    {
+      "text": "I started focusing on results instead of working hours.",
+      "start": 11.15121,
+      "end": 14.77808
+    },
+    {
+      "text": "Now I believe working smarter is more useful than simply working longer.",
+      "start": 15.77998,
+      "end": 20.24844
+    }
+  ]
+}

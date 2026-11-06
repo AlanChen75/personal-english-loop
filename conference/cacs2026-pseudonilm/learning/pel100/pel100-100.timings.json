@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "ae0e998da30e608326455c610c6d865411ff9dc0f6fffddafcb5a7cc0470fae5",
+  "transcript_sha256": "2f164cc18cfac6f96bf4e0726d78292f94aad16121a3c5f8c16fd68da54a92fa",
+  "duration_seconds": 19.74,
+  "cues": [
+    {
+      "text": "Today, we've discussed the problem, our solution, and the early results.",
+      "start": 0.14056,
+      "end": 4.75888
+    },
+    {
+      "text": "We still have challenges to solve, but we've made meaningful progress.",
+      "start": 5.81095,
+      "end": 9.69971
+    },
+    {
+      "text": "Our next step is to test the system with more users.",
+      "start": 10.42133,
+      "end": 13.84905
+    },
+    {
+      "text": "I believe that by learning from real experience, we can build something truly useful.",
+      "start": 15.02157,
+      "end": 19.55929
+    }
+  ]
+}

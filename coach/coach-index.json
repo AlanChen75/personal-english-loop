@@ -1,6 +1,6 @@
 {
   "course": "Personal English Loop",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "language_level": "A2-B1",
   "base_url": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main",
   "coach_instructions": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/coach/CHATGPT_COACH.md",
@@ -19,31 +19,1303 @@
   },
   "lessons": [
     {
-      "id": "D01",
+      "id": "pel100-origin-001",
+      "episode": 1,
       "day": 1,
-      "title": "What is Energy Management?",
-      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/day-01-energy-management/lesson.md",
+      "title": "自我介紹 · Introducing Myself",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-001.md",
+      "source_version": "1.1",
+      "origin_id": "001",
       "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
       "audio": {
-        "slow": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-slow.mp3",
-        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-natural.mp3",
-        "listen_repeat": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-listen-repeat.mp3",
-        "qa": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-qa.mp3",
-        "commute_pack": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-commute-pack.mp3"
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-001.mp3"
       }
     },
     {
-      "id": "D02",
+      "id": "pel100-origin-003",
+      "episode": 2,
       "day": 2,
-      "title": "How AI and IoT Help Energy Management",
-      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/day-02-ai-iot-energy/lesson.md",
+      "title": "早晨習慣 · My Morning Routine",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-002.md",
+      "source_version": "1.1",
+      "origin_id": "003",
       "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
       "audio": {
-        "slow": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-slow.mp3",
-        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-natural.mp3",
-        "listen_repeat": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-listen-repeat.mp3",
-        "qa": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-qa.mp3",
-        "commute_pack": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-commute-pack.mp3"
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-002.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-002",
+      "episode": 3,
+      "day": 3,
+      "title": "我的家庭 · My Family",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-003.md",
+      "source_version": "1.1",
+      "origin_id": "002",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-003.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-012",
+      "episode": 4,
+      "day": 4,
+      "title": "住家附近 · My Neighborhood",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-004.md",
+      "source_version": "1.1",
+      "origin_id": "012",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-004.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-006",
+      "episode": 5,
+      "day": 5,
+      "title": "飲食習慣 · Eating Habits",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-005.md",
+      "source_version": "1.1",
+      "origin_id": "006",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-005.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-041",
+      "episode": 6,
+      "day": 6,
+      "title": "介紹自己的工作 · Describing My Job",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-006.md",
+      "source_version": "1.1",
+      "origin_id": "041",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-006.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-021",
+      "episode": 7,
+      "day": 7,
+      "title": "在咖啡店點餐 · Ordering Coffee",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-007.md",
+      "source_version": "1.1",
+      "origin_id": "021",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-007.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-024",
+      "episode": 8,
+      "day": 8,
+      "title": "結帳付款 · Paying the Bill",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-008.md",
+      "source_version": "1.1",
+      "origin_id": "024",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-008.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-033",
+      "episode": 9,
+      "day": 9,
+      "title": "買衣服 · Buying Clothes",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-009.md",
+      "source_version": "1.1",
+      "origin_id": "033",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-009.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-015",
+      "episode": 10,
+      "day": 10,
+      "title": "購買日用品 · Grocery Shopping",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-010.md",
+      "source_version": "1.1",
+      "origin_id": "015",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-010.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-025",
+      "episode": 11,
+      "day": 11,
+      "title": "問路 · Asking for Directions",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-011.md",
+      "source_version": "1.1",
+      "origin_id": "025",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-011.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-026",
+      "episode": 12,
+      "day": 12,
+      "title": "搭火車 · Taking a Train",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-012.md",
+      "source_version": "1.1",
+      "origin_id": "026",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-012.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-022",
+      "episode": 13,
+      "day": 13,
+      "title": "預訂餐廳 · Booking a Restaurant",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-013.md",
+      "source_version": "1.1",
+      "origin_id": "022",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-013.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-031",
+      "episode": 14,
+      "day": 14,
+      "title": "飯店入住 · Checking Into a Hotel",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-014.md",
+      "source_version": "1.1",
+      "origin_id": "031",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-014.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-018",
+      "episode": 15,
+      "day": 15,
+      "title": "慶祝生日 · Celebrating a Birthday",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-015.md",
+      "source_version": "1.1",
+      "origin_id": "018",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-015.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-016",
+      "episode": 16,
+      "day": 16,
+      "title": "在家煮飯 · Cooking at Home",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-016.md",
+      "source_version": "1.1",
+      "origin_id": "016",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-016.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-010",
+      "episode": 17,
+      "day": 17,
+      "title": "我的興趣 · My Hobbies",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-017.md",
+      "source_version": "1.1",
+      "origin_id": "010",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-017.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-004",
+      "episode": 18,
+      "day": 18,
+      "title": "忙碌的一天 · A Busy Day",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-018.md",
+      "source_version": "1.1",
+      "origin_id": "004",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-018.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-005",
+      "episode": 19,
+      "day": 19,
+      "title": "週末計畫 · Weekend Plans",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-019.md",
+      "source_version": "1.1",
+      "origin_id": "005",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-019.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-042",
+      "episode": 20,
+      "day": 20,
+      "title": "認識新同事 · Meeting a New Colleague",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-020.md",
+      "source_version": "1.1",
+      "origin_id": "042",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-020.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-028",
+      "episode": 21,
+      "day": 21,
+      "title": "搭計程車 · Taking a Taxi",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-021.md",
+      "source_version": "1.1",
+      "origin_id": "028",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-021.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-029",
+      "episode": 22,
+      "day": 22,
+      "title": "機場報到 · Airport Check-In",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-022.md",
+      "source_version": "1.1",
+      "origin_id": "029",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-022.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-023",
+      "episode": 23,
+      "day": 23,
+      "title": "特殊飲食需求 · Food Preferences",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-023.md",
+      "source_version": "1.1",
+      "origin_id": "023",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-023.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-037",
+      "episode": 24,
+      "day": 24,
+      "title": "寄送包裹 · Sending a Package",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-024.md",
+      "source_version": "1.1",
+      "origin_id": "037",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-024.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-038",
+      "episode": 25,
+      "day": 25,
+      "title": "銀行開戶 · Opening a Bank Account",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-025.md",
+      "source_version": "1.1",
+      "origin_id": "038",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-025.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-039",
+      "episode": 26,
+      "day": 26,
+      "title": "網路故障 · An Internet Problem",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-026.md",
+      "source_version": "1.1",
+      "origin_id": "039",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-026.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-032",
+      "episode": 27,
+      "day": 27,
+      "title": "飯店房間問題 · A Problem With the Room",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-027.md",
+      "source_version": "1.1",
+      "origin_id": "032",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-027.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-034",
+      "episode": 28,
+      "day": 28,
+      "title": "商品退貨 · Returning an Item",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-028.md",
+      "source_version": "1.1",
+      "origin_id": "034",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-028.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-040",
+      "episode": 29,
+      "day": 29,
+      "title": "化解誤會 · Clearing Up a Misunderstanding",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-029.md",
+      "source_version": "1.1",
+      "origin_id": "040",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-029.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-044",
+      "episode": 30,
+      "day": 30,
+      "title": "安排會議 · Scheduling a Meeting",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-030.md",
+      "source_version": "1.1",
+      "origin_id": "044",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-030.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-045",
+      "episode": 31,
+      "day": 31,
+      "title": "說明議程 · Explaining the Agenda",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-031.md",
+      "source_version": "1.1",
+      "origin_id": "045",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-031.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-048",
+      "episode": 32,
+      "day": 32,
+      "title": "工作優先順序 · Setting Priorities",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-032.md",
+      "source_version": "1.1",
+      "origin_id": "048",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-032.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-050",
+      "episode": 33,
+      "day": 33,
+      "title": "確認任務 · Clarifying a Task",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-033.md",
+      "source_version": "1.1",
+      "origin_id": "050",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-033.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-049",
+      "episode": 34,
+      "day": 34,
+      "title": "尋求協助 · Asking for Help",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-034.md",
+      "source_version": "1.1",
+      "origin_id": "049",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-034.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-017",
+      "episode": 35,
+      "day": 35,
+      "title": "和朋友見面 · Meeting an Old Friend",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-035.md",
+      "source_version": "1.1",
+      "origin_id": "017",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-035.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-008",
+      "episode": 36,
+      "day": 36,
+      "title": "睡眠與健康 · Getting Enough Sleep",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-036.md",
+      "source_version": "1.1",
+      "origin_id": "008",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-036.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-007",
+      "episode": 37,
+      "day": 37,
+      "title": "運動習慣 · Staying Active",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-037.md",
+      "source_version": "1.1",
+      "origin_id": "007",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-037.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-011",
+      "episode": 38,
+      "day": 38,
+      "title": "我的家鄉 · My Hometown",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-038.md",
+      "source_version": "1.1",
+      "origin_id": "011",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-038.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-019",
+      "episode": 39,
+      "day": 39,
+      "title": "面對壓力 · Dealing with Stress",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-039.md",
+      "source_version": "1.1",
+      "origin_id": "019",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-039.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-027",
+      "episode": 40,
+      "day": 40,
+      "title": "錯過公車 · Missing the Bus",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-040.md",
+      "source_version": "1.1",
+      "origin_id": "027",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-040.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-043",
+      "episode": 41,
+      "day": 41,
+      "title": "每日工作會議 · Daily Team Meeting",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-041.md",
+      "source_version": "1.1",
+      "origin_id": "043",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-041.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-046",
+      "episode": 42,
+      "day": 42,
+      "title": "進度報告 · Giving a Progress Update",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-042.md",
+      "source_version": "1.1",
+      "origin_id": "046",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-042.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-047",
+      "episode": 43,
+      "day": 43,
+      "title": "期限延後 · Explaining a Delay",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-043.md",
+      "source_version": "1.1",
+      "origin_id": "047",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-043.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-051",
+      "episode": 44,
+      "day": 44,
+      "title": "回報問題 · Reporting an Issue",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-044.md",
+      "source_version": "1.1",
+      "origin_id": "051",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-044.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-052",
+      "episode": 45,
+      "day": 45,
+      "title": "提出解決方案 · Suggesting a Solution",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-045.md",
+      "source_version": "1.1",
+      "origin_id": "052",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-045.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-053",
+      "episode": 46,
+      "day": 46,
+      "title": "給予建設性回饋 · Giving Feedback",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-046.md",
+      "source_version": "1.1",
+      "origin_id": "053",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-046.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-054",
+      "episode": 47,
+      "day": 47,
+      "title": "接受批評 · Receiving Feedback",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-047.md",
+      "source_version": "1.1",
+      "origin_id": "054",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-047.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-055",
+      "episode": 48,
+      "day": 48,
+      "title": "說明數據 · Explaining Data",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-048.md",
+      "source_version": "1.1",
+      "origin_id": "055",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-048.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-056",
+      "episode": 49,
+      "day": 49,
+      "title": "遠端協作 · Working Remotely",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-049.md",
+      "source_version": "1.1",
+      "origin_id": "056",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-049.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-057",
+      "episode": 50,
+      "day": 50,
+      "title": "了解客戶需求 · Understanding a Customer",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-050.md",
+      "source_version": "1.1",
+      "origin_id": "057",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-050.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-058",
+      "episode": 51,
+      "day": 51,
+      "title": "產品展示 · Demonstrating a Product",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-051.md",
+      "source_version": "1.1",
+      "origin_id": "058",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-051.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-059",
+      "episode": 52,
+      "day": 52,
+      "title": "處理團隊意見分歧 · Handling Disagreement",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-052.md",
+      "source_version": "1.1",
+      "origin_id": "059",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-052.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-060",
+      "episode": 53,
+      "day": 53,
+      "title": "專案檢討 · Reviewing a Project",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-053.md",
+      "source_version": "1.1",
+      "origin_id": "060",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-053.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-009",
+      "episode": 54,
+      "day": 54,
+      "title": "學英文的原因 · Why I Learn English",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-054.md",
+      "source_version": "1.1",
+      "origin_id": "009",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-054.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-020",
+      "episode": 55,
+      "day": 55,
+      "title": "今年的目標 · My Goals This Year",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-055.md",
+      "source_version": "1.1",
+      "origin_id": "020",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-055.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-030",
+      "episode": 56,
+      "day": 56,
+      "title": "班機延誤 · A Delayed Flight",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-056.md",
+      "source_version": "1.1",
+      "origin_id": "030",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-056.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-035",
+      "episode": 57,
+      "day": 57,
+      "title": "在藥局詢問 · At the Pharmacy",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-057.md",
+      "source_version": "1.1",
+      "origin_id": "035",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-057.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-036",
+      "episode": 58,
+      "day": 58,
+      "title": "醫生看診 · Visiting a Doctor",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-058.md",
+      "source_version": "1.1",
+      "origin_id": "036",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-058.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-014",
+      "episode": 59,
+      "day": 59,
+      "title": "照顧寵物 · Taking Care of a Pet",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-059.md",
+      "source_version": "1.1",
+      "origin_id": "014",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-059.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-013",
+      "episode": 60,
+      "day": 60,
+      "title": "天氣影響計畫 · Weather and Plans",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-060.md",
+      "source_version": "1.1",
+      "origin_id": "013",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-060.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-061",
+      "episode": 61,
+      "day": 61,
+      "title": "第一份工作 · My First Job",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-061.md",
+      "source_version": "1.1",
+      "origin_id": "061",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-061.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-062",
+      "episode": 62,
+      "day": 62,
+      "title": "從錯誤中學習 · Learning From Mistakes",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-062.md",
+      "source_version": "1.1",
+      "origin_id": "062",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-062.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-063",
+      "episode": 63,
+      "day": 63,
+      "title": "面對失敗 · Dealing With Failure",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-063.md",
+      "source_version": "1.1",
+      "origin_id": "063",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-063.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-064",
+      "episode": 64,
+      "day": 64,
+      "title": "計畫突然改變 · An Unexpected Change",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-064.md",
+      "source_version": "1.1",
+      "origin_id": "064",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-064.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-065",
+      "episode": 65,
+      "day": 65,
+      "title": "最有成就感的事情 · A Personal Achievement",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-065.md",
+      "source_version": "1.1",
+      "origin_id": "065",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-065.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-066",
+      "episode": 66,
+      "day": 66,
+      "title": "困難的選擇 · Making a Difficult Decision",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-066.md",
+      "source_version": "1.1",
+      "origin_id": "066",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-066.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-067",
+      "episode": 67,
+      "day": 67,
+      "title": "兩種工作方式 · Comparing Work Methods",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-067.md",
+      "source_version": "1.1",
+      "origin_id": "067",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-067.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-068",
+      "episode": 68,
+      "day": 68,
+      "title": "選擇工具 · Choosing the Right Tool",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-068.md",
+      "source_version": "1.1",
+      "origin_id": "068",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-068.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-069",
+      "episode": 69,
+      "day": 69,
+      "title": "別人的建議 · Learning From Others",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-069.md",
+      "source_version": "1.1",
+      "origin_id": "069",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-069.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-070",
+      "episode": 70,
+      "day": 70,
+      "title": "遠端工作好不好 · Is Remote Work Better?",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-070.md",
+      "source_version": "1.1",
+      "origin_id": "070",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-070.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-071",
+      "episode": 71,
+      "day": 71,
+      "title": "AI與學習 · AI and Learning",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-071.md",
+      "source_version": "1.1",
+      "origin_id": "071",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-071.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-072",
+      "episode": 72,
+      "day": 72,
+      "title": "再生能源 · Renewable Energy",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-072.md",
+      "source_version": "1.1",
+      "origin_id": "072",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-072.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-073",
+      "episode": 73,
+      "day": 73,
+      "title": "永續生活 · Living More Sustainably",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-073.md",
+      "source_version": "1.1",
+      "origin_id": "073",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-073.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-074",
+      "episode": 74,
+      "day": 74,
+      "title": "城市與鄉村 · City Life or Country Life",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-074.md",
+      "source_version": "1.1",
+      "origin_id": "074",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-074.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-075",
+      "episode": 75,
+      "day": 75,
+      "title": "公共運輸 · Public Transportation",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-075.md",
+      "source_version": "1.1",
+      "origin_id": "075",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-075.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-076",
+      "episode": 76,
+      "day": 76,
+      "title": "消費與儲蓄 · Spending and Saving",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-076.md",
+      "source_version": "1.1",
+      "origin_id": "076",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-076.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-077",
+      "episode": 77,
+      "day": 77,
+      "title": "閱讀與思考 · Reading and Thinking",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-077.md",
+      "source_version": "1.1",
+      "origin_id": "077",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-077.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-078",
+      "episode": 78,
+      "day": 78,
+      "title": "難忘的旅行 · A Memorable Trip",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-078.md",
+      "source_version": "1.1",
+      "origin_id": "078",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-078.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-079",
+      "episode": 79,
+      "day": 79,
+      "title": "文化差異 · Cultural Differences",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-079.md",
+      "source_version": "1.1",
+      "origin_id": "079",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-079.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-080",
+      "episode": 80,
+      "day": 80,
+      "title": "改變自己的想法 · Changing My Mind",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-080.md",
+      "source_version": "1.1",
+      "origin_id": "080",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-080.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-081",
+      "episode": 81,
+      "day": 81,
+      "title": "一分鐘自我介紹 · A Short Professional Introduction",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-081.md",
+      "source_version": "1.1",
+      "origin_id": "081",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-081.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-082",
+      "episode": 82,
+      "day": 82,
+      "title": "說明市場問題 · Explaining a Market Problem",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-082.md",
+      "source_version": "1.1",
+      "origin_id": "082",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-082.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-083",
+      "episode": 83,
+      "day": 83,
+      "title": "訪談客戶 · Interviewing a Customer",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-083.md",
+      "source_version": "1.1",
+      "origin_id": "083",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-083.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-084",
+      "episode": 84,
+      "day": 84,
+      "title": "最小可行產品 · Building a Simple First Version",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-084.md",
+      "source_version": "1.1",
+      "origin_id": "084",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-084.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-085",
+      "episode": 85,
+      "day": 85,
+      "title": "競爭優勢 · Explaining Our Advantage",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-085.md",
+      "source_version": "1.1",
+      "origin_id": "085",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-085.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-086",
+      "episode": 86,
+      "day": 86,
+      "title": "市場驗證 · Showing Early Results",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-086.md",
+      "source_version": "1.1",
+      "origin_id": "086",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-086.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-087",
+      "episode": 87,
+      "day": 87,
+      "title": "商業模式 · Explaining How We Make Money",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-087.md",
+      "source_version": "1.1",
+      "origin_id": "087",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-087.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-088",
+      "episode": 88,
+      "day": 88,
+      "title": "評估風險 · Understanding Business Risks",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-088.md",
+      "source_version": "1.1",
+      "origin_id": "088",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-088.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-089",
+      "episode": 89,
+      "day": 89,
+      "title": "長期願景 · Sharing a Long-Term Vision",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-089.md",
+      "source_version": "1.1",
+      "origin_id": "089",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-089.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-090",
+      "episode": 90,
+      "day": 90,
+      "title": "資料隱私 · Protecting User Data",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-090.md",
+      "source_version": "1.1",
+      "origin_id": "090",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-090.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-091",
+      "episode": 91,
+      "day": 91,
+      "title": "介紹研究主題 · Introducing My Research",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-091.md",
+      "source_version": "1.1",
+      "origin_id": "091",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-091.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-092",
+      "episode": 92,
+      "day": 92,
+      "title": "提出研究假設 · Explaining a Hypothesis",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-092.md",
+      "source_version": "1.1",
+      "origin_id": "092",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-092.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-093",
+      "episode": 93,
+      "day": 93,
+      "title": "說明研究方法 · Explaining a Research Method",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-093.md",
+      "source_version": "1.1",
+      "origin_id": "093",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-093.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-094",
+      "episode": 94,
+      "day": 94,
+      "title": "解釋意外的結果 · Explaining an Unexpected Result",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-094.md",
+      "source_version": "1.1",
+      "origin_id": "094",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-094.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-095",
+      "episode": 95,
+      "day": 95,
+      "title": "研究限制 · Discussing Research Limitations",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-095.md",
+      "source_version": "1.1",
+      "origin_id": "095",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-095.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-096",
+      "episode": 96,
+      "day": 96,
+      "title": "回答聽眾問題 · Answering a Difficult Question",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-096.md",
+      "source_version": "1.1",
+      "origin_id": "096",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-096.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-097",
+      "episode": 97,
+      "day": 97,
+      "title": "商業協商 · Negotiating a Deal",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-097.md",
+      "source_version": "1.1",
+      "origin_id": "097",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-097.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-098",
+      "episode": 98,
+      "day": 98,
+      "title": "回應反對意見 · Responding to an Objection",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-098.md",
+      "source_version": "1.1",
+      "origin_id": "098",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-098.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-099",
+      "episode": 99,
+      "day": 99,
+      "title": "情境推演 · Planning for Different Scenarios",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-099.md",
+      "source_version": "1.1",
+      "origin_id": "099",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-099.mp3"
+      }
+    },
+    {
+      "id": "pel100-origin-100",
+      "episode": 100,
+      "day": 100,
+      "title": "總結與下一步 · Summarizing and Moving Forward",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/units/pel100-100.md",
+      "source_version": "1.1",
+      "origin_id": "100",
+      "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice",
+      "audio": {
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/pel100/pel100-100.mp3"
       }
     },
     {
@@ -61,10 +1333,48 @@
     },
     {
       "id": "D03",
-      "day": 3,
+      "legacy_day": 3,
       "title": "Explain My PseudoNILM Research",
       "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/practice-materials/cacs2026-pseudonilm/lesson.md",
       "audio": {}
+    }
+  ],
+  "daily_practice_pack": {
+    "id": "pel100",
+    "version": "1.1",
+    "corpus": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/pel-100/corpus.json",
+    "episode_count": 100,
+    "level_status": "A2–B1 teaching design intent, not professionally CEFR calibrated",
+    "player": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/#daily-practice"
+  },
+  "archived_lessons": [
+    {
+      "id": "D01",
+      "day": 1,
+      "title": "What is Energy Management?",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/day-01-energy-management/lesson.md",
+      "audio": {
+        "slow": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-slow.mp3",
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-natural.mp3",
+        "listen_repeat": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-listen-repeat.mp3",
+        "qa": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-qa.mp3",
+        "commute_pack": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-01-commute-pack.mp3"
+      },
+      "status": "archived; files preserved; replaced in daily player by PEL 100"
+    },
+    {
+      "id": "D02",
+      "day": 2,
+      "title": "How AI and IoT Help Energy Management",
+      "lesson": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/lessons/day-02-ai-iot-energy/lesson.md",
+      "audio": {
+        "slow": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-slow.mp3",
+        "natural": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-natural.mp3",
+        "listen_repeat": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-listen-repeat.mp3",
+        "qa": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-qa.mp3",
+        "commute_pack": "https://alanchen75.github.io/personal-english-loop/conference/cacs2026-pseudonilm/learning/daily-day-02-commute-pack.mp3"
+      },
+      "status": "archived; files preserved; replaced in daily player by PEL 100"
     }
   ]
 }

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "262c1136b64c518fb4068f1ce401367e18df0ee7ae136abd7c59b0f696bb3958",
+  "transcript_sha256": "376068016ec209fe03302021a71159a5d2ca8d1b67a4db5b963190b19c772876",
+  "duration_seconds": 13.15,
+  "cues": [
+    {
+      "text": "We have several tasks to finish this week.",
+      "start": 0.54108,
+      "end": 2.98597
+    },
+    {
+      "text": "Some are urgent, but others can wait.",
+      "start": 3.54709,
+      "end": 5.63126
+    },
+    {
+      "text": "I suggest we focus on the customer issue first.",
+      "start": 6.25251,
+      "end": 9.11824
+    },
+    {
+      "text": "After that, we can work on the new features.",
+      "start": 10.87374,
+      "end": 12.96871
+    }
+  ]
+}

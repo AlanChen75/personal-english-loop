@@ -290,67 +290,907 @@
     },
     {
       "id": "daily-practice",
-      "title": "每日練習",
+      "title": "每日練習 · 100 集",
       "items": [
         {
           "number": 1,
-          "title": "Day 1 · Slow",
-          "audio": "learning/daily-day-01-slow.mp3",
-          "spoken_transcript": "learning/daily-day-01-slow.txt"
+          "title": "自我介紹 · Introducing Myself",
+          "unit_id": "pel100-origin-001",
+          "audio": "learning/pel100/pel100-001.mp3",
+          "spoken_transcript": "learning/pel100/pel100-001.txt",
+          "display_transcript": "learning/pel100/pel100-001-display.txt",
+          "timings": "learning/pel100/pel100-001.timings.json"
         },
         {
           "number": 2,
-          "title": "Day 1 · Natural",
-          "audio": "learning/daily-day-01-natural.mp3",
-          "spoken_transcript": "learning/daily-day-01-natural.txt"
+          "title": "早晨習慣 · My Morning Routine",
+          "unit_id": "pel100-origin-003",
+          "audio": "learning/pel100/pel100-002.mp3",
+          "spoken_transcript": "learning/pel100/pel100-002.txt",
+          "display_transcript": "learning/pel100/pel100-002-display.txt",
+          "timings": "learning/pel100/pel100-002.timings.json"
         },
         {
           "number": 3,
-          "title": "Day 1 · Listen and repeat",
-          "audio": "learning/daily-day-01-listen-repeat.mp3",
-          "spoken_transcript": "learning/daily-day-01-listen-repeat.txt"
+          "title": "我的家庭 · My Family",
+          "unit_id": "pel100-origin-002",
+          "audio": "learning/pel100/pel100-003.mp3",
+          "spoken_transcript": "learning/pel100/pel100-003.txt",
+          "display_transcript": "learning/pel100/pel100-003-display.txt",
+          "timings": "learning/pel100/pel100-003.timings.json"
         },
         {
           "number": 4,
-          "title": "Day 1 · Question and answer",
-          "audio": "learning/daily-day-01-qa.mp3",
-          "spoken_transcript": "learning/daily-day-01-qa.txt"
+          "title": "住家附近 · My Neighborhood",
+          "unit_id": "pel100-origin-012",
+          "audio": "learning/pel100/pel100-004.mp3",
+          "spoken_transcript": "learning/pel100/pel100-004.txt",
+          "display_transcript": "learning/pel100/pel100-004-display.txt",
+          "timings": "learning/pel100/pel100-004.timings.json"
         },
         {
           "number": 5,
-          "title": "Day 1 · Commute pack",
-          "audio": "learning/daily-day-01-commute-pack.mp3",
-          "spoken_transcript": "learning/daily-day-01-commute-pack.txt"
+          "title": "飲食習慣 · Eating Habits",
+          "unit_id": "pel100-origin-006",
+          "audio": "learning/pel100/pel100-005.mp3",
+          "spoken_transcript": "learning/pel100/pel100-005.txt",
+          "display_transcript": "learning/pel100/pel100-005-display.txt",
+          "timings": "learning/pel100/pel100-005.timings.json"
         },
         {
           "number": 6,
-          "title": "Day 2 · Slow",
-          "audio": "learning/daily-day-02-slow.mp3",
-          "spoken_transcript": "learning/daily-day-02-slow.txt"
+          "title": "介紹自己的工作 · Describing My Job",
+          "unit_id": "pel100-origin-041",
+          "audio": "learning/pel100/pel100-006.mp3",
+          "spoken_transcript": "learning/pel100/pel100-006.txt",
+          "display_transcript": "learning/pel100/pel100-006-display.txt",
+          "timings": "learning/pel100/pel100-006.timings.json"
         },
         {
           "number": 7,
-          "title": "Day 2 · Natural",
-          "audio": "learning/daily-day-02-natural.mp3",
-          "spoken_transcript": "learning/daily-day-02-natural.txt"
+          "title": "在咖啡店點餐 · Ordering Coffee",
+          "unit_id": "pel100-origin-021",
+          "audio": "learning/pel100/pel100-007.mp3",
+          "spoken_transcript": "learning/pel100/pel100-007.txt",
+          "display_transcript": "learning/pel100/pel100-007-display.txt",
+          "timings": "learning/pel100/pel100-007.timings.json"
         },
         {
           "number": 8,
-          "title": "Day 2 · Listen and repeat",
-          "audio": "learning/daily-day-02-listen-repeat.mp3",
-          "spoken_transcript": "learning/daily-day-02-listen-repeat.txt"
+          "title": "結帳付款 · Paying the Bill",
+          "unit_id": "pel100-origin-024",
+          "audio": "learning/pel100/pel100-008.mp3",
+          "spoken_transcript": "learning/pel100/pel100-008.txt",
+          "display_transcript": "learning/pel100/pel100-008-display.txt",
+          "timings": "learning/pel100/pel100-008.timings.json"
         },
         {
           "number": 9,
-          "title": "Day 2 · Question and answer",
-          "audio": "learning/daily-day-02-qa.mp3",
-          "spoken_transcript": "learning/daily-day-02-qa.txt"
+          "title": "買衣服 · Buying Clothes",
+          "unit_id": "pel100-origin-033",
+          "audio": "learning/pel100/pel100-009.mp3",
+          "spoken_transcript": "learning/pel100/pel100-009.txt",
+          "display_transcript": "learning/pel100/pel100-009-display.txt",
+          "timings": "learning/pel100/pel100-009.timings.json"
         },
         {
           "number": 10,
-          "title": "Day 2 · Commute pack",
-          "audio": "learning/daily-day-02-commute-pack.mp3",
-          "spoken_transcript": "learning/daily-day-02-commute-pack.txt"
+          "title": "購買日用品 · Grocery Shopping",
+          "unit_id": "pel100-origin-015",
+          "audio": "learning/pel100/pel100-010.mp3",
+          "spoken_transcript": "learning/pel100/pel100-010.txt",
+          "display_transcript": "learning/pel100/pel100-010-display.txt",
+          "timings": "learning/pel100/pel100-010.timings.json"
+        },
+        {
+          "number": 11,
+          "title": "問路 · Asking for Directions",
+          "unit_id": "pel100-origin-025",
+          "audio": "learning/pel100/pel100-011.mp3",
+          "spoken_transcript": "learning/pel100/pel100-011.txt",
+          "display_transcript": "learning/pel100/pel100-011-display.txt",
+          "timings": "learning/pel100/pel100-011.timings.json"
+        },
+        {
+          "number": 12,
+          "title": "搭火車 · Taking a Train",
+          "unit_id": "pel100-origin-026",
+          "audio": "learning/pel100/pel100-012.mp3",
+          "spoken_transcript": "learning/pel100/pel100-012.txt",
+          "display_transcript": "learning/pel100/pel100-012-display.txt",
+          "timings": "learning/pel100/pel100-012.timings.json"
+        },
+        {
+          "number": 13,
+          "title": "預訂餐廳 · Booking a Restaurant",
+          "unit_id": "pel100-origin-022",
+          "audio": "learning/pel100/pel100-013.mp3",
+          "spoken_transcript": "learning/pel100/pel100-013.txt",
+          "display_transcript": "learning/pel100/pel100-013-display.txt",
+          "timings": "learning/pel100/pel100-013.timings.json"
+        },
+        {
+          "number": 14,
+          "title": "飯店入住 · Checking Into a Hotel",
+          "unit_id": "pel100-origin-031",
+          "audio": "learning/pel100/pel100-014.mp3",
+          "spoken_transcript": "learning/pel100/pel100-014.txt",
+          "display_transcript": "learning/pel100/pel100-014-display.txt",
+          "timings": "learning/pel100/pel100-014.timings.json"
+        },
+        {
+          "number": 15,
+          "title": "慶祝生日 · Celebrating a Birthday",
+          "unit_id": "pel100-origin-018",
+          "audio": "learning/pel100/pel100-015.mp3",
+          "spoken_transcript": "learning/pel100/pel100-015.txt",
+          "display_transcript": "learning/pel100/pel100-015-display.txt",
+          "timings": "learning/pel100/pel100-015.timings.json"
+        },
+        {
+          "number": 16,
+          "title": "在家煮飯 · Cooking at Home",
+          "unit_id": "pel100-origin-016",
+          "audio": "learning/pel100/pel100-016.mp3",
+          "spoken_transcript": "learning/pel100/pel100-016.txt",
+          "display_transcript": "learning/pel100/pel100-016-display.txt",
+          "timings": "learning/pel100/pel100-016.timings.json"
+        },
+        {
+          "number": 17,
+          "title": "我的興趣 · My Hobbies",
+          "unit_id": "pel100-origin-010",
+          "audio": "learning/pel100/pel100-017.mp3",
+          "spoken_transcript": "learning/pel100/pel100-017.txt",
+          "display_transcript": "learning/pel100/pel100-017-display.txt",
+          "timings": "learning/pel100/pel100-017.timings.json"
+        },
+        {
+          "number": 18,
+          "title": "忙碌的一天 · A Busy Day",
+          "unit_id": "pel100-origin-004",
+          "audio": "learning/pel100/pel100-018.mp3",
+          "spoken_transcript": "learning/pel100/pel100-018.txt",
+          "display_transcript": "learning/pel100/pel100-018-display.txt",
+          "timings": "learning/pel100/pel100-018.timings.json"
+        },
+        {
+          "number": 19,
+          "title": "週末計畫 · Weekend Plans",
+          "unit_id": "pel100-origin-005",
+          "audio": "learning/pel100/pel100-019.mp3",
+          "spoken_transcript": "learning/pel100/pel100-019.txt",
+          "display_transcript": "learning/pel100/pel100-019-display.txt",
+          "timings": "learning/pel100/pel100-019.timings.json"
+        },
+        {
+          "number": 20,
+          "title": "認識新同事 · Meeting a New Colleague",
+          "unit_id": "pel100-origin-042",
+          "audio": "learning/pel100/pel100-020.mp3",
+          "spoken_transcript": "learning/pel100/pel100-020.txt",
+          "display_transcript": "learning/pel100/pel100-020-display.txt",
+          "timings": "learning/pel100/pel100-020.timings.json"
+        },
+        {
+          "number": 21,
+          "title": "搭計程車 · Taking a Taxi",
+          "unit_id": "pel100-origin-028",
+          "audio": "learning/pel100/pel100-021.mp3",
+          "spoken_transcript": "learning/pel100/pel100-021.txt",
+          "display_transcript": "learning/pel100/pel100-021-display.txt",
+          "timings": "learning/pel100/pel100-021.timings.json"
+        },
+        {
+          "number": 22,
+          "title": "機場報到 · Airport Check-In",
+          "unit_id": "pel100-origin-029",
+          "audio": "learning/pel100/pel100-022.mp3",
+          "spoken_transcript": "learning/pel100/pel100-022.txt",
+          "display_transcript": "learning/pel100/pel100-022-display.txt",
+          "timings": "learning/pel100/pel100-022.timings.json"
+        },
+        {
+          "number": 23,
+          "title": "特殊飲食需求 · Food Preferences",
+          "unit_id": "pel100-origin-023",
+          "audio": "learning/pel100/pel100-023.mp3",
+          "spoken_transcript": "learning/pel100/pel100-023.txt",
+          "display_transcript": "learning/pel100/pel100-023-display.txt",
+          "timings": "learning/pel100/pel100-023.timings.json"
+        },
+        {
+          "number": 24,
+          "title": "寄送包裹 · Sending a Package",
+          "unit_id": "pel100-origin-037",
+          "audio": "learning/pel100/pel100-024.mp3",
+          "spoken_transcript": "learning/pel100/pel100-024.txt",
+          "display_transcript": "learning/pel100/pel100-024-display.txt",
+          "timings": "learning/pel100/pel100-024.timings.json"
+        },
+        {
+          "number": 25,
+          "title": "銀行開戶 · Opening a Bank Account",
+          "unit_id": "pel100-origin-038",
+          "audio": "learning/pel100/pel100-025.mp3",
+          "spoken_transcript": "learning/pel100/pel100-025.txt",
+          "display_transcript": "learning/pel100/pel100-025-display.txt",
+          "timings": "learning/pel100/pel100-025.timings.json"
+        },
+        {
+          "number": 26,
+          "title": "網路故障 · An Internet Problem",
+          "unit_id": "pel100-origin-039",
+          "audio": "learning/pel100/pel100-026.mp3",
+          "spoken_transcript": "learning/pel100/pel100-026.txt",
+          "display_transcript": "learning/pel100/pel100-026-display.txt",
+          "timings": "learning/pel100/pel100-026.timings.json"
+        },
+        {
+          "number": 27,
+          "title": "飯店房間問題 · A Problem With the Room",
+          "unit_id": "pel100-origin-032",
+          "audio": "learning/pel100/pel100-027.mp3",
+          "spoken_transcript": "learning/pel100/pel100-027.txt",
+          "display_transcript": "learning/pel100/pel100-027-display.txt",
+          "timings": "learning/pel100/pel100-027.timings.json"
+        },
+        {
+          "number": 28,
+          "title": "商品退貨 · Returning an Item",
+          "unit_id": "pel100-origin-034",
+          "audio": "learning/pel100/pel100-028.mp3",
+          "spoken_transcript": "learning/pel100/pel100-028.txt",
+          "display_transcript": "learning/pel100/pel100-028-display.txt",
+          "timings": "learning/pel100/pel100-028.timings.json"
+        },
+        {
+          "number": 29,
+          "title": "化解誤會 · Clearing Up a Misunderstanding",
+          "unit_id": "pel100-origin-040",
+          "audio": "learning/pel100/pel100-029.mp3",
+          "spoken_transcript": "learning/pel100/pel100-029.txt",
+          "display_transcript": "learning/pel100/pel100-029-display.txt",
+          "timings": "learning/pel100/pel100-029.timings.json"
+        },
+        {
+          "number": 30,
+          "title": "安排會議 · Scheduling a Meeting",
+          "unit_id": "pel100-origin-044",
+          "audio": "learning/pel100/pel100-030.mp3",
+          "spoken_transcript": "learning/pel100/pel100-030.txt",
+          "display_transcript": "learning/pel100/pel100-030-display.txt",
+          "timings": "learning/pel100/pel100-030.timings.json"
+        },
+        {
+          "number": 31,
+          "title": "說明議程 · Explaining the Agenda",
+          "unit_id": "pel100-origin-045",
+          "audio": "learning/pel100/pel100-031.mp3",
+          "spoken_transcript": "learning/pel100/pel100-031.txt",
+          "display_transcript": "learning/pel100/pel100-031-display.txt",
+          "timings": "learning/pel100/pel100-031.timings.json"
+        },
+        {
+          "number": 32,
+          "title": "工作優先順序 · Setting Priorities",
+          "unit_id": "pel100-origin-048",
+          "audio": "learning/pel100/pel100-032.mp3",
+          "spoken_transcript": "learning/pel100/pel100-032.txt",
+          "display_transcript": "learning/pel100/pel100-032-display.txt",
+          "timings": "learning/pel100/pel100-032.timings.json"
+        },
+        {
+          "number": 33,
+          "title": "確認任務 · Clarifying a Task",
+          "unit_id": "pel100-origin-050",
+          "audio": "learning/pel100/pel100-033.mp3",
+          "spoken_transcript": "learning/pel100/pel100-033.txt",
+          "display_transcript": "learning/pel100/pel100-033-display.txt",
+          "timings": "learning/pel100/pel100-033.timings.json"
+        },
+        {
+          "number": 34,
+          "title": "尋求協助 · Asking for Help",
+          "unit_id": "pel100-origin-049",
+          "audio": "learning/pel100/pel100-034.mp3",
+          "spoken_transcript": "learning/pel100/pel100-034.txt",
+          "display_transcript": "learning/pel100/pel100-034-display.txt",
+          "timings": "learning/pel100/pel100-034.timings.json"
+        },
+        {
+          "number": 35,
+          "title": "和朋友見面 · Meeting an Old Friend",
+          "unit_id": "pel100-origin-017",
+          "audio": "learning/pel100/pel100-035.mp3",
+          "spoken_transcript": "learning/pel100/pel100-035.txt",
+          "display_transcript": "learning/pel100/pel100-035-display.txt",
+          "timings": "learning/pel100/pel100-035.timings.json"
+        },
+        {
+          "number": 36,
+          "title": "睡眠與健康 · Getting Enough Sleep",
+          "unit_id": "pel100-origin-008",
+          "audio": "learning/pel100/pel100-036.mp3",
+          "spoken_transcript": "learning/pel100/pel100-036.txt",
+          "display_transcript": "learning/pel100/pel100-036-display.txt",
+          "timings": "learning/pel100/pel100-036.timings.json"
+        },
+        {
+          "number": 37,
+          "title": "運動習慣 · Staying Active",
+          "unit_id": "pel100-origin-007",
+          "audio": "learning/pel100/pel100-037.mp3",
+          "spoken_transcript": "learning/pel100/pel100-037.txt",
+          "display_transcript": "learning/pel100/pel100-037-display.txt",
+          "timings": "learning/pel100/pel100-037.timings.json"
+        },
+        {
+          "number": 38,
+          "title": "我的家鄉 · My Hometown",
+          "unit_id": "pel100-origin-011",
+          "audio": "learning/pel100/pel100-038.mp3",
+          "spoken_transcript": "learning/pel100/pel100-038.txt",
+          "display_transcript": "learning/pel100/pel100-038-display.txt",
+          "timings": "learning/pel100/pel100-038.timings.json"
+        },
+        {
+          "number": 39,
+          "title": "面對壓力 · Dealing with Stress",
+          "unit_id": "pel100-origin-019",
+          "audio": "learning/pel100/pel100-039.mp3",
+          "spoken_transcript": "learning/pel100/pel100-039.txt",
+          "display_transcript": "learning/pel100/pel100-039-display.txt",
+          "timings": "learning/pel100/pel100-039.timings.json"
+        },
+        {
+          "number": 40,
+          "title": "錯過公車 · Missing the Bus",
+          "unit_id": "pel100-origin-027",
+          "audio": "learning/pel100/pel100-040.mp3",
+          "spoken_transcript": "learning/pel100/pel100-040.txt",
+          "display_transcript": "learning/pel100/pel100-040-display.txt",
+          "timings": "learning/pel100/pel100-040.timings.json"
+        },
+        {
+          "number": 41,
+          "title": "每日工作會議 · Daily Team Meeting",
+          "unit_id": "pel100-origin-043",
+          "audio": "learning/pel100/pel100-041.mp3",
+          "spoken_transcript": "learning/pel100/pel100-041.txt",
+          "display_transcript": "learning/pel100/pel100-041-display.txt",
+          "timings": "learning/pel100/pel100-041.timings.json"
+        },
+        {
+          "number": 42,
+          "title": "進度報告 · Giving a Progress Update",
+          "unit_id": "pel100-origin-046",
+          "audio": "learning/pel100/pel100-042.mp3",
+          "spoken_transcript": "learning/pel100/pel100-042.txt",
+          "display_transcript": "learning/pel100/pel100-042-display.txt",
+          "timings": "learning/pel100/pel100-042.timings.json"
+        },
+        {
+          "number": 43,
+          "title": "期限延後 · Explaining a Delay",
+          "unit_id": "pel100-origin-047",
+          "audio": "learning/pel100/pel100-043.mp3",
+          "spoken_transcript": "learning/pel100/pel100-043.txt",
+          "display_transcript": "learning/pel100/pel100-043-display.txt",
+          "timings": "learning/pel100/pel100-043.timings.json"
+        },
+        {
+          "number": 44,
+          "title": "回報問題 · Reporting an Issue",
+          "unit_id": "pel100-origin-051",
+          "audio": "learning/pel100/pel100-044.mp3",
+          "spoken_transcript": "learning/pel100/pel100-044.txt",
+          "display_transcript": "learning/pel100/pel100-044-display.txt",
+          "timings": "learning/pel100/pel100-044.timings.json"
+        },
+        {
+          "number": 45,
+          "title": "提出解決方案 · Suggesting a Solution",
+          "unit_id": "pel100-origin-052",
+          "audio": "learning/pel100/pel100-045.mp3",
+          "spoken_transcript": "learning/pel100/pel100-045.txt",
+          "display_transcript": "learning/pel100/pel100-045-display.txt",
+          "timings": "learning/pel100/pel100-045.timings.json"
+        },
+        {
+          "number": 46,
+          "title": "給予建設性回饋 · Giving Feedback",
+          "unit_id": "pel100-origin-053",
+          "audio": "learning/pel100/pel100-046.mp3",
+          "spoken_transcript": "learning/pel100/pel100-046.txt",
+          "display_transcript": "learning/pel100/pel100-046-display.txt",
+          "timings": "learning/pel100/pel100-046.timings.json"
+        },
+        {
+          "number": 47,
+          "title": "接受批評 · Receiving Feedback",
+          "unit_id": "pel100-origin-054",
+          "audio": "learning/pel100/pel100-047.mp3",
+          "spoken_transcript": "learning/pel100/pel100-047.txt",
+          "display_transcript": "learning/pel100/pel100-047-display.txt",
+          "timings": "learning/pel100/pel100-047.timings.json"
+        },
+        {
+          "number": 48,
+          "title": "說明數據 · Explaining Data",
+          "unit_id": "pel100-origin-055",
+          "audio": "learning/pel100/pel100-048.mp3",
+          "spoken_transcript": "learning/pel100/pel100-048.txt",
+          "display_transcript": "learning/pel100/pel100-048-display.txt",
+          "timings": "learning/pel100/pel100-048.timings.json"
+        },
+        {
+          "number": 49,
+          "title": "遠端協作 · Working Remotely",
+          "unit_id": "pel100-origin-056",
+          "audio": "learning/pel100/pel100-049.mp3",
+          "spoken_transcript": "learning/pel100/pel100-049.txt",
+          "display_transcript": "learning/pel100/pel100-049-display.txt",
+          "timings": "learning/pel100/pel100-049.timings.json"
+        },
+        {
+          "number": 50,
+          "title": "了解客戶需求 · Understanding a Customer",
+          "unit_id": "pel100-origin-057",
+          "audio": "learning/pel100/pel100-050.mp3",
+          "spoken_transcript": "learning/pel100/pel100-050.txt",
+          "display_transcript": "learning/pel100/pel100-050-display.txt",
+          "timings": "learning/pel100/pel100-050.timings.json"
+        },
+        {
+          "number": 51,
+          "title": "產品展示 · Demonstrating a Product",
+          "unit_id": "pel100-origin-058",
+          "audio": "learning/pel100/pel100-051.mp3",
+          "spoken_transcript": "learning/pel100/pel100-051.txt",
+          "display_transcript": "learning/pel100/pel100-051-display.txt",
+          "timings": "learning/pel100/pel100-051.timings.json"
+        },
+        {
+          "number": 52,
+          "title": "處理團隊意見分歧 · Handling Disagreement",
+          "unit_id": "pel100-origin-059",
+          "audio": "learning/pel100/pel100-052.mp3",
+          "spoken_transcript": "learning/pel100/pel100-052.txt",
+          "display_transcript": "learning/pel100/pel100-052-display.txt",
+          "timings": "learning/pel100/pel100-052.timings.json"
+        },
+        {
+          "number": 53,
+          "title": "專案檢討 · Reviewing a Project",
+          "unit_id": "pel100-origin-060",
+          "audio": "learning/pel100/pel100-053.mp3",
+          "spoken_transcript": "learning/pel100/pel100-053.txt",
+          "display_transcript": "learning/pel100/pel100-053-display.txt",
+          "timings": "learning/pel100/pel100-053.timings.json"
+        },
+        {
+          "number": 54,
+          "title": "學英文的原因 · Why I Learn English",
+          "unit_id": "pel100-origin-009",
+          "audio": "learning/pel100/pel100-054.mp3",
+          "spoken_transcript": "learning/pel100/pel100-054.txt",
+          "display_transcript": "learning/pel100/pel100-054-display.txt",
+          "timings": "learning/pel100/pel100-054.timings.json"
+        },
+        {
+          "number": 55,
+          "title": "今年的目標 · My Goals This Year",
+          "unit_id": "pel100-origin-020",
+          "audio": "learning/pel100/pel100-055.mp3",
+          "spoken_transcript": "learning/pel100/pel100-055.txt",
+          "display_transcript": "learning/pel100/pel100-055-display.txt",
+          "timings": "learning/pel100/pel100-055.timings.json"
+        },
+        {
+          "number": 56,
+          "title": "班機延誤 · A Delayed Flight",
+          "unit_id": "pel100-origin-030",
+          "audio": "learning/pel100/pel100-056.mp3",
+          "spoken_transcript": "learning/pel100/pel100-056.txt",
+          "display_transcript": "learning/pel100/pel100-056-display.txt",
+          "timings": "learning/pel100/pel100-056.timings.json"
+        },
+        {
+          "number": 57,
+          "title": "在藥局詢問 · At the Pharmacy",
+          "unit_id": "pel100-origin-035",
+          "audio": "learning/pel100/pel100-057.mp3",
+          "spoken_transcript": "learning/pel100/pel100-057.txt",
+          "display_transcript": "learning/pel100/pel100-057-display.txt",
+          "timings": "learning/pel100/pel100-057.timings.json"
+        },
+        {
+          "number": 58,
+          "title": "醫生看診 · Visiting a Doctor",
+          "unit_id": "pel100-origin-036",
+          "audio": "learning/pel100/pel100-058.mp3",
+          "spoken_transcript": "learning/pel100/pel100-058.txt",
+          "display_transcript": "learning/pel100/pel100-058-display.txt",
+          "timings": "learning/pel100/pel100-058.timings.json"
+        },
+        {
+          "number": 59,
+          "title": "照顧寵物 · Taking Care of a Pet",
+          "unit_id": "pel100-origin-014",
+          "audio": "learning/pel100/pel100-059.mp3",
+          "spoken_transcript": "learning/pel100/pel100-059.txt",
+          "display_transcript": "learning/pel100/pel100-059-display.txt",
+          "timings": "learning/pel100/pel100-059.timings.json"
+        },
+        {
+          "number": 60,
+          "title": "天氣影響計畫 · Weather and Plans",
+          "unit_id": "pel100-origin-013",
+          "audio": "learning/pel100/pel100-060.mp3",
+          "spoken_transcript": "learning/pel100/pel100-060.txt",
+          "display_transcript": "learning/pel100/pel100-060-display.txt",
+          "timings": "learning/pel100/pel100-060.timings.json"
+        },
+        {
+          "number": 61,
+          "title": "第一份工作 · My First Job",
+          "unit_id": "pel100-origin-061",
+          "audio": "learning/pel100/pel100-061.mp3",
+          "spoken_transcript": "learning/pel100/pel100-061.txt",
+          "display_transcript": "learning/pel100/pel100-061-display.txt",
+          "timings": "learning/pel100/pel100-061.timings.json"
+        },
+        {
+          "number": 62,
+          "title": "從錯誤中學習 · Learning From Mistakes",
+          "unit_id": "pel100-origin-062",
+          "audio": "learning/pel100/pel100-062.mp3",
+          "spoken_transcript": "learning/pel100/pel100-062.txt",
+          "display_transcript": "learning/pel100/pel100-062-display.txt",
+          "timings": "learning/pel100/pel100-062.timings.json"
+        },
+        {
+          "number": 63,
+          "title": "面對失敗 · Dealing With Failure",
+          "unit_id": "pel100-origin-063",
+          "audio": "learning/pel100/pel100-063.mp3",
+          "spoken_transcript": "learning/pel100/pel100-063.txt",
+          "display_transcript": "learning/pel100/pel100-063-display.txt",
+          "timings": "learning/pel100/pel100-063.timings.json"
+        },
+        {
+          "number": 64,
+          "title": "計畫突然改變 · An Unexpected Change",
+          "unit_id": "pel100-origin-064",
+          "audio": "learning/pel100/pel100-064.mp3",
+          "spoken_transcript": "learning/pel100/pel100-064.txt",
+          "display_transcript": "learning/pel100/pel100-064-display.txt",
+          "timings": "learning/pel100/pel100-064.timings.json"
+        },
+        {
+          "number": 65,
+          "title": "最有成就感的事情 · A Personal Achievement",
+          "unit_id": "pel100-origin-065",
+          "audio": "learning/pel100/pel100-065.mp3",
+          "spoken_transcript": "learning/pel100/pel100-065.txt",
+          "display_transcript": "learning/pel100/pel100-065-display.txt",
+          "timings": "learning/pel100/pel100-065.timings.json"
+        },
+        {
+          "number": 66,
+          "title": "困難的選擇 · Making a Difficult Decision",
+          "unit_id": "pel100-origin-066",
+          "audio": "learning/pel100/pel100-066.mp3",
+          "spoken_transcript": "learning/pel100/pel100-066.txt",
+          "display_transcript": "learning/pel100/pel100-066-display.txt",
+          "timings": "learning/pel100/pel100-066.timings.json"
+        },
+        {
+          "number": 67,
+          "title": "兩種工作方式 · Comparing Work Methods",
+          "unit_id": "pel100-origin-067",
+          "audio": "learning/pel100/pel100-067.mp3",
+          "spoken_transcript": "learning/pel100/pel100-067.txt",
+          "display_transcript": "learning/pel100/pel100-067-display.txt",
+          "timings": "learning/pel100/pel100-067.timings.json"
+        },
+        {
+          "number": 68,
+          "title": "選擇工具 · Choosing the Right Tool",
+          "unit_id": "pel100-origin-068",
+          "audio": "learning/pel100/pel100-068.mp3",
+          "spoken_transcript": "learning/pel100/pel100-068.txt",
+          "display_transcript": "learning/pel100/pel100-068-display.txt",
+          "timings": "learning/pel100/pel100-068.timings.json"
+        },
+        {
+          "number": 69,
+          "title": "別人的建議 · Learning From Others",
+          "unit_id": "pel100-origin-069",
+          "audio": "learning/pel100/pel100-069.mp3",
+          "spoken_transcript": "learning/pel100/pel100-069.txt",
+          "display_transcript": "learning/pel100/pel100-069-display.txt",
+          "timings": "learning/pel100/pel100-069.timings.json"
+        },
+        {
+          "number": 70,
+          "title": "遠端工作好不好 · Is Remote Work Better?",
+          "unit_id": "pel100-origin-070",
+          "audio": "learning/pel100/pel100-070.mp3",
+          "spoken_transcript": "learning/pel100/pel100-070.txt",
+          "display_transcript": "learning/pel100/pel100-070-display.txt",
+          "timings": "learning/pel100/pel100-070.timings.json"
+        },
+        {
+          "number": 71,
+          "title": "AI與學習 · AI and Learning",
+          "unit_id": "pel100-origin-071",
+          "audio": "learning/pel100/pel100-071.mp3",
+          "spoken_transcript": "learning/pel100/pel100-071.txt",
+          "display_transcript": "learning/pel100/pel100-071-display.txt",
+          "timings": "learning/pel100/pel100-071.timings.json"
+        },
+        {
+          "number": 72,
+          "title": "再生能源 · Renewable Energy",
+          "unit_id": "pel100-origin-072",
+          "audio": "learning/pel100/pel100-072.mp3",
+          "spoken_transcript": "learning/pel100/pel100-072.txt",
+          "display_transcript": "learning/pel100/pel100-072-display.txt",
+          "timings": "learning/pel100/pel100-072.timings.json"
+        },
+        {
+          "number": 73,
+          "title": "永續生活 · Living More Sustainably",
+          "unit_id": "pel100-origin-073",
+          "audio": "learning/pel100/pel100-073.mp3",
+          "spoken_transcript": "learning/pel100/pel100-073.txt",
+          "display_transcript": "learning/pel100/pel100-073-display.txt",
+          "timings": "learning/pel100/pel100-073.timings.json"
+        },
+        {
+          "number": 74,
+          "title": "城市與鄉村 · City Life or Country Life",
+          "unit_id": "pel100-origin-074",
+          "audio": "learning/pel100/pel100-074.mp3",
+          "spoken_transcript": "learning/pel100/pel100-074.txt",
+          "display_transcript": "learning/pel100/pel100-074-display.txt",
+          "timings": "learning/pel100/pel100-074.timings.json"
+        },
+        {
+          "number": 75,
+          "title": "公共運輸 · Public Transportation",
+          "unit_id": "pel100-origin-075",
+          "audio": "learning/pel100/pel100-075.mp3",
+          "spoken_transcript": "learning/pel100/pel100-075.txt",
+          "display_transcript": "learning/pel100/pel100-075-display.txt",
+          "timings": "learning/pel100/pel100-075.timings.json"
+        },
+        {
+          "number": 76,
+          "title": "消費與儲蓄 · Spending and Saving",
+          "unit_id": "pel100-origin-076",
+          "audio": "learning/pel100/pel100-076.mp3",
+          "spoken_transcript": "learning/pel100/pel100-076.txt",
+          "display_transcript": "learning/pel100/pel100-076-display.txt",
+          "timings": "learning/pel100/pel100-076.timings.json"
+        },
+        {
+          "number": 77,
+          "title": "閱讀與思考 · Reading and Thinking",
+          "unit_id": "pel100-origin-077",
+          "audio": "learning/pel100/pel100-077.mp3",
+          "spoken_transcript": "learning/pel100/pel100-077.txt",
+          "display_transcript": "learning/pel100/pel100-077-display.txt",
+          "timings": "learning/pel100/pel100-077.timings.json"
+        },
+        {
+          "number": 78,
+          "title": "難忘的旅行 · A Memorable Trip",
+          "unit_id": "pel100-origin-078",
+          "audio": "learning/pel100/pel100-078.mp3",
+          "spoken_transcript": "learning/pel100/pel100-078.txt",
+          "display_transcript": "learning/pel100/pel100-078-display.txt",
+          "timings": "learning/pel100/pel100-078.timings.json"
+        },
+        {
+          "number": 79,
+          "title": "文化差異 · Cultural Differences",
+          "unit_id": "pel100-origin-079",
+          "audio": "learning/pel100/pel100-079.mp3",
+          "spoken_transcript": "learning/pel100/pel100-079.txt",
+          "display_transcript": "learning/pel100/pel100-079-display.txt",
+          "timings": "learning/pel100/pel100-079.timings.json"
+        },
+        {
+          "number": 80,
+          "title": "改變自己的想法 · Changing My Mind",
+          "unit_id": "pel100-origin-080",
+          "audio": "learning/pel100/pel100-080.mp3",
+          "spoken_transcript": "learning/pel100/pel100-080.txt",
+          "display_transcript": "learning/pel100/pel100-080-display.txt",
+          "timings": "learning/pel100/pel100-080.timings.json"
+        },
+        {
+          "number": 81,
+          "title": "一分鐘自我介紹 · A Short Professional Introduction",
+          "unit_id": "pel100-origin-081",
+          "audio": "learning/pel100/pel100-081.mp3",
+          "spoken_transcript": "learning/pel100/pel100-081.txt",
+          "display_transcript": "learning/pel100/pel100-081-display.txt",
+          "timings": "learning/pel100/pel100-081.timings.json"
+        },
+        {
+          "number": 82,
+          "title": "說明市場問題 · Explaining a Market Problem",
+          "unit_id": "pel100-origin-082",
+          "audio": "learning/pel100/pel100-082.mp3",
+          "spoken_transcript": "learning/pel100/pel100-082.txt",
+          "display_transcript": "learning/pel100/pel100-082-display.txt",
+          "timings": "learning/pel100/pel100-082.timings.json"
+        },
+        {
+          "number": 83,
+          "title": "訪談客戶 · Interviewing a Customer",
+          "unit_id": "pel100-origin-083",
+          "audio": "learning/pel100/pel100-083.mp3",
+          "spoken_transcript": "learning/pel100/pel100-083.txt",
+          "display_transcript": "learning/pel100/pel100-083-display.txt",
+          "timings": "learning/pel100/pel100-083.timings.json"
+        },
+        {
+          "number": 84,
+          "title": "最小可行產品 · Building a Simple First Version",
+          "unit_id": "pel100-origin-084",
+          "audio": "learning/pel100/pel100-084.mp3",
+          "spoken_transcript": "learning/pel100/pel100-084.txt",
+          "display_transcript": "learning/pel100/pel100-084-display.txt",
+          "timings": "learning/pel100/pel100-084.timings.json"
+        },
+        {
+          "number": 85,
+          "title": "競爭優勢 · Explaining Our Advantage",
+          "unit_id": "pel100-origin-085",
+          "audio": "learning/pel100/pel100-085.mp3",
+          "spoken_transcript": "learning/pel100/pel100-085.txt",
+          "display_transcript": "learning/pel100/pel100-085-display.txt",
+          "timings": "learning/pel100/pel100-085.timings.json"
+        },
+        {
+          "number": 86,
+          "title": "市場驗證 · Showing Early Results",
+          "unit_id": "pel100-origin-086",
+          "audio": "learning/pel100/pel100-086.mp3",
+          "spoken_transcript": "learning/pel100/pel100-086.txt",
+          "display_transcript": "learning/pel100/pel100-086-display.txt",
+          "timings": "learning/pel100/pel100-086.timings.json"
+        },
+        {
+          "number": 87,
+          "title": "商業模式 · Explaining How We Make Money",
+          "unit_id": "pel100-origin-087",
+          "audio": "learning/pel100/pel100-087.mp3",
+          "spoken_transcript": "learning/pel100/pel100-087.txt",
+          "display_transcript": "learning/pel100/pel100-087-display.txt",
+          "timings": "learning/pel100/pel100-087.timings.json"
+        },
+        {
+          "number": 88,
+          "title": "評估風險 · Understanding Business Risks",
+          "unit_id": "pel100-origin-088",
+          "audio": "learning/pel100/pel100-088.mp3",
+          "spoken_transcript": "learning/pel100/pel100-088.txt",
+          "display_transcript": "learning/pel100/pel100-088-display.txt",
+          "timings": "learning/pel100/pel100-088.timings.json"
+        },
+        {
+          "number": 89,
+          "title": "長期願景 · Sharing a Long-Term Vision",
+          "unit_id": "pel100-origin-089",
+          "audio": "learning/pel100/pel100-089.mp3",
+          "spoken_transcript": "learning/pel100/pel100-089.txt",
+          "display_transcript": "learning/pel100/pel100-089-display.txt",
+          "timings": "learning/pel100/pel100-089.timings.json"
+        },
+        {
+          "number": 90,
+          "title": "資料隱私 · Protecting User Data",
+          "unit_id": "pel100-origin-090",
+          "audio": "learning/pel100/pel100-090.mp3",
+          "spoken_transcript": "learning/pel100/pel100-090.txt",
+          "display_transcript": "learning/pel100/pel100-090-display.txt",
+          "timings": "learning/pel100/pel100-090.timings.json"
+        },
+        {
+          "number": 91,
+          "title": "介紹研究主題 · Introducing My Research",
+          "unit_id": "pel100-origin-091",
+          "audio": "learning/pel100/pel100-091.mp3",
+          "spoken_transcript": "learning/pel100/pel100-091.txt",
+          "display_transcript": "learning/pel100/pel100-091-display.txt",
+          "timings": "learning/pel100/pel100-091.timings.json"
+        },
+        {
+          "number": 92,
+          "title": "提出研究假設 · Explaining a Hypothesis",
+          "unit_id": "pel100-origin-092",
+          "audio": "learning/pel100/pel100-092.mp3",
+          "spoken_transcript": "learning/pel100/pel100-092.txt",
+          "display_transcript": "learning/pel100/pel100-092-display.txt",
+          "timings": "learning/pel100/pel100-092.timings.json"
+        },
+        {
+          "number": 93,
+          "title": "說明研究方法 · Explaining a Research Method",
+          "unit_id": "pel100-origin-093",
+          "audio": "learning/pel100/pel100-093.mp3",
+          "spoken_transcript": "learning/pel100/pel100-093.txt",
+          "display_transcript": "learning/pel100/pel100-093-display.txt",
+          "timings": "learning/pel100/pel100-093.timings.json"
+        },
+        {
+          "number": 94,
+          "title": "解釋意外的結果 · Explaining an Unexpected Result",
+          "unit_id": "pel100-origin-094",
+          "audio": "learning/pel100/pel100-094.mp3",
+          "spoken_transcript": "learning/pel100/pel100-094.txt",
+          "display_transcript": "learning/pel100/pel100-094-display.txt",
+          "timings": "learning/pel100/pel100-094.timings.json"
+        },
+        {
+          "number": 95,
+          "title": "研究限制 · Discussing Research Limitations",
+          "unit_id": "pel100-origin-095",
+          "audio": "learning/pel100/pel100-095.mp3",
+          "spoken_transcript": "learning/pel100/pel100-095.txt",
+          "display_transcript": "learning/pel100/pel100-095-display.txt",
+          "timings": "learning/pel100/pel100-095.timings.json"
+        },
+        {
+          "number": 96,
+          "title": "回答聽眾問題 · Answering a Difficult Question",
+          "unit_id": "pel100-origin-096",
+          "audio": "learning/pel100/pel100-096.mp3",
+          "spoken_transcript": "learning/pel100/pel100-096.txt",
+          "display_transcript": "learning/pel100/pel100-096-display.txt",
+          "timings": "learning/pel100/pel100-096.timings.json"
+        },
+        {
+          "number": 97,
+          "title": "商業協商 · Negotiating a Deal",
+          "unit_id": "pel100-origin-097",
+          "audio": "learning/pel100/pel100-097.mp3",
+          "spoken_transcript": "learning/pel100/pel100-097.txt",
+          "display_transcript": "learning/pel100/pel100-097-display.txt",
+          "timings": "learning/pel100/pel100-097.timings.json"
+        },
+        {
+          "number": 98,
+          "title": "回應反對意見 · Responding to an Objection",
+          "unit_id": "pel100-origin-098",
+          "audio": "learning/pel100/pel100-098.mp3",
+          "spoken_transcript": "learning/pel100/pel100-098.txt",
+          "display_transcript": "learning/pel100/pel100-098-display.txt",
+          "timings": "learning/pel100/pel100-098.timings.json"
+        },
+        {
+          "number": 99,
+          "title": "情境推演 · Planning for Different Scenarios",
+          "unit_id": "pel100-origin-099",
+          "audio": "learning/pel100/pel100-099.mp3",
+          "spoken_transcript": "learning/pel100/pel100-099.txt",
+          "display_transcript": "learning/pel100/pel100-099-display.txt",
+          "timings": "learning/pel100/pel100-099.timings.json"
+        },
+        {
+          "number": 100,
+          "title": "總結與下一步 · Summarizing and Moving Forward",
+          "unit_id": "pel100-origin-100",
+          "audio": "learning/pel100/pel100-100.mp3",
+          "spoken_transcript": "learning/pel100/pel100-100.txt",
+          "display_transcript": "learning/pel100/pel100-100-display.txt",
+          "timings": "learning/pel100/pel100-100.timings.json"
         }
       ]
     }

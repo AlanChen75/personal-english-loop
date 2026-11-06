@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "704271943d019ee7b13a58f42c63404fd9c7c3b84d475c21bafa9b613e57b497",
+  "transcript_sha256": "202f63a9f80d2c69e322dd9351f0b2ecc7bd932be87d276a5478dcceb5b03618",
+  "duration_seconds": 18.27,
+  "cues": [
+    {
+      "text": "Remote work gives people more flexibility.",
+      "start": 0.80193,
+      "end": 3.52848
+    },
+    {
+      "text": "They can save time by avoiding long trips to the office.",
+      "start": 4.61108,
+      "end": 8.15961
+    },
+    {
+      "text": "However, it can be harder to communicate with teammates.",
+      "start": 9.07084,
+      "end": 12.3176
+    },
+    {
+      "text": "I believe a mix of remote and office work is often a good solution.",
+      "start": 13.23952,
+      "end": 17.64871
+    }
+  ]
+}

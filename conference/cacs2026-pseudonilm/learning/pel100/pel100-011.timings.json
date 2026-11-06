@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "ba0b7b5c48f403d02b15959146574d9e12c806e726260182a4cb536d0504f8f3",
+  "transcript_sha256": "ddb47d922fb34cf4e79a91a3e608f1e6199383072623ae960612d97eaa9a9e01",
+  "duration_seconds": 11.71,
+  "cues": [
+    {
+      "text": "Excuse me, how can I get to the train station?",
+      "start": 0.64146,
+      "end": 3.64829
+    },
+    {
+      "text": "Is it within walking distance?",
+      "start": 4.22961,
+      "end": 5.81321
+    },
+    {
+      "text": "I'm not familiar with this area.",
+      "start": 6.65513,
+      "end": 8.63964
+    },
+    {
+      "text": "Could you show me the way on a map?",
+      "start": 9.63378,
+      "end": 11.36732
+    }
+  ]
+}

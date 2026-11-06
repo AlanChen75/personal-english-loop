@@ -1,0 +1,1 @@
+We expected the new model to perform better. However, the results were not as good as we hoped. After checking the data, we found differences between the training and testing conditions. This suggests that the model may need to be more reliable across environments.

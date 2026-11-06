@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "4173366852c537bf7ca83873a9f82835678634a527bffebf05fc4f48bfa68851",
+  "transcript_sha256": "98fcb3d22627883ec20fc29b4245ac40d02535cc3b77c2ebd9dbe3308df6021b",
+  "duration_seconds": 17.98,
+  "cues": [
+    {
+      "text": "I try to save part of my income every month.",
+      "start": 0.44111,
+      "end": 2.92739
+    },
+    {
+      "text": "Before buying something expensive, I ask myself whether I really need it.",
+      "start": 3.46876,
+      "end": 7.85985
+    },
+    {
+      "text": "Sometimes waiting a few days helps me make a better decision.",
+      "start": 8.87274,
+      "end": 12.58963
+    },
+    {
+      "text": "I've learned that careful spending is more important than buying things quickly.",
+      "start": 13.4417,
+      "end": 17.85951
+    }
+  ]
+}

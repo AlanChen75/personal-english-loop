@@ -1,0 +1,1 @@
+We believe that electrical signals contain useful information about machine behavior. If we analyze them carefully, we may be able to identify unusual patterns. These patterns could help us detect problems earlier. Our next step is to test this idea with real data.

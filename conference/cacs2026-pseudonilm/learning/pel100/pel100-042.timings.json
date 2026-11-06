@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "8ee3cec20ad2d90c7e60167adc527fc9bf06f3a7487cc75d216d6785fc7f2f87",
+  "transcript_sha256": "e903a315c94e21d181ac3d96fb4e1b2f90107c603daf968a20a94d68edcd2d90",
+  "duration_seconds": 12.51,
+  "cues": [
+    {
+      "text": "The project is moving forward as planned.",
+      "start": 0.32072,
+      "end": 2.54573
+    },
+    {
+      "text": "We've completed most of the testing.",
+      "start": 3.32749,
+      "end": 5.1516
+    },
+    {
+      "text": "However, we still have a few technical issues.",
+      "start": 5.75296,
+      "end": 8.57932
+    },
+    {
+      "text": "We expect to solve them by the end of the week.",
+      "start": 9.57209,
+      "end": 12.34902
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "ef8a6415109421aefb4ae633019c2f752bb4a4a40a0829fecb503809a0be7cd6",
+  "transcript_sha256": "dcc3963ff92b12db39a150275ed7b518ad080741ca2d04de1700dcd639ac0a03",
+  "duration_seconds": 11.28,
+  "cues": [
+    {
+      "text": "I met an old friend yesterday.",
+      "start": 0.58103,
+      "end": 1.98352
+    },
+    {
+      "text": "We hadn't seen each other for years.",
+      "start": 3.06544,
+      "end": 4.8486
+    },
+    {
+      "text": "We talked about our jobs and families.",
+      "start": 5.71012,
+      "end": 7.65357
+    },
+    {
+      "text": "It felt as if no time had passed.",
+      "start": 8.93584,
+      "end": 10.79915
+    }
+  ]
+}

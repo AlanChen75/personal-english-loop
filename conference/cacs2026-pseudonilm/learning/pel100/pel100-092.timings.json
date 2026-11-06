@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "f42211ca965fff878082c4d3e3fc09e4b134fa44906d727f94238db3f3622e76",
+  "transcript_sha256": "90f2d8ddedfc4be2a256602adf84866118cf10b0a90568298519713f1183de82",
+  "duration_seconds": 21.5,
+  "cues": [
+    {
+      "text": "We believe that electrical signals contain useful information about machine behavior.",
+      "start": 0.8427,
+      "end": 6.15974
+    },
+    {
+      "text": "If we analyze them carefully, we may be able to identify unusual patterns.",
+      "start": 7.09099,
+      "end": 11.76018
+    },
+    {
+      "text": "These patterns could help us detect problems earlier.",
+      "start": 12.70203,
+      "end": 15.9885
+    },
+    {
+      "text": "Our next step is to test this idea with real data.",
+      "start": 17.78311,
+      "end": 21.2589
+    }
+  ]
+}

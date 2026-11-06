@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "d8e6097aab0ba8a30af3f0fa4ef46ca8d3ab4dae656329e25241d4213823445a",
+  "transcript_sha256": "5873d3766d96364e7e3b2f1bf5766ac720651d09cbcbb65571f52ecb6cc33a09",
+  "duration_seconds": 20.14,
+  "cues": [
+    {
+      "text": "My research focuses on understanding electrical equipment through power data.",
+      "start": 0.42096,
+      "end": 4.93121
+    },
+    {
+      "text": "We collect signals from a main electricity meter.",
+      "start": 5.8533,
+      "end": 8.65968
+    },
+    {
+      "text": "Then we use AI models to identify different operating patterns.",
+      "start": 9.59181,
+      "end": 13.84926
+    },
+    {
+      "text": "The goal is to understand equipment behavior without installing sensors on every machine.",
+      "start": 14.78139,
+      "end": 19.87909
+    }
+  ]
+}

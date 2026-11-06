@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "c7a246fa89c88d09b202c4ca009b82e50340687b0c87cb3b37e1461ba0b3f650",
+  "transcript_sha256": "778f1cd697a00c4e0a7a306b42d0822550677b699de954987925fdc5086f7a96",
+  "duration_seconds": 10.48,
+  "cues": [
+    {
+      "text": "I'd like a medium coffee, please.",
+      "start": 0.56107,
+      "end": 2.24428
+    },
+    {
+      "text": "Could you make it without sugar?",
+      "start": 2.86547,
+      "end": 4.40841
+    },
+    {
+      "text": "I'll have it to go because I'm in a hurry.",
+      "start": 5.2901,
+      "end": 7.71472
+    },
+    {
+      "text": "How much is it altogether?",
+      "start": 8.1756,
+      "end": 9.65843
+    }
+  ]
+}

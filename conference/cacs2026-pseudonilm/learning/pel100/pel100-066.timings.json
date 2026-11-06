@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "960746b708633c26a107d8e421d49cfc6fb98fccc519bb191a5989438a1babc1",
+  "transcript_sha256": "cd8abf181f9c2b8dc9799788ac9ef55c7927de858e528ea427cc3e61b845b566",
+  "duration_seconds": 15.95,
+  "cues": [
+    {
+      "text": "I once had to choose between two job opportunities.",
+      "start": 0.4812,
+      "end": 3.26817
+    },
+    {
+      "text": "One offered more money, while the other offered better learning opportunities.",
+      "start": 3.68922,
+      "end": 7.81955
+    },
+    {
+      "text": "I thought carefully about my long-term goals.",
+      "start": 8.81121,
+      "end": 11.31781
+    },
+    {
+      "text": "Finally, I chose the job where I could learn more.",
+      "start": 12.90198,
+      "end": 15.86979
+    }
+  ]
+}

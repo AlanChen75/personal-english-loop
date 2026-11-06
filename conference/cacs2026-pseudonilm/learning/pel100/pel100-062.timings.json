@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "80a87fa572d2f6f85dd2a27cbe9c27b78d97c0e3c57274ea47461382a6dae26c",
+  "transcript_sha256": "cddd4bd932f9ae954c0518da746cedc3d82d2469c2adcd40038b0e029b7ad23c",
+  "duration_seconds": 17.95,
+  "cues": [
+    {
+      "text": "I once made an important mistake at work.",
+      "start": 0.92217,
+      "end": 3.48823
+    },
+    {
+      "text": "I didn't check the information carefully enough.",
+      "start": 5.77362,
+      "end": 8.31962
+    },
+    {
+      "text": "After that, I started reviewing my work before sending it.",
+      "start": 9.37119,
+      "end": 13.21963
+    },
+    {
+      "text": "I learned that small mistakes can have big consequences.",
+      "start": 14.302,
+      "end": 17.74956
+    }
+  ]
+}

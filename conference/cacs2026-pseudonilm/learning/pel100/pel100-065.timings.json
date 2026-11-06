@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "391bef7e1de526c3c9b37c66a83aeb16cdd7565570e1290cd33060ca508d6fc1",
+  "transcript_sha256": "5538020fdb094d401cd651fed9fdd7384b02eaf315b85dc459987f3715436ab4",
+  "duration_seconds": 15.07,
+  "cues": [
+    {
+      "text": "Last year, I completed a project that had taken months of work.",
+      "start": 0.42105,
+      "end": 4.67168
+    },
+    {
+      "text": "There were many problems along the way.",
+      "start": 5.73434,
+      "end": 7.77945
+    },
+    {
+      "text": "My team kept working together until we solved them.",
+      "start": 8.85149,
+      "end": 11.94069
+    },
+    {
+      "text": "I was proud of what we had achieved.",
+      "start": 12.76313,
+      "end": 14.98976
+    }
+  ]
+}

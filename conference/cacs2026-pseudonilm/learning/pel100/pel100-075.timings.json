@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "9a35cb5e1102c49c93657371a8b72c6ac84581614255ca41242d24e43f13ccef",
+  "transcript_sha256": "fdb958b70211652fd1caa658924f2ca2516f3db8b194d12554235b82bb5718ed",
+  "duration_seconds": 16.51,
+  "cues": [
+    {
+      "text": "I used to drive to work every day.",
+      "start": 0.56149,
+      "end": 2.50667
+    },
+    {
+      "text": "Recently, I've started taking the train more often.",
+      "start": 4.15104,
+      "end": 7.39968
+    },
+    {
+      "text": "It takes about the same amount of time, but I can read during the trip.",
+      "start": 8.23084,
+      "end": 12.46063
+    },
+    {
+      "text": "As a result, my journey feels less stressful.",
+      "start": 13.02193,
+      "end": 16.32958
+    }
+  ]
+}

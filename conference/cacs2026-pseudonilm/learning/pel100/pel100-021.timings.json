@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "5f6daf58810fcf687a1136a49dd2e92649148ed8aa62ee6ae1fbe6ef3d45acb9",
+  "transcript_sha256": "b5fe057d20e16f2621f73379257312bddb0151fc33ec03f1effcb1f1a32a9568",
+  "duration_seconds": 12.99,
+  "cues": [
+    {
+      "text": "Could you take me to this address?",
+      "start": 0.42082,
+      "end": 2.064
+    },
+    {
+      "text": "I'm running a little late for a meeting.",
+      "start": 4.32839,
+      "end": 6.35231
+    },
+    {
+      "text": "If possible, please use the fastest route.",
+      "start": 7.01359,
+      "end": 9.57856
+    },
+    {
+      "text": "Let me know when we're close to the building.",
+      "start": 11.134,
+      "end": 12.94965
+    }
+  ]
+}

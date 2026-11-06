@@ -1,0 +1,1 @@
+We have different opinions about this design. I understand why you prefer the first option. However, I'm concerned about its long-term cost. Could we compare both options before making a decision?

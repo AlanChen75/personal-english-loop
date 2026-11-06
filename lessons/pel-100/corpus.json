@@ -1,0 +1,1909 @@
+{
+  "version": "1.1",
+  "source_url": "https://github.com/AlanChen75/knowledge-base/blob/3af9420a6e4876e71b202cbc1b763f5209b8310b/raw/2026-11/20261106074615-mcp-note.md",
+  "source_sha256": "af6131b9b4fc65fd6457327860bed5e1205a2ed9271a3ff9174ceb6f8fee5352",
+  "source_type": "original teaching scenarios, not personal biography or research results",
+  "level_status": "A2–B1 design intent; not professionally CEFR calibrated",
+  "units": [
+    {
+      "unit_id": "pel100-origin-001",
+      "lesson_id": "pel100-001",
+      "canonical_order": 1,
+      "origin_id": "001",
+      "stage": 1,
+      "title_zh": "自我介紹",
+      "title_en": "Introducing Myself",
+      "text": "Hi, I'm Sam. I work with technology and business. I enjoy learning new things. I want to improve my English so I can talk to more people.",
+      "sentences": [
+        "Hi, I'm Sam.",
+        "I work with technology and business.",
+        "I enjoy learning new things.",
+        "I want to improve my English so I can talk to more people."
+      ],
+      "T": "現在式／目標表達",
+      "L": "身分→工作→興趣→目標",
+      "E": "work with；want to"
+    },
+    {
+      "unit_id": "pel100-origin-003",
+      "lesson_id": "pel100-002",
+      "canonical_order": 2,
+      "origin_id": "003",
+      "stage": 1,
+      "title_zh": "早晨習慣",
+      "title_en": "My Morning Routine",
+      "text": "I usually wake up at seven. After breakfast, I check my messages. Then I make a plan for the day. This helps me stay organized.",
+      "sentences": [
+        "I usually wake up at seven.",
+        "After breakfast, I check my messages.",
+        "Then I make a plan for the day.",
+        "This helps me stay organized."
+      ],
+      "T": "現在簡單式",
+      "L": "時間順序→效果",
+      "E": "after；then；help me"
+    },
+    {
+      "unit_id": "pel100-origin-002",
+      "lesson_id": "pel100-003",
+      "canonical_order": 3,
+      "origin_id": "002",
+      "stage": 1,
+      "title_zh": "我的家庭",
+      "title_en": "My Family",
+      "text": "I live with my family. We usually have dinner together. Everyone is busy during the day. That's why we enjoy talking at night.",
+      "sentences": [
+        "I live with my family.",
+        "We usually have dinner together.",
+        "Everyone is busy during the day.",
+        "That's why we enjoy talking at night."
+      ],
+      "T": "現在簡單式",
+      "L": "日常習慣→原因→結果",
+      "E": "usually；that's why"
+    },
+    {
+      "unit_id": "pel100-origin-012",
+      "lesson_id": "pel100-004",
+      "canonical_order": 4,
+      "origin_id": "012",
+      "stage": 1,
+      "title_zh": "住家附近",
+      "title_en": "My Neighborhood",
+      "text": "There is a small park near my home. Many people go there in the evening. I sometimes walk there after dinner. It's a nice place to relax.",
+      "sentences": [
+        "There is a small park near my home.",
+        "Many people go there in the evening.",
+        "I sometimes walk there after dinner.",
+        "It's a nice place to relax."
+      ],
+      "T": "現在簡單式",
+      "L": "地點→活動→個人體驗",
+      "E": "there is；a nice place to"
+    },
+    {
+      "unit_id": "pel100-origin-006",
+      "lesson_id": "pel100-005",
+      "canonical_order": 5,
+      "origin_id": "006",
+      "stage": 1,
+      "title_zh": "飲食習慣",
+      "title_en": "Eating Habits",
+      "text": "I try to eat healthy food every day. I usually have vegetables and rice for lunch. Sometimes I eat too much when I'm busy. I'm trying to change that habit.",
+      "sentences": [
+        "I try to eat healthy food every day.",
+        "I usually have vegetables and rice for lunch.",
+        "Sometimes I eat too much when I'm busy.",
+        "I'm trying to change that habit."
+      ],
+      "T": "現在式／現在進行式",
+      "L": "習慣→例外→改善",
+      "E": "try to；too much"
+    },
+    {
+      "unit_id": "pel100-origin-041",
+      "lesson_id": "pel100-006",
+      "canonical_order": 6,
+      "origin_id": "041",
+      "stage": 1,
+      "title_zh": "介紹自己的工作",
+      "title_en": "Describing My Job",
+      "text": "I work as a project manager. My job is to help different teams work together. I spend a lot of time solving problems. What I enjoy most is seeing a project succeed.",
+      "sentences": [
+        "I work as a project manager.",
+        "My job is to help different teams work together.",
+        "I spend a lot of time solving problems.",
+        "What I enjoy most is seeing a project succeed."
+      ],
+      "T": "現在簡單式",
+      "L": "職位→職責→日常→成就感",
+      "E": "work as；what I enjoy most"
+    },
+    {
+      "unit_id": "pel100-origin-021",
+      "lesson_id": "pel100-007",
+      "canonical_order": 7,
+      "origin_id": "021",
+      "stage": 1,
+      "title_zh": "在咖啡店點餐",
+      "title_en": "Ordering Coffee",
+      "text": "I'd like a medium coffee, please. Could you make it without sugar? I'll have it to go because I'm in a hurry. How much is it altogether?",
+      "sentences": [
+        "I'd like a medium coffee, please.",
+        "Could you make it without sugar?",
+        "I'll have it to go because I'm in a hurry.",
+        "How much is it altogether?"
+      ],
+      "T": "現在式／禮貌請求",
+      "L": "需求→條件→原因→詢價",
+      "E": "I'd like；could you"
+    },
+    {
+      "unit_id": "pel100-origin-024",
+      "lesson_id": "pel100-008",
+      "canonical_order": 8,
+      "origin_id": "024",
+      "stage": 1,
+      "title_zh": "結帳付款",
+      "title_en": "Paying the Bill",
+      "text": "Excuse me, could we have the bill, please? We'd like to split it into two payments. I'll pay my part by card. Thank you for your help.",
+      "sentences": [
+        "Excuse me, could we have the bill, please?",
+        "We'd like to split it into two payments.",
+        "I'll pay my part by card.",
+        "Thank you for your help."
+      ],
+      "T": "現在式／禮貌請求",
+      "L": "結帳→分帳→付款",
+      "E": "split the bill；pay by card"
+    },
+    {
+      "unit_id": "pel100-origin-033",
+      "lesson_id": "pel100-009",
+      "canonical_order": 9,
+      "origin_id": "033",
+      "stage": 1,
+      "title_zh": "買衣服",
+      "title_en": "Buying Clothes",
+      "text": "I'm looking for a jacket for work. This one looks nice, but it's a little too small. Do you have it in a larger size? I'd like to try it on before deciding.",
+      "sentences": [
+        "I'm looking for a jacket for work.",
+        "This one looks nice, but it's a little too small.",
+        "Do you have it in a larger size?",
+        "I'd like to try it on before deciding."
+      ],
+      "T": "現在進行式",
+      "L": "需求→評估→詢問→決策",
+      "E": "looking for；try it on"
+    },
+    {
+      "unit_id": "pel100-origin-015",
+      "lesson_id": "pel100-010",
+      "canonical_order": 10,
+      "origin_id": "015",
+      "stage": 1,
+      "title_zh": "購買日用品",
+      "title_en": "Grocery Shopping",
+      "text": "I went to the supermarket after work. I needed some milk, eggs, and vegetables. The store was crowded, so I finished shopping quickly. Luckily, I found everything on my list.",
+      "sentences": [
+        "I went to the supermarket after work.",
+        "I needed some milk, eggs, and vegetables.",
+        "The store was crowded, so I finished shopping quickly.",
+        "Luckily, I found everything on my list."
+      ],
+      "T": "過去式",
+      "L": "目的→障礙→結果",
+      "E": "needed some；luckily"
+    },
+    {
+      "unit_id": "pel100-origin-025",
+      "lesson_id": "pel100-011",
+      "canonical_order": 11,
+      "origin_id": "025",
+      "stage": 1,
+      "title_zh": "問路",
+      "title_en": "Asking for Directions",
+      "text": "Excuse me, how can I get to the train station? Is it within walking distance? I'm not familiar with this area. Could you show me the way on a map?",
+      "sentences": [
+        "Excuse me, how can I get to the train station?",
+        "Is it within walking distance?",
+        "I'm not familiar with this area.",
+        "Could you show me the way on a map?"
+      ],
+      "T": "現在式",
+      "L": "目的地→距離→原因→請求",
+      "E": "get to；within walking distance"
+    },
+    {
+      "unit_id": "pel100-origin-026",
+      "lesson_id": "pel100-012",
+      "canonical_order": 12,
+      "origin_id": "026",
+      "stage": 1,
+      "title_zh": "搭火車",
+      "title_en": "Taking a Train",
+      "text": "I need a ticket to the city center. Is there a direct train, or do I need to transfer? I'd prefer the fastest route. Could you tell me which platform to use?",
+      "sentences": [
+        "I need a ticket to the city center.",
+        "Is there a direct train, or do I need to transfer?",
+        "I'd prefer the fastest route.",
+        "Could you tell me which platform to use?"
+      ],
+      "T": "現在式",
+      "L": "目的→路線比較→選擇",
+      "E": "direct train；need to transfer"
+    },
+    {
+      "unit_id": "pel100-origin-022",
+      "lesson_id": "pel100-013",
+      "canonical_order": 13,
+      "origin_id": "022",
+      "stage": 1,
+      "title_zh": "預訂餐廳",
+      "title_en": "Booking a Restaurant",
+      "text": "I'd like to book a table for four people. Do you have anything available around seven tonight? We prefer a quiet area if possible. Could you confirm the reservation by text?",
+      "sentences": [
+        "I'd like to book a table for four people.",
+        "Do you have anything available around seven tonight?",
+        "We prefer a quiet area if possible.",
+        "Could you confirm the reservation by text?"
+      ],
+      "T": "現在式",
+      "L": "需求→時間→偏好→確認",
+      "E": "book a table；if possible"
+    },
+    {
+      "unit_id": "pel100-origin-031",
+      "lesson_id": "pel100-014",
+      "canonical_order": 14,
+      "origin_id": "031",
+      "stage": 1,
+      "title_zh": "飯店入住",
+      "title_en": "Checking Into a Hotel",
+      "text": "Hello, I have a reservation under the name Chen. I booked a room for two nights. Is breakfast included in the price? Also, what time do I need to check out?",
+      "sentences": [
+        "Hello, I have a reservation under the name Chen.",
+        "I booked a room for two nights.",
+        "Is breakfast included in the price?",
+        "Also, what time do I need to check out?"
+      ],
+      "T": "現在式／過去式",
+      "L": "訂房確認→服務→退房",
+      "E": "under the name；included"
+    },
+    {
+      "unit_id": "pel100-origin-018",
+      "lesson_id": "pel100-015",
+      "canonical_order": 15,
+      "origin_id": "018",
+      "stage": 1,
+      "title_zh": "慶祝生日",
+      "title_en": "Celebrating a Birthday",
+      "text": "Today is my mother's birthday. We're having dinner at her favorite restaurant. I bought her a small gift yesterday. I hope she enjoys the surprise.",
+      "sentences": [
+        "Today is my mother's birthday.",
+        "We're having dinner at her favorite restaurant.",
+        "I bought her a small gift yesterday.",
+        "I hope she enjoys the surprise."
+      ],
+      "T": "現在式／過去式",
+      "L": "特別日子→安排→心意",
+      "E": "favorite；hope"
+    },
+    {
+      "unit_id": "pel100-origin-016",
+      "lesson_id": "pel100-016",
+      "canonical_order": 16,
+      "origin_id": "016",
+      "stage": 1,
+      "title_zh": "在家煮飯",
+      "title_en": "Cooking at Home",
+      "text": "I'm learning to cook simple meals. Yesterday, I made dinner for my family. The food wasn't perfect, but everyone enjoyed it. I'll try a different recipe next time.",
+      "sentences": [
+        "I'm learning to cook simple meals.",
+        "Yesterday, I made dinner for my family.",
+        "The food wasn't perfect, but everyone enjoyed it.",
+        "I'll try a different recipe next time."
+      ],
+      "T": "現在進行式／過去式／未來式",
+      "L": "嘗試→結果→改善",
+      "E": "learn to；next time"
+    },
+    {
+      "unit_id": "pel100-origin-010",
+      "lesson_id": "pel100-017",
+      "canonical_order": 17,
+      "origin_id": "010",
+      "stage": 1,
+      "title_zh": "我的興趣",
+      "title_en": "My Hobbies",
+      "text": "I enjoy reading about new technology. Last week, I watched a video about robots. It gave me some interesting ideas. I'd like to learn more about this topic.",
+      "sentences": [
+        "I enjoy reading about new technology.",
+        "Last week, I watched a video about robots.",
+        "It gave me some interesting ideas.",
+        "I'd like to learn more about this topic."
+      ],
+      "T": "現在式／過去式",
+      "L": "興趣→事件→收穫→延伸",
+      "E": "enjoy -ing；would like to"
+    },
+    {
+      "unit_id": "pel100-origin-004",
+      "lesson_id": "pel100-018",
+      "canonical_order": 18,
+      "origin_id": "004",
+      "stage": 1,
+      "title_zh": "忙碌的一天",
+      "title_en": "A Busy Day",
+      "text": "I had a busy day yesterday. I attended two meetings and finished a report. I felt tired when I got home. However, I was happy with my progress.",
+      "sentences": [
+        "I had a busy day yesterday.",
+        "I attended two meetings and finished a report.",
+        "I felt tired when I got home.",
+        "However, I was happy with my progress."
+      ],
+      "T": "過去式",
+      "L": "事件→感受→轉折",
+      "E": "felt tired；however"
+    },
+    {
+      "unit_id": "pel100-origin-005",
+      "lesson_id": "pel100-019",
+      "canonical_order": 19,
+      "origin_id": "005",
+      "stage": 1,
+      "title_zh": "週末計畫",
+      "title_en": "Weekend Plans",
+      "text": "I'm going to visit my friends this weekend. We plan to have lunch together. If the weather is nice, we'll go for a walk. I hope we can spend more time together.",
+      "sentences": [
+        "I'm going to visit my friends this weekend.",
+        "We plan to have lunch together.",
+        "If the weather is nice, we'll go for a walk.",
+        "I hope we can spend more time together."
+      ],
+      "T": "未來式／第一類條件句",
+      "L": "計畫→條件→期待",
+      "E": "be going to；if"
+    },
+    {
+      "unit_id": "pel100-origin-042",
+      "lesson_id": "pel100-020",
+      "canonical_order": 20,
+      "origin_id": "042",
+      "stage": 1,
+      "title_zh": "認識新同事",
+      "title_en": "Meeting a New Colleague",
+      "text": "Welcome to the team. I joined this company three years ago. I mainly work on product development. If you need any help, feel free to ask me.",
+      "sentences": [
+        "Welcome to the team.",
+        "I joined this company three years ago.",
+        "I mainly work on product development.",
+        "If you need any help, feel free to ask me."
+      ],
+      "T": "過去式／現在式",
+      "L": "歡迎→背景→角色→協助",
+      "E": "mainly；feel free to"
+    },
+    {
+      "unit_id": "pel100-origin-028",
+      "lesson_id": "pel100-021",
+      "canonical_order": 21,
+      "origin_id": "028",
+      "stage": 2,
+      "title_zh": "搭計程車",
+      "title_en": "Taking a Taxi",
+      "text": "Could you take me to this address? I'm running a little late for a meeting. If possible, please use the fastest route. Let me know when we're close to the building.",
+      "sentences": [
+        "Could you take me to this address?",
+        "I'm running a little late for a meeting.",
+        "If possible, please use the fastest route.",
+        "Let me know when we're close to the building."
+      ],
+      "T": "現在進行式／祈使句",
+      "L": "目的→原因→要求",
+      "E": "running late；let me know"
+    },
+    {
+      "unit_id": "pel100-origin-029",
+      "lesson_id": "pel100-022",
+      "canonical_order": 22,
+      "origin_id": "029",
+      "stage": 2,
+      "title_zh": "機場報到",
+      "title_en": "Airport Check-In",
+      "text": "I'm checking in for my flight to Singapore. I have one suitcase to check and one carry-on bag. Could I have an aisle seat if one is available? Please let me know if the flight is on time.",
+      "sentences": [
+        "I'm checking in for my flight to Singapore.",
+        "I have one suitcase to check and one carry-on bag.",
+        "Could I have an aisle seat if one is available?",
+        "Please let me know if the flight is on time."
+      ],
+      "T": "現在進行式／條件句",
+      "L": "報到→行李→座位→確認",
+      "E": "check in；carry-on；aisle seat"
+    },
+    {
+      "unit_id": "pel100-origin-023",
+      "lesson_id": "pel100-023",
+      "canonical_order": 23,
+      "origin_id": "023",
+      "stage": 2,
+      "title_zh": "特殊飲食需求",
+      "title_en": "Food Preferences",
+      "text": "I'm looking for something without dairy. Do you have any dishes that would work for me? I can eat vegetables, rice, and seafood. If you're not sure, could you check with the kitchen?",
+      "sentences": [
+        "I'm looking for something without dairy.",
+        "Do you have any dishes that would work for me?",
+        "I can eat vegetables, rice, and seafood.",
+        "If you're not sure, could you check with the kitchen?"
+      ],
+      "T": "現在式／條件句",
+      "L": "限制→詢問→可接受範圍",
+      "E": "looking for；check with"
+    },
+    {
+      "unit_id": "pel100-origin-037",
+      "lesson_id": "pel100-024",
+      "canonical_order": 24,
+      "origin_id": "037",
+      "stage": 2,
+      "title_zh": "寄送包裹",
+      "title_en": "Sending a Package",
+      "text": "I'd like to send this package overseas. It contains some books and small gifts. How long will delivery usually take? I'd also like a tracking number if possible.",
+      "sentences": [
+        "I'd like to send this package overseas.",
+        "It contains some books and small gifts.",
+        "How long will delivery usually take?",
+        "I'd also like a tracking number if possible."
+      ],
+      "T": "現在式／未來式",
+      "L": "目的→內容→時間→追蹤",
+      "E": "send overseas；tracking number"
+    },
+    {
+      "unit_id": "pel100-origin-038",
+      "lesson_id": "pel100-025",
+      "canonical_order": 25,
+      "origin_id": "038",
+      "stage": 2,
+      "title_zh": "銀行開戶",
+      "title_en": "Opening a Bank Account",
+      "text": "I'd like to open a savings account. I already have my passport and identification documents. Could you explain the monthly fees? I'd also like to know whether I can manage the account online.",
+      "sentences": [
+        "I'd like to open a savings account.",
+        "I already have my passport and identification documents.",
+        "Could you explain the monthly fees?",
+        "I'd also like to know whether I can manage the account online."
+      ],
+      "T": "現在式／情態動詞",
+      "L": "需求→準備→費用→功能",
+      "E": "open an account；whether"
+    },
+    {
+      "unit_id": "pel100-origin-039",
+      "lesson_id": "pel100-026",
+      "canonical_order": 26,
+      "origin_id": "039",
+      "stage": 2,
+      "title_zh": "網路故障",
+      "title_en": "An Internet Problem",
+      "text": "My internet connection stopped working this morning. I've already restarted the router twice. The problem is still there. Could you help me check whether there's a service outage?",
+      "sentences": [
+        "My internet connection stopped working this morning.",
+        "I've already restarted the router twice.",
+        "The problem is still there.",
+        "Could you help me check whether there's a service outage?"
+      ],
+      "T": "過去式／現在完成式",
+      "L": "問題→已嘗試→現況→請求",
+      "E": "restart；service outage"
+    },
+    {
+      "unit_id": "pel100-origin-032",
+      "lesson_id": "pel100-027",
+      "canonical_order": 27,
+      "origin_id": "032",
+      "stage": 2,
+      "title_zh": "飯店房間問題",
+      "title_en": "A Problem With the Room",
+      "text": "I'm having trouble with the air conditioner. It doesn't seem to be working properly. Could someone come and take a look? If it can't be fixed, I'd like to change rooms.",
+      "sentences": [
+        "I'm having trouble with the air conditioner.",
+        "It doesn't seem to be working properly.",
+        "Could someone come and take a look?",
+        "If it can't be fixed, I'd like to change rooms."
+      ],
+      "T": "現在進行式／被動式",
+      "L": "問題→請求→替代方案",
+      "E": "having trouble with；take a look"
+    },
+    {
+      "unit_id": "pel100-origin-034",
+      "lesson_id": "pel100-028",
+      "canonical_order": 28,
+      "origin_id": "034",
+      "stage": 2,
+      "title_zh": "商品退貨",
+      "title_en": "Returning an Item",
+      "text": "I bought these headphones last week. Unfortunately, the left side doesn't work. I still have the receipt and the original box. Could I get a replacement or a refund?",
+      "sentences": [
+        "I bought these headphones last week.",
+        "Unfortunately, the left side doesn't work.",
+        "I still have the receipt and the original box.",
+        "Could I get a replacement or a refund?"
+      ],
+      "T": "過去式／現在式",
+      "L": "購買→問題→證明→要求",
+      "E": "replacement；refund"
+    },
+    {
+      "unit_id": "pel100-origin-040",
+      "lesson_id": "pel100-029",
+      "canonical_order": 29,
+      "origin_id": "040",
+      "stage": 2,
+      "title_zh": "化解誤會",
+      "title_en": "Clearing Up a Misunderstanding",
+      "text": "I think there was a misunderstanding. I didn't mean to cancel the meeting. I only wanted to change the time. Sorry if my message wasn't clear enough.",
+      "sentences": [
+        "I think there was a misunderstanding.",
+        "I didn't mean to cancel the meeting.",
+        "I only wanted to change the time.",
+        "Sorry if my message wasn't clear enough."
+      ],
+      "T": "過去式",
+      "L": "指出誤會→澄清→致歉",
+      "E": "misunderstanding；didn't mean to"
+    },
+    {
+      "unit_id": "pel100-origin-044",
+      "lesson_id": "pel100-030",
+      "canonical_order": 30,
+      "origin_id": "044",
+      "stage": 2,
+      "title_zh": "安排會議",
+      "title_en": "Scheduling a Meeting",
+      "text": "We need to discuss the new project. Are you available on Thursday afternoon? If that doesn't work, we can meet on Friday morning. Let me know which time is better for you.",
+      "sentences": [
+        "We need to discuss the new project.",
+        "Are you available on Thursday afternoon?",
+        "If that doesn't work, we can meet on Friday morning.",
+        "Let me know which time is better for you."
+      ],
+      "T": "現在式／條件句",
+      "L": "目的→選項→替代方案",
+      "E": "are you available；let me know"
+    },
+    {
+      "unit_id": "pel100-origin-045",
+      "lesson_id": "pel100-031",
+      "canonical_order": 31,
+      "origin_id": "045",
+      "stage": 2,
+      "title_zh": "說明議程",
+      "title_en": "Explaining the Agenda",
+      "text": "Today, we have three things to discuss. First, we'll review the project schedule. Next, we'll look at the main problems. Finally, we'll decide who will handle each task.",
+      "sentences": [
+        "Today, we have three things to discuss.",
+        "First, we'll review the project schedule.",
+        "Next, we'll look at the main problems.",
+        "Finally, we'll decide who will handle each task."
+      ],
+      "T": "未來式",
+      "L": "有序列舉→決策",
+      "E": "first；next；finally"
+    },
+    {
+      "unit_id": "pel100-origin-048",
+      "lesson_id": "pel100-032",
+      "canonical_order": 32,
+      "origin_id": "048",
+      "stage": 2,
+      "title_zh": "工作優先順序",
+      "title_en": "Setting Priorities",
+      "text": "We have several tasks to finish this week. Some are urgent, but others can wait. I suggest we focus on the customer issue first. After that, we can work on the new features.",
+      "sentences": [
+        "We have several tasks to finish this week.",
+        "Some are urgent, but others can wait.",
+        "I suggest we focus on the customer issue first.",
+        "After that, we can work on the new features."
+      ],
+      "T": "現在式／情態動詞",
+      "L": "任務→分類→建議→次序",
+      "E": "focus on；I suggest"
+    },
+    {
+      "unit_id": "pel100-origin-050",
+      "lesson_id": "pel100-033",
+      "canonical_order": 33,
+      "origin_id": "050",
+      "stage": 2,
+      "title_zh": "確認任務",
+      "title_en": "Clarifying a Task",
+      "text": "Before I start, I'd like to confirm the requirements. Do you need a short summary or a detailed report? I can prepare either one. I just want to make sure we're working toward the same goal.",
+      "sentences": [
+        "Before I start, I'd like to confirm the requirements.",
+        "Do you need a short summary or a detailed report?",
+        "I can prepare either one.",
+        "I just want to make sure we're working toward the same goal."
+      ],
+      "T": "現在式",
+      "L": "確認→選項→原因",
+      "E": "make sure；work toward"
+    },
+    {
+      "unit_id": "pel100-origin-049",
+      "lesson_id": "pel100-034",
+      "canonical_order": 34,
+      "origin_id": "049",
+      "stage": 2,
+      "title_zh": "尋求協助",
+      "title_en": "Asking for Help",
+      "text": "I'm having trouble understanding this report. I've checked the numbers, but something doesn't look right. Could you review it with me? I think a second opinion would be helpful.",
+      "sentences": [
+        "I'm having trouble understanding this report.",
+        "I've checked the numbers, but something doesn't look right.",
+        "Could you review it with me?",
+        "I think a second opinion would be helpful."
+      ],
+      "T": "現在進行式／現在完成式",
+      "L": "困難→已採取行動→請求",
+      "E": "having trouble；second opinion"
+    },
+    {
+      "unit_id": "pel100-origin-017",
+      "lesson_id": "pel100-035",
+      "canonical_order": 35,
+      "origin_id": "017",
+      "stage": 2,
+      "title_zh": "和朋友見面",
+      "title_en": "Meeting an Old Friend",
+      "text": "I met an old friend yesterday. We hadn't seen each other for years. We talked about our jobs and families. It felt as if no time had passed.",
+      "sentences": [
+        "I met an old friend yesterday.",
+        "We hadn't seen each other for years.",
+        "We talked about our jobs and families.",
+        "It felt as if no time had passed."
+      ],
+      "T": "過去完成式／過去式",
+      "L": "重逢→背景→交流→感受",
+      "E": "each other；as if"
+    },
+    {
+      "unit_id": "pel100-origin-008",
+      "lesson_id": "pel100-036",
+      "canonical_order": 36,
+      "origin_id": "008",
+      "stage": 2,
+      "title_zh": "睡眠與健康",
+      "title_en": "Getting Enough Sleep",
+      "text": "I didn't sleep well last night. I stayed up late to finish some work. As a result, I felt tired this morning. Tonight, I'll try to go to bed earlier.",
+      "sentences": [
+        "I didn't sleep well last night.",
+        "I stayed up late to finish some work.",
+        "As a result, I felt tired this morning.",
+        "Tonight, I'll try to go to bed earlier."
+      ],
+      "T": "過去式／未來式",
+      "L": "原因→結果→改善",
+      "E": "stay up late；as a result"
+    },
+    {
+      "unit_id": "pel100-origin-007",
+      "lesson_id": "pel100-037",
+      "canonical_order": 37,
+      "origin_id": "007",
+      "stage": 2,
+      "title_zh": "運動習慣",
+      "title_en": "Staying Active",
+      "text": "I started walking every evening last month. At first, it was difficult to keep going. Now I feel stronger and sleep better. Small changes can make a big difference.",
+      "sentences": [
+        "I started walking every evening last month.",
+        "At first, it was difficult to keep going.",
+        "Now I feel stronger and sleep better.",
+        "Small changes can make a big difference."
+      ],
+      "T": "過去式與現在式",
+      "L": "開始→困難→改善",
+      "E": "at first；make a difference"
+    },
+    {
+      "unit_id": "pel100-origin-011",
+      "lesson_id": "pel100-038",
+      "canonical_order": 38,
+      "origin_id": "011",
+      "stage": 2,
+      "title_zh": "我的家鄉",
+      "title_en": "My Hometown",
+      "text": "I grew up in a small town. It was quiet and had many beautiful places. Although I live in a big city now, I still miss my hometown. I visit it whenever I have time.",
+      "sentences": [
+        "I grew up in a small town.",
+        "It was quiet and had many beautiful places.",
+        "Although I live in a big city now, I still miss my hometown.",
+        "I visit it whenever I have time."
+      ],
+      "T": "過去式／現在式",
+      "L": "過去→現在→情感",
+      "E": "grew up；although；whenever"
+    },
+    {
+      "unit_id": "pel100-origin-019",
+      "lesson_id": "pel100-039",
+      "canonical_order": 39,
+      "origin_id": "019",
+      "stage": 2,
+      "title_zh": "面對壓力",
+      "title_en": "Dealing with Stress",
+      "text": "I sometimes feel stressed when I have too much work. When that happens, I take a short break. A few minutes of walking helps me think clearly. I've learned that rest is also important.",
+      "sentences": [
+        "I sometimes feel stressed when I have too much work.",
+        "When that happens, I take a short break.",
+        "A few minutes of walking helps me think clearly.",
+        "I've learned that rest is also important."
+      ],
+      "T": "現在式／現在完成式",
+      "L": "問題→應對→體會",
+      "E": "when that happens；I've learned that"
+    },
+    {
+      "unit_id": "pel100-origin-027",
+      "lesson_id": "pel100-040",
+      "canonical_order": 40,
+      "origin_id": "027",
+      "stage": 2,
+      "title_zh": "錯過公車",
+      "title_en": "Missing the Bus",
+      "text": "I missed the bus this morning. I arrived at the stop just a minute too late. The next bus wasn't coming for another twenty minutes. So I decided to take a taxi instead.",
+      "sentences": [
+        "I missed the bus this morning.",
+        "I arrived at the stop just a minute too late.",
+        "The next bus wasn't coming for another twenty minutes.",
+        "So I decided to take a taxi instead."
+      ],
+      "T": "過去式／過去進行式",
+      "L": "失誤→後果→替代方案",
+      "E": "just a minute too late；instead"
+    },
+    {
+      "unit_id": "pel100-origin-043",
+      "lesson_id": "pel100-041",
+      "canonical_order": 41,
+      "origin_id": "043",
+      "stage": 3,
+      "title_zh": "每日工作會議",
+      "title_en": "Daily Team Meeting",
+      "text": "Yesterday, I finished the first version of the report. Today, I'll review it with the team. I still need some data from the sales department. Once I get it, I can finish the analysis.",
+      "sentences": [
+        "Yesterday, I finished the first version of the report.",
+        "Today, I'll review it with the team.",
+        "I still need some data from the sales department.",
+        "Once I get it, I can finish the analysis."
+      ],
+      "T": "過去式／未來式",
+      "L": "昨日成果→今日安排→阻礙→條件",
+      "E": "still need；once I get"
+    },
+    {
+      "unit_id": "pel100-origin-046",
+      "lesson_id": "pel100-042",
+      "canonical_order": 42,
+      "origin_id": "046",
+      "stage": 3,
+      "title_zh": "進度報告",
+      "title_en": "Giving a Progress Update",
+      "text": "The project is moving forward as planned. We've completed most of the testing. However, we still have a few technical issues. We expect to solve them by the end of the week.",
+      "sentences": [
+        "The project is moving forward as planned.",
+        "We've completed most of the testing.",
+        "However, we still have a few technical issues.",
+        "We expect to solve them by the end of the week."
+      ],
+      "T": "現在進行式／現在完成式",
+      "L": "進度→成果→問題→預期",
+      "E": "as planned；expect to"
+    },
+    {
+      "unit_id": "pel100-origin-047",
+      "lesson_id": "pel100-043",
+      "canonical_order": 43,
+      "origin_id": "047",
+      "stage": 3,
+      "title_zh": "期限延後",
+      "title_en": "Explaining a Delay",
+      "text": "We may need two more days to finish the work. One of our suppliers delivered the materials late. As a result, we couldn't start testing on time. We're adjusting the schedule to reduce the delay.",
+      "sentences": [
+        "We may need two more days to finish the work.",
+        "One of our suppliers delivered the materials late.",
+        "As a result, we couldn't start testing on time.",
+        "We're adjusting the schedule to reduce the delay."
+      ],
+      "T": "過去式／現在進行式",
+      "L": "延期→原因→影響→對策",
+      "E": "as a result；on time"
+    },
+    {
+      "unit_id": "pel100-origin-051",
+      "lesson_id": "pel100-044",
+      "canonical_order": 44,
+      "origin_id": "051",
+      "stage": 3,
+      "title_zh": "回報問題",
+      "title_en": "Reporting an Issue",
+      "text": "We found a problem during yesterday's test. The system stopped responding after several hours. We haven't identified the cause yet. We're collecting more information before making changes.",
+      "sentences": [
+        "We found a problem during yesterday's test.",
+        "The system stopped responding after several hours.",
+        "We haven't identified the cause yet.",
+        "We're collecting more information before making changes."
+      ],
+      "T": "過去式／現在完成式",
+      "L": "發現→現象→未知→調查",
+      "E": "identify the cause；before -ing"
+    },
+    {
+      "unit_id": "pel100-origin-052",
+      "lesson_id": "pel100-045",
+      "canonical_order": 45,
+      "origin_id": "052",
+      "stage": 3,
+      "title_zh": "提出解決方案",
+      "title_en": "Suggesting a Solution",
+      "text": "I think we should try a simpler approach. The current process takes too much time. If we automate one part of it, we could reduce manual work. Let's test the idea before making a larger change.",
+      "sentences": [
+        "I think we should try a simpler approach.",
+        "The current process takes too much time.",
+        "If we automate one part of it, we could reduce manual work.",
+        "Let's test the idea before making a larger change."
+      ],
+      "T": "現在式／假設語氣",
+      "L": "問題→方案→效益→驗證",
+      "E": "should；if we；let's"
+    },
+    {
+      "unit_id": "pel100-origin-053",
+      "lesson_id": "pel100-046",
+      "canonical_order": 46,
+      "origin_id": "053",
+      "stage": 3,
+      "title_zh": "給予建設性回饋",
+      "title_en": "Giving Feedback",
+      "text": "Your presentation was clear and easy to follow. I especially liked the examples. One thing you could improve is the final summary. It might help to end with a clear recommendation.",
+      "sentences": [
+        "Your presentation was clear and easy to follow.",
+        "I especially liked the examples.",
+        "One thing you could improve is the final summary.",
+        "It might help to end with a clear recommendation."
+      ],
+      "T": "過去式／情態動詞",
+      "L": "肯定→具體優點→改善建議",
+      "E": "one thing you could improve；might help"
+    },
+    {
+      "unit_id": "pel100-origin-054",
+      "lesson_id": "pel100-047",
+      "canonical_order": 47,
+      "origin_id": "054",
+      "stage": 3,
+      "title_zh": "接受批評",
+      "title_en": "Receiving Feedback",
+      "text": "Thank you for your feedback. I hadn't noticed that problem before. I'll review the presentation and make some changes. Please let me know if there's anything else I should improve.",
+      "sentences": [
+        "Thank you for your feedback.",
+        "I hadn't noticed that problem before.",
+        "I'll review the presentation and make some changes.",
+        "Please let me know if there's anything else I should improve."
+      ],
+      "T": "過去完成式／未來式",
+      "L": "感謝→理解→行動→確認",
+      "E": "hadn't noticed；anything else"
+    },
+    {
+      "unit_id": "pel100-origin-055",
+      "lesson_id": "pel100-048",
+      "canonical_order": 48,
+      "origin_id": "055",
+      "stage": 3,
+      "title_zh": "說明數據",
+      "title_en": "Explaining Data",
+      "text": "Sales increased last month. However, our costs also went up. This means our profit didn't grow as much as expected. We need to understand what's driving the higher costs.",
+      "sentences": [
+        "Sales increased last month.",
+        "However, our costs also went up.",
+        "This means our profit didn't grow as much as expected.",
+        "We need to understand what's driving the higher costs."
+      ],
+      "T": "過去式",
+      "L": "數據→對比→解讀→待研究問題",
+      "E": "went up；as much as expected"
+    },
+    {
+      "unit_id": "pel100-origin-056",
+      "lesson_id": "pel100-049",
+      "canonical_order": 49,
+      "origin_id": "056",
+      "stage": 3,
+      "title_zh": "遠端協作",
+      "title_en": "Working Remotely",
+      "text": "Our team works in different cities. We use online tools to share files and discuss ideas. Sometimes communication takes longer than expected. That's why we write down important decisions after each meeting.",
+      "sentences": [
+        "Our team works in different cities.",
+        "We use online tools to share files and discuss ideas.",
+        "Sometimes communication takes longer than expected.",
+        "That's why we write down important decisions after each meeting."
+      ],
+      "T": "現在簡單式",
+      "L": "工作模式→工具→問題→制度",
+      "E": "write down；that's why"
+    },
+    {
+      "unit_id": "pel100-origin-057",
+      "lesson_id": "pel100-050",
+      "canonical_order": 50,
+      "origin_id": "057",
+      "stage": 3,
+      "title_zh": "了解客戶需求",
+      "title_en": "Understanding a Customer",
+      "text": "Before we suggest a solution, we need to understand the customer's problem. I'll ask how their current process works. Then I'll find out where they lose the most time. This information will help us design a better system.",
+      "sentences": [
+        "Before we suggest a solution, we need to understand the customer's problem.",
+        "I'll ask how their current process works.",
+        "Then I'll find out where they lose the most time.",
+        "This information will help us design a better system."
+      ],
+      "T": "現在式／未來式",
+      "L": "先理解→訪談→找瓶頸→設計",
+      "E": "find out；help us design"
+    },
+    {
+      "unit_id": "pel100-origin-058",
+      "lesson_id": "pel100-051",
+      "canonical_order": 51,
+      "origin_id": "058",
+      "stage": 3,
+      "title_zh": "產品展示",
+      "title_en": "Demonstrating a Product",
+      "text": "Let me show you how the system works. First, you connect the device to the network. The system then collects data automatically. If it detects a problem, it sends you a notification.",
+      "sentences": [
+        "Let me show you how the system works.",
+        "First, you connect the device to the network.",
+        "The system then collects data automatically.",
+        "If it detects a problem, it sends you a notification."
+      ],
+      "T": "現在式／條件句",
+      "L": "操作→資料→判斷→通知",
+      "E": "let me show you；if it detects"
+    },
+    {
+      "unit_id": "pel100-origin-059",
+      "lesson_id": "pel100-052",
+      "canonical_order": 52,
+      "origin_id": "059",
+      "stage": 3,
+      "title_zh": "處理團隊意見分歧",
+      "title_en": "Handling Disagreement",
+      "text": "We have different opinions about this design. I understand why you prefer the first option. However, I'm concerned about its long-term cost. Could we compare both options before making a decision?",
+      "sentences": [
+        "We have different opinions about this design.",
+        "I understand why you prefer the first option.",
+        "However, I'm concerned about its long-term cost.",
+        "Could we compare both options before making a decision?"
+      ],
+      "T": "現在式",
+      "L": "承認差異→理解→疑慮→比較",
+      "E": "I'm concerned about；could we"
+    },
+    {
+      "unit_id": "pel100-origin-060",
+      "lesson_id": "pel100-053",
+      "canonical_order": 53,
+      "origin_id": "060",
+      "stage": 3,
+      "title_zh": "專案檢討",
+      "title_en": "Reviewing a Project",
+      "text": "We finished the project last week. Some parts went well, but others took longer than expected. We've learned several lessons from the experience. Next time, we'll spend more time checking the requirements at the beginning.",
+      "sentences": [
+        "We finished the project last week.",
+        "Some parts went well, but others took longer than expected.",
+        "We've learned several lessons from the experience.",
+        "Next time, we'll spend more time checking the requirements at the beginning."
+      ],
+      "T": "過去式／現在完成式／未來式",
+      "L": "完成→檢討→學習→改進",
+      "E": "lessons learned；next time"
+    },
+    {
+      "unit_id": "pel100-origin-009",
+      "lesson_id": "pel100-054",
+      "canonical_order": 54,
+      "origin_id": "009",
+      "stage": 3,
+      "title_zh": "學英文的原因",
+      "title_en": "Why I Learn English",
+      "text": "I've been learning English for several months. I want to speak more naturally. Sometimes I know the words but cannot make a sentence quickly. That's why I practice speaking every day.",
+      "sentences": [
+        "I've been learning English for several months.",
+        "I want to speak more naturally.",
+        "Sometimes I know the words but cannot make a sentence quickly.",
+        "That's why I practice speaking every day."
+      ],
+      "T": "現在完成進行式",
+      "L": "學習背景→問題→行動",
+      "E": "have been learning；that's why"
+    },
+    {
+      "unit_id": "pel100-origin-020",
+      "lesson_id": "pel100-055",
+      "canonical_order": 55,
+      "origin_id": "020",
+      "stage": 3,
+      "title_zh": "今年的目標",
+      "title_en": "My Goals This Year",
+      "text": "I set three goals at the beginning of this year. One of them was to improve my English. I've made some progress, but I still need more practice. By the end of the year, I hope to speak with more confidence.",
+      "sentences": [
+        "I set three goals at the beginning of this year.",
+        "One of them was to improve my English.",
+        "I've made some progress, but I still need more practice.",
+        "By the end of the year, I hope to speak with more confidence."
+      ],
+      "T": "過去式／現在完成式／未來目標",
+      "L": "目標→進度→下一步",
+      "E": "make progress；by the end of"
+    },
+    {
+      "unit_id": "pel100-origin-030",
+      "lesson_id": "pel100-056",
+      "canonical_order": 56,
+      "origin_id": "030",
+      "stage": 3,
+      "title_zh": "班機延誤",
+      "title_en": "A Delayed Flight",
+      "text": "My flight has been delayed by two hours. I was supposed to arrive before dinner. Now I need to change my plans. I'll let my friends know as soon as I have a new arrival time.",
+      "sentences": [
+        "My flight has been delayed by two hours.",
+        "I was supposed to arrive before dinner.",
+        "Now I need to change my plans.",
+        "I'll let my friends know as soon as I have a new arrival time."
+      ],
+      "T": "現在完成式／過去預期／未來式",
+      "L": "變化→影響→應對",
+      "E": "be supposed to；as soon as"
+    },
+    {
+      "unit_id": "pel100-origin-035",
+      "lesson_id": "pel100-057",
+      "canonical_order": 57,
+      "origin_id": "035",
+      "stage": 3,
+      "title_zh": "在藥局詢問",
+      "title_en": "At the Pharmacy",
+      "text": "I've had a sore throat since yesterday. I don't have a fever, but it hurts when I swallow. Is there anything that might help? Could you explain how to use it safely?",
+      "sentences": [
+        "I've had a sore throat since yesterday.",
+        "I don't have a fever, but it hurts when I swallow.",
+        "Is there anything that might help?",
+        "Could you explain how to use it safely?"
+      ],
+      "T": "現在完成式",
+      "L": "症狀→補充→詢問",
+      "E": "I've had；anything that might help"
+    },
+    {
+      "unit_id": "pel100-origin-036",
+      "lesson_id": "pel100-058",
+      "canonical_order": 58,
+      "origin_id": "036",
+      "stage": 3,
+      "title_zh": "醫生看診",
+      "title_en": "Visiting a Doctor",
+      "text": "I've been feeling tired for several days. I've also been having trouble sleeping. I'm not sure whether the two problems are related. I'd like to know what I should do next.",
+      "sentences": [
+        "I've been feeling tired for several days.",
+        "I've also been having trouble sleeping.",
+        "I'm not sure whether the two problems are related.",
+        "I'd like to know what I should do next."
+      ],
+      "T": "現在完成進行式",
+      "L": "症狀→疑問→求助",
+      "E": "have trouble -ing；be related"
+    },
+    {
+      "unit_id": "pel100-origin-014",
+      "lesson_id": "pel100-059",
+      "canonical_order": 59,
+      "origin_id": "014",
+      "stage": 3,
+      "title_zh": "照顧寵物",
+      "title_en": "Taking Care of a Pet",
+      "text": "My cat usually eats twice a day. Recently, she has been eating less than usual. I've started keeping a record of her meals. I want to understand whether something has changed.",
+      "sentences": [
+        "My cat usually eats twice a day.",
+        "Recently, she has been eating less than usual.",
+        "I've started keeping a record of her meals.",
+        "I want to understand whether something has changed."
+      ],
+      "T": "現在式／現在完成進行式",
+      "L": "正常行為→變化→觀察",
+      "E": "less than usual；keep a record"
+    },
+    {
+      "unit_id": "pel100-origin-013",
+      "lesson_id": "pel100-060",
+      "canonical_order": 60,
+      "origin_id": "013",
+      "stage": 3,
+      "title_zh": "天氣影響計畫",
+      "title_en": "Weather and Plans",
+      "text": "It was raining when I woke up. I had planned to ride my bike. Instead, I decided to stay home and read. Sometimes a change of plans can be relaxing.",
+      "sentences": [
+        "It was raining when I woke up.",
+        "I had planned to ride my bike.",
+        "Instead, I decided to stay home and read.",
+        "Sometimes a change of plans can be relaxing."
+      ],
+      "T": "過去進行式／過去完成式",
+      "L": "預期→變化→替代方案",
+      "E": "instead；decide to"
+    },
+    {
+      "unit_id": "pel100-origin-061",
+      "lesson_id": "pel100-061",
+      "canonical_order": 61,
+      "origin_id": "061",
+      "stage": 4,
+      "title_zh": "第一份工作",
+      "title_en": "My First Job",
+      "text": "I got my first job when I was twenty-two. At that time, I didn't know much about business. My manager taught me how to solve problems step by step. That experience helped me become more confident.",
+      "sentences": [
+        "I got my first job when I was twenty-two.",
+        "At that time, I didn't know much about business.",
+        "My manager taught me how to solve problems step by step.",
+        "That experience helped me become more confident."
+      ],
+      "T": "過去式",
+      "L": "背景→困難→學習→改變",
+      "E": "at that time；step by step"
+    },
+    {
+      "unit_id": "pel100-origin-062",
+      "lesson_id": "pel100-062",
+      "canonical_order": 62,
+      "origin_id": "062",
+      "stage": 4,
+      "title_zh": "從錯誤中學習",
+      "title_en": "Learning From Mistakes",
+      "text": "I once made an important mistake at work. I didn't check the information carefully enough. After that, I started reviewing my work before sending it. I learned that small mistakes can have big consequences.",
+      "sentences": [
+        "I once made an important mistake at work.",
+        "I didn't check the information carefully enough.",
+        "After that, I started reviewing my work before sending it.",
+        "I learned that small mistakes can have big consequences."
+      ],
+      "T": "過去式",
+      "L": "錯誤→原因→改善→教訓",
+      "E": "carefully enough；after that"
+    },
+    {
+      "unit_id": "pel100-origin-063",
+      "lesson_id": "pel100-063",
+      "canonical_order": 63,
+      "origin_id": "063",
+      "stage": 4,
+      "title_zh": "面對失敗",
+      "title_en": "Dealing With Failure",
+      "text": "One of my projects failed a few years ago. We had a good idea, but we didn't understand the market well. Instead of giving up, we studied what went wrong. The experience changed how I approach new projects.",
+      "sentences": [
+        "One of my projects failed a few years ago.",
+        "We had a good idea, but we didn't understand the market well.",
+        "Instead of giving up, we studied what went wrong.",
+        "The experience changed how I approach new projects."
+      ],
+      "T": "過去式",
+      "L": "失敗→原因→反省→成長",
+      "E": "instead of；what went wrong"
+    },
+    {
+      "unit_id": "pel100-origin-064",
+      "lesson_id": "pel100-064",
+      "canonical_order": 64,
+      "origin_id": "064",
+      "stage": 4,
+      "title_zh": "計畫突然改變",
+      "title_en": "An Unexpected Change",
+      "text": "We were preparing for an important event when the speaker canceled. Everyone was worried because we had little time. We quickly found another speaker and changed the schedule. In the end, the event went better than we expected.",
+      "sentences": [
+        "We were preparing for an important event when the speaker canceled.",
+        "Everyone was worried because we had little time.",
+        "We quickly found another speaker and changed the schedule.",
+        "In the end, the event went better than we expected."
+      ],
+      "T": "過去進行式／過去式",
+      "L": "意外→壓力→行動→結果",
+      "E": "in the end；better than expected"
+    },
+    {
+      "unit_id": "pel100-origin-065",
+      "lesson_id": "pel100-065",
+      "canonical_order": 65,
+      "origin_id": "065",
+      "stage": 4,
+      "title_zh": "最有成就感的事情",
+      "title_en": "A Personal Achievement",
+      "text": "Last year, I completed a project that had taken months of work. There were many problems along the way. My team kept working together until we solved them. I was proud of what we had achieved.",
+      "sentences": [
+        "Last year, I completed a project that had taken months of work.",
+        "There were many problems along the way.",
+        "My team kept working together until we solved them.",
+        "I was proud of what we had achieved."
+      ],
+      "T": "過去完成式／過去式",
+      "L": "挑戰→堅持→成果→感受",
+      "E": "along the way；be proud of"
+    },
+    {
+      "unit_id": "pel100-origin-066",
+      "lesson_id": "pel100-066",
+      "canonical_order": 66,
+      "origin_id": "066",
+      "stage": 4,
+      "title_zh": "困難的選擇",
+      "title_en": "Making a Difficult Decision",
+      "text": "I once had to choose between two job opportunities. One offered more money, while the other offered better learning opportunities. I thought carefully about my long-term goals. Finally, I chose the job where I could learn more.",
+      "sentences": [
+        "I once had to choose between two job opportunities.",
+        "One offered more money, while the other offered better learning opportunities.",
+        "I thought carefully about my long-term goals.",
+        "Finally, I chose the job where I could learn more."
+      ],
+      "T": "過去式",
+      "L": "選項→比較→標準→決定",
+      "E": "choose between；while"
+    },
+    {
+      "unit_id": "pel100-origin-067",
+      "lesson_id": "pel100-067",
+      "canonical_order": 67,
+      "origin_id": "067",
+      "stage": 4,
+      "title_zh": "兩種工作方式",
+      "title_en": "Comparing Work Methods",
+      "text": "Some people prefer working alone, while others enjoy teamwork. Working alone can help you focus. Teamwork allows people to share different ideas. I think the best choice depends on the task.",
+      "sentences": [
+        "Some people prefer working alone, while others enjoy teamwork.",
+        "Working alone can help you focus.",
+        "Teamwork allows people to share different ideas.",
+        "I think the best choice depends on the task."
+      ],
+      "T": "現在式",
+      "L": "兩種方法→優缺點→條件判斷",
+      "E": "while；depends on"
+    },
+    {
+      "unit_id": "pel100-origin-068",
+      "lesson_id": "pel100-068",
+      "canonical_order": 68,
+      "origin_id": "068",
+      "stage": 4,
+      "title_zh": "選擇工具",
+      "title_en": "Choosing the Right Tool",
+      "text": "There are many tools that can do similar things. The most expensive one isn't always the best. I usually compare cost, reliability, and ease of use. What matters most is whether the tool solves the real problem.",
+      "sentences": [
+        "There are many tools that can do similar things.",
+        "The most expensive one isn't always the best.",
+        "I usually compare cost, reliability, and ease of use.",
+        "What matters most is whether the tool solves the real problem."
+      ],
+      "T": "現在式",
+      "L": "現象→反例→評估標準→原則",
+      "E": "what matters most；whether"
+    },
+    {
+      "unit_id": "pel100-origin-069",
+      "lesson_id": "pel100-069",
+      "canonical_order": 69,
+      "origin_id": "069",
+      "stage": 4,
+      "title_zh": "別人的建議",
+      "title_en": "Learning From Others",
+      "text": "A friend once gave me advice about managing my time. At first, I didn't think it would help. However, I decided to try his method for a week. It worked better than I expected.",
+      "sentences": [
+        "A friend once gave me advice about managing my time.",
+        "At first, I didn't think it would help.",
+        "However, I decided to try his method for a week.",
+        "It worked better than I expected."
+      ],
+      "T": "過去式",
+      "L": "建議→懷疑→實驗→結果",
+      "E": "at first；better than I expected"
+    },
+    {
+      "unit_id": "pel100-origin-070",
+      "lesson_id": "pel100-070",
+      "canonical_order": 70,
+      "origin_id": "070",
+      "stage": 4,
+      "title_zh": "遠端工作好不好",
+      "title_en": "Is Remote Work Better?",
+      "text": "Remote work gives people more flexibility. They can save time by avoiding long trips to the office. However, it can be harder to communicate with teammates. I believe a mix of remote and office work is often a good solution.",
+      "sentences": [
+        "Remote work gives people more flexibility.",
+        "They can save time by avoiding long trips to the office.",
+        "However, it can be harder to communicate with teammates.",
+        "I believe a mix of remote and office work is often a good solution."
+      ],
+      "T": "現在式",
+      "L": "優點→原因→缺點→立場",
+      "E": "flexibility；however；a mix of"
+    },
+    {
+      "unit_id": "pel100-origin-071",
+      "lesson_id": "pel100-071",
+      "canonical_order": 71,
+      "origin_id": "071",
+      "stage": 4,
+      "title_zh": "AI與學習",
+      "title_en": "AI and Learning",
+      "text": "AI has changed how people learn new skills. Students can now ask questions and get feedback quickly. However, getting an answer doesn't always mean understanding it. I think students still need to practice and explain things themselves.",
+      "sentences": [
+        "AI has changed how people learn new skills.",
+        "Students can now ask questions and get feedback quickly.",
+        "However, getting an answer doesn't always mean understanding it.",
+        "I think students still need to practice and explain things themselves."
+      ],
+      "T": "現在完成式／現在式",
+      "L": "改變→好處→限制→觀點",
+      "E": "has changed；doesn't always mean"
+    },
+    {
+      "unit_id": "pel100-origin-072",
+      "lesson_id": "pel100-072",
+      "canonical_order": 72,
+      "origin_id": "072",
+      "stage": 4,
+      "title_zh": "再生能源",
+      "title_en": "Renewable Energy",
+      "text": "Solar energy is becoming more common in many places. It can help reduce the use of fossil fuels. However, solar panels don't produce the same amount of electricity all day. That's why energy storage and better planning are important.",
+      "sentences": [
+        "Solar energy is becoming more common in many places.",
+        "It can help reduce the use of fossil fuels.",
+        "However, solar panels don't produce the same amount of electricity all day.",
+        "That's why energy storage and better planning are important."
+      ],
+      "T": "現在進行式／現在式",
+      "L": "趨勢→優點→限制→對策",
+      "E": "become more common；that's why"
+    },
+    {
+      "unit_id": "pel100-origin-073",
+      "lesson_id": "pel100-073",
+      "canonical_order": 73,
+      "origin_id": "073",
+      "stage": 4,
+      "title_zh": "永續生活",
+      "title_en": "Living More Sustainably",
+      "text": "Many people want to reduce waste in their daily lives. Some bring reusable bags or avoid buying unnecessary things. These actions may seem small, but they can become good habits. I believe lasting change begins with simple decisions.",
+      "sentences": [
+        "Many people want to reduce waste in their daily lives.",
+        "Some bring reusable bags or avoid buying unnecessary things.",
+        "These actions may seem small, but they can become good habits.",
+        "I believe lasting change begins with simple decisions."
+      ],
+      "T": "現在式",
+      "L": "目標→行動→意義→觀點",
+      "E": "reduce waste；lasting change"
+    },
+    {
+      "unit_id": "pel100-origin-074",
+      "lesson_id": "pel100-074",
+      "canonical_order": 74,
+      "origin_id": "074",
+      "stage": 4,
+      "title_zh": "城市與鄉村",
+      "title_en": "City Life or Country Life",
+      "text": "Living in a city offers more job opportunities. Public transportation is also more convenient. On the other hand, the countryside is often quieter and less crowded. I'd prefer the city for work but the countryside for relaxation.",
+      "sentences": [
+        "Living in a city offers more job opportunities.",
+        "Public transportation is also more convenient.",
+        "On the other hand, the countryside is often quieter and less crowded.",
+        "I'd prefer the city for work but the countryside for relaxation."
+      ],
+      "T": "現在式／偏好表達",
+      "L": "城市優點→鄉村優點→個人選擇",
+      "E": "on the other hand；I'd prefer"
+    },
+    {
+      "unit_id": "pel100-origin-075",
+      "lesson_id": "pel100-075",
+      "canonical_order": 75,
+      "origin_id": "075",
+      "stage": 4,
+      "title_zh": "公共運輸",
+      "title_en": "Public Transportation",
+      "text": "I used to drive to work every day. Recently, I've started taking the train more often. It takes about the same amount of time, but I can read during the trip. As a result, my journey feels less stressful.",
+      "sentences": [
+        "I used to drive to work every day.",
+        "Recently, I've started taking the train more often.",
+        "It takes about the same amount of time, but I can read during the trip.",
+        "As a result, my journey feels less stressful."
+      ],
+      "T": "used to／現在完成式",
+      "L": "過去習慣→改變→比較→效果",
+      "E": "used to；as a result"
+    },
+    {
+      "unit_id": "pel100-origin-076",
+      "lesson_id": "pel100-076",
+      "canonical_order": 76,
+      "origin_id": "076",
+      "stage": 4,
+      "title_zh": "消費與儲蓄",
+      "title_en": "Spending and Saving",
+      "text": "I try to save part of my income every month. Before buying something expensive, I ask myself whether I really need it. Sometimes waiting a few days helps me make a better decision. I've learned that careful spending is more important than buying things quickly.",
+      "sentences": [
+        "I try to save part of my income every month.",
+        "Before buying something expensive, I ask myself whether I really need it.",
+        "Sometimes waiting a few days helps me make a better decision.",
+        "I've learned that careful spending is more important than buying things quickly."
+      ],
+      "T": "現在式／現在完成式",
+      "L": "習慣→判斷→方法→體會",
+      "E": "ask myself whether；I've learned"
+    },
+    {
+      "unit_id": "pel100-origin-077",
+      "lesson_id": "pel100-077",
+      "canonical_order": 77,
+      "origin_id": "077",
+      "stage": 4,
+      "title_zh": "閱讀與思考",
+      "title_en": "Reading and Thinking",
+      "text": "I recently read a book about decision-making. The author explained why people sometimes make poor choices. One idea was especially interesting to me. We should question our first impression before making important decisions.",
+      "sentences": [
+        "I recently read a book about decision-making.",
+        "The author explained why people sometimes make poor choices.",
+        "One idea was especially interesting to me.",
+        "We should question our first impression before making important decisions."
+      ],
+      "T": "過去式／情態動詞",
+      "L": "閱讀→重點→啟發→應用",
+      "E": "especially；first impression"
+    },
+    {
+      "unit_id": "pel100-origin-078",
+      "lesson_id": "pel100-078",
+      "canonical_order": 78,
+      "origin_id": "078",
+      "stage": 4,
+      "title_zh": "難忘的旅行",
+      "title_en": "A Memorable Trip",
+      "text": "I visited Japan with my family a few years ago. We traveled through several cities and tried many local dishes. What impressed me most was how easy it was to use public transportation. I'd love to visit again someday.",
+      "sentences": [
+        "I visited Japan with my family a few years ago.",
+        "We traveled through several cities and tried many local dishes.",
+        "What impressed me most was how easy it was to use public transportation.",
+        "I'd love to visit again someday."
+      ],
+      "T": "過去式／未來意願",
+      "L": "旅行→活動→印象→期待",
+      "E": "what impressed me most；I'd love to"
+    },
+    {
+      "unit_id": "pel100-origin-079",
+      "lesson_id": "pel100-079",
+      "canonical_order": 79,
+      "origin_id": "079",
+      "stage": 4,
+      "title_zh": "文化差異",
+      "title_en": "Cultural Differences",
+      "text": "People in different countries may communicate in different ways. In some cultures, being direct is considered helpful. In others, people prefer softer expressions. Understanding these differences can help us avoid misunderstandings.",
+      "sentences": [
+        "People in different countries may communicate in different ways.",
+        "In some cultures, being direct is considered helpful.",
+        "In others, people prefer softer expressions.",
+        "Understanding these differences can help us avoid misunderstandings."
+      ],
+      "T": "現在式／被動式",
+      "L": "差異→對比→意義",
+      "E": "in some cultures；in others"
+    },
+    {
+      "unit_id": "pel100-origin-080",
+      "lesson_id": "pel100-080",
+      "canonical_order": 80,
+      "origin_id": "080",
+      "stage": 4,
+      "title_zh": "改變自己的想法",
+      "title_en": "Changing My Mind",
+      "text": "I used to believe that working longer meant getting more done. Then I noticed that tired people often make more mistakes. I started focusing on results instead of working hours. Now I believe working smarter is more useful than simply working longer.",
+      "sentences": [
+        "I used to believe that working longer meant getting more done.",
+        "Then I noticed that tired people often make more mistakes.",
+        "I started focusing on results instead of working hours.",
+        "Now I believe working smarter is more useful than simply working longer."
+      ],
+      "T": "used to／過去式／現在式",
+      "L": "原始信念→新證據→調整→新觀點",
+      "E": "used to believe；instead of"
+    },
+    {
+      "unit_id": "pel100-origin-081",
+      "lesson_id": "pel100-081",
+      "canonical_order": 81,
+      "origin_id": "081",
+      "stage": 5,
+      "title_zh": "一分鐘自我介紹",
+      "title_en": "A Short Professional Introduction",
+      "text": "I've been working in technology and business for several years. My main interest is using AI to solve practical problems. I enjoy turning new ideas into useful products. Today, I'd like to share one of the projects I'm working on.",
+      "sentences": [
+        "I've been working in technology and business for several years.",
+        "My main interest is using AI to solve practical problems.",
+        "I enjoy turning new ideas into useful products.",
+        "Today, I'd like to share one of the projects I'm working on."
+      ],
+      "T": "現在完成進行式",
+      "L": "背景→專長→價值→主題",
+      "E": "my main interest；turn into"
+    },
+    {
+      "unit_id": "pel100-origin-082",
+      "lesson_id": "pel100-082",
+      "canonical_order": 82,
+      "origin_id": "082",
+      "stage": 5,
+      "title_zh": "說明市場問題",
+      "title_en": "Explaining a Market Problem",
+      "text": "Many small businesses want to use AI but don't know where to start. Existing solutions can be expensive or difficult to manage. As a result, some companies give up before seeing any benefits. We believe there is a better way to solve this problem.",
+      "sentences": [
+        "Many small businesses want to use AI but don't know where to start.",
+        "Existing solutions can be expensive or difficult to manage.",
+        "As a result, some companies give up before seeing any benefits.",
+        "We believe there is a better way to solve this problem."
+      ],
+      "T": "現在式",
+      "L": "需求→障礙→後果→機會",
+      "E": "as a result；there is a better way"
+    },
+    {
+      "unit_id": "pel100-origin-083",
+      "lesson_id": "pel100-083",
+      "canonical_order": 83,
+      "origin_id": "083",
+      "stage": 5,
+      "title_zh": "訪談客戶",
+      "title_en": "Interviewing a Customer",
+      "text": "Before building our product, we talked to potential customers. We asked them about their daily work and biggest problems. Several people described the same difficulty. This helped us understand which problem we should solve first.",
+      "sentences": [
+        "Before building our product, we talked to potential customers.",
+        "We asked them about their daily work and biggest problems.",
+        "Several people described the same difficulty.",
+        "This helped us understand which problem we should solve first."
+      ],
+      "T": "過去式／情態動詞",
+      "L": "訪談→發現→問題確認",
+      "E": "potential customers；help us understand"
+    },
+    {
+      "unit_id": "pel100-origin-084",
+      "lesson_id": "pel100-084",
+      "canonical_order": 84,
+      "origin_id": "084",
+      "stage": 5,
+      "title_zh": "最小可行產品",
+      "title_en": "Building a Simple First Version",
+      "text": "We don't need to build every feature at the beginning. Instead, we can start with a simple version of the product. This allows us to test whether customers actually need it. If the results are positive, we can add more features later.",
+      "sentences": [
+        "We don't need to build every feature at the beginning.",
+        "Instead, we can start with a simple version of the product.",
+        "This allows us to test whether customers actually need it.",
+        "If the results are positive, we can add more features later."
+      ],
+      "T": "現在式／條件句",
+      "L": "簡化→測試→條件→擴展",
+      "E": "instead；start with；if"
+    },
+    {
+      "unit_id": "pel100-origin-085",
+      "lesson_id": "pel100-085",
+      "canonical_order": 85,
+      "origin_id": "085",
+      "stage": 5,
+      "title_zh": "競爭優勢",
+      "title_en": "Explaining Our Advantage",
+      "text": "There are already several products in this market. However, most of them require expensive equipment. Our solution uses simpler hardware and a flexible software system. This could make it easier for small companies to get started.",
+      "sentences": [
+        "There are already several products in this market.",
+        "However, most of them require expensive equipment.",
+        "Our solution uses simpler hardware and a flexible software system.",
+        "This could make it easier for small companies to get started."
+      ],
+      "T": "現在式／情態動詞",
+      "L": "競爭環境→差異→優勢→效益",
+      "E": "most of them；make it easier to"
+    },
+    {
+      "unit_id": "pel100-origin-086",
+      "lesson_id": "pel100-086",
+      "canonical_order": 86,
+      "origin_id": "086",
+      "stage": 5,
+      "title_zh": "市場驗證",
+      "title_en": "Showing Early Results",
+      "text": "We tested our first product with a small group of users. Most of them were able to complete the main task. However, some users needed help during setup. We've used their feedback to improve the process.",
+      "sentences": [
+        "We tested our first product with a small group of users.",
+        "Most of them were able to complete the main task.",
+        "However, some users needed help during setup.",
+        "We've used their feedback to improve the process."
+      ],
+      "T": "過去式／現在完成式",
+      "L": "測試→成果→問題→改善",
+      "E": "were able to；feedback"
+    },
+    {
+      "unit_id": "pel100-origin-087",
+      "lesson_id": "pel100-087",
+      "canonical_order": 87,
+      "origin_id": "087",
+      "stage": 5,
+      "title_zh": "商業模式",
+      "title_en": "Explaining How We Make Money",
+      "text": "Our customers pay a monthly fee to use the service. The price depends on how many devices they connect. This gives small companies a lower starting cost. As their needs grow, they can upgrade to a larger plan.",
+      "sentences": [
+        "Our customers pay a monthly fee to use the service.",
+        "The price depends on how many devices they connect.",
+        "This gives small companies a lower starting cost.",
+        "As their needs grow, they can upgrade to a larger plan."
+      ],
+      "T": "現在式",
+      "L": "收費方式→計價基礎→價值→擴展",
+      "E": "depends on；as their needs grow"
+    },
+    {
+      "unit_id": "pel100-origin-088",
+      "lesson_id": "pel100-088",
+      "canonical_order": 88,
+      "origin_id": "088",
+      "stage": 5,
+      "title_zh": "評估風險",
+      "title_en": "Understanding Business Risks",
+      "text": "Every new business faces uncertainty. One major risk is that customers may not be willing to pay. To reduce this risk, we plan to test the pricing before expanding. We'd rather learn early than spend too much money on the wrong idea.",
+      "sentences": [
+        "Every new business faces uncertainty.",
+        "One major risk is that customers may not be willing to pay.",
+        "To reduce this risk, we plan to test the pricing before expanding.",
+        "We'd rather learn early than spend too much money on the wrong idea."
+      ],
+      "T": "現在式／未來計畫",
+      "L": "風險→原因→對策→原則",
+      "E": "to reduce this risk；would rather"
+    },
+    {
+      "unit_id": "pel100-origin-089",
+      "lesson_id": "pel100-089",
+      "canonical_order": 89,
+      "origin_id": "089",
+      "stage": 5,
+      "title_zh": "長期願景",
+      "title_en": "Sharing a Long-Term Vision",
+      "text": "Today, our product solves one specific problem. In the future, we hope to connect several related services. This would allow customers to manage their work more easily. Our long-term goal is to build a system that grows with their needs.",
+      "sentences": [
+        "Today, our product solves one specific problem.",
+        "In the future, we hope to connect several related services.",
+        "This would allow customers to manage their work more easily.",
+        "Our long-term goal is to build a system that grows with their needs."
+      ],
+      "T": "現在式／未來式／假設語氣",
+      "L": "現況→擴展→效益→願景",
+      "E": "in the future；long-term goal"
+    },
+    {
+      "unit_id": "pel100-origin-090",
+      "lesson_id": "pel100-090",
+      "canonical_order": 90,
+      "origin_id": "090",
+      "stage": 5,
+      "title_zh": "資料隱私",
+      "title_en": "Protecting User Data",
+      "text": "AI systems often need data to provide useful services. However, users should know what information is collected. They should also be able to control who can access it. We believe trust is essential for long-term success.",
+      "sentences": [
+        "AI systems often need data to provide useful services.",
+        "However, users should know what information is collected.",
+        "They should also be able to control who can access it.",
+        "We believe trust is essential for long-term success."
+      ],
+      "T": "現在式／被動式",
+      "L": "需求→風險→權限→信任",
+      "E": "should be able to；who can access"
+    },
+    {
+      "unit_id": "pel100-origin-091",
+      "lesson_id": "pel100-091",
+      "canonical_order": 91,
+      "origin_id": "091",
+      "stage": 5,
+      "title_zh": "介紹研究主題",
+      "title_en": "Introducing My Research",
+      "text": "My research focuses on understanding electrical equipment through power data. We collect signals from a main electricity meter. Then we use AI models to identify different operating patterns. The goal is to understand equipment behavior without installing sensors on every machine.",
+      "sentences": [
+        "My research focuses on understanding electrical equipment through power data.",
+        "We collect signals from a main electricity meter.",
+        "Then we use AI models to identify different operating patterns.",
+        "The goal is to understand equipment behavior without installing sensors on every machine."
+      ],
+      "T": "現在式",
+      "L": "研究目的→資料→方法→價值",
+      "E": "focus on；the goal is to"
+    },
+    {
+      "unit_id": "pel100-origin-092",
+      "lesson_id": "pel100-092",
+      "canonical_order": 92,
+      "origin_id": "092",
+      "stage": 5,
+      "title_zh": "提出研究假設",
+      "title_en": "Explaining a Hypothesis",
+      "text": "We believe that electrical signals contain useful information about machine behavior. If we analyze them carefully, we may be able to identify unusual patterns. These patterns could help us detect problems earlier. Our next step is to test this idea with real data.",
+      "sentences": [
+        "We believe that electrical signals contain useful information about machine behavior.",
+        "If we analyze them carefully, we may be able to identify unusual patterns.",
+        "These patterns could help us detect problems earlier.",
+        "Our next step is to test this idea with real data."
+      ],
+      "T": "現在式／條件句／情態動詞",
+      "L": "假設→條件→可能效益→驗證",
+      "E": "we believe that；may be able to"
+    },
+    {
+      "unit_id": "pel100-origin-093",
+      "lesson_id": "pel100-093",
+      "canonical_order": 93,
+      "origin_id": "093",
+      "stage": 5,
+      "title_zh": "說明研究方法",
+      "title_en": "Explaining a Research Method",
+      "text": "First, we collect electricity data from different machines. Next, we prepare the data and remove obvious errors. Then we train a model to recognize operating patterns. Finally, we evaluate how well the model works on unseen data.",
+      "sentences": [
+        "First, we collect electricity data from different machines.",
+        "Next, we prepare the data and remove obvious errors.",
+        "Then we train a model to recognize operating patterns.",
+        "Finally, we evaluate how well the model works on unseen data."
+      ],
+      "T": "現在式",
+      "L": "資料→前處理→訓練→驗證",
+      "E": "first；next；then；finally"
+    },
+    {
+      "unit_id": "pel100-origin-094",
+      "lesson_id": "pel100-094",
+      "canonical_order": 94,
+      "origin_id": "094",
+      "stage": 5,
+      "title_zh": "解釋意外的結果",
+      "title_en": "Explaining an Unexpected Result",
+      "text": "We expected the new model to perform better. However, the results were not as good as we hoped. After checking the data, we found differences between the training and testing conditions. This suggests that the model may need to be more reliable across environments.",
+      "sentences": [
+        "We expected the new model to perform better.",
+        "However, the results were not as good as we hoped.",
+        "After checking the data, we found differences between the training and testing conditions.",
+        "This suggests that the model may need to be more reliable across environments."
+      ],
+      "T": "過去式／情態動詞",
+      "L": "預期→反差→發現→推論",
+      "E": "not as good as；this suggests that"
+    },
+    {
+      "unit_id": "pel100-origin-095",
+      "lesson_id": "pel100-095",
+      "canonical_order": 95,
+      "origin_id": "095",
+      "stage": 5,
+      "title_zh": "研究限制",
+      "title_en": "Discussing Research Limitations",
+      "text": "Our results are promising, but the study has some limitations. We tested the model on only a few datasets. Therefore, we cannot assume it will work equally well everywhere. More experiments are needed before we can make a stronger claim.",
+      "sentences": [
+        "Our results are promising, but the study has some limitations.",
+        "We tested the model on only a few datasets.",
+        "Therefore, we cannot assume it will work equally well everywhere.",
+        "More experiments are needed before we can make a stronger claim."
+      ],
+      "T": "現在式／過去式／被動式",
+      "L": "成果→限制→推論邊界→後續",
+      "E": "limitations；therefore；cannot assume"
+    },
+    {
+      "unit_id": "pel100-origin-096",
+      "lesson_id": "pel100-096",
+      "canonical_order": 96,
+      "origin_id": "096",
+      "stage": 5,
+      "title_zh": "回答聽眾問題",
+      "title_en": "Answering a Difficult Question",
+      "text": "Thank you for the question. That's an important point, and we haven't fully explored it yet. Based on our current results, we believe the method has potential. However, we need more evidence before reaching a final conclusion.",
+      "sentences": [
+        "Thank you for the question.",
+        "That's an important point, and we haven't fully explored it yet.",
+        "Based on our current results, we believe the method has potential.",
+        "However, we need more evidence before reaching a final conclusion."
+      ],
+      "T": "現在完成式／現在式",
+      "L": "感謝→承認未知→現有證據→限制",
+      "E": "based on；before reaching"
+    },
+    {
+      "unit_id": "pel100-origin-097",
+      "lesson_id": "pel100-097",
+      "canonical_order": 97,
+      "origin_id": "097",
+      "stage": 5,
+      "title_zh": "商業協商",
+      "title_en": "Negotiating a Deal",
+      "text": "We understand that the price is an important concern. However, we also need to maintain the quality of our service. If you can commit to a longer contract, we may be able to offer a discount. Would that be an acceptable option for your team?",
+      "sentences": [
+        "We understand that the price is an important concern.",
+        "However, we also need to maintain the quality of our service.",
+        "If you can commit to a longer contract, we may be able to offer a discount.",
+        "Would that be an acceptable option for your team?"
+      ],
+      "T": "現在式／條件句",
+      "L": "理解→限制→交換條件→確認",
+      "E": "commit to；offer a discount"
+    },
+    {
+      "unit_id": "pel100-origin-098",
+      "lesson_id": "pel100-098",
+      "canonical_order": 98,
+      "origin_id": "098",
+      "stage": 5,
+      "title_zh": "回應反對意見",
+      "title_en": "Responding to an Objection",
+      "text": "I understand your concern about the cost. However, we should also consider the time saved by automation. A lower purchase price doesn't always mean a lower total cost. That's why I suggest comparing the overall value rather than the initial price alone.",
+      "sentences": [
+        "I understand your concern about the cost.",
+        "However, we should also consider the time saved by automation.",
+        "A lower purchase price doesn't always mean a lower total cost.",
+        "That's why I suggest comparing the overall value rather than the initial price alone."
+      ],
+      "T": "現在式／情態動詞",
+      "L": "理解反對→增加觀點→重新比較",
+      "E": "consider；doesn't always mean；rather than"
+    },
+    {
+      "unit_id": "pel100-origin-099",
+      "lesson_id": "pel100-099",
+      "canonical_order": 99,
+      "origin_id": "099",
+      "stage": 5,
+      "title_zh": "情境推演",
+      "title_en": "Planning for Different Scenarios",
+      "text": "Let's consider three possible outcomes. If demand grows quickly, we'll need more resources. If growth is slower than expected, we can control costs and improve the product. By preparing for both situations, we can make better decisions.",
+      "sentences": [
+        "Let's consider three possible outcomes.",
+        "If demand grows quickly, we'll need more resources.",
+        "If growth is slower than expected, we can control costs and improve the product.",
+        "By preparing for both situations, we can make better decisions."
+      ],
+      "T": "第一類條件句",
+      "L": "情境→應對→風險管理",
+      "E": "possible outcomes；slower than expected"
+    },
+    {
+      "unit_id": "pel100-origin-100",
+      "lesson_id": "pel100-100",
+      "canonical_order": 100,
+      "origin_id": "100",
+      "stage": 5,
+      "title_zh": "總結與下一步",
+      "title_en": "Summarizing and Moving Forward",
+      "text": "Today, we've discussed the problem, our solution, and the early results. We still have challenges to solve, but we've made meaningful progress. Our next step is to test the system with more users. I believe that by learning from real experience, we can build something truly useful.",
+      "sentences": [
+        "Today, we've discussed the problem, our solution, and the early results.",
+        "We still have challenges to solve, but we've made meaningful progress.",
+        "Our next step is to test the system with more users.",
+        "I believe that by learning from real experience, we can build something truly useful."
+      ],
+      "T": "現在完成式／未來計畫",
+      "L": "回顧→進展→下一步→願景",
+      "E": "meaningful progress；our next step"
+    }
+  ]
+}

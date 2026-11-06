@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "d7e9abfbfa3d680b365c3ed779bc5f699800d0445d2a8eb9e4f754812caf4c80",
+  "transcript_sha256": "b9a2d1f588f9c706f0e621417cae2087e5bca7af16b107efe5dcf69c0b6e3a2e",
+  "duration_seconds": 14.59,
+  "cues": [
+    {
+      "text": "I'm checking in for my flight to Singapore.",
+      "start": 0.86225,
+      "end": 3.1883
+    },
+    {
+      "text": "I have one suitcase to check and one carry-on bag.",
+      "start": 4.33128,
+      "end": 7.53963
+    },
+    {
+      "text": "Could I have an aisle seat if one is available?",
+      "start": 8.6519,
+      "end": 11.09936
+    },
+    {
+      "text": "Please let me know if the flight is on time.",
+      "start": 12.1626,
+      "end": 14.40945
+    }
+  ]
+}

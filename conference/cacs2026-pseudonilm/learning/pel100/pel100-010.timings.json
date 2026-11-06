@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "d2255038efd4e848b7a8219f08c8022aab5c6dc6477fc67e279ca1371022344e",
+  "transcript_sha256": "b3e1d6539b8521c2672bb7b22f88a11f92db4eca0c4d790f18b5b0ff84d6bec1",
+  "duration_seconds": 15.07,
+  "cues": [
+    {
+      "text": "I went to the supermarket after work.",
+      "start": 0.48084,
+      "end": 2.72476
+    },
+    {
+      "text": "I needed some milk, eggs, and vegetables.",
+      "start": 4.46781,
+      "end": 7.17254
+    },
+    {
+      "text": "The store was crowded, so I finished shopping quickly.",
+      "start": 7.77359,
+      "end": 10.93912
+    },
+    {
+      "text": "Luckily, I found everything on my list.",
+      "start": 12.69552,
+      "end": 14.94926
+    }
+  ]
+}

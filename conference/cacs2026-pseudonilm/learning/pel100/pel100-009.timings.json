@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "b62e787055b4d499937dc062a3fad2399a21c19a51fee6e5e6eba358ea2a720e",
+  "transcript_sha256": "0215bb7bc41c4abefbf5008dba9859984852228e5a991b80a347f72b86d4f310",
+  "duration_seconds": 11.07,
+  "cues": [
+    {
+      "text": "I'm looking for a jacket for work.",
+      "start": 0.3208,
+      "end": 2.14536
+    },
+    {
+      "text": "This one looks nice, but it's a little too small.",
+      "start": 2.80702,
+      "end": 5.71429
+    },
+    {
+      "text": "Do you have it in a larger size?",
+      "start": 6.23559,
+      "end": 7.8797
+    },
+    {
+      "text": "I'd like to try it on before deciding.",
+      "start": 8.77311,
+      "end": 11.00956
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "6959656985fbb6cd663d24676302f69c0b3ae0f50af6312c4c009dac415da051",
+  "transcript_sha256": "1706caf2c2ef95b2eb35dc63cd98254d9ea03dbb7f3cf176d0ff15f1630e7f28",
+  "duration_seconds": 13.39,
+  "cues": [
+    {
+      "text": "I need a ticket to the city center.",
+      "start": 0.62123,
+      "end": 2.26449
+    },
+    {
+      "text": "Is there a direct train, or do I need to transfer?",
+      "start": 3.26648,
+      "end": 6.41272
+    },
+    {
+      "text": "I'd prefer the fastest route.",
+      "start": 7.65519,
+      "end": 9.25837
+    },
+    {
+      "text": "Could you tell me which platform to use?",
+      "start": 11.35626,
+      "end": 13.24905
+    }
+  ]
+}

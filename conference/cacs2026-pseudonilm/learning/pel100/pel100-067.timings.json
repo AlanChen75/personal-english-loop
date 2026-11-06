@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "ee5a8e3a8a98741ef5e78d307c937189c8a377a9aba52af1822a95f77de43791",
+  "transcript_sha256": "9c5be0b1bd857e554741365ddc79e0511d440839c4aeca033f110723614ad8b7",
+  "duration_seconds": 14.59,
+  "cues": [
+    {
+      "text": "Some people prefer working alone, while others enjoy teamwork.",
+      "start": 0.4612,
+      "end": 4.27112
+    },
+    {
+      "text": "Working alone can help you focus.",
+      "start": 5.31384,
+      "end": 7.37922
+    },
+    {
+      "text": "Teamwork allows people to share different ideas.",
+      "start": 8.33092,
+      "end": 11.23979
+    },
+    {
+      "text": "I think the best choice depends on the task.",
+      "start": 12.12248,
+      "end": 14.48969
+    }
+  ]
+}

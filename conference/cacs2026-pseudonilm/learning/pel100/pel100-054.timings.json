@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "1a0e958e78b87fe6c2e8eab11cf0c7cb0e7aa7087d166e8008224fb888baad53",
+  "transcript_sha256": "814e8551262d95258f118283567da73b77db44d9209ecdad5fb85d556d408b33",
+  "duration_seconds": 12.27,
+  "cues": [
+    {
+      "text": "I've been learning English for several months.",
+      "start": 0.34131,
+      "end": 2.54981
+    },
+    {
+      "text": "I want to speak more naturally.",
+      "start": 3.45328,
+      "end": 5.13977
+    },
+    {
+      "text": "Sometimes I know the words but cannot make a sentence quickly.",
+      "start": 5.99131,
+      "end": 9.30116
+    },
+    {
+      "text": "That's why I practice speaking every day.",
+      "start": 10.08349,
+      "end": 12.12958
+    }
+  ]
+}

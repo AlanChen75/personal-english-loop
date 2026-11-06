@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "40f6d858729acc195bdd548e8d416d06770f69bd6200555f6f3ebaaba5d3e3cd",
+  "transcript_sha256": "a7acdadfe74ad79dad066c5447efbcb7949e6dd5f504f07fa17cfb02de0e9343",
+  "duration_seconds": 14.91,
+  "cues": [
+    {
+      "text": "I'd like to open a savings account.",
+      "start": 0.80153,
+      "end": 2.62501
+    },
+    {
+      "text": "I already have my passport and identification documents.",
+      "start": 3.78723,
+      "end": 7.334
+    },
+    {
+      "text": "Could you explain the monthly fees?",
+      "start": 7.97522,
+      "end": 9.93897
+    },
+    {
+      "text": "I'd also like to know whether I can manage the account online.",
+      "start": 11.37266,
+      "end": 14.82961
+    }
+  ]
+}

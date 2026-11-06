@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "93f4e191d9711c6733d93dd79e4788d41bf38c8565161c7da7a40d03697dd926",
+  "transcript_sha256": "10220025f2b3fa9289803dc4234306a4064cbe7d59139fc28a81ca08a687417b",
+  "duration_seconds": 13.07,
+  "cues": [
+    {
+      "text": "I've been feeling tired for several days.",
+      "start": 0.42082,
+      "end": 2.66521
+    },
+    {
+      "text": "I've also been having trouble sleeping.",
+      "start": 3.80744,
+      "end": 5.79131
+    },
+    {
+      "text": "I'm not sure whether the two problems are related.",
+      "start": 6.67303,
+      "end": 9.49855
+    },
+    {
+      "text": "I'd like to know what I should do next.",
+      "start": 11.15455,
+      "end": 12.96919
+    }
+  ]
+}

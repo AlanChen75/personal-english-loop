@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "9838e8bc57e4bf5631eb66f357ed3ea73bc72e064794dfe6dd867d145e41ce5c",
+  "transcript_sha256": "638309f1da869ae5c588ab22b3f1a5dec1ad2478dadc1415643e5d0d5ede4a2e",
+  "duration_seconds": 12.27,
+  "cues": [
+    {
+      "text": "Today, we have three things to discuss.",
+      "start": 0.26066,
+      "end": 2.36604
+    },
+    {
+      "text": "First, we'll review the project schedule.",
+      "start": 3.02772,
+      "end": 5.23335
+    },
+    {
+      "text": "Next, we'll look at the main problems.",
+      "start": 5.75468,
+      "end": 7.57934
+    },
+    {
+      "text": "Finally, we'll decide who will handle each task.",
+      "start": 8.91355,
+      "end": 12.08911
+    }
+  ]
+}

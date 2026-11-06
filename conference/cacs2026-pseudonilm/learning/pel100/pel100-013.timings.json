@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "5d7457245fa902888201d1f1e1018596bb0bfea711e1b3dc44aa354ea4182248",
+  "transcript_sha256": "4faa9a56a39671d4056060e857275d5153d7691fcff041a239b190b7827800e5",
+  "duration_seconds": 12.75,
+  "cues": [
+    {
+      "text": "I'd like to book a table for four people.",
+      "start": 0.52108,
+      "end": 2.5653
+    },
+    {
+      "text": "Do you have anything available around seven tonight?",
+      "start": 3.62749,
+      "end": 6.07255
+    },
+    {
+      "text": "We prefer a quiet area if possible.",
+      "start": 6.99445,
+      "end": 9.27917
+    },
+    {
+      "text": "Could you confirm the reservation by text?",
+      "start": 10.51356,
+      "end": 12.60896
+    }
+  ]
+}

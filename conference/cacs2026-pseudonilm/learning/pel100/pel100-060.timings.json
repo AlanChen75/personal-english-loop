@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "5ca3760400b89d27c9f9bfa056c5e0d0e39e5deeb2d8f2ee246789b03887c6d6",
+  "transcript_sha256": "b62bf0f1f59b659731e5124887209ed484d54726e8e6517246cddb0e0eda5495",
+  "duration_seconds": 12.43,
+  "cues": [
+    {
+      "text": "It was raining when I woke up.",
+      "start": 0.38091,
+      "end": 1.82434
+    },
+    {
+      "text": "I had planned to ride my bike.",
+      "start": 2.60621,
+      "end": 4.31026
+    },
+    {
+      "text": "Instead, I decided to stay home and read.",
+      "start": 5.17232,
+      "end": 8.23962
+    },
+    {
+      "text": "Sometimes a change of plans can be relaxing.",
+      "start": 9.15219,
+      "end": 12.32945
+    }
+  ]
+}

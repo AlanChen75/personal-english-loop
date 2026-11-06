@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "518117598a0d07741ae9827d11cdc3d5cbf02d2ef57437dbd1f22c003a7d57ba",
+  "transcript_sha256": "df2bf11eff6b24ed8478a39235518bf918b961e5a68863f1034cbfd8c3cb3746",
+  "duration_seconds": 16.99,
+  "cues": [
+    {
+      "text": "Solar energy is becoming more common in many places.",
+      "start": 0.30083,
+      "end": 3.71019
+    },
+    {
+      "text": "It can help reduce the use of fossil fuels.",
+      "start": 4.53245,
+      "end": 7.19978
+    },
+    {
+      "text": "However, solar panels don't produce the same amount of electricity all day.",
+      "start": 8.15111,
+      "end": 12.74092
+    },
+    {
+      "text": "That's why energy storage and better planning are important.",
+      "start": 13.28208,
+      "end": 16.64927
+    }
+  ]
+}

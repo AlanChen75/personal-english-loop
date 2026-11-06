@@ -1,0 +1,1 @@
+Before we suggest a solution, we need to understand the customer's problem. I'll ask how their current process works. Then I'll find out where they lose the most time. This information will help us design a better system.

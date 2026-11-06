@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "23ea56a68276c15fbfe5c9b1e18fb84cc8b2086666eaf5e3b5594222d47dda1d",
+  "transcript_sha256": "0b0e147d2d14abd26562e599aaa6eb05bfbc4f6217bb221c03a9fd9123658d6c",
+  "duration_seconds": 18.51,
+  "cues": [
+    {
+      "text": "Many people want to reduce waste in their daily lives.",
+      "start": 0.70149,
+      "end": 3.70786
+    },
+    {
+      "text": "Some bring reusable bags or avoid buying unnecessary things.",
+      "start": 4.83023,
+      "end": 9.25962
+    },
+    {
+      "text": "These actions may seem small, but they can become good habits.",
+      "start": 10.29115,
+      "end": 13.77915
+    },
+    {
+      "text": "I believe lasting change begins with simple decisions.",
+      "start": 14.98191,
+      "end": 18.38972
+    }
+  ]
+}

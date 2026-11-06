@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "bdf4b19b8595529d9429431c71248a37f3a2771bcd87b53960c74aafcc155854",
+  "transcript_sha256": "5e8471c8b06635c3bf8ef26e8ebc77269c56ef8523f24287797f7020d6cded46",
+  "duration_seconds": 11.55,
+  "cues": [
+    {
+      "text": "I think there was a misunderstanding.",
+      "start": 0.56135,
+      "end": 2.42583
+    },
+    {
+      "text": "I didn't mean to cancel the meeting.",
+      "start": 3.18766,
+      "end": 4.83161
+    },
+    {
+      "text": "I only wanted to change the time.",
+      "start": 6.31518,
+      "end": 8.17966
+    },
+    {
+      "text": "Sorry if my message wasn't clear enough.",
+      "start": 9.21378,
+      "end": 11.4493
+    }
+  ]
+}

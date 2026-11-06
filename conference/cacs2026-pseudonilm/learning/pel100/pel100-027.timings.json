@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "d4581df21ac978bf0c9ea1cbdf0a181b292304c03058153c33926eeb7a987780",
+  "transcript_sha256": "cfc23bdc6820e3f3a6083b559a707b8fded7b67c1af3fde90f51e7993cadba5f",
+  "duration_seconds": 15.15,
+  "cues": [
+    {
+      "text": "I'm having trouble with the air conditioner.",
+      "start": 3.02529,
+      "end": 5.12897
+    },
+    {
+      "text": "It doesn't seem to be working properly.",
+      "start": 5.81016,
+      "end": 7.77359
+    },
+    {
+      "text": "Could someone come and take a look?",
+      "start": 8.49485,
+      "end": 10.19783
+    },
+    {
+      "text": "If it can't be fixed, I'd like to change rooms.",
+      "start": 12.23263,
+      "end": 15.02928
+    }
+  ]
+}

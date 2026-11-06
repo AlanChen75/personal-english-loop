@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "c14f5b73dea56bb5bc122dc73bdf5db811b05d92ee77eee6a150403137dffed4",
+  "transcript_sha256": "05625cdd6b02092b82156b23eb4fe8e9386a04598aaa1857d829c063b07b4697",
+  "duration_seconds": 12.59,
+  "cues": [
+    {
+      "text": "I started walking every evening last month.",
+      "start": 0.60125,
+      "end": 2.80585
+    },
+    {
+      "text": "At first, it was difficult to keep going.",
+      "start": 3.98831,
+      "end": 6.35324
+    },
+    {
+      "text": "Now I feel stronger and sleep better.",
+      "start": 7.23507,
+      "end": 9.45971
+    },
+    {
+      "text": "Small changes can make a big difference.",
+      "start": 10.49412,
+      "end": 12.52954
+    }
+  ]
+}

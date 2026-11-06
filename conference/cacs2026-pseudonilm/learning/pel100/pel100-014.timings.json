@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "b52dc2659965106f114bb1be912c0a7c77aeac75f6b37ea4d20a87b7379386f4",
+  "transcript_sha256": "addca02d8d3cd4b87b324fafd2f27d54dbc5f9b97099a60b2c744ae17da70ad0",
+  "duration_seconds": 12.19,
+  "cues": [
+    {
+      "text": "Hello, I have a reservation under the name Chen.",
+      "start": 0.30067,
+      "end": 3.46767
+    },
+    {
+      "text": "I booked a room for two nights.",
+      "start": 4.08905,
+      "end": 5.69259
+    },
+    {
+      "text": "Is breakfast included in the price?",
+      "start": 6.65472,
+      "end": 8.77942
+    },
+    {
+      "text": "Also, what time do I need to check out?",
+      "start": 9.81302,
+      "end": 12.16986
+    }
+  ]
+}

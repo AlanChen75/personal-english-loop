@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "ced35e253e37777d5393758c84ef7d282bd55aae0749752f02c5c18493a30ff3",
+  "transcript_sha256": "8136510b236468e9ec7b0c99143008d3b3e0714fea2fc900dc852dda608f527c",
+  "duration_seconds": 18.11,
+  "cues": [
+    {
+      "text": "I recently read a book about decision-making.",
+      "start": 0.56129,
+      "end": 3.40782
+    },
+    {
+      "text": "The author explained why people sometimes make poor choices.",
+      "start": 3.88892,
+      "end": 8.49949
+    },
+    {
+      "text": "One idea was especially interesting to me.",
+      "start": 10.05217,
+      "end": 12.49758
+    },
+    {
+      "text": "We should question our first impression before making important decisions.",
+      "start": 13.62007,
+      "end": 17.84942
+    }
+  ]
+}

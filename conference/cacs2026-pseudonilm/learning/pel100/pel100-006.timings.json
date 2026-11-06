@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "786f9e2fe039042fbf85550960f0864302a206ccccf9c45486e3f8f218c7a2c0",
+  "transcript_sha256": "09a1d99faad5fc80842164b4dad9698defd2e69151a8f057ecddb6cd49003b3d",
+  "duration_seconds": 13.95,
+  "cues": [
+    {
+      "text": "I work as a project manager.",
+      "start": 0.44087,
+      "end": 2.0641
+    },
+    {
+      "text": "My job is to help different teams work together.",
+      "start": 2.82561,
+      "end": 5.75141
+    },
+    {
+      "text": "I spend a lot of time solving problems.",
+      "start": 7.25439,
+      "end": 9.53893
+    },
+    {
+      "text": "What I enjoy most is seeing a project succeed.",
+      "start": 10.81217,
+      "end": 13.82931
+    }
+  ]
+}

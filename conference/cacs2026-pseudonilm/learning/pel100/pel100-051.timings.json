@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "0b04a592861f9a3f18ef5eddf02075adae7417653e789e7c83c598710bd5a9fb",
+  "transcript_sha256": "d9103f3de989a08fb0a8c9550ceb8124788f0348b53d79392f1af090c1d8f2f6",
+  "duration_seconds": 13.07,
+  "cues": [
+    {
+      "text": "Let me show you how the system works.",
+      "start": 0.52115,
+      "end": 2.40532
+    },
+    {
+      "text": "First, you connect the device to the network.",
+      "start": 3.10687,
+      "end": 5.37188
+    },
+    {
+      "text": "The system then collects data automatically.",
+      "start": 6.33401,
+      "end": 8.91973
+    },
+    {
+      "text": "If it detects a problem, it sends you a notification.",
+      "start": 9.91284,
+      "end": 12.98956
+    }
+  ]
+}

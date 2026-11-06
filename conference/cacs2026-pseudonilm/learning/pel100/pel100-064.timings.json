@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "73b42cffd8d81479830dfc71f1d02c8e19430c5070ef2f0dbc9d6f3b6df3fbc7",
+  "transcript_sha256": "0725cab0ecbbb377b39bc9f4abbbf6e1f2ac436f43192b93cf32d6c9b066892b",
+  "duration_seconds": 16.59,
+  "cues": [
+    {
+      "text": "We were preparing for an important event when the speaker canceled.",
+      "start": 1.22278,
+      "end": 5.03144
+    },
+    {
+      "text": "Everyone was worried because we had little time.",
+      "start": 5.95353,
+      "end": 8.63964
+    },
+    {
+      "text": "We quickly found another speaker and changed the schedule.",
+      "start": 9.53102,
+      "end": 12.55916
+    },
+    {
+      "text": "In the end, the event went better than we expected.",
+      "start": 13.58191,
+      "end": 16.50978
+    }
+  ]
+}

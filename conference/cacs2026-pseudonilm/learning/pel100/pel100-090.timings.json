@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "432b55a3d2993c8c0307e138e1eb9b739b8b557d23a7bb13110cf2c18a800e85",
+  "transcript_sha256": "c1d717e013cf66ed3ffe5d591e0896ae535d367dcdc8ae02a796f23c3535aaea",
+  "duration_seconds": 17.63,
+  "cues": [
+    {
+      "text": "AI systems often need data to provide useful services.",
+      "start": 0.48106,
+      "end": 4.30953
+    },
+    {
+      "text": "However, users should know what information is collected.",
+      "start": 4.93091,
+      "end": 8.69925
+    },
+    {
+      "text": "They should also be able to control who can access it.",
+      "start": 9.93131,
+      "end": 12.73813
+    },
+    {
+      "text": "We believe trust is essential for long-term success.",
+      "start": 13.90095,
+      "end": 17.14883
+    }
+  ]
+}

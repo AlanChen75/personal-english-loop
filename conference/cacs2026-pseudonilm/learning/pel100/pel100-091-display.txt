@@ -1,0 +1,1 @@
+My research focuses on understanding electrical equipment through power data. We collect signals from a main electricity meter. Then we use AI models to identify different operating patterns. The goal is to understand equipment behavior without installing sensors on every machine.

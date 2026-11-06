@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "3a13ecee121e6491b9cd09017a832d731d78ee416c4c605d89ee1b9336712700",
+  "transcript_sha256": "a0b7554b430e7a5359468f2ecfd18120f2cd347e790ebd970204c2c9fc4d88f9",
+  "duration_seconds": 16.27,
+  "cues": [
+    {
+      "text": "One of my projects failed a few years ago.",
+      "start": 0.42107,
+      "end": 2.86731
+    },
+    {
+      "text": "We had a good idea, but we didn't understand the market well.",
+      "start": 3.64931,
+      "end": 7.65954
+    },
+    {
+      "text": "Instead of giving up, we studied what went wrong.",
+      "start": 8.55089,
+      "end": 11.87913
+    },
+    {
+      "text": "The experience changed how I approach new projects.",
+      "start": 12.88161,
+      "end": 16.08955
+    }
+  ]
+}

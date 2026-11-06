@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "fdbd28ea060c60ba5a92c7c8117469ac89c8d85f7a229bfbda40785ad914b9e4",
+  "transcript_sha256": "852e794a137f9b5dfd8cc522db5538ecd03850e500792691218501a3f249c6e2",
+  "duration_seconds": 11.04,
+  "cues": [
+    {
+      "text": "Excuse me, could we have the bill, please?",
+      "start": 0.56102,
+      "end": 3.04552
+    },
+    {
+      "text": "We'd like to split it into two payments.",
+      "start": 3.52639,
+      "end": 5.87064
+    },
+    {
+      "text": "I'll pay my part by card.",
+      "start": 6.65205,
+      "end": 8.21488
+    },
+    {
+      "text": "Thank you for your help.",
+      "start": 9.33691,
+      "end": 10.3788
+    }
+  ]
+}

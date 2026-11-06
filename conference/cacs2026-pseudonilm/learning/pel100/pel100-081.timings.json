@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "7cac6e777a3ff479fe431e78b4daada54b0c3dcbe011eedd795ef4e1b734aabc",
+  "transcript_sha256": "2d20aab341b319c69fa613edb9b731fe8f544647864666e9c0c0e2f499ee5b74",
+  "duration_seconds": 20.03,
+  "cues": [
+    {
+      "text": "I've been working in technology and business for several years.",
+      "start": 0.58122,
+      "end": 4.20884
+    },
+    {
+      "text": "My main interest is using AI to solve practical problems.",
+      "start": 4.99048,
+      "end": 8.95882
+    },
+    {
+      "text": "I enjoy turning new ideas into useful products.",
+      "start": 10.95213,
+      "end": 14.27868
+    },
+    {
+      "text": "Today, I'd like to share one of the projects I'm working on.",
+      "start": 15.30069,
+      "end": 19.08815
+    }
+  ]
+}

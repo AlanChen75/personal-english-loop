@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "55e03ad206b2f5b461dd09c456968c3b535a1dd2ad13d822332359ceb990c206",
+  "transcript_sha256": "344f82abe3e0ce0fa38818931cd910848059208e44e697bc9472e4bfee614b6d",
+  "duration_seconds": 12.27,
+  "cues": [
+    {
+      "text": "I enjoy reading about new technology.",
+      "start": 0.58123,
+      "end": 2.54539
+    },
+    {
+      "text": "Last week, I watched a video about robots.",
+      "start": 3.22684,
+      "end": 6.03278
+    },
+    {
+      "text": "It gave me some interesting ideas.",
+      "start": 7.25537,
+      "end": 9.27966
+    },
+    {
+      "text": "I'd like to learn more about this topic.",
+      "start": 10.17309,
+      "end": 12.18935
+    }
+  ]
+}

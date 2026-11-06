@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "3f27c7671193e64ac3a127aafacb3224282959eb0ddbf85f5c0cb95ec099a7c0",
+  "transcript_sha256": "56e274b3633777fb5433ab9d693dfd2fbee0f664300a3575e85f68bb20bc04a3",
+  "duration_seconds": 14.83,
+  "cues": [
+    {
+      "text": "Sales increased last month.",
+      "start": 0.40075,
+      "end": 1.96366
+    },
+    {
+      "text": "However, our costs also went up.",
+      "start": 2.7852,
+      "end": 5.41009
+    },
+    {
+      "text": "This means our profit didn't grow as much as expected.",
+      "start": 6.23163,
+      "end": 10.09884
+    },
+    {
+      "text": "We need to understand what's driving the higher costs.",
+      "start": 11.97481,
+      "end": 14.70936
+    }
+  ]
+}

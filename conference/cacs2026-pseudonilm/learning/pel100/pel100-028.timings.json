@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "1ccf6415a76a2daf94550a5fdabec099ba9f1ea3b9dc2a1e9cc2bbfad5e4756d",
+  "transcript_sha256": "d7453bc717cad395d7adb293fb7f89c4fbe4937849bb3d3f897dd4c0b490d854",
+  "duration_seconds": 10.67,
+  "cues": [
+    {
+      "text": "I bought these headphones last week.",
+      "start": 0.36092,
+      "end": 2.08532
+    },
+    {
+      "text": "Unfortunately, the left side doesn't work.",
+      "start": 2.38609,
+      "end": 4.69197
+    },
+    {
+      "text": "I still have the receipt and the original box.",
+      "start": 5.23335,
+      "end": 7.59939
+    },
+    {
+      "text": "Could I get a replacement or a refund?",
+      "start": 8.55293,
+      "end": 10.56919
+    }
+  ]
+}

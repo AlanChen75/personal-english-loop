@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "097056940c2ded92eb4b62cb0b5c0e5cf51e08673c98f925daaf13eab174a3eb",
+  "transcript_sha256": "7b83b2e09085998cfb5059cbffb7a3f568ab743990498b56f9eb54a8211f95f1",
+  "duration_seconds": 11.15,
+  "cues": [
+    {
+      "text": "I didn't sleep well last night.",
+      "start": 0.36094,
+      "end": 1.92501
+    },
+    {
+      "text": "I stayed up late to finish some work.",
+      "start": 2.66695,
+      "end": 4.67217
+    },
+    {
+      "text": "As a result, I felt tired this morning.",
+      "start": 5.49431,
+      "end": 7.68
+    },
+    {
+      "text": "Tonight, I'll try to go to bed earlier.",
+      "start": 8.53323,
+      "end": 11.12987
+    }
+  ]
+}

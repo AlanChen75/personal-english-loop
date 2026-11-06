@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "4e9cba7bf432e474bc1ac9a1265f1b860c3dfe6fa431085fd5a63161ed5dee3f",
+  "transcript_sha256": "7cb91fc7f727cefee5450ae254a7dfeb39604834929da6cff8e28c5eac3055af",
+  "duration_seconds": 17.95,
+  "cues": [
+    {
+      "text": "Every new business faces uncertainty.",
+      "start": 0.56136,
+      "end": 2.88701
+    },
+    {
+      "text": "One major risk is that customers may not be willing to pay.",
+      "start": 4.21022,
+      "end": 7.95932
+    },
+    {
+      "text": "To reduce this risk, we plan to test the pricing before expanding.",
+      "start": 9.07103,
+      "end": 13.01946
+    },
+    {
+      "text": "We'd rather learn early than spend too much money on the wrong idea.",
+      "start": 14.24208,
+      "end": 17.70949
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+We found a problem during yesterday's test. The system stopped responding after several hours. We haven't identified the cause yet. We're collecting more information before making changes.

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "8b1aa6ebe417a9bbe745509c11d79c006fd62d59a99cd9db1dfe7e9809950a1b",
+  "transcript_sha256": "3b0f5f9394c6342154cf04bf6f3d88559953ca9ec7cf74c31bcbe4fd4e1f21e1",
+  "duration_seconds": 10.16,
+  "cues": [
+    {
+      "text": "I live with my family.",
+      "start": 0.42083,
+      "end": 1.72339
+    },
+    {
+      "text": "We usually have dinner together.",
+      "start": 2.32458,
+      "end": 3.96781
+    },
+    {
+      "text": "Everyone is busy during the day.",
+      "start": 4.48884,
+      "end": 6.25231
+    },
+    {
+      "text": "That's why we enjoy talking at night.",
+      "start": 6.93365,
+      "end": 9.15803
+    }
+  ]
+}

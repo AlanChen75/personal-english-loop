@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "ac3e123e4c53a87130f373f3adce03f1a3d5bcb45b05c55c70c6eea90e08da62",
+  "transcript_sha256": "dbb6f2c435616bff05b33f8e5cd1f77930e8e9d254cc8e4c3f9f4375603811c7",
+  "duration_seconds": 11.55,
+  "cues": [
+    {
+      "text": "I'd like to send this package overseas.",
+      "start": 0.40096,
+      "end": 2.64636
+    },
+    {
+      "text": "It contains some books and small gifts.",
+      "start": 3.30795,
+      "end": 5.45311
+    },
+    {
+      "text": "How long will delivery usually take?",
+      "start": 6.25504,
+      "end": 8.21976
+    },
+    {
+      "text": "I'd also like a tracking number if possible.",
+      "start": 9.19364,
+      "end": 11.48958
+    }
+  ]
+}

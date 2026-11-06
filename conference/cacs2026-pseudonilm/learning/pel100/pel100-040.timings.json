@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "550d88e220eed07acf066a24bb00805790c86670948bdc65ee74583d9f30aa08",
+  "transcript_sha256": "738ffd72a8d475a11aafd5389c2bc9a4bda951af17aee22c770a3aceb5583113",
+  "duration_seconds": 14.19,
+  "cues": [
+    {
+      "text": "I missed the bus this morning.",
+      "start": 0.42079,
+      "end": 2.06385
+    },
+    {
+      "text": "I arrived at the stop just a minute too late.",
+      "start": 3.00561,
+      "end": 5.93107
+    },
+    {
+      "text": "The next bus wasn't coming for another twenty minutes.",
+      "start": 6.85279,
+      "end": 10.19903
+    },
+    {
+      "text": "So I decided to take a taxi instead.",
+      "start": 11.67387,
+      "end": 14.0491
+    }
+  ]
+}

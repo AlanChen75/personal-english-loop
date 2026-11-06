@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "428d3f90351fd89df11d4aeb048245847883463ff18e51db6357a15f97edd1ed",
+  "transcript_sha256": "fa86eba50019d5b677d3f85306e593f05b953b48664e8dd8df1e37ec8c22328d",
+  "duration_seconds": 17.87,
+  "cues": [
+    {
+      "text": "I visited Japan with my family a few years ago.",
+      "start": 0.50115,
+      "end": 3.32763
+    },
+    {
+      "text": "We traveled through several cities and tried many local dishes.",
+      "start": 4.34998,
+      "end": 8.39926
+    },
+    {
+      "text": "What impressed me most was how easy it was to use public transportation.",
+      "start": 9.87182,
+      "end": 14.56248
+    },
+    {
+      "text": "I'd love to visit again someday.",
+      "start": 15.78526,
+      "end": 17.68959
+    }
+  ]
+}

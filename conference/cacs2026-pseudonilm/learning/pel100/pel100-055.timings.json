@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "f500b01cc018915c79587bcdd6ba1e956e451ff08c5271da603ec1196aff6893",
+  "transcript_sha256": "34e0b8f2740d8124d9a32aa4a19d039a0c3f6d0e0b6266d9791981fec00644b3",
+  "duration_seconds": 15.71,
+  "cues": [
+    {
+      "text": "I set three goals at the beginning of this year.",
+      "start": 0.62183,
+      "end": 3.02891
+    },
+    {
+      "text": "One of them was to improve my English.",
+      "start": 4.39292,
+      "end": 6.63953
+    },
+    {
+      "text": "I've made some progress, but I still need more practice.",
+      "start": 7.4908,
+      "end": 10.6181
+    },
+    {
+      "text": "By the end of the year, I hope to speak with more confidence.",
+      "start": 11.84096,
+      "end": 15.48948
+    }
+  ]
+}

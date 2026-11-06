@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "eecce8740e08efa25ac5b450ba5034428e13c9710521228dec7732ec2332a56d",
+  "transcript_sha256": "f49215391309d18f8f323af953befa6fe350c31455c0f59a21c8c744faf90cfb",
+  "duration_seconds": 15.15,
+  "cues": [
+    {
+      "text": "I grew up in a small town.",
+      "start": 0.90148,
+      "end": 2.38392
+    },
+    {
+      "text": "It was quiet and had many beautiful places.",
+      "start": 3.3455,
+      "end": 6.29035
+    },
+    {
+      "text": "Although I live in a big city now, I still miss my hometown.",
+      "start": 7.51236,
+      "end": 11.69924
+    },
+    {
+      "text": "I visit it whenever I have time.",
+      "start": 13.09443,
+      "end": 15.10969
+    }
+  ]
+}

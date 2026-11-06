@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "baba49f64d34d5095f24dd3003ff8fff192b0d6e95e9a7089426f93def50064c",
+  "transcript_sha256": "75d27de3e3341d849e377061573d5085c647128e8f8dce774fed483bdee22d73",
+  "duration_seconds": 17.47,
+  "cues": [
+    {
+      "text": "Today, our product solves one specific problem.",
+      "start": 0.421,
+      "end": 3.68878
+    },
+    {
+      "text": "In the future, we hope to connect several related services.",
+      "start": 3.96945,
+      "end": 8.29976
+    },
+    {
+      "text": "This would allow customers to manage their work more easily.",
+      "start": 9.29124,
+      "end": 12.61887
+    },
+    {
+      "text": "Our long-term goal is to build a system that grows with their needs.",
+      "start": 13.5009,
+      "end": 17.34972
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "465bc98110b361736ac507a716b070af91d845b97002f705cfb52c4fbcc949f7",
+  "transcript_sha256": "beb05547b99a8dc3db6ab3a5097181761cd91806573a01b889869d80c68dff74",
+  "duration_seconds": 10.8,
+  "cues": [
+    {
+      "text": "Hi, I'm Sam.",
+      "start": 0.38071,
+      "end": 1.52282
+    },
+    {
+      "text": "I work with technology and business.",
+      "start": 2.26419,
+      "end": 4.24787
+    },
+    {
+      "text": "I enjoy learning new things.",
+      "start": 5.10946,
+      "end": 6.49202
+    },
+    {
+      "text": "I want to improve my English so I can talk to more people.",
+      "start": 7.13321,
+      "end": 10.259
+    }
+  ]
+}

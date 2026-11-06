@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "16b596813ed733ccf74e5afb354df04574be970a1a5aa1e13e69e4516a32d785",
+  "transcript_sha256": "4eb4d20361660219aea583d62bc69fb639c45d54f092373517593750c64f1644",
+  "duration_seconds": 12.91,
+  "cues": [
+    {
+      "text": "I'm looking for something without dairy.",
+      "start": 0.30062,
+      "end": 2.48509
+    },
+    {
+      "text": "Do you have any dishes that would work for me?",
+      "start": 3.16649,
+      "end": 5.79187
+    },
+    {
+      "text": "I can eat vegetables, rice, and seafood.",
+      "start": 6.61355,
+      "end": 9.19885
+    },
+    {
+      "text": "If you're not sure, could you check with the kitchen?",
+      "start": 10.57331,
+      "end": 12.82942
+    }
+  ]
+}

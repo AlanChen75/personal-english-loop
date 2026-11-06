@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "method": "CTC forced alignment on original TTS WAV chunks",
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "audio_sha256": "d0776a46bcd851d75efedf0254e31376c52597c20464b12310a0ba0ffdf1b61c",
+  "transcript_sha256": "db93346a633b846a70db33f86a077d4b6a55b658cede496027fcdf44d1b783da",
+  "duration_seconds": 16.75,
+  "cues": [
+    {
+      "text": "People in different countries may communicate in different ways.",
+      "start": 0.48117,
+      "end": 3.84934
+    },
+    {
+      "text": "In some cultures, being direct is considered helpful.",
+      "start": 4.4909,
+      "end": 8.09966
+    },
+    {
+      "text": "In others, people prefer softer expressions.",
+      "start": 8.93084,
+      "end": 11.65752
+    },
+    {
+      "text": "Understanding these differences can help us avoid misunderstandings.",
+      "start": 12.45948,
+      "end": 16.46931
+    }
+  ]
+}

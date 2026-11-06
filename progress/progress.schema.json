@@ -2,6 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/AlanChen75/personal-english-loop/main/progress/progress.schema.json",
   "title": "Personal English Loop Session Record",
+  "$comment": "2026-11-06 additive ID extension: retain legacy IDs and accept stable PEL100 origin IDs 001–100; do not reassign learner history when canonical order changes.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -25,7 +26,7 @@
     "schema_version": {"const": "2.0"},
     "session_id": {
       "type": "string",
-      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}-[A-F][0-9]{2}-[0-9]{4}$"
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}-(?:[A-F][0-9]{2}|pel100-origin-(?:00[1-9]|0[1-9][0-9]|100))-[0-9]{4}$"
     },
     "recorded_at": {"type": "string", "format": "date-time"},
     "timezone": {"const": "Asia/Taipei"},
@@ -46,7 +47,7 @@
       "additionalProperties": false,
       "required": ["lesson_id", "title", "day", "source_url", "course_git_ref"],
       "properties": {
-        "lesson_id": {"type": "string", "pattern": "^[A-F][0-9]{2}$"},
+        "lesson_id": {"type": "string", "pattern": "^(?:[A-F][0-9]{2}|pel100-origin-(?:00[1-9]|0[1-9][0-9]|100))$"},
         "title": {"type": "string", "minLength": 1},
         "day": {"type": "integer", "minimum": 1},
         "source_url": {"type": "string", "format": "uri"},
