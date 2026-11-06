@@ -49,7 +49,7 @@
 
 ## Automation 2026 更新流程
 
-1. `python3 scripts/generate_automation_audio.py --prepare --work-root <work-dir>` 從 12 頁基礎講稿與 `extension-v7.json` 套用逐頁講稿、收尾及附錄後，建立固定的 x-vector 工作清單。顯示稿用數字；TTS 保留小數前的 zero 與 MCC 逐字母停頓。
+1. `python3 scripts/generate_automation_audio.py --prepare --work-root <work-dir>` 從 12 頁基礎講稿與 `extension-v10.json` 套用逐頁講稿、收尾及附錄後，建立固定的 x-vector 工作清單。顯示稿用數字；TTS 保留小數前的 zero 與 MCC 逐字母停頓。2026-11-06 僅恢復第 1 頁 v7 原稿，保留第 3、6、9 頁核准簡化；不得因封面資訊變更自行增加口播。
 2. 在 `ac-3090` 以 `scripts/remote_qwen_clone_worker.py` 和既有參考聲音執行工作清單，參數維持 `--max-new-tokens 512 --x-vector-only`。
 3. `python3 scripts/generate_automation_audio.py --assemble --work-root <work-dir> --xvector-cache <wav-cache> --output-root <output-dir>` 合併、正規化並輸出 MP3。
 4. 將生成檔與投影片圖片放進 `automation2026/`。用 `scripts/remote_align_tts_chunks.py --jobs <jobs.json> --cache <wav-cache> --output <alignment.json>` 在 3090 對齊原始片段，再以 `scripts/build_automation_timings.py --plan <plan.json> --alignment <alignment.json> --cache <wav-cache> --audio-root conference/cacs2026-pseudonilm/automation2026` 產生時間戳。對齊流程不修改聲音或語速。

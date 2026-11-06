@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T13:42:40.286636+00:00",
+  "generated_at": "2026-11-06T08:51:06.438169+00:00",
   "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "generation_mode": "voice_clone_x-vector-only_existing_parameters",
   "post_processing": "loudnorm I=-16 LUFS, TP=-1.5 dB, LRA=11; no speed change",
@@ -11,8 +11,8 @@
       "sha256": "3c6a9066c07e2bcfd109e840ac93793bf697e18eec67ff9590483f600e822d8a"
     },
     {
-      "path": "extension-v9.json",
-      "sha256": "940591827f085f9ce5ffdb2132b44b62cf586497ca40ea011e6edba0ff53375f"
+      "path": "extension-v10.json",
+      "sha256": "0758ed76acff6055f04cc9c79452f64ae26a9838aae443044f83e4ce70c4305d"
     }
   ],
   "items": [
@@ -23,7 +23,7 @@
       "spoken_transcript": "slide-01-engineering-bounds-constrain-candidate-selection-in-industri.txt",
       "display_transcript": "slide-01-engineering-bounds-constrain-candidate-selection-in-industri-display.txt",
       "slide_image": "automation2026/slides/slide-1.png",
-      "raw_duration_seconds": 38.28,
+      "raw_duration_seconds": 38.52,
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -35,9 +35,9 @@
           }
         ],
         "format": {
-          "duration": "38.280000",
-          "size": "460269",
-          "bit_rate": "96189"
+          "duration": "38.520000",
+          "size": "463149",
+          "bit_rate": "96188"
         }
       }
     },
@@ -416,7 +416,7 @@
     "audio": "automation2026-full-talk.mp3",
     "spoken_transcript": "automation2026-full-talk.txt",
     "display_transcript": "automation2026-full-talk-display.txt",
-    "raw_duration_seconds": 694.43,
+    "raw_duration_seconds": 694.67,
     "probe": {
       "programs": [],
       "stream_groups": [],
@@ -428,8 +428,8 @@
         }
       ],
       "format": {
-        "duration": "694.430000",
-        "size": "8334189",
+        "duration": "694.670000",
+        "size": "8337069",
         "bit_rate": "96011"
       }
     }
